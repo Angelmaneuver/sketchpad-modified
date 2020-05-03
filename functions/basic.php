@@ -13,24 +13,24 @@
  */
 function sketchpad_customize2basic_register( $wp_customize ) {
   // panel
-	$wp_customize->add_panel( 'sketchpad_basic_panel', array(
+  $wp_customize->add_panel( 'sketchpad_basic_panel', array(
     'title'							=> __( 'Sketchpad - modified Basic Setting', 'sketchpad-modified' ),
-		'priority'					=> 1000,
+    'priority'					=> 1000,
   ) );
   // head section
   $wp_customize->add_section( 'sketchpad_head_section', array(
     'title'							=> __( 'Head Tag Setting', 'sketchpad-modified' ),
     'description'       => __( 'Please enter if you want to insert in the head tag', 'sketchpad-modified' ),
     'panel'             => 'sketchpad_basic_panel',
-	) );
+  ) );
   $wp_customize->add_setting( 'sketchpad_head_insert_head', array(
-		'default'						=> '',
-		'sanitize_callback'	=> 'sketchpad_sanitize_head',
-	) );
-	$wp_customize->add_control( 'sketchpad_head_insert_head', array(
-		'setting'						=> 'sketchpad_head_insert_head',
-		'section'						=> 'sketchpad_head_section',
-		'type'							=> 'textarea',
+    'default'						=> '',
+    'sanitize_callback'	=> 'sketchpad_sanitize_head',
+  ) );
+  $wp_customize->add_control( 'sketchpad_head_insert_head', array(
+    'setting'						=> 'sketchpad_head_insert_head',
+    'section'						=> 'sketchpad_head_section',
+    'type'							=> 'textarea',
   ) );
 }
 
@@ -70,5 +70,7 @@ EOM;
 
 add_action( 'customize_register', 'sketchpad_customize2basic_register', 100 );
 add_filter( 'wp_head', 'sketchpad_head_insert_head' );
+add_filter( 'embed_head', 'sketchpad_head_insert_head' );
 
 get_template_part( 'functions/option/top-button' );
+get_template_part( 'functions/option/blog-card' );

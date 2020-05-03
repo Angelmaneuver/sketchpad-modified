@@ -17,9 +17,8 @@
 					_e( 'Page: ', 'sketchpad' );
 					the_title();
 				} else {
-					echo '<a href="' . get_permalink() . '">' . get_the_title() . '</a>';
+					echo '<a href="' . get_permalink() . '">' . get_the_title() . '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span></a>';
 				} ?>
-				<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>
 			</h3>
 		</div><!--.post-header-->
 		<div class="post-meta">

@@ -97,7 +97,7 @@ function register_sketchpad_widgets() {
 /* Load scripts and styles */
 function sketchpad_script() {
 	wp_enqueue_style( 'google-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', array() );
-	wp_enqueue_style( 'sketchpad-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'sketchpad-style', get_template_directory_uri() . '/style.min.css' );
 
 	// Load the Internet Explorer specific stylesheet & scripts.
 	wp_enqueue_style( 'sketchpad-ie', get_template_directory_uri() . '/css/ie.css' );
@@ -195,6 +195,7 @@ add_action( 'wp_head', 'sketchpad_header' );
 add_filter( 'widget_tag_cloud_args', 'sketchpad_wp_tag_cloud' );
 
 get_template_part( 'functions/common/sanitizer' );
+get_template_part( 'functions/common/utility' );
 get_template_part( 'functions/basic' );
 get_template_part( 'functions/breadcrumb' );
 get_template_part( 'functions/rss' );

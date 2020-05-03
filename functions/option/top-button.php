@@ -131,5 +131,5 @@ EOM;
   <?php
 }
 
-add_action( 'customize_register', 'sketchpad_customize2top_button_register', 110 );
+add_action( 'customize_register', 'sketchpad_customize2top_button_register', 120 );
 add_filter( 'wp_footer', 'sketchpad_top_button' );

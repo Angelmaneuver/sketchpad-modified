@@ -3,7 +3,7 @@ Theme Name: Sketchpad - modified
 Theme URI: 
 Author: Angelmaneuver
 Author URI: https://gokugetsu.plala.jp/
-Description: This is a modified theme of Sketchpad from BestLayout.com. Original is: http://wp-demo-theme.bestweblayout.com/sketchpad/
+Description: This is a modified theme of Sketchpad from BestLayout.com. Original is: https://bestweblayout.com/products/sketchpad/
 Version: 1.0
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -1431,7 +1431,7 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 	margin-left: 6em;
 }
 
-.post-content p, .post-content div.wp-block-cover {
+.post-content p, .post-content ul, .post-content ol, .post-content div.wp-block-cover {
 	margin-bottom: 2em;
 }
 
@@ -1645,6 +1645,12 @@ div.header-postit section h4 {
 	display: none;
 }
 
+iframe.wp-embedded-content {
+	-webkit-box-shadow: 3px 4px 3px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 3px 4px 3px rgba(50, 50, 50, 0.4);
+	box-shadow: 3px 4px 3px rgba(50, 50, 50, 0.4);
+}
+
 div.sidebar li {
 	margin: 0 auto;
 }
@@ -1842,7 +1848,6 @@ div.related-posts li:not(.tag-r18) > a > span {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	background-color: #000;
-	filter: opactity(80%);
 	-moz-opacity: 0.8;
 	opacity: 0.8;
 	-webkit-box-sizing: border-box;
@@ -1888,12 +1893,6 @@ div.related-posts > ul > li > a > img {
 	object-fit: contain;
 }
 
-article.tag-r18 .post-header h3 a:before {
-	content: "";
-	background: inherit;
-	filter: drop-shadow(1px 1xp 2px #FF9A93);
-}
-
 article.tag-r18 * {
 	color: #FFFFFF !important;
 	font-weight: bold !important;
@@ -1905,6 +1904,12 @@ article.tag-r18 li::marker {
 	color: #FF9A93;
 }
 
+article.tag-r18 .post-header h3 a:before {
+	content: "";
+	background: inherit;
+	filter: drop-shadow(1px 1px 2px #FF9A93);
+}
+
 article:not(.tag-r18) span.r18 {
 	display: none;
 }
@@ -1914,11 +1919,11 @@ article.tag-r18 > header > div.post-header > h3.post-title > a {
 	background: none !important;
 }
 
-article.tag-r18 > header > div.post-header > h3.post-title > span.r18 {
+article.tag-r18 > header > div.post-header > h3.post-title > a > span.r18 {
 	font-size: 0.75em;
 }
 
-article.tag-r18 > header > div.post-header > h3.post-title > span.r18 > span {
+article.tag-r18 > header > div.post-header > h3.post-title > a > span.r18 > span {
 	margin-top: -1px;
 	margin-left: -1px;
 }

@@ -51,7 +51,6 @@ function sketchpad_customize2rss_register( $wp_customize ) {
 		'type'							=> 'checkbox',
 	) );
 	$wp_customize->add_setting( 'sketchpad_rss_media_image_size', array(
-		'default'						=> 'thumbnail',
 		'defualt'						=> 'thumbnail',
 		'transport'					=> 'postMessage',
 		'sanitize_callback'	=> 'sketchpad_sanitize_select',
@@ -81,21 +80,11 @@ EOM;
 function sketchpad_content_feed( $content ) {
   global $post;
 
-  $permalink = esc_url( get_permalink( $post ) );
+	$permalink = esc_url( get_permalink( $post ) );
+	
+	$content = sketchpad_content2more_read( $post->post_content, $permalink );
 
-  $more_text = esc_html( __('more &raquo;', 'sketchpad-modified' ) );
-
-  $split_content = get_extended( $post->post_content );
-
-  $content = wp_strip_all_tags( $split_content['main'] );
-
-  if ( $split_content['extended'] != "" ) {
-    $content = <<< EOM
-    {$content} <a href="{$permalink}">{$more_text}</a>
-EOM;
-  }
-
-	if ( get_theme_mod ( 'sketchpad_rss_output_post_tumbnail', true ) ) {
+	if ( get_theme_mod ( 'sketchpad_rss_output_post_tumbnail', false ) ) {
 
 		if ( has_post_thumbnail ( $post->ID ) ) {
 			$thumbnail = sketchpad_get_thumbnail_info( $post->ID, get_theme_mod ( 'sketchpad_rss_media_image_size', 'thumbnail' ) );
