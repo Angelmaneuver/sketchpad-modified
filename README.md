@@ -1,6 +1,6 @@
 # sketchpad-modified
 
-This is a modified theme of Sketchpad from BestLayout.com. Original [Sketchpad](https://bestweblayout.com/products/sketchpad/){:target="_blank" rel="noopener"}
+This is a modified theme of Sketchpad from BestLayout.com. Original [Sketchpad](https://bestweblayout.com/products/sketchpad/)
 
 ## Description
 
@@ -10,7 +10,7 @@ I like this theme so I dicided to customize it. Not a job but a hobby...
 
 ## Demo
 
-My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/){:target="_blank" rel="noopener"}
+My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/)
 
 ## Todo
 
@@ -26,8 +26,8 @@ My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/){:target="_blank
 
 ## Requirement
 
-- [Font Awesome 5 Free](https://fontawesome.com/){:target="_blank" rel="noopener"}
+- [Font Awesome 5 Free](https://fontawesome.com/)
 
 ## License
 
-[GNU General Public License V3](https://www.gnu.org/licenses/gpl-3.0.html){:target="_blank" rel="noopener"}
+[GNU General Public License V3](https://www.gnu.org/licenses/gpl-3.0.html)
