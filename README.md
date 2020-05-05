@@ -4,7 +4,7 @@ This is a modified theme of Sketchpad from BestLayout.com. Original [Sketchpad](
 
 ## Description
 
-Original Skethpad theme has stopped updating. (Last Update V1.8 – 04.08.2014)
+Original Sketchpad theme has stopped updating. (Last Update V2.0 – 25.08.2016)
 
 I like this theme so I dicided to customize it. Not a job but a hobby...
 
