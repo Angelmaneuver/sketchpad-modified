@@ -1389,7 +1389,7 @@ input[type="submit"]:hover {
 	margin-top: 2em;
 }
 
-.post-content h2 + .post-content h3, .post-content h3 + .post-content h4, .post-content h4 + .post-content h5, .post-content h5 + .post-content h6 {
+h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 	margin-top: 0 !important;
 }
 
@@ -1449,6 +1449,7 @@ input[type="submit"]:hover {
 
 .post-content .notes {
 	display: flex;
+	margin-bottom: 0;
 }
 
 .post-content .notes::before {
