@@ -1462,7 +1462,8 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 
 .post-content .answer-arrow {
 	display: flex;
-	margin-bottom: 0;
+	align-items: flex-start;
+	margin-top:0;
 	margin-left:1em;
 }
 
@@ -1470,10 +1471,9 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 	content: "\f3bf";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	margin-top:-0.2em;
 	margin-right: 0.5em;
 	font-size: 1.5em;
-	line-height: 1.3;
+	line-height: 0.8em;
 	-moz-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
