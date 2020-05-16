@@ -20,6 +20,7 @@ My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/)
 - [x] Add a Breadcrumb list
 - [x] Add a Return to Top Button
 - [x] Customize to Blog Card design
+- [x] Exclude IE from the target browser
 - [ ] Add a Output Structured Data (maybe JSON-LD)
 - [ ] Add a Responsive
 - [ ] Move Shortcode to plugin

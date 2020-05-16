@@ -1,4 +1,4 @@
-/**Auto height .content for left vertical background image**/
+/** Auto height .content for left vertical background image **/
 (function( $ ){
 	$(document).ready(function() {
 		$(".content").height(function(i,val){

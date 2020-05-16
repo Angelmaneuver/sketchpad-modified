@@ -99,14 +99,6 @@ function sketchpad_script() {
 	wp_enqueue_style( 'google-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', array() );
 	wp_enqueue_style( 'sketchpad-style', get_template_directory_uri() . '/style.min.css' );
 
-	// Load the Internet Explorer specific stylesheet & scripts.
-	wp_enqueue_style( 'sketchpad-ie', get_template_directory_uri() . '/css/ie.css' );
-	wp_style_add_data( 'sketchpad-ie', 'conditional', 'lt IE 9' );
-	wp_enqueue_script( 'sketchpad-ie-html5', get_template_directory_uri() . '/js/html5.js' );
-	wp_script_add_data( 'sketchpad-ie-html5', 'conditional', 'lt IE 9' );
-	wp_enqueue_script( 'sketchpad-ie-IE9', get_template_directory_uri() . '/js/IE9.js' );
-	wp_script_add_data( 'sketchpad-ie-IE9', 'conditional', 'lt IE 9' );
-
 	if ( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );
 		wp_enqueue_script( 'clipboard' );
@@ -116,7 +108,7 @@ function sketchpad_script() {
 	}
 
 	/* Auto calculate height of .content */
-	wp_enqueue_script( 'sketchpad-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'sketchpad-script', get_template_directory_uri() . '/js/sketchpad-ready.js', array( 'jquery' ), false, true );
 }
 
 /**
