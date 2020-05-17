@@ -13,9 +13,11 @@
 			<h3 class="post-title">
 				<?php if ( is_singular() && ! is_page() ) {
 					the_title();
+					echo '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>';
 				} elseif ( is_page() ) {
 					_e( 'Page: ', 'sketchpad' );
 					the_title();
+					echo '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>';
 				} else {
 					echo '<a href="' . get_permalink() . '">' . get_the_title() . '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span></a>';
 				} ?>

@@ -67,7 +67,8 @@ function sketchpad_setup() {
 	) );
 
 	/* This theme supports to style the visual editor. */
-	add_editor_style( get_template_directory_uri() . 'css/editor_style.css' );
+	add_theme_support( 'editor-styles' );
+	add_editor_style( get_template_directory_uri() . '/style-editor.min.css' );
 }
 
 function register_sketchpad_widgets() {
