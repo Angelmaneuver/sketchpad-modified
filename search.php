@@ -9,7 +9,7 @@
 get_header(); ?>
 	<main>
 		<?php do_action( 'sketchpad_modified_breadcrumb' ) ?>
-		<h2 class="page-title"><?php _e( 'Search results for: ', 'sketchpad' );
+		<h2 class="page-title"><?php _e( 'Search results for: ', 'sketchpad-modified' );
 			echo '&laquo;', get_search_query(), '&raquo;' ?>
 		</h2>
 		<?php if ( have_posts() ) :
@@ -33,9 +33,9 @@ get_header(); ?>
 		<?php else : ?>
 			<article <?php post_class(); ?>>
 				<header>
-					<h3 class="post-title"><?php _e( 'Sorry, no results for your search request...', 'sketchpad' ); ?></h3>
+					<h3 class="post-title"><?php _e( 'Sorry, no results for your search request...', 'sketchpad-modified' ); ?></h3>
 				</header>
-				<p><?php _e( 'Try to search again', 'sketchpad' ); ?></p>
+				<p><?php _e( 'Try to search again', 'sketchpad-modified' ); ?></p>
 				<?php echo get_search_form(); ?>
 			</article>
 		<?php endif; /*have_posts*/ ?>

@@ -17,12 +17,12 @@
 					echo '<a href="' . get_permalink() . '">' . get_the_date() . '</a>';
 				} ?>
 			</time>
-			<?php edit_post_link( __( 'edit', 'sketchpad' ) ); ?>
+			<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
 			<span class="by-author">
-				<?php _e( 'posted by ', 'sketchpad' );
+				<?php _e( 'posted by ', 'sketchpad-modified' );
 				the_author_posts_link();
 				if ( has_category() ) {
-					_e( ' in ', 'sketchpad' );
+					_e( ' in ', 'sketchpad-modified' );
 					the_category( ', ' );
 				} ?>
 			</span>
@@ -42,21 +42,21 @@
 	<footer>
 		<?php /*post pagination*/
 		wp_link_pages( array(
-			'before' => '<div class="pagination">' . __( 'Pages:', 'sketchpad' ),
+			'before' => '<div class="pagination">' . __( 'Pages:', 'sketchpad-modified' ),
 			'after'  => '</div>',
 		) );
 		if ( ! is_singular() ) { ?>
 			<div class="post-footer">
 				<?php if ( get_comments_number() > 0 ) { ?>
-					<a class="comments-link" href="<?php the_permalink(); ?>#comments"><?php _e( 'read comments', 'sketchpad' );
+					<a class="comments-link" href="<?php the_permalink(); ?>#comments"><?php _e( 'read comments', 'sketchpad-modified' );
 						echo ' (' . ( get_comments_number() ) . ')'; ?></a>
 				<?php } ?>
-				<a class="more-link" href="<?php the_permalink(); ?>"><?php _e( 'more', 'sketchpad' ) ?> &raquo;</a>
+				<a class="more-link" href="<?php the_permalink(); ?>"><?php _e( 'more', 'sketchpad-modified' ) ?> &raquo;</a>
 			</div><!--.post-footer-->
 		<?php }
 		if ( has_tag() ) { /* display if has tags */
 			echo '<div class="post-tag">';
-			the_tags( __( 'Tags: ', 'sketchpad' ) );
+			the_tags( __( 'Tags: ', 'sketchpad-modified' ) );
 			echo '</div>';
 		} ?>
 	</footer>

@@ -18,10 +18,10 @@ function sketchpad_init() {
 
 function sketchpad_setup() {
 	/* Makes Sketchpad available for translation */
-	load_theme_textdomain( 'sketchpad', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'sketchpad-modified', get_template_directory() . '/languages' );
 
 	/* This theme support wp_nav_menu() in one location */
-	register_nav_menu( 'primary', __( 'Primary menu', 'sketchpad' ) );
+	register_nav_menu( 'primary', __( 'Primary menu', 'sketchpad-modified' ) );
 
 	/* This theme supports for post thumbnails */
 	add_theme_support( 'post-thumbnails' );
@@ -71,6 +71,16 @@ function sketchpad_setup() {
 	add_editor_style( get_template_directory_uri() . '/style-editor.min.css' );
 }
 
+function register_sketchpad_admin_menu() {
+	/* add a recycle block editor */
+	add_posts_page(
+		__( 'Recycle Block', 'sketchpad-modified' ),
+		__( 'Recycle Block', 'sketchpad-modified' ),
+		'edit_dashboard',
+		'edit.php?post_type=wp_block'
+	);
+}
+
 function register_sketchpad_widgets() {
 	/* This theme support widget header postit. */
 	register_sidebar( array(
@@ -85,9 +95,9 @@ function register_sketchpad_widgets() {
 
 	/* This theme support widget sidebar. */
 	register_sidebar( array(
-		'name'          => __( 'Right Sidebar Widget', 'sketchpad' ),
+		'name'          => __( 'Right Sidebar Widget', 'sketchpad-modified' ),
 		'id'            => 'sidebar',
-		'description'   => __( 'Right Widget Area', 'sketchpad' ),
+		'description'   => __( 'Right Widget Area', 'sketchpad-modified' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<header><h4 class="widgettitle">',
@@ -125,9 +135,9 @@ function sketchpad_customize_register( $wp_customize ) {
 			'sanitize_callback' => 'esc_url_raw',
 		) );
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sketchpad_logo', array(
-			'label'       => __( 'Logo (supported formats: .jpg, .png, .gif)', 'sketchpad' ),
+			'label'       => __( 'Logo (supported formats: .jpg, .png, .gif)', 'sketchpad-modified' ),
 			'section'     => 'title_tagline',
-			'description' => __( 'Upload a logo to be displayed on the left above the header', 'sketchpad' ),
+			'description' => __( 'Upload a logo to be displayed on the left above the header', 'sketchpad-modified' ),
 		) ) );
 	}
 
@@ -138,9 +148,9 @@ function sketchpad_customize_register( $wp_customize ) {
 			'sanitize_callback' => 'esc_url_raw',
 		) );
 		$wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'sketchpad_favicon', array(
-			'label'       => __( 'Site icon (supported formats: .jpg, .png, .gif)', 'sketchpad' ),
+			'label'       => __( 'Site icon (supported formats: .jpg, .png, .gif)', 'sketchpad-modified' ),
 			'section'     => 'title_tagline',
-			'description' => __( 'The Site Icon is used as a browser and app icon for your site.', 'sketchpad' ),
+			'description' => __( 'The Site Icon is used as a browser and app icon for your site.', 'sketchpad-modified' ),
 		) ) );
 	}
 }
@@ -180,6 +190,7 @@ function sketchpad_get_current_url() {
 
 add_action( 'init', 'sketchpad_init' );
 add_action( 'after_setup_theme', 'sketchpad_setup' );
+add_action( 'admin_menu', 'register_sketchpad_admin_menu' );
 add_action( 'widgets_init', 'register_sketchpad_widgets' );
 add_action( 'widget_text', 'do_shortcode' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
