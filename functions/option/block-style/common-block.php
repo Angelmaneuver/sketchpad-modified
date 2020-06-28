@@ -13,7 +13,7 @@ function register_sketchpad_common_block_style() {
 		'core/heading',
 		array(
 			'name'					=> 'under-line',
-			'label'					=> __( 'Under Line' ),
+			'label'					=> __( 'Under Line', 'sketchpad-modified' ),
 		)
 	);
 
@@ -22,7 +22,7 @@ function register_sketchpad_common_block_style() {
 		'core/paragraph',
 		array(
 			'name'					=> 'mb0',
-			'label'					=> __( 'Close the gap between the two' ),
+			'label'					=> __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 
@@ -31,7 +31,7 @@ function register_sketchpad_common_block_style() {
 		'core/image',
 		array(
 			'name'					=> 'image-postit',
-			'label'					=> __( 'Postit' ),
+			'label'					=> __( 'Postit', 'sketchpad-modified' ),
 		)
 	);
 };
