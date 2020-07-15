@@ -149,58 +149,6 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   margin-top: 0 !important;
 }
 
-.post-content h3 {
-  margin-left: 1.1em;
-}
-
-.post-content h3 + div.wp-block-group.no-indent {
-  margin-left: 1.5em;
-}
-
-.h3 + div.wp-block-group.no-indent {
-  margin-left: 1.5em;
-}
-
-.post-content h3 + div.wp-block-group:not(.no-indent), .h3 + div.wp-block-group:not(.no-indent) {
-  margin-left: 2.9em;
-}
-
-.post-content h4 {
-  margin-left: 2.3em;
-}
-
-.post-content h4 + div.wp-block-group.no-indent {
-  margin-left: 2.9em;
-}
-
-.post-content h4 + div.wp-block-group:not(.no-indent) {
-  margin-left: 4.2em;
-}
-
-.post-content h5 {
-  margin-left: 4.1em;
-}
-
-.post-content h5 + div.wp-block-group.no-indent {
-  margin-left: 5.2em;
-}
-
-.post-content h5 + div.wp-block-group:not(.no-indent) {
-  margin-left: 4.1em;
-}
-
-.post-content h6 {
-  margin-left: 5.8em;
-}
-
-.post-content h6 + div.wp-block-group.no-indent {
-  margin-left: 5.2em;
-}
-
-.post-content h6 + div.wp-block-group:not(.no-indent) {
-  margin-left: 6em;
-}
-
 .post-content p, .post-content ul, .post-content ol, .post-content div.wp-block-cover {
   margin-bottom: 2em;
 }
