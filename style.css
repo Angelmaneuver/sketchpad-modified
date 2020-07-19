@@ -1729,23 +1729,6 @@ div.sidebar section.toc_widget a {
   color: #9b8f76;
 }
 
-/* Copy button */
-.sketchpad-copy-button {
-  background-color: transparent;
-  font-size: 1em;
-  border: none;
-  text-align: right;
-  cursor: pointer;
-}
-
-.sketchpad-copy-button:focus {
-  outline: 0;
-}
-
-.sketchpad-copy-button > div {
-  color: #9b8f76;
-}
-
 /* Postit */
 .postit {
   width: 15em;
@@ -2108,7 +2091,7 @@ article.tag-r18 li::marker {
   color: #FF9A93;
 }
 
-article.tag-r18 .wp-block-image:not(.no-postit) img, article.tag-r18 .image-postit {
+article.tag-r18 .wp-block-image img, article.tag-r18 .image-postit {
   -o-border-image: linear-gradient(to bottom, #FFB6C1 0.001em, #FFFFFF 0.1em) 1/1 0 0 0;
      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.001em, #FFB6C1), color-stop(0.1em, #FFFFFF)) 1/1 0 0 0;
      border-image: linear-gradient(to bottom, #FFB6C1 0.001em, #FFFFFF 0.1em) 1/1 0 0 0;

@@ -30,18 +30,6 @@ function sketchpad_get_avatar( $atts ) {
   return get_avatar( $id_or_email, $size, $default, $alt, $args );
 }
 
-// return copy button
-function sketchpad_copy_button( $atts ) {
-  $target = $atts['target'];
-  $result = '';
-
-  if( $target != '' ) {
-    $result = '<button class="sketchpad-copy-button" data-clipboard-target="' . $target . '" onClick="return false;"><div class="fa-stack"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-copy fa-stack-1x fa-inverse"></i></div></button>';
-  }
-
-  return $result;
-}
-
 // return tag list
 function sketchpad_tag_cloud( $atts ) {
   $args = array(
@@ -69,5 +57,4 @@ add_shortcode( 'sketchpad_get_current_url', 'sketchpad_get_current_url' );
 add_shortcode( 'sketchpad_get_feed_link', 'get_feed_link' );
 add_shortcode( 'sketchpad_has_tag', 'sketchpad_has_tag' );
 add_shortcode( 'sketchpad_get_avatar', 'sketchpad_get_avatar' );
-add_shortcode( 'sketchpad_copy_button', 'sketchpad_copy_button' );
 add_shortcode( 'sketchpad_tag_cloud', 'sketchpad_tag_cloud' );

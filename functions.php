@@ -112,10 +112,6 @@ function sketchpad_script() {
 
 	if ( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );
-		wp_enqueue_script( 'clipboard' );
-		wp_enqueue_script( 'sketchpad-clipboard', get_template_directory_uri() . '/js/sketchpad-clipboard.js', array( 'jquery' ), false, true );
-		wp_enqueue_style( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css', array(), false, 'screen' );
-		wp_enqueue_script( 'toastr', 'https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js', array( 'jquery' ), false, true );
 	}
 
 	/* Auto calculate height of .content */

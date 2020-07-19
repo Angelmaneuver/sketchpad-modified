@@ -70,6 +70,7 @@ EOM;
 
 add_action( 'customize_register', 'sketchpad_customize2basic_register', 100 );
 add_filter( 'wp_head', 'sketchpad_head_insert_head' );
+add_filter( 'admin_head', 'sketchpad_head_insert_head' );
 add_filter( 'embed_head', 'sketchpad_head_insert_head' );
 
 get_template_part( 'functions/option/custom-block-style' );

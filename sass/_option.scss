@@ -156,23 +156,6 @@ div.sidebar {
   font-family: Arial;
 }
 
-/* Copy button */
-.sketchpad-copy-button {
-  background-color: transparent;
-  font-size: 1em;
-  border: none;
-  text-align: right;
-  cursor: pointer;
-
-  &:focus {
-    outline: 0;
-  }
-
-  > div {
-    color: #9b8f76;
-  }
-}
-
 /* Postit */
 .postit {
   width: 15em;
@@ -518,7 +501,7 @@ article {
       color: #FF9A93;
     }
 
-    .wp-block-image:not(.no-postit) img, .image-postit {
+    .wp-block-image img, .image-postit {
       border-image: linear-gradient(to bottom, #FFB6C1 0.001em, #FFFFFF 0.1em) 1 / 1 0 0 0;
     }
 
