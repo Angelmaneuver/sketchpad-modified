@@ -125,7 +125,7 @@ iframe.wp-embedded-content {
   border-bottom: 0.01em solid #b3a279;
 }
 
-.is-style-image-postit img {
+.is-style-image-postit {
   width: 99%;
   background: #fff;
   -o-border-image: linear-gradient(to bottom, #ddffff 0.001em, #fff 0.1em) 1/1 0 0 0;
