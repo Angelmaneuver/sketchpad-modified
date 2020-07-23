@@ -139,6 +139,10 @@ iframe.wp-embedded-content {
   padding: 0.2em 0.2em 0.2em 0.2em;
 }
 
+.is-style-indent {
+  margin-left: 1.1em;
+}
+
 .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
   margin-top: 2em;
   margin-bottom: 0.5em;

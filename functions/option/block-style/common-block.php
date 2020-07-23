@@ -16,6 +16,20 @@ function register_sketchpad_common_block_style() {
 			'label'					=> __( 'Under Line', 'sketchpad-modified' ),
 		)
 	);
+	register_block_style(
+		'core/heading',
+		array(
+			'name'					=> 'mtb0',
+			'label'					=> __( 'Close the gap between the two', 'sketchpad-modified' ),
+		)
+	);
+	register_block_style(
+		'core/heading',
+		array(
+			'name'					=> 'mt0',
+			'label'					=> __( 'Close the gap to the top', 'sketchpad-modified' ),
+		)
+	);
 
 	// paragraph
 	register_block_style(
@@ -32,6 +46,15 @@ function register_sketchpad_common_block_style() {
 		array(
 			'name'					=> 'image-postit',
 			'label'					=> __( 'Postit', 'sketchpad-modified' ),
+		)
+	);
+
+	// group
+	register_block_style(
+		'core/group',
+		array(
+			'name'					=> 'indent',
+			'label'					=> __( 'Indent', 'sketchpad-modified' ),
 		)
 	);
 };
