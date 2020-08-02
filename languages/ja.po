@@ -3,9 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-"
-"modified\n"
-"POT-Creation-Date: 2020-07-23T18:42:19+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
+"POT-Creation-Date: 2020-08-02T11:01:21+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -26,9 +25,7 @@ msgid "https://github.com/Angelmaneuver/sketchpad-modified"
 msgstr ""
 
 #. Description of the theme
-msgid ""
-"This is a modified theme of Sketchpad from BestLayout.com. Original is: "
-"https://bestweblayout.com/products/sketchpad/"
+msgid "This is a modified theme of Sketchpad from BestLayout.com. Original is: https://bestweblayout.com/products/sketchpad/"
 msgstr ""
 
 #. Author of the theme
@@ -125,45 +122,27 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: content-aside.php:20 content-audio.php:20 content-chat.php:20
-#: content-gallery.php:20 content-image.php:20 content-link.php:20
-#: content-quote.php:20 content-status.php:20 content-video.php:20
-#: content.php:39 content.php:48 image.php:20
+#: content-aside.php:20 content-audio.php:20 content-chat.php:20 content-gallery.php:20 content-image.php:20 content-link.php:20 content-quote.php:20 content-status.php:20 content-video.php:20 content.php:39 content.php:48 image.php:20
 msgid "edit"
 msgstr ""
 
-#: content-aside.php:22 content-audio.php:22 content-chat.php:22
-#: content-gallery.php:22 content-image.php:22 content-link.php:22
-#: content-quote.php:22 content-status.php:22 content-video.php:22
-#: content.php:31 content.php:50 image.php:22
+#: content-aside.php:22 content-audio.php:22 content-chat.php:22 content-gallery.php:22 content-image.php:22 content-link.php:22 content-quote.php:22 content-status.php:22 content-video.php:22 content.php:31 content.php:50 image.php:22
 msgid "posted by "
 msgstr ""
 
-#: content-aside.php:25 content-audio.php:25 content-chat.php:25
-#: content-gallery.php:25 content-image.php:25 content-link.php:25
-#: content-quote.php:25 content-status.php:25 content-video.php:25
-#: content.php:34 content.php:53 image.php:25
+#: content-aside.php:25 content-audio.php:25 content-chat.php:25 content-gallery.php:25 content-image.php:25 content-link.php:25 content-quote.php:25 content-status.php:25 content-video.php:25 content.php:34 content.php:53 image.php:25
 msgid " in "
 msgstr ""
 
-#: content-aside.php:44 content-audio.php:37 content-chat.php:45
-#: content-gallery.php:40 content-image.php:37 content-link.php:44
-#: content-quote.php:44 content-status.php:44 content-video.php:37
-#: content.php:73 image.php:61
+#: content-aside.php:44 content-audio.php:37 content-chat.php:45 content-gallery.php:40 content-image.php:37 content-link.php:44 content-quote.php:44 content-status.php:44 content-video.php:37 content.php:73 image.php:61
 msgid "Pages:"
 msgstr ""
 
-#: content-aside.php:49 content-audio.php:42 content-chat.php:51
-#: content-gallery.php:45 content-image.php:42 content-link.php:49
-#: content-quote.php:49 content-status.php:49 content-video.php:42
-#: content.php:79
+#: content-aside.php:49 content-audio.php:42 content-chat.php:51 content-gallery.php:45 content-image.php:42 content-link.php:49 content-quote.php:49 content-status.php:49 content-video.php:42 content.php:79
 msgid "read comments"
 msgstr ""
 
-#: content-aside.php:55 content-audio.php:48 content-chat.php:59
-#: content-gallery.php:51 content-image.php:48 content-link.php:55
-#: content-quote.php:55 content-status.php:55 content-video.php:48
-#: content.php:87 image.php:67
+#: content-aside.php:55 content-audio.php:48 content-chat.php:59 content-gallery.php:51 content-image.php:48 content-link.php:55 content-quote.php:55 content-status.php:55 content-video.php:48 content.php:87 image.php:67
 msgid "Tags: "
 msgstr ""
 
@@ -319,8 +298,7 @@ msgstr ""
 msgid "Under Line"
 msgstr "下線付き"
 
-#: functions/option/block-style/common-block.php:23
-#: functions/option/block-style/common-block.php:39
+#: functions/option/block-style/common-block.php:23 functions/option/block-style/common-block.php:53
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
@@ -328,11 +306,19 @@ msgstr "余白無し"
 msgid "Close the gap to the top"
 msgstr "余白無し (上)"
 
-#: functions/option/block-style/common-block.php:48
+#: functions/option/block-style/common-block.php:37
+msgid "Font style h5"
+msgstr "H5 スタイル"
+
+#: functions/option/block-style/common-block.php:44
+msgid "Font sytle h5 and close the gap between the two"
+msgstr "H5 スタイル (余白無し)"
+
+#: functions/option/block-style/common-block.php:62
 msgid "Postit"
 msgstr "ポストイット"
 
-#: functions/option/block-style/common-block.php:57
+#: functions/option/block-style/common-block.php:71
 msgid "Indent"
 msgstr "インデント"
 

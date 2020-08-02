@@ -30,6 +30,20 @@ function register_sketchpad_common_block_style() {
 			'label'					=> __( 'Close the gap to the top', 'sketchpad-modified' ),
 		)
 	);
+	register_block_style(
+		'core/heading',
+		array(
+			'name'					=> 'h5',
+			'label'					=> __( 'Font style h5', 'sketchpad-modified' ),
+		)
+	);
+	register_block_style(
+		'core/heading',
+		array(
+			'name'					=> 'h5-and-mtb0',
+			'label'					=> __( 'Font sytle h5 and close the gap between the two', 'sketchpad-modified' ),
+		)
+	);
 
 	// paragraph
 	register_block_style(
