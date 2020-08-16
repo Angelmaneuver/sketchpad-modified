@@ -154,7 +154,6 @@ iframe.wp-embedded-content {
 }
 
 .is-style-under-line {
-  margin-right: 0;
   margin-bottom: 0.5em;
   padding-right: 0.2em;
   border-bottom: 0.01em solid #b3a279;
@@ -192,38 +191,6 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
   margin-bottom: 2em;
 }
 
-.post-content .notes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 0;
-}
-
-.post-content .notes::before {
-  content: "*";
-  margin-right: 0.5em;
-  font-size: 1.5em;
-  line-height: 1.3;
-}
-
-.post-content .answer-arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 0;
-  margin-left: 1em;
-}
-
-.post-content .answer-arrow::before {
-  content: "->";
-  font-family: sans-serif;
-  margin-right: 0.5em;
-  font-size: 1.5em;
-}
-
 .float-block {
   height: auto;
   overflow: hidden;
@@ -232,52 +199,5 @@ h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
 .float-block p {
   padding-top: 0.1em;
   padding-left: 0.5em;
-}
-
-.sketchpad-grid-block .wp-block-group__inner-container {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-
-h2 + .sketchpad-grid-block .wp-block-group__inner-container h3, h3 + .sketchpad-grid-block .wp-block-group__inner-container h4, h4 + .sketchpad-grid-block .wp-block-group__inner-container h5, h5 + .sketchpad-grid-block .wp-block-group__inner-container h6 {
-  margin-top: 0 !important;
-}
-
-.sketchpad-grid-block .wp-block-group__inner-container h2, .sketchpad-grid-block .wp-block-group__inner-container h3, .sketchpad-grid-block .wp-block-group__inner-container h4, .sketchpad-grid-block .wp-block-group__inner-container h5, .sketchpad-grid-block .wp-block-group__inner-container h6, .sketchpad-grid-block .wp-block-group__inner-container p {
-  margin-bottom: 0;
-}
-
-.biim1 {
-  height: 22.5em;
-  margin: 0 !important;
-  color: #fff !important;
-  background-color: #313131 !important;
-}
-
-.biim2 {
-  margin-top: 0 !important;
-  margin-left: 0 !important;
-  margin-bottom: 3em !important;
-  color: #fff !important;
-  background-color: #313131 !important;
-  display: -webkit-flex;
-  list-style: none !important;
-}
-
-.biim2 > .icon {
-  margin: 0.5em;
-}
-
-.biim2 > .message {
-  width: 100%;
-  padding: 0.2em;
-  margin: 0.2em;
-  border: 0.1em solid #fff;
-  font-size: 1.2em;
-  line-height: 1.2em;
 }
 /*# sourceMappingURL=style-editor.css.map */
