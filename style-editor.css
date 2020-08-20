@@ -173,22 +173,22 @@ iframe.wp-embedded-content {
   padding: 0.2em 0.2em 0.2em 0.2em;
 }
 
-.is-style-indent {
-  margin-left: 1.1em;
-}
-
 .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
   margin-top: 2em;
   margin-bottom: 0.5em;
   color: #776B53;
 }
 
-h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
-  margin-top: 0 !important;
-}
-
 .post-content p, .post-content ul, .post-content ol, .post-content div.wp-block-cover {
   margin-bottom: 2em;
+}
+
+.post-content .is-style-indent {
+  margin-left: 1.1em;
+}
+
+h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: 0 !important;
 }
 
 .float-block {
