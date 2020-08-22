@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-08-02T11:01:21+00:00\n"
+"POT-Creation-Date: 2020-08-22T06:52:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -365,7 +365,8 @@ msgid "Under Line"
 msgstr ""
 
 #: functions/option/block-style/common-block.php:23
-#: functions/option/block-style/common-block.php:53
+#: functions/option/block-style/common-block.php:60
+#: functions/option/block-style/common-block.php:78
 msgid "Close the gap between the two"
 msgstr ""
 
@@ -381,11 +382,15 @@ msgstr ""
 msgid "Font sytle h5 and close the gap between the two"
 msgstr ""
 
-#: functions/option/block-style/common-block.php:62
+#: functions/option/block-style/common-block.php:51
+msgid "Font sytle h5 and close the gap to the top"
+msgstr ""
+
+#: functions/option/block-style/common-block.php:69
 msgid "Postit"
 msgstr ""
 
-#: functions/option/block-style/common-block.php:71
+#: functions/option/block-style/common-block.php:87
 msgid "Indent"
 msgstr ""
 

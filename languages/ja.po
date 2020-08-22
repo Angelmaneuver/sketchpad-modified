@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-08-02T11:01:21+00:00\n"
+"POT-Creation-Date: 2020-08-22T06:52:27+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -298,7 +298,7 @@ msgstr ""
 msgid "Under Line"
 msgstr "下線付き"
 
-#: functions/option/block-style/common-block.php:23 functions/option/block-style/common-block.php:53
+#: functions/option/block-style/common-block.php:23 functions/option/block-style/common-block.php:60 functions/option/block-style/common-block.php:78
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
@@ -314,11 +314,15 @@ msgstr "H5 スタイル"
 msgid "Font sytle h5 and close the gap between the two"
 msgstr "H5 スタイル (余白無し)"
 
-#: functions/option/block-style/common-block.php:62
+#: functions/option/block-style/common-block.php:51
+msgid "Font sytle h5 and close the gap to the top"
+msgstr "H5 スタイル (上余白無し)"
+
+#: functions/option/block-style/common-block.php:69
 msgid "Postit"
 msgstr "ポストイット"
 
-#: functions/option/block-style/common-block.php:71
+#: functions/option/block-style/common-block.php:87
 msgid "Indent"
 msgstr "インデント"
 

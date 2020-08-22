@@ -44,6 +44,13 @@ function register_sketchpad_common_block_style() {
 			'label'					=> __( 'Font sytle h5 and close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
+	register_block_style(
+		'core/heading',
+		array(
+			'name'					=> 'h5-and-mt0',
+			'label'					=> __( 'Font sytle h5 and close the gap to the top', 'sketchpad-modified' ),
+		)
+	);
 
 	// paragraph
 	register_block_style(
@@ -60,6 +67,15 @@ function register_sketchpad_common_block_style() {
 		array(
 			'name'					=> 'image-postit',
 			'label'					=> __( 'Postit', 'sketchpad-modified' ),
+		)
+	);
+
+	// columns
+	register_block_style(
+		'core/columns',
+		array(
+			'name'					=> 'mtb0',
+			'label'					=> __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 

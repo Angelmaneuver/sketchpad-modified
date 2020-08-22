@@ -155,6 +155,11 @@ iframe.wp-embedded-content {
   margin-bottom: 0 !important;
 }
 
+.is-style-h5-and-mt0 {
+  @extend .is-style-h5;
+  margin-top: 0 !important;
+}
+
 .is-style-h6 {
   font-weight: bold;
   font-size: 14px;
