@@ -19,6 +19,7 @@
 	wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="main-content">
 	<div id="wrapper">
 		<header>
