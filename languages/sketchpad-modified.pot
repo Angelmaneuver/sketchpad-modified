@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-08-22T06:52:27+00:00\n"
+"POT-Creation-Date: 2020-09-20T04:02:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -264,16 +264,40 @@ msgstr ""
 msgid "The Site Icon is used as a browser and app icon for your site."
 msgstr ""
 
-#: functions/basic.php:17
+#: functions/basic.php:32
 msgid "Sketchpad - modified Basic Setting"
 msgstr ""
 
-#: functions/basic.php:22
+#: functions/basic.php:37
 msgid "Head Tag Setting"
 msgstr ""
 
-#: functions/basic.php:23
+#: functions/basic.php:38
 msgid "Please enter if you want to insert in the head tag"
+msgstr ""
+
+#: functions/basic.php:52
+msgid "Admin Page Setting"
+msgstr ""
+
+#: functions/basic.php:53
+msgid "Please enter if you want to background image for the admin panel."
+msgstr ""
+
+#: functions/basic.php:64
+msgid "Activate the background image setting in the admin panel."
+msgstr ""
+
+#: functions/basic.php:95
+msgid "Opacity"
+msgstr ""
+
+#: functions/basic.php:96
+msgid "The more you slide to the left, the higher the transparency."
+msgstr ""
+
+#: functions/basic.php:112
+msgid "Transparent DOM"
 msgstr ""
 
 #: functions/breadcrumb.php:35

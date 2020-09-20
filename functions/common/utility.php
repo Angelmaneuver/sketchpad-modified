@@ -25,3 +25,17 @@ EOM;
 
   return $content;
 }
+
+/**
+ * Color code to rgba Convert.
+ *
+ * @param string $color_code Color code.
+ */
+function sketchpad_color_code2rgba( $color_code ) {
+  $hex = preg_replace( '/#/', '', $color_code );
+  $rgba['red']   = hexdec( substr( $hex, 0, 2 ) );
+  $rgba['green'] = hexdec( substr( $hex, 2, 2 ) );
+  $rgba['blue']  = hexdec( substr( $hex, 4, 2 ) );
+
+  return $rgba;
+}

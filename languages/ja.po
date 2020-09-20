@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-08-22T06:52:27+00:00\n"
+"POT-Creation-Date: 2020-09-20T04:02:28+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -122,27 +122,45 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: content-aside.php:20 content-audio.php:20 content-chat.php:20 content-gallery.php:20 content-image.php:20 content-link.php:20 content-quote.php:20 content-status.php:20 content-video.php:20 content.php:39 content.php:48 image.php:20
+#: content-aside.php:20 content-audio.php:20 content-chat.php:20
+#: content-gallery.php:20 content-image.php:20 content-link.php:20
+#: content-quote.php:20 content-status.php:20 content-video.php:20
+#: content.php:39 content.php:48 image.php:20
 msgid "edit"
 msgstr ""
 
-#: content-aside.php:22 content-audio.php:22 content-chat.php:22 content-gallery.php:22 content-image.php:22 content-link.php:22 content-quote.php:22 content-status.php:22 content-video.php:22 content.php:31 content.php:50 image.php:22
+#: content-aside.php:22 content-audio.php:22 content-chat.php:22
+#: content-gallery.php:22 content-image.php:22 content-link.php:22
+#: content-quote.php:22 content-status.php:22 content-video.php:22
+#: content.php:31 content.php:50 image.php:22
 msgid "posted by "
 msgstr ""
 
-#: content-aside.php:25 content-audio.php:25 content-chat.php:25 content-gallery.php:25 content-image.php:25 content-link.php:25 content-quote.php:25 content-status.php:25 content-video.php:25 content.php:34 content.php:53 image.php:25
+#: content-aside.php:25 content-audio.php:25 content-chat.php:25
+#: content-gallery.php:25 content-image.php:25 content-link.php:25
+#: content-quote.php:25 content-status.php:25 content-video.php:25
+#: content.php:34 content.php:53 image.php:25
 msgid " in "
 msgstr ""
 
-#: content-aside.php:44 content-audio.php:37 content-chat.php:45 content-gallery.php:40 content-image.php:37 content-link.php:44 content-quote.php:44 content-status.php:44 content-video.php:37 content.php:73 image.php:61
+#: content-aside.php:44 content-audio.php:37 content-chat.php:45
+#: content-gallery.php:40 content-image.php:37 content-link.php:44
+#: content-quote.php:44 content-status.php:44 content-video.php:37
+#: content.php:73 image.php:61
 msgid "Pages:"
 msgstr ""
 
-#: content-aside.php:49 content-audio.php:42 content-chat.php:51 content-gallery.php:45 content-image.php:42 content-link.php:49 content-quote.php:49 content-status.php:49 content-video.php:42 content.php:79
+#: content-aside.php:49 content-audio.php:42 content-chat.php:51
+#: content-gallery.php:45 content-image.php:42 content-link.php:49
+#: content-quote.php:49 content-status.php:49 content-video.php:42
+#: content.php:79
 msgid "read comments"
 msgstr ""
 
-#: content-aside.php:55 content-audio.php:48 content-chat.php:59 content-gallery.php:51 content-image.php:48 content-link.php:55 content-quote.php:55 content-status.php:55 content-video.php:48 content.php:87 image.php:67
+#: content-aside.php:55 content-audio.php:48 content-chat.php:59
+#: content-gallery.php:51 content-image.php:48 content-link.php:55
+#: content-quote.php:55 content-status.php:55 content-video.php:48
+#: content.php:87 image.php:67
 msgid "Tags: "
 msgstr ""
 
@@ -198,17 +216,41 @@ msgstr ""
 msgid "The Site Icon is used as a browser and app icon for your site."
 msgstr ""
 
-#: functions/basic.php:17
+#: functions/basic.php:32
 msgid "Sketchpad - modified Basic Setting"
 msgstr "Sketchpad - modified 基本設定"
 
-#: functions/basic.php:22
+#: functions/basic.php:37
 msgid "Head Tag Setting"
 msgstr "Head タグ設定"
 
-#: functions/basic.php:23
+#: functions/basic.php:38
 msgid "Please enter if you want to insert in the head tag"
 msgstr "Head タグに挿入する場合は入力してください。"
+
+#: functions/basic.php:52
+msgid "Admin Page Setting"
+msgstr "Head タグ設定"
+
+#: functions/basic.php:53
+msgid "Please enter if you want to background image for the admin panel."
+msgstr "Head タグに挿入する場合は入力してください。"
+
+#: functions/basic.php:64
+msgid "Activate the background image setting in the admin panel."
+msgstr "管理画面で背景画像の設定を有効にする。"
+
+#: functions/basic.php:95
+msgid "Opacity"
+msgstr "透過率"
+
+#: functions/basic.php:96
+msgid "The more you slide to the left, the higher the transparency."
+msgstr "左にスライドするほど透明度が高くなります。"
+
+#: functions/basic.php:112
+msgid "Transparent DOM"
+msgstr "透過させるDOM"
 
 #: functions/breadcrumb.php:35
 msgid "Sketchpad - modified Breadcrumb Setting"
@@ -298,7 +340,9 @@ msgstr ""
 msgid "Under Line"
 msgstr "下線付き"
 
-#: functions/option/block-style/common-block.php:23 functions/option/block-style/common-block.php:60 functions/option/block-style/common-block.php:78
+#: functions/option/block-style/common-block.php:23
+#: functions/option/block-style/common-block.php:60
+#: functions/option/block-style/common-block.php:78
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
