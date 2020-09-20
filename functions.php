@@ -71,16 +71,6 @@ function sketchpad_setup() {
 	add_editor_style( get_template_directory_uri() . '/style-editor.min.css' );
 }
 
-function register_sketchpad_admin_menu() {
-	/* add a recycle block editor */
-	add_posts_page(
-		__( 'Recycle Block', 'sketchpad-modified' ),
-		__( 'Recycle Block', 'sketchpad-modified' ),
-		'edit_dashboard',
-		'edit.php?post_type=wp_block'
-	);
-}
-
 function register_sketchpad_widgets() {
 	/* This theme support widget header postit. */
 	register_sidebar( array(
@@ -136,33 +126,15 @@ function sketchpad_header() { ?>
 	</style>
 <?php }
 
-/* customize for tag cloud */
-function sketchpad_wp_tag_cloud($args) {
-	$myargs = array(
-	'number' => 0
-);
-
-$args = wp_parse_args($args, $myargs);
-return $args;
-}
-
-/* get current url */
-function sketchpad_get_current_url() {
-	return site_url() . $_SERVER['REQUEST_URI'];
-}
-
 add_action( 'init', 'sketchpad_init' );
 add_action( 'after_setup_theme', 'sketchpad_setup' );
-add_action( 'admin_menu', 'register_sketchpad_admin_menu' );
 add_action( 'widgets_init', 'register_sketchpad_widgets' );
 add_action( 'widget_text', 'do_shortcode' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
 add_action( 'wp_head', 'sketchpad_header' );
-add_filter( 'widget_tag_cloud_args', 'sketchpad_wp_tag_cloud' );
 
 get_template_part( 'functions/common/sanitizer' );
 get_template_part( 'functions/common/utility' );
 get_template_part( 'functions/basic' );
 get_template_part( 'functions/breadcrumb' );
 get_template_part( 'functions/rss' );
-get_template_part( 'functions/shortcode' );

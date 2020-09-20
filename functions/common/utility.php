@@ -7,6 +7,14 @@
  */
 
 /**
+ * Get current url..
+ *
+ */
+function sketchpad_get_current_url() {
+	return site_url() . $_SERVER['REQUEST_URI'];
+}
+
+/**
  * Content to More Read Convert.
  *
  * @param string $post_content Post Content.
