@@ -273,7 +273,7 @@ function sketchpad_output_breadcrumb() {
   $breadcrumb_temp = '';
 
   // output around the tag
-  echo get_theme_mod( 'sketchpad_breadcrumb_around_the_tag', sketchpad_sanitize_breadcrumb_template( BreadcrumbDefualtClass::AROUND_THE_TAG ) );
+  echo sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_around_the_tag', BreadcrumbDefualtClass::AROUND_THE_TAG ) );
 
   // output home to breadcrumbs
   if ( get_theme_mod ( 'sketchpad_breadcrumb_output_home', true ) ) {
@@ -511,7 +511,7 @@ function sketchpad_output_breadcrumb() {
   }
 
   // output close tag
-  echo get_theme_mod( 'sketchpad_breadcrumb_close_tag', BreadcrumbDefualtClass::CLOSE_TAG );
+  echo sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_close_tag', BreadcrumbDefualtClass::CLOSE_TAG ) );
 }
 
 add_action( 'customize_register', 'sketchpad_customize2breadcrumb_register', 100 );
