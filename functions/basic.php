@@ -11,14 +11,12 @@
  */
 class BasicDefualtClass {
   const ADMIN_BACKGROUND_COLOR = '#000000';
-  const ADMIN_BACKGROUND_OPACITY_TARGETS = <<<EOM
-.postbox, #activity-widget, #the-comment-list, .comment-item, .community-events ul,
-.edit-post-header,
-.components-notice,
-.interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper,
-.interface-interface-skeleton__sidebar, .components-panel__header, .interface-complementary-area-header, .interface-complementary-area, .edit-post-sidebar, .edit-post-sidebar__panel-tabs, .components-panel,
-.edit-post-layout__footer
-EOM;
+  const ADMIN_BACKGROUND_OPACITY_TARGETS = '.postbox, #activity-widget, #the-comment-list, .comment-item, .community-events ul,'
+                                            . '.edit-post-header,'
+                                            . '.components-notice,'
+                                            . '.interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper,'
+                                            . '.interface-interface-skeleton__sidebar, .components-panel__header, .interface-complementary-area-header, .interface-complementary-area, .edit-post-sidebar, .edit-post-sidebar__panel-tabs, .components-panel,'
+                                            . '.edit-post-layout__footer';
 }
 
 /**
@@ -110,7 +108,7 @@ function sketchpad_customize2basic_register( $wp_customize ) {
 		'setting'						=> 'sketchpad_admin_background_image_opacity_targets',
 		'section'						=> 'sketchpad_admin_page_setting_section',
     'label'							=> __( 'Transparent DOM', 'sketchpad-modified' ),
-    'description'       => __( 'Enter the DOM element you want to make transparent.', ),
+    'description'       => __( 'Enter the DOM element you want to make transparent.', 'sketchpad-modified' ),
 		'type'							=> 'textarea',
 	) );
 }

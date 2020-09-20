@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-09-20T04:02:28+00:00\n"
+"POT-Creation-Date: 2020-09-20T04:33:36+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -216,41 +216,45 @@ msgstr ""
 msgid "The Site Icon is used as a browser and app icon for your site."
 msgstr ""
 
-#: functions/basic.php:32
+#: functions/basic.php:30
 msgid "Sketchpad - modified Basic Setting"
 msgstr "Sketchpad - modified 基本設定"
 
-#: functions/basic.php:37
+#: functions/basic.php:35
 msgid "Head Tag Setting"
 msgstr "Head タグ設定"
 
-#: functions/basic.php:38
+#: functions/basic.php:36
 msgid "Please enter if you want to insert in the head tag"
 msgstr "Head タグに挿入する場合は入力してください。"
 
-#: functions/basic.php:52
+#: functions/basic.php:50
 msgid "Admin Page Setting"
-msgstr "Head タグ設定"
+msgstr "管理画面設定"
 
-#: functions/basic.php:53
+#: functions/basic.php:51
 msgid "Please enter if you want to background image for the admin panel."
-msgstr "Head タグに挿入する場合は入力してください。"
+msgstr "管理画面に背景画像が必要な場合は入力してください。"
 
-#: functions/basic.php:64
+#: functions/basic.php:62
 msgid "Activate the background image setting in the admin panel."
 msgstr "管理画面で背景画像の設定を有効にする。"
 
-#: functions/basic.php:95
+#: functions/basic.php:93
 msgid "Opacity"
 msgstr "透過率"
 
-#: functions/basic.php:96
+#: functions/basic.php:94
 msgid "The more you slide to the left, the higher the transparency."
 msgstr "左にスライドするほど透明度が高くなります。"
 
-#: functions/basic.php:112
+#: functions/basic.php:110
 msgid "Transparent DOM"
 msgstr "透過させるDOM"
+
+#: functions/basic.php:111
+msgid "Enter the DOM element you want to make transparent."
+msgstr "投下させたい DOM 要素を入力してください。"
 
 #: functions/breadcrumb.php:35
 msgid "Sketchpad - modified Breadcrumb Setting"
