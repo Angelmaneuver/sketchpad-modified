@@ -118,39 +118,6 @@ function sketchpad_script() {
 	wp_enqueue_script( 'sketchpad-script', get_template_directory_uri() . '/js/sketchpad-ready.js', array( 'jquery' ), false, true );
 }
 
-/**
- * Sets up the logo and favicon via customizer.
- *
- * @param WP_Customize_Manager $wp_customize The Customizer object.
- */
-function sketchpad_customize_register( $wp_customize ) {
-	/* Site logo */
-	if ( ! function_exists( 'the_custom_logo' ) ) {
-		$wp_customize->add_setting( 'sketchpad_logo', array(
-			'default'           => get_template_directory_uri() . '/images/logo.png',
-			'sanitize_callback' => 'esc_url_raw',
-		) );
-		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'sketchpad_logo', array(
-			'label'       => __( 'Logo (supported formats: .jpg, .png, .gif)', 'sketchpad-modified' ),
-			'section'     => 'title_tagline',
-			'description' => __( 'Upload a logo to be displayed on the left above the header', 'sketchpad-modified' ),
-		) ) );
-	}
-
-	/* Site icon */
-	if ( ! function_exists( 'wp_site_icon' ) ) {
-		$wp_customize->add_setting( 'sketchpad_favicon', array(
-			'default'           => get_template_directory_uri() . '/images/favicon.ico',
-			'sanitize_callback' => 'esc_url_raw',
-		) );
-		$wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'sketchpad_favicon', array(
-			'label'       => __( 'Site icon (supported formats: .jpg, .png, .gif)', 'sketchpad-modified' ),
-			'section'     => 'title_tagline',
-			'description' => __( 'The Site Icon is used as a browser and app icon for your site.', 'sketchpad-modified' ),
-		) ) );
-	}
-}
-
 /* style for site title */
 function sketchpad_header() { ?>
 	<style type="text/css">
@@ -190,7 +157,6 @@ add_action( 'admin_menu', 'register_sketchpad_admin_menu' );
 add_action( 'widgets_init', 'register_sketchpad_widgets' );
 add_action( 'widget_text', 'do_shortcode' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
-add_action( 'customize_register', 'sketchpad_customize_register', 11 );
 add_action( 'wp_head', 'sketchpad_header' );
 add_filter( 'widget_tag_cloud_args', 'sketchpad_wp_tag_cloud' );
 

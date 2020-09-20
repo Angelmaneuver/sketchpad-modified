@@ -13,9 +13,6 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) { ?>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php }
-	if ( ! function_exists( 'wp_site_icon' ) && get_theme_mod( 'sketchpad_favicon' ) ) { ?>
-		<link rel="shortcut icon" href="<?php echo esc_url( get_theme_mod( 'sketchpad_favicon' ) ); ?>" />
-	<?php }
 	wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
