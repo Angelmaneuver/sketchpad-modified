@@ -2221,4 +2221,8 @@ div.wp-caption {
   z-index: 100000;
   /* Above WP toolbar. */
 }
+
+.sticky, .gallery-caption {
+  color: inherit;
+}
 /*# sourceMappingURL=style.css.map */
