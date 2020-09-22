@@ -2,8 +2,8 @@
 /**
  * Functions and definitions.
  *
- * @subpackage Sketchpad
- * @since      Sketchpad - modified 1.0
+ * @subpackage sketchpad
+ * @since      1.0.0
  */
 
 if ( ! isset( $content_width ) ) {
@@ -133,8 +133,4 @@ add_action( 'widget_text', 'do_shortcode' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
 add_action( 'wp_head', 'sketchpad_header' );
 
-get_template_part( 'functions/common/sanitizer' );
-get_template_part( 'functions/common/utility' );
-get_template_part( 'functions/basic' );
-get_template_part( 'functions/breadcrumb' );
-get_template_part( 'functions/rss' );
+require get_template_directory() . '/includes/load.php';

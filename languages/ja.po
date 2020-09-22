@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-09-20T04:33:36+00:00\n"
+"POT-Creation-Date: 2020-09-22T08:25:37+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -180,271 +180,21 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:77 functions.php:78
-msgid "Recycle Block"
-msgstr "再利用ブロック"
-
-#: functions.php:87
+#: functions.php:77
 msgid "Header Postit Widget"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:79
 msgid "Header Postit Widget Area (Warning! This Widget only use custom Html.)"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:88
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:90
 msgid "Right Widget Area"
 msgstr ""
-
-#: functions.php:134
-msgid "Logo (supported formats: .jpg, .png, .gif)"
-msgstr ""
-
-#: functions.php:136
-msgid "Upload a logo to be displayed on the left above the header"
-msgstr ""
-
-#: functions.php:147
-msgid "Site icon (supported formats: .jpg, .png, .gif)"
-msgstr ""
-
-#: functions.php:149
-msgid "The Site Icon is used as a browser and app icon for your site."
-msgstr ""
-
-#: functions/basic.php:30
-msgid "Sketchpad - modified Basic Setting"
-msgstr "Sketchpad - modified 基本設定"
-
-#: functions/basic.php:35
-msgid "Head Tag Setting"
-msgstr "Head タグ設定"
-
-#: functions/basic.php:36
-msgid "Please enter if you want to insert in the head tag"
-msgstr "Head タグに挿入する場合は入力してください。"
-
-#: functions/basic.php:50
-msgid "Admin Page Setting"
-msgstr "管理画面設定"
-
-#: functions/basic.php:51
-msgid "Please enter if you want to background image for the admin panel."
-msgstr "管理画面に背景画像が必要な場合は入力してください。"
-
-#: functions/basic.php:62
-msgid "Activate the background image setting in the admin panel."
-msgstr "管理画面で背景画像の設定を有効にする。"
-
-#: functions/basic.php:93
-msgid "Opacity"
-msgstr "透過率"
-
-#: functions/basic.php:94
-msgid "The more you slide to the left, the higher the transparency."
-msgstr "左にスライドするほど透明度が高くなります。"
-
-#: functions/basic.php:110
-msgid "Transparent DOM"
-msgstr "透過させるDOM"
-
-#: functions/basic.php:111
-msgid "Enter the DOM element you want to make transparent."
-msgstr "投下させたい DOM 要素を入力してください。"
-
-#: functions/breadcrumb.php:35
-msgid "Sketchpad - modified Breadcrumb Setting"
-msgstr "Sketchpad - modified パンくずリスト設定"
-
-#: functions/breadcrumb.php:39
-msgid "General"
-msgstr "一般"
-
-#: functions/breadcrumb.php:51
-msgid "output breadcrumb"
-msgstr "パンくずリストを出力する"
-
-#: functions/breadcrumb.php:62
-msgid "Breadcrumb Separator"
-msgstr "パンくずリスト区切り文字"
-
-#: functions/breadcrumb.php:63
-msgid "Placed between each piece of breadcrumbs."
-msgstr "パンくずリスト間に出力されます。"
-
-#: functions/breadcrumb.php:74
-msgid "Breadcrumb around the tag"
-msgstr "パンくずリストを包含する要素の開始タグ"
-
-#: functions/breadcrumb.php:85
-msgid "Breadcrumb close tag"
-msgstr "パンくずリストを包含する要素の終了タグ"
-
-#: functions/breadcrumb.php:96
-msgid "Homepage Template"
-msgstr "ホ－ムペ－ジテンプレ－ト"
-
-#: functions/breadcrumb.php:107
-msgid "include homepage in breadcrumb"
-msgstr "パンくずリストにホ－ムペ－ジを含む"
-
-#: functions/breadcrumb.php:112
-msgid "Post Type"
-msgstr "投稿タイプ"
-
-#: functions/breadcrumb.php:124
-msgid "Post Template"
-msgstr "投稿テンプレ－ト"
-
-#: functions/breadcrumb.php:135
-msgid "Page Template"
-msgstr "ペ－ジテンプレ－ト"
-
-#: functions/breadcrumb.php:146
-msgid "Media Template"
-msgstr "メディアテンプレ－ト"
-
-#: functions/breadcrumb.php:151
-msgid "Taxonomies"
-msgstr "タクソノミ－"
-
-#: functions/breadcrumb.php:163
-msgid "Category Template"
-msgstr "カテゴリ－テンプレ－ト"
-
-#: functions/breadcrumb.php:174
-msgid "Tag Template"
-msgstr "タグテンプレ－ト"
-
-#: functions/breadcrumb.php:179
-msgid "Other"
-msgstr "その他"
-
-#: functions/breadcrumb.php:191
-msgid "Author Template"
-msgstr "投稿者テンプレ－ト"
-
-#: functions/breadcrumb.php:202
-msgid "Date Template"
-msgstr "日付テンプレ－ト"
-
-#: functions/breadcrumb.php:213
-msgid "Search Template"
-msgstr "検索テンプレ－ト"
-
-#: functions/common/utility.php:16
-msgid "more &raquo;"
-msgstr ""
-
-#: functions/option/block-style/common-block.php:16
-msgid "Under Line"
-msgstr "下線付き"
-
-#: functions/option/block-style/common-block.php:23
-#: functions/option/block-style/common-block.php:60
-#: functions/option/block-style/common-block.php:78
-msgid "Close the gap between the two"
-msgstr "余白無し"
-
-#: functions/option/block-style/common-block.php:30
-msgid "Close the gap to the top"
-msgstr "余白無し (上)"
-
-#: functions/option/block-style/common-block.php:37
-msgid "Font style h5"
-msgstr "H5 スタイル"
-
-#: functions/option/block-style/common-block.php:44
-msgid "Font sytle h5 and close the gap between the two"
-msgstr "H5 スタイル (余白無し)"
-
-#: functions/option/block-style/common-block.php:51
-msgid "Font sytle h5 and close the gap to the top"
-msgstr "H5 スタイル (上余白無し)"
-
-#: functions/option/block-style/common-block.php:69
-msgid "Postit"
-msgstr "ポストイット"
-
-#: functions/option/block-style/common-block.php:87
-msgid "Indent"
-msgstr "インデント"
-
-#: functions/option/blog-card.php:16
-msgid "Blog Card Setting"
-msgstr "ブログカ－ド設定"
-
-#: functions/option/blog-card.php:17
-msgid "Configure settings for the Blog Card."
-msgstr "ブログカ－ドの設定"
-
-#: functions/option/blog-card.php:27
-msgid "Blog Card Image Size setting enable"
-msgstr "ブログカ－ドの画像設定を有効化する"
-
-#: functions/option/blog-card.php:37 functions/rss.php:61
-msgid "Image Size"
-msgstr "画像サイズ"
-
-#: functions/option/blog-card.php:54
-msgid "Blog Card Image Form Type setting enable"
-msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する"
-
-#: functions/option/blog-card.php:65
-msgid "Form Type"
-msgstr "フォ－ムタイプ"
-
-#: functions/option/top-button.php:26
-msgid "Top Button Setting"
-msgstr "トップへ戻るボタン設定"
-
-#: functions/option/top-button.php:27
-msgid "Configure settings for the button that returns to the top of the page."
-msgstr "ペ－ジの先頭に戻るボタンの設定"
-
-#: functions/option/top-button.php:37
-msgid "Top Button enable"
-msgstr "トップへ戻るボタンを有効化する"
-
-#: functions/option/top-button.php:47
-msgid "Top Button Mark"
-msgstr "トップへ戻るボタンのマ－ク"
-
-#: functions/option/top-button.php:57
-msgid "Top Button Background Color"
-msgstr "トップへ戻るボタンの背景色"
-
-#: functions/option/top-button.php:66
-msgid "Top Button Hover Background Color"
-msgstr "トップへ戻るボタンの背景色 (オンマウス時)"
-
-#: functions/option/top-button.php:75
-msgid "Top Button Border Color"
-msgstr "トップへ戻るボタンの枠線色"
-
-#: functions/rss.php:16
-msgid "Sketchpad - modified RSS Feed Setting"
-msgstr "Sketchpad - modified RSS Feed 設定"
-
-#: functions/rss.php:17
-msgid "Set whether to output an eye-catching image to RSS Feed."
-msgstr "アイキャッチ画像を RSS Feed に出力するかどうかの設定"
-
-#: functions/rss.php:28
-msgid "output eye-catching image"
-msgstr "アイキャッチ画像を出力する"
-
-#: functions/rss.php:39
-msgid "to incluede the \"media:content\" tag"
-msgstr "\"media:content\" タグを追加する"
-
-#: functions/rss.php:50
-msgid "to incluede the \"enclosure\" tag"
-msgstr "\"enclosure\" タグを追加する"
 
 #: image.php:34
 msgid "Full size is %s pixels"
@@ -464,6 +214,236 @@ msgstr ""
 
 #: image.php:56
 msgid "Next Image"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:17
+msgid "Admin Page Setting"
+msgstr "管理画面設定"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:18
+msgid "Please enter if you want to background image for the admin panel."
+msgstr "管理画面に背景画像が必要な場合は入力してください。"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:29
+msgid "Activate the background image setting in the admin panel."
+msgstr "管理画面で背景画像の設定を有効にする。"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:60
+msgid "Opacity"
+msgstr "透過率"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:61
+msgid "The more you slide to the left, the higher the transparency."
+msgstr "左にスライドするほど透明度が高くなります。"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:77
+msgid "Transparent DOM"
+msgstr "透過させるDOM"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:78
+msgid "Enter the DOM element you want to make transparent."
+msgstr "投下させたい DOM 要素を入力してください。"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:17
+msgid "Blog Card Setting"
+msgstr "ブログカ－ド設定"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:18
+msgid "Configure settings for the Blog Card."
+msgstr "ブログカ－ドの設定"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:28
+msgid "Blog Card Image Size setting enable"
+msgstr "ブログカ－ドの画像設定を有効化する"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:38
+#: includes/admin/theme-customizer/sm-rss.php:62
+msgid "Image Size"
+msgstr "画像サイズ"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:55
+msgid "Blog Card Image Form Type setting enable"
+msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する"
+
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:66
+msgid "Form Type"
+msgstr "フォ－ムタイプ"
+
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:17
+msgid "Head Tag Setting"
+msgstr "Head タグ設定"
+
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:18
+msgid "Please enter if you want to insert in the head tag"
+msgstr "Head タグに挿入する場合は入力してください。"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:17
+msgid "Top Button Setting"
+msgstr "トップへ戻るボタン設定"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:18
+msgid "Configure settings for the button that returns to the top of the page."
+msgstr "ペ－ジの先頭に戻るボタンの設定"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:28
+msgid "Top Button enable"
+msgstr "トップへ戻るボタンを有効化する"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:38
+msgid "Top Button Mark"
+msgstr "トップへ戻るボタンのマ－ク"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:48
+msgid "Top Button Background Color"
+msgstr "トップへ戻るボタンの背景色"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:57
+msgid "Top Button Hover Background Color"
+msgstr "トップへ戻るボタンの背景色 (オンマウス時)"
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:66
+msgid "Top Button Border Color"
+msgstr "トップへ戻るボタンの枠線色"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:18
+msgid "Sketchpad - modified Breadcrumb Setting"
+msgstr "Sketchpad - modified パンくずリスト設定"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:22
+msgid "General"
+msgstr "一般"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:34
+msgid "output breadcrumb"
+msgstr "パンくずリストを出力する"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:45
+msgid "Breadcrumb Separator"
+msgstr "パンくずリスト区切り文字"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:46
+msgid "Placed between each piece of breadcrumbs."
+msgstr "パンくずリスト間に出力されます。"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:57
+msgid "Breadcrumb around the tag"
+msgstr "パンくずリストを包含する要素の開始タグ"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:68
+msgid "Breadcrumb close tag"
+msgstr "パンくずリストを包含する要素の終了タグ"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:79
+msgid "Homepage Template"
+msgstr "ホ－ムペ－ジテンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:90
+msgid "include homepage in breadcrumb"
+msgstr "パンくずリストにホ－ムペ－ジを含む"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:95
+msgid "Post Type"
+msgstr "投稿タイプ"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:107
+msgid "Post Template"
+msgstr "投稿テンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:118
+msgid "Page Template"
+msgstr "ペ－ジテンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:129
+msgid "Media Template"
+msgstr "メディアテンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:134
+msgid "Taxonomies"
+msgstr "タクソノミ－"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:146
+msgid "Category Template"
+msgstr "カテゴリ－テンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:157
+msgid "Tag Template"
+msgstr "タグテンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:162
+msgid "Other"
+msgstr "その他"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:174
+msgid "Author Template"
+msgstr "投稿者テンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:185
+msgid "Date Template"
+msgstr "日付テンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-breadcrumb.php:196
+msgid "Search Template"
+msgstr "検索テンプレ－ト"
+
+#: includes/admin/theme-customizer/sm-rss.php:17
+msgid "Sketchpad - modified RSS Feed Setting"
+msgstr "Sketchpad - modified RSS Feed 設定"
+
+#: includes/admin/theme-customizer/sm-rss.php:18
+msgid "Set whether to output an eye-catching image to RSS Feed."
+msgstr "アイキャッチ画像を RSS Feed に出力するかどうかの設定"
+
+#: includes/admin/theme-customizer/sm-rss.php:29
+msgid "output eye-catching image"
+msgstr "アイキャッチ画像を出力する"
+
+#: includes/admin/theme-customizer/sm-rss.php:40
+msgid "to incluede the \"media:content\" tag"
+msgstr "\"media:content\" タグを追加する"
+
+#: includes/admin/theme-customizer/sm-rss.php:51
+msgid "to incluede the \"enclosure\" tag"
+msgstr "\"enclosure\" タグを追加する"
+
+#: includes/block-style/sm-style.php:20
+msgid "Under Line"
+msgstr "下線付き"
+
+#: includes/block-style/sm-style.php:27 includes/block-style/sm-style.php:64
+#: includes/block-style/sm-style.php:82
+msgid "Close the gap between the two"
+msgstr "余白無し"
+
+#: includes/block-style/sm-style.php:34
+msgid "Close the gap to the top"
+msgstr "余白無し (上)"
+
+#: includes/block-style/sm-style.php:41
+msgid "Font style h5"
+msgstr "H5 スタイル"
+
+#: includes/block-style/sm-style.php:48
+msgid "Font sytle h5 and close the gap between the two"
+msgstr "H5 スタイル (余白無し)"
+
+#: includes/block-style/sm-style.php:55
+msgid "Font sytle h5 and close the gap to the top"
+msgstr "H5 スタイル (上余白無し)"
+
+#: includes/block-style/sm-style.php:73
+msgid "Postit"
+msgstr "ポストイット"
+
+#: includes/block-style/sm-style.php:91
+msgid "Indent"
+msgstr "インデント"
+
+#: includes/sm-basic.php:20
+msgid "Sketchpad - modified Basic Setting"
+msgstr "Sketchpad - modified 基本設定"
+
+#: includes/utils/sm-utility.php:25
+msgid "more &raquo;"
 msgstr ""
 
 #: search.php:12

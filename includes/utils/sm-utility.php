@@ -1,13 +1,14 @@
 <?php
 /**
- * Sketchpad - modified Utility.
+ * Utility.
  *
- * @subpackage Sketchpad - modified 1.0
- * @since      Sketchpad - modified 1.0
+ * @package sketchpad - modified
+ * @subpackage utils
+ * @since 1.0.0
  */
 
 /**
- * Get current url..
+ * get current url.
  *
  */
 function sketchpad_get_current_url() {
@@ -15,14 +16,13 @@ function sketchpad_get_current_url() {
 }
 
 /**
- * Content to More Read Convert.
+ * content to more read convert.
  *
  * @param string $post_content Post Content.
  * @param string $link         Post link.
  */
 function sketchpad_content2more_read( $post_content, $link ) {
   $more_text = esc_html( __('more &raquo;', 'sketchpad-modified' ) );
-
   $split_content = get_extended( $post_content );
   $content = wp_strip_all_tags( $split_content['main'] );
   if ( $split_content['extended'] !== "" ) {
@@ -35,7 +35,7 @@ EOM;
 }
 
 /**
- * Color code to rgba Convert.
+ * color code to rgba convert.
  *
  * @param string $color_code Color code.
  */
