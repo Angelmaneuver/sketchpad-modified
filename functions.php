@@ -104,7 +104,7 @@ function sketchpad_script() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	/* Auto calculate height of .content */
+	/* Auto calculate height */
 	wp_enqueue_script( 'sketchpad-script', get_template_directory_uri() . '/js/sketchpad-ready.js', array( 'jquery' ), false, true );
 }
 
