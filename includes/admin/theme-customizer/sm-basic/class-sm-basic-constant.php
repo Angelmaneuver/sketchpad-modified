@@ -9,7 +9,7 @@
 
 class SmBasicConstantClass {
   const PANEL = 'sketchpad_basic_panel';
-  const ADMIN_BACKGROUND_COLOR = '#000000';
+  const ADMIN_BACKGROUND_COLOR = '#ffffff';
   const ADMIN_BACKGROUND_OPACITY_TARGETS = <<<EOM
 body,
 .postbox, #activity-widget, #the-comment-list, .comment-item, .community-events ul,

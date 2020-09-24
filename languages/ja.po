@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-09-22T08:25:37+00:00\n"
+"POT-Creation-Date: 2020-09-24T20:14:46+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -228,21 +228,27 @@ msgstr "管理画面に背景画像が必要な場合は入力してください
 msgid "Activate the background image setting in the admin panel."
 msgstr "管理画面で背景画像の設定を有効にする。"
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:60
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:57
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:83
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:104
+msgid "Reset"
+msgstr "初期値に戻す"
+
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:69
 msgid "Opacity"
 msgstr "透過率"
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:61
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:70
 msgid "The more you slide to the left, the higher the transparency."
 msgstr "左にスライドするほど透明度が高くなります。"
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:77
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:95
 msgid "Transparent DOM"
-msgstr "透過させるDOM"
+msgstr "透過させる DOM"
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:78
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:96
 msgid "Enter the DOM element you want to make transparent."
-msgstr "投下させたい DOM 要素を入力してください。"
+msgstr "透過させたい DOM 要素を入力してください。"
 
 #: includes/admin/theme-customizer/sm-basic/blog-card.php:17
 msgid "Blog Card Setting"

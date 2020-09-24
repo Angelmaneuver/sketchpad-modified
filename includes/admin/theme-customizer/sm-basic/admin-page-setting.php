@@ -49,8 +49,17 @@ function sketchpad_customize4admin_page_setting_register( $wp_customize ) {
 		'section'					  => 'sketchpad_admin_page_setting_section',
     'label'						  => __( 'Color' ),
   ) ) );
+  $wp_customize->add_control( 'sketchpad_admin_background_image_color_reset_button', array(
+    'settings'          => array(),
+		'section'						=> 'sketchpad_admin_page_setting_section',
+    'type'							=> 'button',
+    'input_attrs'       => array(
+      'value' => __( 'Reset', 'sketchpad-modified' ),
+      'class' => 'button button-primary',
+    )
+	) );
   $wp_customize->add_setting( 'sketchpad_admin_page_background_image_opacity', array(
-    'default'						=> 0.01,
+    'default'						=> 0.5,
 		'transport'					=> 'postMessage',
     'sanitize_callback'	=> 'esc_html',
   ) );
@@ -61,10 +70,19 @@ function sketchpad_customize4admin_page_setting_register( $wp_customize ) {
     'description'       => __( 'The more you slide to the left, the higher the transparency.', 'sketchpad-modified' ),
     'type'							=> 'range',
     'input_attrs'       => array(
-      'min'  => 0.01,
+      'min'  => 0,
       'max'  => 1,
       'step' => 0.01,
     ),
+  ) );
+  $wp_customize->add_control( 'sketchpad_admin_background_image_opacity_reset_button', array(
+    'settings'          => array(),
+		'section'						=> 'sketchpad_admin_page_setting_section',
+    'type'							=> 'button',
+    'input_attrs'       => array(
+      'value' => __( 'Reset', 'sketchpad-modified' ),
+      'class' => 'button button-primary',
+    )
 	) );
   $wp_customize->add_setting( 'sketchpad_admin_background_image_opacity_targets', array(
 		'default'						=> SmBasicConstantClass::ADMIN_BACKGROUND_OPACITY_TARGETS,
@@ -78,6 +96,15 @@ function sketchpad_customize4admin_page_setting_register( $wp_customize ) {
     'description'       => __( 'Enter the DOM element you want to make transparent.', 'sketchpad-modified' ),
 		'type'							=> 'textarea',
 	) );
+  $wp_customize->add_control( 'sketchpad_admin_background_image_opacity_targets_reset_button', array(
+    'settings'          => array(),
+		'section'						=> 'sketchpad_admin_page_setting_section',
+    'type'							=> 'button',
+    'input_attrs'       => array(
+      'value' => __( 'Reset', 'sketchpad-modified' ),
+      'class' => 'button button-primary',
+    )
+	) );
 }
 
 /**
@@ -86,7 +113,7 @@ function sketchpad_customize4admin_page_setting_register( $wp_customize ) {
  */
 function sketchpad_admin_style() {
   $image_url = get_theme_mod ( 'sketchpad_admin_page_background_image_url', NULL );
-  $opacity = get_theme_mod ( 'sketchpad_admin_page_background_image_opacity', 0.01 );
+  $opacity = get_theme_mod ( 'sketchpad_admin_page_background_image_opacity', 0.5 );
   $rgba = implode ( ',', sketchpad_color_code2rgba( get_theme_mod ( 'sketchpad_admin_page_background_image_color', SmBasicConstantClass::ADMIN_BACKGROUND_COLOR ) ) );
   $targets = get_theme_mod ( 'sketchpad_admin_background_image_opacity_targets', SmBasicConstantClass::ADMIN_BACKGROUND_OPACITY_TARGETS );
 
@@ -107,7 +134,7 @@ function sketchpad_admin_style() {
           background-size: cover;
         }
         {$targets} {
-          background-color: rgba(255, 255, 255, 0.1) !important;
+          background-color: rgba(255, 255, 255, 0) !important;
         }
     </style>
 
@@ -115,5 +142,62 @@ EOM;
   }
 }
 
+/**
+ * Additional loading script.
+ *
+ */
+function sketchpad_admin_page_setting_control_js(){
+  wp_enqueue_script( 'sm-admin-page-setting-control', get_template_directory_uri() . '/js/sm-admin-page-setting-control.js', array( 'jquery', 'customize-controls' ), false, true );
+}
+
+/**
+ * Add a nonce for this theme customizer.
+ *
+ * @param Array $nonces Nonce array object.
+ */
+function sketchpad_refresh_nonces_admin_background_reset( $nonces ) {
+  $nonces['sketchpad-modified-admin-background-reset'] = wp_create_nonce( 'sketchpad-modified-admin-background-reset' );
+  return $nonces;
+}
+
+/**
+ * Ajax handler for reset buttons.
+ *
+ */
+function sketchpad_ajax_admin_background_reset() {
+  check_ajax_referer( 'sketchpad-modified-admin-background-reset', 'security', true );
+
+  if( !current_user_can( 'edit_theme_options' ) ){
+    wp_die( -1 );
+  }
+
+  $id = $_POST['id'];
+
+  $key = NULL;
+  $value = NULL;
+  switch( $id ){
+    case 'sketchpad_admin_background_image_color_reset_button':
+      $key = 'sketchpad_admin_page_background_image_color';
+      $value = SmBasicConstantClass::ADMIN_BACKGROUND_COLOR;
+      break;
+    case 'sketchpad_admin_background_image_opacity_reset_button':
+      $key = 'sketchpad_admin_page_background_image_opacity';
+      $value = 0.5;
+      break;
+    case 'sketchpad_admin_background_image_opacity_targets_reset_button':
+      $key = 'sketchpad_admin_background_image_opacity_targets';
+      $value = SmBasicConstantClass::ADMIN_BACKGROUND_OPACITY_TARGETS;
+      break;
+  }
+
+  $data = json_encode( array( $key => $value ) );
+
+  wp_send_json_success( array( 'data' => $data ) );
+}
+
 add_action( 'customize_register', 'sketchpad_customize4admin_page_setting_register', 100 );
 add_action( 'admin_print_styles', 'sketchpad_admin_style' );
+add_action( 'customize_controls_enqueue_scripts', 'sketchpad_admin_page_setting_control_js' );
+add_action( 'wp_ajax_sketchpad_ajax_admin_background_reset', 'sketchpad_ajax_admin_background_reset' );
+
+add_filter( 'customize_refresh_nonces', 'sketchpad_refresh_nonces_admin_background_reset' );
