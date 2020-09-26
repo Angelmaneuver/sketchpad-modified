@@ -12,7 +12,7 @@
  *
  */
 function sketchpad_get_current_url() {
-	return site_url() . $_SERVER['REQUEST_URI'];
+	return home_url() . $_SERVER['REQUEST_URI'];
 }
 
 /**
