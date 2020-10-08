@@ -64,6 +64,13 @@ function register_sketchpad_block_style() {
 			'label'	=> __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'	=> 'single-character-line-spacing',
+			'label'	=> __( 'Open one character between line', 'sketchpad-modified' ),
+		)
+	);
 
 	// image
 	register_block_style(

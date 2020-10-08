@@ -163,6 +163,10 @@ iframe.wp-embedded-content {
   border-bottom: 0.01em solid #b3a279;
 }
 
+.is-style-single-character-line-spacing {
+  line-height: 2 !important;
+}
+
 .is-style-image-postit img, .is-style-image-postit svg {
   width: 99%;
   background: #fff;

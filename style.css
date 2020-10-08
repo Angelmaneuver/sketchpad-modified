@@ -1492,6 +1492,10 @@ iframe.wp-embedded-content {
   border-bottom: 0.01em solid #b3a279;
 }
 
+.is-style-single-character-line-spacing {
+  line-height: 2 !important;
+}
+
 .is-style-image-postit img, .is-style-image-postit svg {
   width: 99%;
   background: #fff;
@@ -1744,29 +1748,24 @@ div.sidebar section.toc_widget a {
   border-right-color: #000000;
 }
 
-div {
-  /* Plugin : Recent Posts */
-  /* Plugin : yarpp */
-}
-
-div.rpwwt-widget {
+section.sm_widget_recent_entries {
   word-wrap: break-word;
   overflow: hidden;
 }
 
-div.rpwwt-widget li {
+section.sm_widget_recent_entries li {
   width: 12em;
   max-width: 12em;
   height: 11.5em;
   max-height: 11.5em;
+  margin: 0 0 1.5em;
   position: relative;
-  border: 1px solid #ddd;
-  color: #e47911;
+  border: 1px solid;
   display: block;
   overflow: hidden;
 }
 
-div.rpwwt-widget li > a {
+section.sm_widget_recent_entries li > a {
   width: 12em;
   max-width: 12em;
   height: 11.5em;
@@ -1778,18 +1777,18 @@ div.rpwwt-widget li > a {
   transition: 1s all;
 }
 
-div.rpwwt-widget li > a:hover {
+section.sm_widget_recent_entries li > a:hover {
   color: #996633;
 }
 
-div.rpwwt-widget li > a:hover img {
+section.sm_widget_recent_entries li > a:hover img {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   -webkit-transition: 1s all;
   transition: 1s all;
 }
 
-div.rpwwt-widget li img.wp-post-image {
+section.sm_widget_recent_entries li img {
   position: absolute;
   height: 95%;
   left: 0;
@@ -1801,7 +1800,7 @@ div.rpwwt-widget li img.wp-post-image {
      object-fit: contain;
 }
 
-div.rpwwt-widget li span {
+section.sm_widget_recent_entries li span {
   position: absolute;
   width: 100%;
   left: 0;
@@ -1817,6 +1816,30 @@ div.rpwwt-widget li span {
   opacity: 0.8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+section.sm_widget_recent_entries li.tag-r18 {
+  border-color: #FFB6C1 !important;
+}
+
+section.sm_widget_recent_entries li.tag-r18 > a {
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+  text-shadow: #FF9A93 1px 1px 10px, #FF9A93 -1px 1px 10px, #FF9A93 1px -1px 10px, #FF9A93 -1px -1px 10px !important;
+}
+
+section.sm_widget_recent_entries li:not(.tag-r18) {
+  border-color: #ddd !important;
+}
+
+section.sm_widget_recent_entries li:not(.tag-r18) > a > span {
+  color: #e47911 !important;
+  font-weight: initial !important;
+  text-shadow: initial !important;
+}
+
+div {
+  /* Plugin : yarpp */
 }
 
 div.related-posts {

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-09-24T20:14:46+00:00\n"
+"POT-Creation-Date: 2020-10-08T02:40:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -464,7 +464,7 @@ msgstr ""
 
 #: includes/block-style/sm-style.php:27
 #: includes/block-style/sm-style.php:64
-#: includes/block-style/sm-style.php:82
+#: includes/block-style/sm-style.php:89
 msgid "Close the gap between the two"
 msgstr ""
 
@@ -484,11 +484,15 @@ msgstr ""
 msgid "Font sytle h5 and close the gap to the top"
 msgstr ""
 
-#: includes/block-style/sm-style.php:73
+#: includes/block-style/sm-style.php:71
+msgid "Open one character between line"
+msgstr ""
+
+#: includes/block-style/sm-style.php:80
 msgid "Postit"
 msgstr ""
 
-#: includes/block-style/sm-style.php:91
+#: includes/block-style/sm-style.php:98
 msgid "Indent"
 msgstr ""
 
@@ -498,6 +502,43 @@ msgstr ""
 
 #: includes/utils/sm-utility.php:25
 msgid "more &raquo;"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:27
+msgid "Your site&#8217;s most recent Posts. (Sketchpad - modified)"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:30
+#: includes/widgets/class-sm-widget-recent-posts.php:48
+msgid "Recent Posts (Sketchpad - modified)"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:208
+msgid "Display Options"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:219
+msgid "Output the tag to the class."
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:223
+msgid "Don't show the currently viewed articles in the list."
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:227
+msgid "Show the date of posting."
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:229
+msgid "Filter by categories"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:236
+msgid "Show all categories."
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:249
+msgid "Display a thumbnail image."
 msgstr ""
 
 #: search.php:12

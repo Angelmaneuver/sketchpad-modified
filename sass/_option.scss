@@ -208,9 +208,8 @@ div.sidebar {
   border-right-color: #000000;
 }
 
-div {
-  /* Plugin : Recent Posts */
-  &.rpwwt-widget {
+section {
+  &.sm_widget_recent_entries {
     word-wrap: break-word;
     overflow: hidden;
     
@@ -219,9 +218,9 @@ div {
       max-width: 12em;
       height: 11.5em;
       max-height: 11.5em;
+      margin: 0 0 1.5em;
       position: relative;
-      border: 1px solid #ddd;
-      color: #e47911;
+      border: 1px solid;
       display: block;
       overflow: hidden;
 
@@ -245,7 +244,7 @@ div {
         }
       }
       
-      img.wp-post-image {
+      img {
         position: absolute;
         height: 95%;
         left: 0;
@@ -272,9 +271,31 @@ div {
         opacity: 0.8;
         box-sizing: border-box;
       }
+
+      &.tag-r18 {
+        border-color: #FFB6C1 !important;
+
+        > a {
+          color: #FFFFFF !important;
+          font-weight: bold !important;
+          text-shadow: #FF9A93 1px 1px 10px, #FF9A93 -1px 1px 10px, #FF9A93 1px -1px 10px, #FF9A93 -1px -1px 10px !important;
+        }
+      }
+
+      &:not(.tag-r18) {
+        border-color: #ddd !important;
+
+        > a > span {
+          color: #e47911 !important;
+          font-weight: initial !important;
+          text-shadow: initial !important;
+        }
+      }
     }
   }
+}
 
+div {
   /* Plugin : yarpp */
   &.related-posts {
     word-wrap: break-word;
