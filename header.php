@@ -40,12 +40,7 @@
 				if ( $description || is_customize_preview() ) { ?>
 					<h2 class="site-description"><?php echo $description; ?></h2>
 				<?php }
-				echo get_search_form();
-				if( is_active_sidebar( 'header_postit' ) ) : ?>
-				<div class="header-postit">
-					<?php dynamic_sidebar( 'header_postit' ); ?>
-				</div>
-				<?php endif; ?>
+				echo get_search_form(); ?>
 			</div><!--.header-->
 		</header>
 		<div class="content">

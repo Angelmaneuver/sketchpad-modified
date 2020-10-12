@@ -72,17 +72,6 @@ function sketchpad_setup() {
 }
 
 function register_sketchpad_widgets() {
-	/* This theme support widget header postit. */
-	register_sidebar( array(
-		'name'          => __( 'Header Postit Widget', 'sketchpad-modified' ),
-		'id'            => 'header_postit',
-		'description'   => __( 'Header Postit Widget Area (Warning! This Widget only use custom Html.)', 'sketchpad-modified' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<header><h4 class="widgettitle">',
-		'after_title'   => '</h4></header>',
-	) );
-
 	/* This theme support widget sidebar. */
 	register_sidebar( array(
 		'name'          => __( 'Right Sidebar Widget', 'sketchpad-modified' ),

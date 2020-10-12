@@ -3,45 +3,6 @@
 * -----------------------------------------------------------------------------------------------
 */
 
-/* Header Postit */
-.header-postit section {
-  position: absolute;
-  top: -3em;
-  left: 32em;
-  width: 8em;
-  height: 2.8em;
-  max-height: 2.8em;
-  margin: 0.05em 0.5em 0.05em 0.5em;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  border: 1px solid #dcd0b6;
-  background: #f5ead0;
-  border-radius: 0 0 0 68px/15px;
-  box-shadow: 0.1em -0.5em 0.5em rgba(0, 0, 0, 0.22);
-  display: inline-block;
-  font-size: 1em;
-  font-style: italic;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: -17px;
-    left: 17px;
-    width: 16px;
-    height: 50px;
-    display: inline-block;
-    background: #f5ead0 url(images/bg-side1.jpg) no-repeat;
-    background-size: contain;
-    transform: rotate(270deg);
-  }
-
-  h4 {
-    display: none;
-  }
-}
-
 /* Sidebar */
 div.sidebar {
   li {
