@@ -263,6 +263,7 @@ input.search-text {
   z-index: 200;
   display: block;
   width: 590px;
+  line-height: 1.5em;
   font-size: 12px;
   font-family: Arial;
 }
