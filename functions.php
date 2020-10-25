@@ -66,6 +66,12 @@ function sketchpad_setup() {
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
 
+	/* This theme supports to JetPack's infinite scroll. */
+	add_theme_support( 'infinite-scroll', array(
+		'container' => 'articles',
+		'wrapper'   => false,
+	) );
+
 	/* This theme supports to style the visual editor. */
 	add_theme_support( 'editor-styles' );
 	add_editor_style( get_template_directory_uri() . '/style-editor.min.css' );

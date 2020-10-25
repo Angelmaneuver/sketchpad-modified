@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-	<main>
+	<main id="articles">
 		<?php do_action( 'sketchpad_modified_breadcrumb' ) ?>
 		<h2 class="page-title"><?php _e( 'Search results for: ', 'sketchpad-modified' );
 			echo '&laquo;', get_search_query(), '&raquo;' ?>

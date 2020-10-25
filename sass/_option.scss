@@ -464,6 +464,31 @@ p.grav-about {
   }
 }
 
+/* JetPack : infinite scroll */
+.infinite-scroll {
+  div.pagination {
+    display: none;
+  }
+
+  #infinite-handle {
+    text-align: center;
+    vertical-align: middle;
+    
+    span {
+      width: 52px;
+      height: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #9b8f76;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      font-family: Arial;
+      cursor: pointer;
+    }
+  }
+}
+
 /* Advanced noCaptcha & invisible Captcha */
 .grecaptcha-badge {
   z-index: 11000;

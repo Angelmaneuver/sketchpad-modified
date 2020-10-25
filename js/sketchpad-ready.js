@@ -1,12 +1,23 @@
 /** Auto height .content for left vertical background image **/
 ( function( $ ){
+	'use strict';
+
 	$( document ).ready( function() {
+		height_adjustment();
+	});
+
+	$( document.body ).on( 'post-load', function () {
+		height_adjustment();
+	});
+
+	function height_adjustment() {
 		$( ".content" ).height( function( i, val ){
 			return Math.ceil( val / 74 ) * 74;
 		});
-		var h = $( ".content" ).height();
+		let h = $( ".content" ).height();
 		$( ".main-content" ).height( h );
-	});
+	}
+
 })( jQuery );
 
 /**

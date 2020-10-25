@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-	<main>
+	<main id="articles">
 		<?php do_action( 'sketchpad_modified_breadcrumb' ) ?>
 		<h2 class="page-title">
 			<?php the_archive_title(); ?>
