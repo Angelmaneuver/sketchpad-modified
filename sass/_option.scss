@@ -470,6 +470,14 @@ p.grav-about {
     display: none;
   }
 
+  #navigation, &.neverending #footer {
+    display: none;
+  }
+  
+  .infinity-end.neverending #footer {
+    display: block;
+  }
+
   #infinite-handle {
     text-align: center;
     vertical-align: middle;

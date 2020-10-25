@@ -69,6 +69,7 @@ function sketchpad_setup() {
 	/* This theme supports to JetPack's infinite scroll. */
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'articles',
+		'footer'    => false,
 		'wrapper'   => false,
 	) );
 
