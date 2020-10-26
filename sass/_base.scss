@@ -397,9 +397,12 @@ article {
   }
 }
 
+article.post footer {
+  clear: both;
+}
+
 .post-meta, .post-footer {
   display: block;
-  clear: both;
   margin-top: 5px;
   height: 15px;
   font-size: 12px;
@@ -407,6 +410,8 @@ article {
 }
 
 .post-meta {
+  clear: both;
+
   time {
     float: left;
     color: #483613;
@@ -435,23 +440,17 @@ article {
   margin: 25px 0 0;
 }
 
-.comments-link {
-  float: left;
-}
-
-.more-link {
-  float: right;
-}
-
 a {
   &.comments-link {
+    float: left;
     text-align: left;
   }
 
   &.more-link {
+    float: right;
     text-align: right;
   }
-  
+
   &.comments-link, &.more-link {
     color: #483613;
     text-decoration: none;
