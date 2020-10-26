@@ -75,7 +75,7 @@ function sketchpad_setup() {
 
 	/* This theme supports to style the visual editor. */
 	add_theme_support( 'editor-styles' );
-	add_editor_style( get_template_directory_uri() . '/style-editor.min.css' );
+	add_editor_style( get_template_directory_uri() . '/style-editor.css' );
 }
 
 function register_sketchpad_widgets() {
@@ -94,7 +94,7 @@ function register_sketchpad_widgets() {
 /* Load scripts and styles */
 function sketchpad_script() {
 	wp_enqueue_style( 'google-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', array() );
-	wp_enqueue_style( 'sketchpad-style', get_template_directory_uri() . '/style.min.css' );
+	wp_enqueue_style( 'sketchpad-style', get_template_directory_uri() . '/style.css' );
 
 	if ( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );

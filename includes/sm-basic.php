@@ -58,7 +58,7 @@ add_filter( 'embed_head', 'sketchpad_head_insert_head' );
  * @since 1.0.0
  */
 function sketchpad_embed_styles() {
-  wp_enqueue_style( 'wp-oembed-embed', get_template_directory_uri() . '/sketchpad-embed-template.min.css' );
+  wp_enqueue_style( 'wp-oembed-embed', get_template_directory_uri() . '/sketchpad-embed-template.css' );
 }
 
 /**
