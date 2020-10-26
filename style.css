@@ -433,6 +433,14 @@ article {
   float: right;
 }
 
+a.comments-link {
+  text-align: left;
+}
+
+a.more-link {
+  text-align: right;
+}
+
 a.comments-link, a.more-link {
   color: #483613;
   text-decoration: none;
@@ -2021,6 +2029,14 @@ p.grav-about {
 /* JetPack : infinite scroll */
 .infinite-scroll div.pagination {
   display: none;
+}
+
+.infinite-scroll #navigation, .infinite-scroll.neverending #footer {
+  display: none;
+}
+
+.infinite-scroll .infinity-end.neverending #footer {
+  display: block;
 }
 
 .infinite-scroll #infinite-handle {

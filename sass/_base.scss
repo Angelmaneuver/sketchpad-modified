@@ -444,6 +444,14 @@ article {
 }
 
 a {
+  &.comments-link {
+    text-align: left;
+  }
+
+  &.more-link {
+    text-align: right;
+  }
+  
   &.comments-link, &.more-link {
     color: #483613;
     text-decoration: none;
