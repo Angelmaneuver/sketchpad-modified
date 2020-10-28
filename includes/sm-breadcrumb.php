@@ -199,7 +199,7 @@ function sketchpad_output_breadcrumb() {
       $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
 
       $breadcrumb_content += 1;
-      $breadcrumb_temp .= $breadcrumb_date . $breadcrumb_separator;
+      $breadcrumb_temp .= $breadcrumb_date;
     }
     
     if ( $month > 0) {
@@ -212,7 +212,7 @@ function sketchpad_output_breadcrumb() {
       $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
 
       $breadcrumb_content += 1;
-      $breadcrumb_temp .= $breadcrumb_date . $breadcrumb_separator;
+      $breadcrumb_temp .=  $breadcrumb_separator . $breadcrumb_date;
     }
     
     if ( $day > 0) {
@@ -225,7 +225,7 @@ function sketchpad_output_breadcrumb() {
       $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
 
       $breadcrumb_content += 1;
-      $breadcrumb_temp .= $breadcrumb_date;
+      $breadcrumb_temp .=  $breadcrumb_separator . $breadcrumb_date;
     }
 
   // term archive
