@@ -20,6 +20,7 @@
 					echo '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>';
 				} else {
 					echo '<a href="' . get_permalink() . '">' . get_the_title() . '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span></a>';
+					echo '<a class="external" href="' . get_permalink() . '" rel="noopener" target="_blank"></a>';
 				} ?>
 			</h3>
 		</div><!--.post-header-->

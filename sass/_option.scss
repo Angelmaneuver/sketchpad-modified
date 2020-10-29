@@ -532,12 +532,6 @@ article {
       border-color: #FF9A93 !important;
     }
 
-    .post-header h3 a:before {
-      content: "";
-      background: inherit;
-      filter: drop-shadow(1px 1px 2px #FF9A93);
-    }
-
     > header > div.post-header > h3.post-title {
       > a {
         padding-right: 0 !important;

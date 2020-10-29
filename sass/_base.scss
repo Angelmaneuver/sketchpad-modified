@@ -383,7 +383,7 @@ article {
     line-height: 34px;
 
     a {
-      padding-right: 40px;
+      padding-right: 1em;
       border: none;
       background: url(images/mark3.png) no-repeat right center;
       color: #9b8f76;
@@ -392,6 +392,26 @@ article {
       &:hover {
         text-decoration: underline;
         cursor: pointer;
+      }
+
+      &.external {
+        padding-right: 0;
+        background: none;
+        font-size: 0.65em;
+
+        @if $font-awesome {
+
+          padding-left: 0.5em;
+
+          &:before {
+            content: "\f35d";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+        @else {
+          display: none;
+        }
       }
     }
   }

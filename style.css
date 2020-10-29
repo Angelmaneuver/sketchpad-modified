@@ -377,7 +377,7 @@ article {
 }
 
 .post-header h3 a {
-  padding-right: 40px;
+  padding-right: 1em;
   border: none;
   background: url(images/mark3.png) no-repeat right center;
   color: #9b8f76;
@@ -387,6 +387,19 @@ article {
 .post-header h3 a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.post-header h3 a.external {
+  padding-right: 0;
+  background: none;
+  font-size: 0.65em;
+  padding-left: 0.5em;
+}
+
+.post-header h3 a.external:before {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 article.post footer {
@@ -2091,13 +2104,6 @@ article.tag-r18 .post-edit-link, article.tag-r18 .post-tag a {
 
 article.tag-r18 .sd-block .sd-content ul li a.sd-button:hover {
   border-color: #FF9A93 !important;
-}
-
-article.tag-r18 .post-header h3 a:before {
-  content: "";
-  background: inherit;
-  -webkit-filter: drop-shadow(1px 1px 2px #FF9A93);
-          filter: drop-shadow(1px 1px 2px #FF9A93);
 }
 
 article.tag-r18 > header > div.post-header > h3.post-title > a {
