@@ -7,7 +7,7 @@
  * If no active widgets are in this sidebar, display default widget Pages instead navigation menu.
  *
  * @subpackage Sketchpad
- * @since      Sketchpad 1.7
+ * @since      Sketchpad - modified 1.0
  */
 ?>
 </div><!--.main-content-->
@@ -25,5 +25,10 @@
 			$instance = array();
 			the_widget( 'WP_Widget_Pages', $instance, $args );
 		} ?>
+		<?php if ( !is_singular() && in_array ( 'infinite-scroll', get_option ( 'jetpack_active_modules' ) ) && ( get_option ( 'infinite_scroll' ) === '1' )  ) { ?>
+		<section class="widget">
+			<?php get_template_part( 'footer', 'content' ); ?>
+		</section>
+		<?php } ?>
 	</div><!--.sidebar-->
 </aside>

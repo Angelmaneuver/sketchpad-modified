@@ -1646,6 +1646,32 @@ div.sidebar section.toc_widget a {
   white-space: normal;
 }
 
+div.sidebar section div.footer {
+  width: initial;
+  margin: 0;
+  padding: 0;
+  background: initial;
+}
+
+div.sidebar section div.footer .site-info {
+  width: 20.6em;
+  padding-top: 0;
+  font-size: 0.5em;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 13px;
+}
+
+div.sidebar section div.footer .site-info .right {
+  padding-top: 1em;
+  text-align: left;
+  float: left;
+}
+
+div.sidebar section div.footer .site-info .right .original {
+  display: none;
+}
+
 /* Tag */
 .post-tag a {
   padding-right: 0.5em;
