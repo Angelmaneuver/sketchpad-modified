@@ -127,11 +127,18 @@
   }
   
   ins {
-    @include InsBorderColor;
-    @include ThinBorderStyle(thin, dashed);
-    @include ExternalContentBackgroundColor1;
     display: block;
     text-decoration: none;
+
+    > * {
+      @include InsBorderColor;
+      @include DottedOutlineStyle;
+      outline-offset: -0.1rem;
+    }
+
+    * {
+      @include ExternalContentBackgroundColor1;
+    }
   }
   
   abbr, acronym {

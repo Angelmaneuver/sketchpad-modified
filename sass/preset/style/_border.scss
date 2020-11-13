@@ -24,3 +24,8 @@
   border-bottom-width: $border-width;
   border-bottom-style: $border-style;
 }
+
+@mixin DottedOutlineStyle($border-width: thin, $border-style: dotted) {
+  outline-width: $border-width;
+  outline-style: $border-style;
+}
