@@ -36,7 +36,7 @@
 }
 
 .post-content, div.wp-block-group > div.wp-block-group__inner-container {
-  > p, > div, > blockquote,  > figure {
+  > p, > ul, > ol, > div:not(.wp-block-spacer), > blockquote,  > figure, > iframe {
 
     &:not(:last-child) {
 

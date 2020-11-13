@@ -1848,7 +1848,7 @@ aside .sidebar section div.footer .site-info > span.right .original {
   list-style-position: outside;
 }
 
-.post-content > p:not(:last-child), .post-content > div:not(:last-child), .post-content > blockquote:not(:last-child), .post-content > figure:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > p:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > div:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > blockquote:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > figure:not(:last-child) {
+.post-content > p:not(:last-child), .post-content > ul:not(:last-child), .post-content > ol:not(:last-child), .post-content > div:not(.wp-block-spacer):not(:last-child), .post-content > blockquote:not(:last-child), .post-content > figure:not(:last-child), .post-content > iframe:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > p:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > ul:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > ol:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > div:not(.wp-block-spacer):not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > blockquote:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > figure:not(:last-child), div.wp-block-group > div.wp-block-group__inner-container > iframe:not(:last-child) {
   margin-bottom: 3rem;
 }
 
