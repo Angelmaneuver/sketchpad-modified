@@ -115,6 +115,9 @@ blockquote.wp-block-quote:before {
 }
 
 blockquote.wp-block-quote p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
   margin-bottom: 2rem;
 }
 

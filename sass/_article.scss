@@ -112,6 +112,8 @@ blockquote.wp-block-quote {
   }
 
   p {
+    @include GetFontPreSet(1.4rem);
+
     &:first-child {
       margin-top: 0.5rem;
     }
