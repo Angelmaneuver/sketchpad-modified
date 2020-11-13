@@ -2105,6 +2105,22 @@ p.grav-about {
 }
 
 /**
+* Toc
+* -----------------------------------------------------------------------------------------------
+*/
+div.sidebar section.toc_widget > ul > li > ul {
+  margin-left: 2.5rem;
+}
+
+div.sidebar section.toc_widget > ul > li > ul li > ul {
+  margin-left: 2.5rem;
+}
+
+div.sidebar section.toc_widget a {
+  white-space: normal;
+}
+
+/**
 * Yarpp
 * -----------------------------------------------------------------------------------------------
 */
