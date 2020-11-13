@@ -115,7 +115,11 @@ blockquote.wp-block-quote:before {
 }
 
 blockquote.wp-block-quote p {
-  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+blockquote.wp-block-quote p:first-child {
+  margin-top: 0.5rem;
 }
 
 blockquote.wp-block-quote cite {
