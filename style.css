@@ -2087,13 +2087,35 @@ p.grav-about {
 * Yarpp
 * -----------------------------------------------------------------------------------------------
 */
+.related-posts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+.related-posts ul li:not(:last-child) {
+  margin-bottom: initial;
+}
+
+.related-posts ul li a img {
+  width: 85%;
+  max-width: 85%;
+}
+
 .related-posts li {
   position: relative;
   display: block;
-  width: 14.5rem;
-  height: 14rem;
-  max-width: 14.5rem;
-  max-height: 14rem;
+  width: 14rem;
+  height: 13.5rem;
+  max-width: 14rem;
+  max-height: 13.5rem;
   border-color: #dddddd;
   border-width: thin;
   border-style: solid;
@@ -2106,10 +2128,10 @@ p.grav-about {
 
 .related-posts li > a {
   display: block;
-  width: 14.5rem;
-  height: 14rem;
-  max-width: 14.5rem;
-  max-height: 14rem;
+  width: 14rem;
+  height: 13.5rem;
+  max-width: 14rem;
+  max-height: 13.5rem;
   margin: 0;
   color: #e47911;
   -webkit-transition: 1s all;

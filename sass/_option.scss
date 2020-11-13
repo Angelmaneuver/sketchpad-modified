@@ -126,7 +126,25 @@ p.grav-about {
 */
 
 .related-posts {
-  @include RecentPost(14.5rem, 14rem);
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: initial;
+      }
+
+      a img {
+        width: 85%;
+        max-width: 85%;
+      }
+    }
+  }
+
+  @include RecentPost(14rem, 13.5rem);
 }
 
 /**
