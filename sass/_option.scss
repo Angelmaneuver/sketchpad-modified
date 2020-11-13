@@ -125,17 +125,19 @@ p.grav-about {
 * -----------------------------------------------------------------------------------------------
 */
 
-div.sidebar section.toc_widget {
-  > ul > li > ul {
-    margin-left: 2.5rem;
-  
-    li > ul {
+div.content > aside > div.sidebar > section.toc_widget {
+  > ul.toc_widget_list > li {
+    > ul {
       margin-left: 2.5rem;
+    
+      li > ul {
+        margin-left: 2.5rem;
+      }
     }
-  }
 
-  a {
-    white-space: normal;
+    a {
+      white-space: normal;
+    }
   }
 }
 

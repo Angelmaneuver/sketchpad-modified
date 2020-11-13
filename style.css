@@ -2108,15 +2108,15 @@ p.grav-about {
 * Toc
 * -----------------------------------------------------------------------------------------------
 */
-div.sidebar section.toc_widget > ul > li > ul {
+div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li > ul {
   margin-left: 2.5rem;
 }
 
-div.sidebar section.toc_widget > ul > li > ul li > ul {
+div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li > ul li > ul {
   margin-left: 2.5rem;
 }
 
-div.sidebar section.toc_widget a {
+div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li a {
   white-space: normal;
 }
 
