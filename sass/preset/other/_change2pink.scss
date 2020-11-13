@@ -82,6 +82,11 @@
         @include Change2PinkBorderColor;
       }
 
+      a.more-link {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
       .post-tag a {
         @include Change2PinkPostTagBackground;
       }

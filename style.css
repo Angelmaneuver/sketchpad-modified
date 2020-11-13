@@ -524,6 +524,13 @@ article.tag-r18 footer * {
   border-color: #FFB6C1;
 }
 
+article.tag-r18 footer a.more-link {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  border-color: #FFB6C1;
+}
+
 article.tag-r18 footer .post-tag a {
   background: #FF9A93;
 }
