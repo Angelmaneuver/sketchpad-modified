@@ -82,7 +82,7 @@
         @include Change2PinkBorderColor;
       }
 
-      a.more-link {
+      a.comments-link, a.more-link {
         @include Change2PinkTextStyle;
         @include Change2PinkBorderColor;
       }
