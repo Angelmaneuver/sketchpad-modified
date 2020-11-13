@@ -96,35 +96,35 @@
 }
 
 @mixin SidebarPostitColorSeries4a {
-  &:nth-of-type(9n + 2) a {
+  &:nth-child(9n + 2) a {
     @include PostitBlue;
   }
 
-  &:nth-of-type(9n + 3) a {
+  &:nth-child(9n + 3) a {
     @include PostitYellow;
   }
 
-  &:nth-of-type(9n + 4) a {
+  &:nth-child(9n + 4) a {
     @include PostitGreen;
   }
 
-  &:nth-of-type(9n + 5) a {
+  &:nth-child(9n + 5) a {
     @include PostitOrange;
   }
 
-  &:nth-of-type(9n + 6) a {
+  &:nth-child(9n + 6) a {
     @include PostitLavender;
   }
 
-  &:nth-of-type(9n + 7) a {
+  &:nth-child(9n + 7) a {
     @include PostitMistyrose;
   }
   
-  &:nth-of-type(9n + 8) a {
+  &:nth-child(9n + 8) a {
     @include PostitMintcream;
   }
 
-  &:nth-of-type(9n + 9) a {
+  &:nth-child(9n + 9) a {
     @include PostitBlack;
   }
 }

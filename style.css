@@ -1113,35 +1113,35 @@ aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:
   vertical-align: middle;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 2) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 2) a {
   border-color: #4169e1;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 3) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 3) a {
   border-color: #ffd700;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 4) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 4) a {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 5) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 5) a {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 6) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 6) a {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 7) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 7) a {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 8) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 8) a {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries):nth-of-type(9n + 9) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 9) a {
   border-right-color: #000000;
 }
 

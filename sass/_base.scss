@@ -558,7 +558,9 @@ aside {
             vertical-align: middle;
           }
         }
+      }
 
+      > ul > li:not(.recentcomments):not(.sm_widget_recent_entries) {
         @include SidebarPostitColorSeries4a;
       }
 
