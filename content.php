@@ -27,7 +27,10 @@
 		<div class="post-meta">
 			<?php if ( is_page() ) {
 				if ( is_singular() ) { ?>
-					<time class="post-date" datetime="<?php the_modified_time( 'Y-m-d' ); ?>"><?php echo get_the_modified_date() ?></time>
+					<span>
+						<time class="post-date" datetime="<?php the_modified_time( 'Y-m-d' ); ?>"><?php echo get_the_modified_date() ?></time>
+						<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+					</span>
 					<span class="by-author">
 					<?php _e( 'posted by ', 'sketchpad-modified' );
 					the_author_posts_link();
@@ -35,18 +38,19 @@
 						_e( ' in ', 'sketchpad-modified' );
 						the_category( ', ' );
 					} ?>
-				</span>
+					</span>
 				<?php }
-				edit_post_link( __( 'edit', 'sketchpad-modified' ) );
 			} else { ?>
-				<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>">
-					<?php if ( is_singular() ) {
-						printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( ( is_singular() ) ? get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) : get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
-					} else {
-						echo '<a href="' . get_permalink() . '">' . get_the_date() . '</a>';
-					} ?>
-				</time>
-				<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+				<span>
+					<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>">
+						<?php if ( is_singular() ) {
+							printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( ( is_singular() ) ? get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) : get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
+						} else {
+							echo '<a href="' . get_permalink() . '">' . get_the_date() . '</a>';
+						} ?>
+					</time>
+					<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+				</span>
 				<span class="by-author">
 					<?php _e( 'posted by ', 'sketchpad-modified' );
 					the_author_posts_link();
@@ -76,11 +80,15 @@
 		) );
 		if ( ! is_singular() ) { ?>
 			<div class="post-footer">
-				<?php if ( get_comments_number() > 0 ) { ?>
-					<a class="comments-link" href="<?php the_permalink(); ?>#comments"><?php _e( 'read comments', 'sketchpad-modified' );
-						echo ' (' . ( get_comments_number() ) . ')'; ?></a>
-				<?php } ?>
-				<a class="more-link" href="<?php the_permalink(); ?>"><?php _e( 'more', 'sketchpad-modified' ) ?> &raquo;</a>
+				<span>
+					<?php if ( get_comments_number() > 0 ) { ?>
+						<a class="comments-link" href="<?php the_permalink(); ?>#comments"><?php _e( 'read comments', 'sketchpad-modified' );
+							echo ' (' . ( get_comments_number() ) . ')'; ?></a>
+					<?php } ?>
+				</span>
+				<span>
+					<a class="more-link" href="<?php the_permalink(); ?>"><?php _e( 'more', 'sketchpad-modified' ) ?> &raquo;</a>
+				</span>
 			</div><!--.post-footer-->
 		<?php }
 		if ( has_tag() ) { /* display if has tags */

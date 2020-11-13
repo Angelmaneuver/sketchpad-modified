@@ -1,0 +1,147 @@
+// Change to Pink Property
+
+@mixin Change2PinkTextStyle {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+}
+
+@mixin Change2PinkQuoteSimbol {
+  color: #FFFFFF;
+}
+
+@mixin Change2PinkBorderColor {
+  border-color: #FFB6C1;
+}
+
+@mixin Change2PinkHoverBorderColor {
+  border-color: #FF9A93;
+}
+
+@mixin Change2PinkBackground {
+  background: #FF9A93
+}
+
+@mixin Change2PinkPostTagBackground {
+  background: #FF9A93
+}
+
+@mixin Change2PinkImagePostit {
+  border-image: linear-gradient(to bottom, #FFB6C1 0rem, #FFFFFF 0.1rem) 1 / 1 0 0 0;
+}
+
+@mixin Change2PinkRecentPost {
+  &.tag-r18 {
+    @include Change2PinkBorderColor;
+
+    > a > span {
+      @include Change2PinkTextStyle;
+    }
+  }
+}
+
+@mixin Change2PinkArticle {
+  &.tag-r18 {
+    header {
+      * {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      > div.post-header > h3.post-title {
+        > a {
+          @include Change2PinkTextStyle;
+          padding-right: 0;
+          background: none;
+        }
+  
+        span.r18 {
+          font-size: 1.65rem;
+  
+          > span {
+            margin-top: -0.1rem;
+            margin-left: -0.1rem;
+          }
+        }
+      }
+
+      .post-meta {
+        .post-edit-link {
+          @include Change2PinkBackground;
+        }
+
+        .by-author {
+          @include Change2PinkTextStyle;
+        }
+      }
+    }
+
+    footer {
+      * {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      .post-tag a {
+        @include Change2PinkPostTagBackground;
+      }
+    }
+
+    .post-content {
+      h2, h3, h4, h5, h6, p, a, ul, ol, li, table, thead, tbody, tr, th, td, span, div {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      li::marker {
+        @include Change2PinkTextStyle;
+      }
+
+      blockquote.wp-block-quote:before {
+        @include Change2PinkBorderColor;
+      }
+
+      .is-style-image-postit {
+        img, svg {
+          @include Change2PinkImagePostit;
+        }
+      }
+
+      .no-change {
+        * {
+          text-shadow: initial;
+        }
+
+        @include BasicTags;
+
+        .is-style-image-postit {
+          @include ImagePostit;
+        }
+      }
+
+      .sd-block .sd-content ul li a.sd-button {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+
+        &:hover {
+          @include Change2PinkHoverBorderColor;
+        }
+      }
+    }
+  }
+
+  &:not(.tag-r18) {
+    span.r18 {
+      display: none;
+    }
+
+    .sharedaddy .sd-block .sd-content ul li a.sd-button {
+      background-color: #AF9F88;
+      border: transparent thin solid;
+  
+      &:hover {
+        border: #999999 thin solid;
+      }
+    }
+  }
+}

@@ -10,8 +10,10 @@ get_header(); ?>
 	<main>
 		<?php while ( have_posts() ) : the_post();
 			get_template_part( 'content', get_post_format() ); ?>
-			<p class="prev-post"><?php previous_post_link( '&larr;%link' ); ?></p><!--Previous post navigation-->
-			<p class="next-post"><?php next_post_link( '%link&rarr;' ); ?></p><!--Next post navigation-->
+			<div class="post-navigation">
+				<div class="prev-post"><?php previous_post_link( '<span>&larr;</span><span>%link</span>' ); ?></div><!--Previous post navigation-->
+				<div class="next-post"><?php next_post_link( '<span>&rarr;</span><span>%link</span>' ); ?></div><!--Next post navigation-->
+			</div>
 			<?php comments_template();
 		endwhile; ?>
 	</main>

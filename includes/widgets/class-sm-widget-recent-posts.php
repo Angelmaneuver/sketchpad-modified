@@ -127,7 +127,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 				$post_title   = get_the_title( $recent_post->ID );
 				$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
 				$tags					= get_the_tags( $recent_post->ID );
-				$tags2class		= '';
+				$tags2class		= ' class="' . $this->alt_option_name . '" ';
 				$aria_current = '';
 
 				if ( get_queried_object_id() === $recent_post->ID ) {
@@ -139,7 +139,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 					foreach( $tags as $tag ){
 						$slugs[] = esc_attr( 'tag-' . $tag->slug );
 					}
-					$tags2class = ' class="' . implode( ' ', $slugs ) . '" ';
+					$tags2class = ' class="' . $this->alt_option_name . ' ' . implode( ' ', $slugs ) . '" ';
 				}
 
 				$thumbnail = get_the_post_thumbnail( $recent_post->ID, array( 130, 130 ) );

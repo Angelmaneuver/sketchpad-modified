@@ -1,0 +1,69 @@
+// Recent Post Property
+
+@mixin RecentPost($width: 15rem, $height: 14.5rem) {
+  li {
+    position: relative;
+    display: block;
+    width: $width;
+    height: $height;
+    max-width: $width;
+    max-height: $height;
+    border-color: #dddddd;
+    border-width: thin;
+    border-style: solid;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    > a {
+      display: block;
+      width: $width;
+      height: $height;
+      max-width: $width;
+      max-height: $height;
+      margin: 0;
+      color: #e47911;
+      transition: 1s all;
+    }
+
+    > a:hover {
+      color: #996633;
+
+      img {
+        transform: scale(1.2, 1.2);
+        transition: 1s all;
+      }
+    }
+    
+    img {
+      position: absolute;
+      height: 99%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      object-fit: contain;
+    }
+
+    span {
+      @include GetFontPreSet(1.1rem, 700);
+      color: #e47911;
+      background-color: #000000;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 0 0.4rem;
+      word-break: break-all;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      opacity: 0.8;
+    }
+    @include Change2PinkRecentPost;
+  }
+}

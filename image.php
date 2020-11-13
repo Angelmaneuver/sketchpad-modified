@@ -16,8 +16,10 @@ get_header(); ?>
 						<h3 class="post-title"><?php the_title(); ?></h3>
 					</div><!--.post-header-->
 					<div class="post-meta">
-						<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>"><?php echo get_the_date(); ?></time>
-						<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+						<span>
+							<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>"><?php echo get_the_date(); ?></time>
+							<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+						</span>
 						<span class="by-author">
 							<?php _e( 'posted by ', 'sketchpad-modified' );
 							the_author_posts_link();
@@ -67,8 +69,10 @@ get_header(); ?>
 						the_tags( __( 'Tags: ', 'sketchpad-modified' ) );
 						echo '</div>';
 					} ?>
-					<p class="prev-post"><?php previous_post_link( '&larr;%link' ); ?></p><!--Previous post navigation-->
-					<p class="next-post"><?php next_post_link( '%link&rarr;' ); ?></p><!--Next post navigation-->
+				<div class="post-navigation">
+					<div class="prev-post"><?php previous_post_link( '<span>&larr;</span><span>%link</span>' ); ?></div><!--Previous post navigation-->
+					<div class="next-post"><?php next_post_link( '<span>&rarr;</span><span>%link</span>' ); ?></div><!--Next post navigation-->
+				</div>
 				</footer>
 			</article>
 			<?php comments_template();

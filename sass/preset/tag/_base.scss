@@ -1,0 +1,140 @@
+// Basic Tags
+
+@mixin BasicTags {
+  h1, h2, .is-style-h1, .is-style-h2 {
+    @include GetFontPreSet(2.4rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor1;
+  }
+  
+  h3, .is-style-h3 {
+    @include GetFontPreSet(2.2rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor2;
+  }
+
+  h4, .is-style-h4 {
+    @include GetFontPreSet(2.0rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor3;
+  }
+  
+  h5, .is-style-h5 {
+    @include GetFontPreSet(1.8rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor3;
+  }
+  
+  .is-style-h5-and-mt0 {
+    @extend .is-style-h5;
+    margin-top: 0;
+  }
+  
+  .is-style-h5-and-mtb0 {
+    @extend .is-style-h5-and-mt0;
+    margin-bottom: 0;
+  }
+  
+  h6, .is-style-h6 {
+    @include GetFontPreSet(1.6rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor3;
+  }
+  
+  p {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+  }
+  
+  address {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+    font-style: italic;
+  }
+  
+  table {
+    @include GetFontPreSet(1.2rem);
+    @include BaseFontFamily;
+    @include SentenceColor1;
+    width: 100%;
+    @include TableBorderColor1;
+    @include ThinBorderStyle;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  th {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+  }
+  
+  th, td {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+  }
+  
+  dl {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+  
+    dt, dd {
+      padding: 0 0.5rem;
+    }
+  
+    dt {
+      font-weight: 700;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    outline: 0;
+    border: 0;
+  }
+  
+  a {
+    @include LinkColor1;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  
+  iframe, object {
+    max-width: 100%;
+  }
+  
+  iframe.wp-embedded-content {
+    @include EmbeddedContentShadowStyle1;
+  }
+  
+  pre {
+    @include GetFontPreSet;
+    @include MonospaceFontFamily;
+    overflow: auto;
+    margin: 1.2rem 0;
+    padding: 1rem;
+    @include PreBorderColor1;
+    @include ThinBorderStyle;
+  }
+  
+  ins {
+    @include InsBorderColor;
+    @include ThinBorderStyle(thin, dashed);
+    @include ExternalContentBackgroundColor1;
+    display: block;
+    text-decoration: none;
+  }
+  
+  abbr, acronym {
+    cursor: help;
+  }
+}

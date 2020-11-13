@@ -1,0 +1,97 @@
+// Color Property
+
+@mixin HeadlineColor1 {
+  color: #776b53;
+}
+
+@mixin HeadlineColor2 {
+  color: #9b8f76;
+}
+
+@mixin HeadlineColor3 {
+  color: #483613;
+}
+
+@mixin HeadlineColor4 {
+  color: #5e523a;
+}
+
+@mixin SentenceColor1 {
+  color: #483613;
+}
+
+@mixin BreadcrumbColor {
+  color: #9b8f76;
+}
+
+@mixin QuoteSimbolColor {
+  color: #9dd4ff;
+}
+
+@mixin QuoteColor {
+  color: #777777;
+}
+
+@mixin QuoteCiteColor {
+  color: #888888
+}
+
+@mixin LinkColor1 {
+  color: #483613;
+}
+
+@mixin LinkColor2 {
+  color: #483a28;
+}
+
+@mixin LinkColor3 {
+  color: #5e523a;
+}
+
+@mixin CommentCancelLinkHoverColor {
+  color: #000000;
+}
+
+@mixin FillInStringColor($color: #ffffff) {
+  color: $color;
+}
+
+@mixin MetaColor1 {
+  color: #61553c;
+}
+
+@mixin MetaColor2 {
+  color: #000000;
+}
+
+@mixin PostTagColor {
+  color: #f4eddf;
+}
+
+@mixin PaginationColor {
+  color: #f4eddf
+}
+
+@mixin CommentColor {
+  color: #483613;
+}
+
+@mixin SidebarColor1 {
+  color: #71634e;
+}
+
+@mixin SidebarCalendarCaptionColor {
+  color: #F6E9DC;
+}
+
+@mixin SidebarCalendarLinkColor {
+  color: #000000;
+}
+
+@mixin FooterColor1 {
+  color: #71634e;
+}
+
+@mixin Required {
+  color: #c0392b;
+}

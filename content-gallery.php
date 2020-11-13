@@ -1,3 +1,11 @@
+<?php
+/**
+ * The template for displaying the content
+ * 
+ * @subpackage Sketchpad
+ * @since      Sketchpad - modified 1.0
+ */
+?>
 <article <?php post_class(); ?>>
 	<header>
 		<div class="post-header">
@@ -10,22 +18,24 @@
 			</h3>
 		</div><!--.post-header-->
 		<div class="post-meta">
-			<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>">
-				<?php if ( is_singular() ) {
-					printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( ( is_singular() ) ? get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) : get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
-				} else {
-					echo '<a href="' . get_permalink() . '">' . get_the_date() . '</a>';
-				} ?>
-			</time>
-			<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
-			<span class="by-author">
+			<span>
+				<time class="post-date" datetime="<?php the_time( 'Y-m-d' ); ?>">
+					<?php if ( is_singular() ) {
+						printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( ( is_singular() ) ? get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) : get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
+					} else {
+						echo '<a href="' . get_permalink() . '">' . get_the_date() . '</a>';
+					} ?>
+				</time>
+				<?php edit_post_link( __( 'edit', 'sketchpad-modified' ) ); ?>
+			</span>
+			<spa class="by-author">
 				<?php _e( 'posted by ', 'sketchpad-modified' );
 				the_author_posts_link();
 				if ( has_category() ) {
 					_e( ' in ', 'sketchpad-modified' );
 					the_category( ', ' );
 				} ?>
-			</span>
+			</>
 		</div><!--.post-meta-->
 	</header>
 	<div class="post-content">

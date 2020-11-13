@@ -12,6 +12,7 @@ require get_template_directory() . '/includes/utils/sm-sanitizer.php';
 
 // filter
 require get_template_directory() . '/includes/filter/sm-dropdown-categories.php';
+require get_template_directory() . '/includes/filter/sm-tag-cloud.php';
 
 // block style
 require get_template_directory() . '/includes/block-style/sm-style.php';
