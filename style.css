@@ -2151,6 +2151,39 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
      object-position: var(--image-position);
 }
 
+.reduction4iframe {
+  --original-width: auto;
+  --original-height: auto;
+  --reduction-width: auto;
+  --reduction-height: auto;
+  --scale: scale(0.45, 0.45);
+  --top: 0;
+  --left: 0;
+  width: var(--reduction-width);
+  max-width: var(--reduction-width);
+  height: var(--reduction-height);
+}
+
+.reduction4iframe > div {
+  width: var(--original-width);
+  max-width: var(--original-width);
+  height: var(--original-height);
+  max-height: var(--original-height);
+  overflow: hidden;
+}
+
+.reduction4iframe > div > iframe {
+  width: var(--original-width);
+  max-width: var(--original-width);
+  height: var(--original-height);
+  max-height: var(--original-height);
+  position: relative;
+  -webkit-transform: var(--scale);
+          transform: var(--scale);
+  top: var(--top);
+  left: var(--left);
+}
+
 .top_button {
   font-size: 2rem;
   font-weight: 400;

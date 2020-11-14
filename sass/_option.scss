@@ -24,6 +24,10 @@
   @include Clipping4Image;
 }
 
+.reduction4iframe {
+  @include Reduction4Iframe;
+}
+
 .top_button {
   @include GetFontPreSet(2rem);
   @include BaseFontFamily;
