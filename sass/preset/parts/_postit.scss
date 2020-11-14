@@ -12,17 +12,30 @@
   }
 }
 
-@mixin SidebarPostit {
+@mixin BaseSidebarPostit($padding: 0.6rem 0.6rem 0.6rem 2.8rem) {
   font-style: italic;
   display: inline-block;
-  width: 17.5rem;
   margin-left: 0.5rem;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  padding: $padding;
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
   @include PostitRed;
   border-right-width: 2rem;
   border-right-style: solid;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+}
+
+@mixin SidebarPostit {
+  @include BaseSidebarPostit;
+  width: 17.5rem;
+}
+
+@mixin SidebarPostitWidthAuto {
+  @include BaseSidebarPostit(0.6rem 0.6rem 0.6rem 22%);
+
+  * {
+    width: var(--width);
+    max-width: var(--max-width);
+  }
 }
 
 @mixin PostitRed {
@@ -62,69 +75,69 @@
 }
 
 @mixin SidebarPostitColorSeries {
-  &:nth-child(9n + 2) {
+  &:not([class*='postit-']):nth-child(9n + 2) {
     @include PostitBlue;
   }
 
-  &:nth-child(9n + 3) {
+  &:not([class*='postit-']):nth-child(9n + 3) {
     @include PostitYellow;
   }
 
-  &:nth-child(9n + 4) {
+  &:not([class*='postit-']):nth-child(9n + 4) {
     @include PostitGreen;
   }
 
-  &:nth-child(9n + 5) {
+  &:not([class*='postit-']):nth-child(9n + 5) {
     @include PostitOrange;
   }
 
-  &:nth-child(9n + 6) {
+  &:not([class*='postit-']):nth-child(9n + 6) {
     @include PostitLavender;
   }
 
-  &:nth-child(9n + 7) {
+  &:not([class*='postit-']):nth-child(9n + 7) {
     @include PostitMistyrose;
   }
   
-  &:nth-child(9n + 8) {
+  &:not([class*='postit-']):nth-child(9n + 8) {
     @include PostitMintcream;
   }
 
-  &:nth-child(9n + 9) {
+  &:not([class*='postit-']):nth-child(9n + 9) {
     @include PostitBlack;
   }
 }
 
 @mixin SidebarPostitColorSeries4a {
-  &:nth-child(9n + 2) a {
+  &:not([class*='postit-']):nth-child(9n + 2) a {
     @include PostitBlue;
   }
 
-  &:nth-child(9n + 3) a {
+  &:not([class*='postit-']):nth-child(9n + 3) a {
     @include PostitYellow;
   }
 
-  &:nth-child(9n + 4) a {
+  &:not([class*='postit-']):nth-child(9n + 4) a {
     @include PostitGreen;
   }
 
-  &:nth-child(9n + 5) a {
+  &:not([class*='postit-']):nth-child(9n + 5) a {
     @include PostitOrange;
   }
 
-  &:nth-child(9n + 6) a {
+  &:not([class*='postit-']):nth-child(9n + 6) a {
     @include PostitLavender;
   }
 
-  &:nth-child(9n + 7) a {
+  &:not([class*='postit-']):nth-child(9n + 7) a {
     @include PostitMistyrose;
   }
   
-  &:nth-child(9n + 8) a {
+  &:not([class*='postit-']):nth-child(9n + 8) a {
     @include PostitMintcream;
   }
 
-  &:nth-child(9n + 9) a {
+  &:not([class*='postit-']):nth-child(9n + 9) a {
     @include PostitBlack;
   }
 }

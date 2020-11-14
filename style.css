@@ -1146,9 +1146,8 @@ aside .sidebar section ul li {
 aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:not(.rsswidget) {
   font-style: italic;
   display: inline-block;
-  width: 17.5rem;
   margin-left: 0.5rem;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 2.8rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
   border-color: #ff0000;
@@ -1156,6 +1155,7 @@ aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:
   border-right-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+  width: 17.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1165,44 +1165,45 @@ aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:
   vertical-align: middle;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 2) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 2) a {
   border-color: #4169e1;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 3) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 3) a {
   border-color: #ffd700;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 4) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 4) a {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 5) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 5) a {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 6) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 6) a {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 7) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 7) a {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 8) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 8) a {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):nth-child(9n + 9) a {
+aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 9) a {
   border-right-color: #000000;
 }
 
 aside .sidebar section .postit {
+  --width: auto;
+  --max-width: none;
   font-style: italic;
   display: inline-block;
-  width: 17.5rem;
   margin-left: 0.5rem;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 22%;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
   border-color: #ff0000;
@@ -1210,6 +1211,47 @@ aside .sidebar section .postit {
   border-right-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+}
+
+aside .sidebar section .postit * {
+  width: var(--width);
+  max-width: var(--max-width);
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 2) {
+  border-color: #4169e1;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 3) {
+  border-color: #ffd700;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 4) {
+  border-right-color: #90ee90;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 5) {
+  border-right-color: #ff8c00;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 6) {
+  border-right-color: #e6e6fa;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 7) {
+  border-right-color: #ffe4e1;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 8) {
+  border-right-color: #f5fffa;
+}
+
+aside .sidebar section .postit:not([class*='postit-']):nth-child(9n + 9) {
+  border-right-color: #000000;
+}
+
+aside .sidebar section .postit:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 aside .sidebar section .postit-royalblue {
@@ -1251,9 +1293,8 @@ aside .sidebar section div.tagcloud a.tag-cloud-link {
   font-family: 'Arial';
   font-style: italic;
   display: inline-block;
-  width: 17.5rem;
   margin-left: 0.5rem;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 2.8rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
   border-color: #ff0000;
@@ -1261,49 +1302,49 @@ aside .sidebar section div.tagcloud a.tag-cloud-link {
   border-right-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+  width: 17.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 2) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 2) {
   border-color: #4169e1;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 3) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 3) {
   border-color: #ffd700;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 4) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 4) {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 5) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 5) {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 6) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 6) {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 7) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 7) {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 8) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 8) {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section div.tagcloud a.tag-cloud-link:nth-child(9n + 9) {
+aside .sidebar section div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 9) {
   border-right-color: #000000;
 }
 
 aside .sidebar section.widget_rss li, aside .sidebar section ul#recentcomments li {
   font-style: italic;
   display: inline-block;
-  width: 17.5rem;
   margin-left: 0.5rem;
-  padding: 0.6rem 0.6rem 0.6rem 2.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 2.8rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
   border-color: #ff0000;
@@ -1311,37 +1352,38 @@ aside .sidebar section.widget_rss li, aside .sidebar section ul#recentcomments l
   border-right-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+  width: 17.5rem;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 2), aside .sidebar section ul#recentcomments li:nth-child(9n + 2) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 2), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 2) {
   border-color: #4169e1;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 3), aside .sidebar section ul#recentcomments li:nth-child(9n + 3) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 3), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 3) {
   border-color: #ffd700;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 4), aside .sidebar section ul#recentcomments li:nth-child(9n + 4) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 4), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 4) {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 5), aside .sidebar section ul#recentcomments li:nth-child(9n + 5) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 5), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 5) {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 6), aside .sidebar section ul#recentcomments li:nth-child(9n + 6) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 6), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 6) {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 7), aside .sidebar section ul#recentcomments li:nth-child(9n + 7) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 7), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 7) {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 8), aside .sidebar section ul#recentcomments li:nth-child(9n + 8) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 8), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 8) {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section.widget_rss li:nth-child(9n + 9), aside .sidebar section ul#recentcomments li:nth-child(9n + 9) {
+aside .sidebar section.widget_rss li:not([class*='postit-']):nth-child(9n + 9), aside .sidebar section ul#recentcomments li:not([class*='postit-']):nth-child(9n + 9) {
   border-right-color: #000000;
 }
 

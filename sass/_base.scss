@@ -565,7 +565,14 @@ aside {
       }
 
       .postit {
-        @include SidebarPostit;
+        --width: auto;
+        --max-width: none;
+        @include SidebarPostitWidthAuto;
+        @include SidebarPostitColorSeries;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
       }
 
       .postit-royalblue {
