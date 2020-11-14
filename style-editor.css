@@ -14,6 +14,10 @@
   margin-bottom: 1rem;
 }
 
+.post-content h2:not(:first-child), .post-content h3:not(:first-child), .post-content h4:not(:first-child), .post-content h5:not(:first-child), .post-content h6:not(:first-child), .comment-body h2:not(:first-child), .comment-body h3:not(:first-child), .comment-body h4:not(:first-child), .comment-body h5:not(:first-child), .comment-body h6:not(:first-child) {
+  margin-top: 5rem;
+}
+
 .post-content a, .comment-body a {
   color: #5e523a;
   text-decoration: underline;
