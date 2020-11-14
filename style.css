@@ -220,14 +220,11 @@ ins {
   text-decoration: none;
 }
 
-ins > * {
+ins *:not(a) {
   outline-color: #9b8f76;
   outline-width: thin;
   outline-style: dotted;
   outline-offset: -0.1rem;
-}
-
-ins * {
   background: none repeat scroll 0 0 #f5ead0;
 }
 
@@ -781,14 +778,11 @@ article.tag-r18 .post-content .no-change ins {
   text-decoration: none;
 }
 
-article.tag-r18 .post-content .no-change ins > * {
+article.tag-r18 .post-content .no-change ins *:not(a) {
   outline-color: #9b8f76;
   outline-width: thin;
   outline-style: dotted;
   outline-offset: -0.1rem;
-}
-
-article.tag-r18 .post-content .no-change ins * {
   background: none repeat scroll 0 0 #f5ead0;
 }
 

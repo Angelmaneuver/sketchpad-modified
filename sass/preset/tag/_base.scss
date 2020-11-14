@@ -160,13 +160,10 @@
     display: block;
     text-decoration: none;
 
-    > * {
+    *:not(a) {
       @include InsBorderColor;
       @include DottedOutlineStyle;
       outline-offset: -0.1rem;
-    }
-
-    * {
       @include ExternalContentBackgroundColor1;
     }
   }
