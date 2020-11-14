@@ -20,6 +20,10 @@
   }
 }
 
+.clipping4image {
+  @include Clipping4Image;
+}
+
 .top_button {
   @include GetFontPreSet(2rem);
   @include BaseFontFamily;

@@ -2131,6 +2131,26 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   text-decoration: none;
 }
 
+.clipping4image {
+  --box-width: auto;
+  --box-height: auto;
+  --image-width: auto;
+  --image-height: auto;
+  --image-position: 0 0;
+  width: var(--box-width);
+  height: var(--box-height);
+  overflow: hidden;
+}
+
+.clipping4image img {
+  width: var(--image-width);
+  height: var(--image-height);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: var(--image-position);
+     object-position: var(--image-position);
+}
+
 .top_button {
   font-size: 2rem;
   font-weight: 400;
