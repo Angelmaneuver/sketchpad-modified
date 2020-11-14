@@ -39,35 +39,58 @@ body {
   background: #AF9F88;
 }
 
-h1, h2, .is-style-h1, .is-style-h2 {
+.is-style-h1, h1, article.tag-r18 .post-content .no-change h1 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.6rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1 {
   color: #776b53;
 }
 
-h3, .is-style-h3 {
+.is-style-h2, h2, article.tag-r18 .post-content .no-change h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h2 {
+  color: #776b53;
+}
+
+.is-style-h3, h3, article.tag-r18 .post-content .no-change h3 {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 3.3rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h3 {
   color: #9b8f76;
 }
 
-h4, .is-style-h4 {
+.is-style-h4, h4, article.tag-r18 .post-content .no-change h4 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h4 {
   color: #483613;
 }
 
-h5, .is-style-h5, .is-style-h5-and-mt0, .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change .is-style-h5-and-mt0 {
+.is-style-h5, h5, .is-style-h5-and-mt0, .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change h5, article.tag-r18 .post-content .no-change .is-style-h5-and-mt0 {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.7rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h5 {
   color: #483613;
 }
 
@@ -79,11 +102,14 @@ h5, .is-style-h5, .is-style-h5-and-mt0, .is-style-h5-and-mtb0, article.tag-r18 .
   margin-bottom: 0;
 }
 
-h6, .is-style-h6 {
+.is-style-h6, h6, article.tag-r18 .post-content .no-change h6 {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.4rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+h6 {
   color: #483613;
 }
 
@@ -574,35 +600,58 @@ article.tag-r18 .post-content .no-change * {
   text-shadow: initial;
 }
 
-article.tag-r18 .post-content .no-change h1, article.tag-r18 .post-content .no-change h2, article.tag-r18 .post-content .no-change .is-style-h1, article.tag-r18 .post-content .no-change .is-style-h2 {
+article.tag-r18 .post-content .no-change .is-style-h1, article.tag-r18 .post-content .no-change h1 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.6rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h1 {
   color: #776b53;
 }
 
-article.tag-r18 .post-content .no-change h3, article.tag-r18 .post-content .no-change .is-style-h3 {
+article.tag-r18 .post-content .no-change .is-style-h2, article.tag-r18 .post-content .no-change h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h2 {
+  color: #776b53;
+}
+
+article.tag-r18 .post-content .no-change .is-style-h3, article.tag-r18 .post-content .no-change h3 {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 3.3rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h3 {
   color: #9b8f76;
 }
 
-article.tag-r18 .post-content .no-change h4, article.tag-r18 .post-content .no-change .is-style-h4 {
+article.tag-r18 .post-content .no-change .is-style-h4, article.tag-r18 .post-content .no-change h4 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 3rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h4 {
   color: #483613;
 }
 
-article.tag-r18 .post-content .no-change h5, article.tag-r18 .post-content .no-change .is-style-h5, article.tag-r18 .post-content .no-change .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change .is-style-h5-and-mt0 {
+article.tag-r18 .post-content .no-change .is-style-h5, article.tag-r18 .post-content .no-change h5, article.tag-r18 .post-content .no-change .is-style-h5-and-mtb0, article.tag-r18 .post-content .no-change .is-style-h5-and-mt0 {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.7rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h5 {
   color: #483613;
 }
 
@@ -614,11 +663,14 @@ article.tag-r18 .post-content .no-change .is-style-h5-and-mtb0 {
   margin-bottom: 0;
 }
 
-article.tag-r18 .post-content .no-change h6, article.tag-r18 .post-content .no-change .is-style-h6 {
+article.tag-r18 .post-content .no-change .is-style-h6, article.tag-r18 .post-content .no-change h6 {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.4rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+article.tag-r18 .post-content .no-change h6 {
   color: #483613;
 }
 

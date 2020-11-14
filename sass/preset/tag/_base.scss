@@ -1,27 +1,53 @@
 // Basic Tags
 
 @mixin BasicTags {
-  h1, h2, .is-style-h1, .is-style-h2 {
+  .is-style-h1 {
     @include GetFontPreSet(2.4rem, 700);
     @include BaseFontFamily;
+  }
+
+  h1 {
+    @extend .is-style-h1;
     @include HeadlineColor1;
   }
-  
-  h3, .is-style-h3 {
+
+  .is-style-h2 {
+    @include GetFontPreSet(2.4rem, 700);
+    @include BaseFontFamily;
+  }
+
+  h2 {
+    @extend .is-style-h2;
+    @include HeadlineColor1;
+  }
+
+  .is-style-h3 {
     @include GetFontPreSet(2.2rem, 700);
     @include BaseFontFamily;
+  }
+
+  h3 {
+    @extend .is-style-h3;
     @include HeadlineColor2;
   }
 
-  h4, .is-style-h4 {
+  .is-style-h4 {
     @include GetFontPreSet(2.0rem, 700);
     @include BaseFontFamily;
+  }
+
+  h4 {
+    @extend .is-style-h4;
     @include HeadlineColor3;
   }
   
-  h5, .is-style-h5 {
+  .is-style-h5 {
     @include GetFontPreSet(1.8rem, 700);
     @include BaseFontFamily;
+  }
+
+  h5 {
+    @extend .is-style-h5;
     @include HeadlineColor3;
   }
   
@@ -35,12 +61,16 @@
     margin-bottom: 0;
   }
   
-  h6, .is-style-h6 {
+  .is-style-h6 {
     @include GetFontPreSet(1.6rem, 700);
     @include BaseFontFamily;
+  }
+
+  h6 {
+    @extend .is-style-h6;
     @include HeadlineColor3;
   }
-  
+
   p {
     @include GetFontPreSet;
     @include BaseFontFamily;
