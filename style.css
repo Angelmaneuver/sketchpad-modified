@@ -2485,3 +2485,7 @@ div.wp-caption {
 .sticky, .gallery-caption {
   color: inherit;
 }
+
+*[class^='has-'][class$='-font-size'] {
+  line-height: initial;
+}
