@@ -1,0 +1,190 @@
+/**
+* Article
+* -----------------------------------------------------------------------------------------------
+*/
+
+@import './preset/init';
+
+.post-content, .comment-body {
+  h2 {
+    @include GetFontPreSet(2.4rem, 700);
+    @include BaseFontFamily;
+    @include HeadlineColor1;
+  }
+
+  h2, h3, h4, h5, h6 {
+    &:not(:first-child) {
+      margin-top: 5rem;
+    }
+    
+    margin-bottom: 1rem;
+  }
+
+  a {
+    @include LinkColor3;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  > ul, > div.wp-block-group ul {
+    @include GetFontPreSet;
+    @include SentenceColor1;
+    margin: 0 0 0 2.5rem;
+    list-style-position: outside;
+
+    @if $font-awesome {
+      @include FontAwesome;
+      list-style: none;
+
+      li {
+        display: flex;
+
+        &:before {
+          content: "\f00c";
+          padding-right: 0.5rem;
+        }
+      }
+    }
+    @else {
+      @include BaseFontFamily;
+      list-style: square;
+    }
+  }
+
+  > ol, > div.wp-block-group ol {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+    margin: 0 0 0 2.5rem;
+    list-style-position: outside;
+  }
+}
+
+.post-content, div.wp-block-group > div.wp-block-group__inner-container {
+  > p, > ul, > ol, > div:not(.wp-block-spacer), > blockquote,  > figure, > iframe {
+
+    &:not(:last-child) {
+
+      margin-bottom: 3rem;
+    }
+  }
+
+  .is-style-indent {
+    margin-left: 1.5rem;
+  }
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  div {
+    @include GetFontPreSet(1.4rem, 700);
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+
+    &.next-post {
+      flex-direction: row-reverse;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+blockquote.wp-block-quote {
+  @include GetFontPreSet(1.6rem);
+  @include BaseFontFamily;
+  @include QuoteColor;
+  font-style: italic;
+  min-height: 10rem;
+  position: relative;
+  padding: 0.2rem 1.5rem 1rem 3rem;
+  box-sizing: border-box;
+  @include QuoteBackgroundColor;
+  @include QuoteBorderColor;
+  border-left-width: 2rem;
+  border-left-style: solid;
+  @include BlockQuoteShadow;
+
+  &:before {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+
+    @if $font-awesome {
+      content: "\f10d";
+      @include FontAwesome;
+      top: 0.7rem;
+      left: 0.7rem;
+    }
+    @else {
+      content: "“";
+      @include GetFontPreSet(8rem, 400, 1);
+      @include SansSerifFontFamily;
+      top: 0;
+      left: 0;
+    }
+
+    @include QuoteSimbolColor;
+  }
+
+  p {
+    @include GetFontPreSet(1.4rem);
+
+    &:first-child {
+      margin-top: 0.5rem;
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  cite {
+    @include GetFontPreSet(1.2rem);
+    position: absolute;
+    bottom: 0.3rem;
+    right: 1rem;
+    display: block;
+    @include QuoteCiteColor;
+  }
+
+  div.wp-block-quote__citation {
+    text-align: right;
+  }
+}
+
+.is-style-under-line {
+  @include DelimiterBorderColor2;
+  @include ThinBorderBottomStyle;
+}
+
+.is-style-single-character-line-spacing {
+  line-height: 2;
+}
+
+.is-style-mt0 {
+  margin-top: 0 !important;
+}
+
+.is-style-mb0 {
+  margin-bottom: 0 !important;
+}
+
+.is-style-mtb0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.is-style-image-postit {
+  @include ImagePostit;
+}

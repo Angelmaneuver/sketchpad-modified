@@ -1,0 +1,61 @@
+// Border Color Property
+
+@mixin TableBorderColor1 {
+  border-color: #483613;
+}
+
+@mixin PreBorderColor1 {
+  border-color: #cccccc;
+}
+
+@mixin InsBorderColor {
+  outline-color: #9b8f76;
+}
+
+@mixin QuoteBorderColor {
+  border-color: #9dd4ff;
+}
+
+@mixin InputFormBorderColor1 {
+  border-color: #dbcfb4;
+}
+
+@mixin DelimiterBorderColor1 {
+  border-color: #776B53;
+}
+
+@mixin DelimiterBorderColor2 {
+  border-color: #B3A279;
+}
+
+@mixin TagListBorderColor {
+  border-color: #cfc5ad;
+}
+
+@mixin TagListHoverBorderColor {
+  border-color: #000000;
+}
+
+@mixin ThumbnailBorderColor {
+  border-color: #d1c6ab;
+}
+
+@mixin CommentInfoBorderColor {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+@mixin SidebarBorderColor {
+  border-color: #cfc5ad;
+}
+
+@mixin SidebarDelimiterBorderColor1 {
+  border-color: #dcd0b6;
+}
+
+@mixin SidebarFormBorderColor {
+  border-color: #000000;
+}
+
+@mixin SidebarCalendarBorderColor {
+  border-color: #e66053;
+}

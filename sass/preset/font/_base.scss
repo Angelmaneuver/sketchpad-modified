@@ -1,0 +1,34 @@
+// Font Base
+
+@mixin GetFontPreSet($font-size: $default_font_size,
+                     $font-weight: $default_font_weight,
+                     $line-height-ratio: $default_line_height_ratio) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $font-size * $line-height-ratio;
+}
+
+@mixin BaseFontFamily {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+}
+
+@mixin ArialFontFamily {
+  font-family: 'Arial';
+}
+
+@mixin SansSerifFontFamily {
+  font-family: sans-serif;
+}
+
+@mixin MonospaceFontFamily {
+  font-family: monospace;
+}
+
+@mixin MontserratFontFamily {
+  font-family: 'Montserrat';
+}
+
+@mixin FontAwesome {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

@@ -1,0 +1,143 @@
+// Postit Property
+
+@mixin ImagePostit {
+  img, svg {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    background: #ffffff;
+    border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.1rem) 1 / 1 0 0 0;
+    border-width: 2.5rem 0 0 0;
+    border-style: solid;
+    box-shadow: 0 1rem 0.6rem -0.6rem #777777;
+  }
+}
+
+@mixin BaseSidebarPostit($padding: 0.6rem 0.6rem 0.6rem 2.8rem) {
+  font-style: italic;
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: $padding;
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
+  @include PostitRed;
+  border-right-width: 2rem;
+  border-right-style: solid;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+}
+
+@mixin SidebarPostit {
+  @include BaseSidebarPostit;
+  width: 17.5rem;
+}
+
+@mixin SidebarPostitWidthAuto {
+  @include BaseSidebarPostit(0.6rem 0.6rem 0.6rem 22%);
+
+  * {
+    width: var(--width);
+    max-width: var(--max-width);
+  }
+}
+
+@mixin PostitRed {
+  border-color: #ff0000;
+}
+
+@mixin PostitBlue {
+  border-color: #4169e1;
+}
+
+@mixin PostitYellow {
+  border-color: #ffd700;
+}
+
+@mixin PostitGreen {
+  border-right-color: #90ee90;
+}
+
+@mixin PostitOrange {
+  border-right-color: #ff8c00;
+}
+
+@mixin PostitLavender {
+  border-right-color: #e6e6fa;
+}
+
+@mixin PostitMistyrose {
+  border-right-color: #ffe4e1;
+}
+
+@mixin PostitMintcream {
+  border-right-color: #f5fffa;
+}
+
+@mixin PostitBlack {
+  border-right-color: #000000;
+}
+
+@mixin SidebarPostitColorSeries {
+  &:not([class*='postit-']):nth-child(9n + 2) {
+    @include PostitBlue;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 3) {
+    @include PostitYellow;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 4) {
+    @include PostitGreen;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 5) {
+    @include PostitOrange;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 6) {
+    @include PostitLavender;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 7) {
+    @include PostitMistyrose;
+  }
+  
+  &:not([class*='postit-']):nth-child(9n + 8) {
+    @include PostitMintcream;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 9) {
+    @include PostitBlack;
+  }
+}
+
+@mixin SidebarPostitColorSeries4a {
+  &:not([class*='postit-']):nth-child(9n + 2) a {
+    @include PostitBlue;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 3) a {
+    @include PostitYellow;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 4) a {
+    @include PostitGreen;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 5) a {
+    @include PostitOrange;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 6) a {
+    @include PostitLavender;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 7) a {
+    @include PostitMistyrose;
+  }
+  
+  &:not([class*='postit-']):nth-child(9n + 8) a {
+    @include PostitMintcream;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 9) a {
+    @include PostitBlack;
+  }
+}

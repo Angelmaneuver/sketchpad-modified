@@ -1,0 +1,9 @@
+$font-awesome: true;
+
+@import 'base';
+@import 'article';
+@import 'option';
+@import './preset/deprecated';
+@import 'wp-core';
+
+@import './customised/init';
