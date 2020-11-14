@@ -25,11 +25,10 @@
     }
   }
 
-  > ul, > ol {
+  > ul, > div.wp-block-group ul {
     @include GetFontPreSet;
     @include SentenceColor1;
     margin: 0 0 0 2.5rem;
-    list-style: square;
     list-style-position: outside;
 
     @if $font-awesome {
@@ -49,6 +48,14 @@
       @include BaseFontFamily;
       list-style: square;
     }
+  }
+
+  > ol, > div.wp-block-group ol {
+    @include GetFontPreSet;
+    @include BaseFontFamily;
+    @include SentenceColor1;
+    margin: 0 0 0 2.5rem;
+    list-style-position: outside;
   }
 }
 
