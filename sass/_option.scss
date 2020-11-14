@@ -153,13 +153,12 @@ div.content > aside > div.sidebar > section.toc_widget {
 .related-posts {
   ul {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     margin: 0;
 
     li {
       &:not(:last-child) {
-        margin-bottom: initial;
+        margin-right: ($main_width - (14.2rem * 4)) / 3;
       }
 
       a img {
