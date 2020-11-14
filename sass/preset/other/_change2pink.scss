@@ -1,3 +1,5 @@
+@import '../../customised/restore4color';
+
 // Change to Pink Property
 
 @mixin Change2PinkTextStyle {
@@ -123,6 +125,8 @@
         .is-style-image-postit {
           @include ImagePostit;
         }
+
+        @include RestoreColor;
       }
 
       .sd-block .sd-content ul li a.sd-button {
