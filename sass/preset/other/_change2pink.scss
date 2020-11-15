@@ -117,6 +117,10 @@
 
       .no-change {
         * {
+          color: initial;
+          background-color: initial;
+          border-color: initial;
+          outline-color: initial;
           text-shadow: initial;
         }
 

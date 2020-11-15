@@ -594,6 +594,10 @@ article.tag-r18 .post-content .is-style-image-postit img, article.tag-r18 .post-
 }
 
 article.tag-r18 .post-content .no-change * {
+  color: initial;
+  background-color: initial;
+  border-color: initial;
+  outline-color: initial;
   text-shadow: initial;
 }
 
