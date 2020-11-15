@@ -2,53 +2,48 @@
 
 @mixin BasicTags {
   .is-style-h1 {
-    @include GetFontPreSet(2.4rem, 700);
+    @include GetFont(2.4rem);
     @include BaseFontFamily;
   }
 
   h1 {
     @extend .is-style-h1;
-    @include HeadlineColor1;
   }
 
   .is-style-h2 {
-    @include GetFontPreSet(2.4rem, 700);
+    @include GetFont(2.4rem);
     @include BaseFontFamily;
   }
 
   h2 {
     @extend .is-style-h2;
-    @include HeadlineColor1;
   }
 
   .is-style-h3 {
-    @include GetFontPreSet(2.2rem, 700);
+    @include GetFont(2.2rem);
     @include BaseFontFamily;
   }
 
   h3 {
     @extend .is-style-h3;
-    @include HeadlineColor2;
   }
 
   .is-style-h4 {
-    @include GetFontPreSet(2.0rem, 700);
+    @include GetFont(2.0rem);
     @include BaseFontFamily;
   }
 
   h4 {
     @extend .is-style-h4;
-    @include HeadlineColor3;
   }
   
   .is-style-h5 {
-    @include GetFontPreSet(1.8rem, 700);
+    @include GetFont(1.8rem);
     @include BaseFontFamily;
   }
 
   h5 {
     @extend .is-style-h5;
-    @include HeadlineColor3;
   }
   
   .is-style-h5-and-mt0 {
@@ -62,34 +57,29 @@
   }
   
   .is-style-h6 {
-    @include GetFontPreSet(1.6rem, 700);
+    @include GetFont(1.6rem);
     @include BaseFontFamily;
   }
 
   h6 {
     @extend .is-style-h6;
-    @include HeadlineColor3;
   }
 
   p {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
   }
   
   address {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
     font-style: italic;
   }
   
   table {
     @include GetFontPreSet(1.2rem);
     @include BaseFontFamily;
-    @include SentenceColor1;
     width: 100%;
-    @include TableBorderColor1;
     @include ThinBorderStyle;
     border-spacing: 0;
     border-collapse: collapse;
@@ -98,19 +88,16 @@
   th {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
   }
   
   th, td {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
   }
   
   dl {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
   
     dt, dd {
       padding: 0 0.5rem;
@@ -129,7 +116,6 @@
   }
   
   a {
-    @include LinkColor1;
     text-decoration: none;
   
     &:hover {
@@ -152,7 +138,6 @@
     overflow: auto;
     margin: 1.2rem 0;
     padding: 1rem;
-    @include PreBorderColor1;
     @include ThinBorderStyle;
   }
   
@@ -161,10 +146,8 @@
     text-decoration: none;
 
     *:not(a) {
-      @include InsBorderColor;
       @include DottedOutlineStyle;
       outline-offset: -0.1rem;
-      @include ExternalContentBackgroundColor1;
     }
   }
   

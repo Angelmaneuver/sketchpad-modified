@@ -6,11 +6,9 @@
 @import './preset/init';
 @import './customised/init';
 
-@include ArticleColorSet;
-
 .post-content, .comment-body {
   h2 {
-    @include GetFontPreSet(2.4rem, 700);
+    @include GetFont(2.4rem);
     @include BaseFontFamily;
   }
 
@@ -82,7 +80,7 @@
   align-items: flex-start;
 
   div {
-    @include GetFontPreSet(1.4rem, 700);
+    @include GetFont(1.4rem);
     display: flex;
     align-items: flex-start;
     width: 50%;
@@ -180,6 +178,8 @@ blockquote.wp-block-quote {
 .is-style-image-postit {
   @include ImagePostit;
 }
+
+@include ArticleStyleSet;
 
 /**
 * User Defintion Article

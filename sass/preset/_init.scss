@@ -8,12 +8,13 @@
 @import './color/color';
 @import './color/border_color';
 @import './color/background';
-@import './color/article_color_set';
 
 // Style
 @import './style/border';
 @import './style/shadow';
 @import './style/z-index';
+@import './style/base_tags_style_set';
+@import './style/article_style_set';
 
 // Html Tag
 @import './tag/base';

@@ -1,11 +1,20 @@
 // Font Base
 
+@mixin GetFont($font-size: $default_font_size,
+               $line-height-ratio: $default_line_height_ratio) {
+    font-size: $font-size;
+    line-height: $font-size * $line-height-ratio;
+}
+
+@mixin GetFontWeight($font-weight: $default_font_weight) {
+    font-weight: $font-weight;
+}
+
 @mixin GetFontPreSet($font-size: $default_font_size,
                      $font-weight: $default_font_weight,
                      $line-height-ratio: $default_line_height_ratio) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $font-size * $line-height-ratio;
+    @include GetFont($font-size, $line-height-ratio);
+    @include GetFontWeight($font-weight);
 }
 
 @mixin BaseFontFamily {

@@ -1,8 +1,9 @@
-// Article's Color Set Property
+// Article's Style Set Property
 
-@mixin ArticleColorSet {
+@mixin ArticleStyleSet {
   .post-content, .comment-body {
     h2 {
+      @include GetFontWeight(700);
       @include HeadlineColor1;
     }
 
@@ -16,6 +17,12 @@
   
     > ol, > div.wp-block-group ol {
       @include SentenceColor1;
+    }
+  }
+
+  .post-navigation {
+    div {
+      @include GetFontWeight(700);
     }
   }
 
