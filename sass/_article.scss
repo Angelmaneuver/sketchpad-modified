@@ -4,6 +4,7 @@
 */
 
 @import './preset/init';
+@import './customised/init';
 
 @include ArticleColorSet;
 
@@ -179,3 +180,10 @@ blockquote.wp-block-quote {
 .is-style-image-postit {
   @include ImagePostit;
 }
+
+/**
+* User Defintion Article
+* -----------------------------------------------------------------------------------------------
+*/
+
+@include UserDefinitionArticle;
