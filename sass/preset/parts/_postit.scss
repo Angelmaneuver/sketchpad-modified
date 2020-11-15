@@ -3,6 +3,7 @@
 @mixin ImagePostit {
   img, svg {
     width: calc(100% - 1rem);
+    margin: auto;
     padding: 0.5rem;
     background: #ffffff;
     border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.1rem) 1 / 1 0 0 0;
