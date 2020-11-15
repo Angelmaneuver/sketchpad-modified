@@ -3,11 +3,44 @@
 * -----------------------------------------------------------------------------------------------
 */
 .post-content h2, .comment-body h2 {
+  color: #776b53;
+}
+
+.post-content a, .comment-body a {
+  color: #5e523a;
+}
+
+.post-content > ul, .post-content > div.wp-block-group ul, .comment-body > ul, .comment-body > div.wp-block-group ul {
+  color: #483613;
+}
+
+.post-content > ol, .post-content > div.wp-block-group ol, .comment-body > ol, .comment-body > div.wp-block-group ol {
+  color: #483613;
+}
+
+blockquote.wp-block-quote {
+  color: #777777;
+  background: #f5f5f5;
+  border-color: #9dd4ff;
+}
+
+blockquote.wp-block-quote:before {
+  color: #9dd4ff;
+}
+
+blockquote.wp-block-quote cite {
+  color: #888888;
+}
+
+.is-style-under-line {
+  border-color: #B3A279;
+}
+
+.post-content h2, .comment-body h2 {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.6rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-  color: #776b53;
 }
 
 .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .comment-body h2, .comment-body h3, .comment-body h4, .comment-body h5, .comment-body h6 {
@@ -19,7 +52,6 @@
 }
 
 .post-content a, .comment-body a {
-  color: #5e523a;
   text-decoration: underline;
 }
 
@@ -31,7 +63,6 @@
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
-  color: #483613;
   margin: 0 0 0 2.5rem;
   list-style-position: outside;
   font-family: "Font Awesome 5 Free";
@@ -55,7 +86,6 @@
   font-weight: 400;
   line-height: 2.4rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-  color: #483613;
   margin: 0 0 0 2.5rem;
   list-style-position: outside;
 }
@@ -113,15 +143,12 @@ blockquote.wp-block-quote {
   font-weight: 400;
   line-height: 2.4rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-  color: #777777;
   font-style: italic;
   min-height: 10rem;
   position: relative;
   padding: 0.2rem 1.5rem 1rem 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f5f5f5;
-  border-color: #9dd4ff;
   border-left-width: 2rem;
   border-left-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
@@ -137,7 +164,6 @@ blockquote.wp-block-quote:before {
   font-weight: 900;
   top: 0.7rem;
   left: 0.7rem;
-  color: #9dd4ff;
 }
 
 blockquote.wp-block-quote p {
@@ -159,7 +185,6 @@ blockquote.wp-block-quote cite {
   bottom: 0.3rem;
   right: 1rem;
   display: block;
-  color: #888888;
 }
 
 blockquote.wp-block-quote div.wp-block-quote__citation {
@@ -167,7 +192,6 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
 }
 
 .is-style-under-line {
-  border-color: #B3A279;
   border-bottom-width: thin;
   border-bottom-style: solid;
 }

@@ -121,6 +121,7 @@
         }
 
         @include BasicTags;
+        @include ArticleColorSet;
 
         .is-style-image-postit {
           @include ImagePostit;

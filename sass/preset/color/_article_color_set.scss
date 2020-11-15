@@ -1,0 +1,39 @@
+// Article's Color Set Property
+
+@mixin ArticleColorSet {
+  .post-content, .comment-body {
+    h2 {
+      @include HeadlineColor1;
+    }
+
+    a {
+      @include LinkColor3;
+    }
+
+    > ul, > div.wp-block-group ul {
+      @include SentenceColor1;
+    }
+  
+    > ol, > div.wp-block-group ol {
+      @include SentenceColor1;
+    }
+  }
+
+  blockquote.wp-block-quote {
+    @include QuoteColor;
+    @include QuoteBackgroundColor;
+    @include QuoteBorderColor;
+  
+    &:before {
+      @include QuoteSimbolColor;
+    }
+  
+    cite {
+      @include QuoteCiteColor;
+    }
+  }
+
+  .is-style-under-line {
+    @include DelimiterBorderColor2;
+  }
+}

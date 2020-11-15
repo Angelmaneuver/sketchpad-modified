@@ -5,11 +5,12 @@
 
 @import './preset/init';
 
+@include ArticleColorSet;
+
 .post-content, .comment-body {
   h2 {
     @include GetFontPreSet(2.4rem, 700);
     @include BaseFontFamily;
-    @include HeadlineColor1;
   }
 
   h2, h3, h4, h5, h6 {
@@ -21,7 +22,6 @@
   }
 
   a {
-    @include LinkColor3;
     text-decoration: underline;
 
     &:hover {
@@ -31,7 +31,6 @@
 
   > ul, > div.wp-block-group ul {
     @include GetFontPreSet;
-    @include SentenceColor1;
     margin: 0 0 0 2.5rem;
     list-style-position: outside;
 
@@ -57,7 +56,6 @@
   > ol, > div.wp-block-group ol {
     @include GetFontPreSet;
     @include BaseFontFamily;
-    @include SentenceColor1;
     margin: 0 0 0 2.5rem;
     list-style-position: outside;
   }
@@ -105,14 +103,11 @@
 blockquote.wp-block-quote {
   @include GetFontPreSet(1.6rem);
   @include BaseFontFamily;
-  @include QuoteColor;
   font-style: italic;
   min-height: 10rem;
   position: relative;
   padding: 0.2rem 1.5rem 1rem 3rem;
   box-sizing: border-box;
-  @include QuoteBackgroundColor;
-  @include QuoteBorderColor;
   border-left-width: 2rem;
   border-left-style: solid;
   @include BlockQuoteShadow;
@@ -135,8 +130,6 @@ blockquote.wp-block-quote {
       top: 0;
       left: 0;
     }
-
-    @include QuoteSimbolColor;
   }
 
   p {
@@ -155,7 +148,6 @@ blockquote.wp-block-quote {
     bottom: 0.3rem;
     right: 1rem;
     display: block;
-    @include QuoteCiteColor;
   }
 
   div.wp-block-quote__citation {
@@ -164,7 +156,6 @@ blockquote.wp-block-quote {
 }
 
 .is-style-under-line {
-  @include DelimiterBorderColor2;
   @include ThinBorderBottomStyle;
 }
 
