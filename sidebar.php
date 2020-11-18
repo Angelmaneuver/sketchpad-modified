@@ -25,7 +25,7 @@
 			$instance = array();
 			the_widget( 'WP_Widget_Pages', $instance, $args );
 		} ?>
-		<?php if ( !is_singular() && in_array ( 'infinite-scroll', get_option ( 'jetpack_active_modules' ) ) && ( get_option ( 'infinite_scroll' ) === '1' )  ) { ?>
+		<?php if ( !is_singular() && ( get_option ( 'infinite_scroll' ) === '1' )  ) { ?>
 		<section class="widget">
 			<?php get_template_part( 'footer', 'content' ); ?>
 		</section>
