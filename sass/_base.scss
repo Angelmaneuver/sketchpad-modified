@@ -549,6 +549,8 @@ aside {
       }
 
       li:not(.recentcomments):not(.sm_widget_recent_entries) {
+        min-height: 3.5rem;
+        
         a:not(.rsswidget) {
           @include SidebarPostit;
           overflow: hidden;
