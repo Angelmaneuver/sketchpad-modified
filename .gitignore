@@ -25,5 +25,8 @@ node_modules/
 # ignore os manage files
 .DS_Store
 
+# ignore VSCode manage files
+.vscode/
+
 # ignore user definitions saas files.
 sass/customised/
