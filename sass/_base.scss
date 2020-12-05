@@ -553,16 +553,13 @@ aside {
         
         a:not(.rsswidget) {
           @include SidebarPostit;
+          margin-bottom: 0.25rem;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
 
           img {
             vertical-align: middle;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 0.5rem;
           }
         }
       }
