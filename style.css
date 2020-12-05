@@ -1351,6 +1351,10 @@ aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:
   vertical-align: middle;
 }
 
+aside .sidebar section li:not(.recentcomments):not(.sm_widget_recent_entries) a:not(.rsswidget):not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 aside .sidebar section > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 2) a, aside .sidebar section > div > ul > li:not(.recentcomments):not(.sm_widget_recent_entries):not([class*='postit-']):nth-child(9n + 2) a {
   border-color: #4169e1;
 }
