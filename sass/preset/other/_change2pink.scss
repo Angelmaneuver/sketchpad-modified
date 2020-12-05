@@ -17,6 +17,11 @@
   outline-color: #FFB6C1;
 }
 
+@mixin Change2PinkBorderColorImportant {
+  border-color: #FFB6C1 !important;
+  outline-color: #FFB6C1 !important;
+}
+
 @mixin Change2PinkHoverBorderColor {
   border-color: #FF9A93;
 }
@@ -105,8 +110,16 @@
         @include Change2PinkTextStyle;
       }
 
-      blockquote.wp-block-quote:before {
+      .thumb-box {
+        @include Change2PinkBorderColorImportant;
+      }
+
+      blockquote.wp-block-quote {
         @include Change2PinkBorderColor;
+
+        &:before {
+          @include Change2PinkTextStyle;
+        }
       }
 
       .is-style-image-postit {

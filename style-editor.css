@@ -1,44 +1,10 @@
+@charset "UTF-8";
 /**
 * Article
 * -----------------------------------------------------------------------------------------------
 */
 .post-content h2, .comment-body h2 {
-  color: #776b53;
-}
-
-.post-content a, .comment-body a {
-  color: #5e523a;
-}
-
-.post-content > ul, .post-content > div.wp-block-group ul, .comment-body > ul, .comment-body > div.wp-block-group ul {
-  color: #483613;
-}
-
-.post-content > ol, .post-content > div.wp-block-group ol, .comment-body > ol, .comment-body > div.wp-block-group ol {
-  color: #483613;
-}
-
-blockquote.wp-block-quote {
-  color: #777777;
-  background: #f5f5f5;
-  border-color: #9dd4ff;
-}
-
-blockquote.wp-block-quote:before {
-  color: #9dd4ff;
-}
-
-blockquote.wp-block-quote cite {
-  color: #888888;
-}
-
-.is-style-under-line {
-  border-color: #B3A279;
-}
-
-.post-content h2, .comment-body h2 {
   font-size: 2.4rem;
-  font-weight: 700;
   line-height: 3.6rem;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
 }
@@ -61,8 +27,8 @@ blockquote.wp-block-quote cite {
 
 .post-content > ul, .post-content > div.wp-block-group ul, .comment-body > ul, .comment-body > div.wp-block-group ul {
   font-size: 1.6rem;
-  font-weight: 400;
   line-height: 2.4rem;
+  font-weight: 400;
   margin: 0 0 0 2.5rem;
   list-style-position: outside;
   font-family: "Font Awesome 5 Free";
@@ -83,8 +49,8 @@ blockquote.wp-block-quote cite {
 
 .post-content > ol, .post-content > div.wp-block-group ol, .comment-body > ol, .comment-body > div.wp-block-group ol {
   font-size: 1.6rem;
-  font-weight: 400;
   line-height: 2.4rem;
+  font-weight: 400;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
   margin: 0 0 0 2.5rem;
   list-style-position: outside;
@@ -112,7 +78,6 @@ blockquote.wp-block-quote cite {
 
 .post-navigation div {
   font-size: 1.4rem;
-  font-weight: 700;
   line-height: 2.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,8 +105,8 @@ blockquote.wp-block-quote cite {
 
 blockquote.wp-block-quote {
   font-size: 1.6rem;
-  font-weight: 400;
   line-height: 2.4rem;
+  font-weight: 400;
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
   font-style: italic;
   min-height: 10rem;
@@ -168,8 +133,8 @@ blockquote.wp-block-quote:before {
 
 blockquote.wp-block-quote p {
   font-size: 1.4rem;
-  font-weight: 400;
   line-height: 2.1rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -179,9 +144,10 @@ blockquote.wp-block-quote p:first-child {
 
 blockquote.wp-block-quote cite {
   font-size: 1.2rem;
-  font-weight: 400;
   line-height: 1.8rem;
+  font-weight: 400;
   position: absolute;
+  width: 95%;
   bottom: 0.3rem;
   right: 1rem;
   display: block;
@@ -215,6 +181,7 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
 
 .is-style-image-postit img, .is-style-image-postit svg {
   width: calc(100% - 1rem);
+  margin: auto;
   padding: 0.5rem;
   background: #ffffff;
   -o-border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.1rem) 1/1 0 0 0;
@@ -226,7 +193,577 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
           box-shadow: 0 1rem 0.6rem -0.6rem #777777;
 }
 
+.post-content h2, .comment-body h2 {
+  font-weight: 700;
+  color: #776b53;
+}
+
+.post-content a, .comment-body a {
+  color: #5e523a;
+}
+
+.post-content > ul, .post-content > div.wp-block-group ul, .comment-body > ul, .comment-body > div.wp-block-group ul {
+  color: #483613;
+}
+
+.post-content > ol, .post-content > div.wp-block-group ol, .comment-body > ol, .comment-body > div.wp-block-group ol {
+  color: #483613;
+}
+
+.post-navigation div {
+  font-weight: 700;
+}
+
+blockquote.wp-block-quote {
+  color: #777777;
+  background: #f5f5f5;
+  border-color: #9dd4ff;
+}
+
+blockquote.wp-block-quote:before {
+  color: #9dd4ff;
+}
+
+blockquote.wp-block-quote cite {
+  color: #888888;
+}
+
+.is-style-under-line {
+  border-color: #B3A279;
+}
+
 /**
 * User Defintion Article
 * -----------------------------------------------------------------------------------------------
 */
+section.profiles {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section.profiles h3, section.profiles h3 > span {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+section.profiles h4 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+section.profiles h4:first-of-type {
+  margin-top: 0;
+}
+
+section.profiles article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.profiles article div.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.profiles article div.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.profiles article div.column:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section.profiles article .row-rebarse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section.profiles article p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: inline;
+}
+
+section.profiles article div.headline {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 0 0 0 1.5rem;
+}
+
+section.profiles article div.headline:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+section.profiles article div.headline + * {
+  margin-left: 1.5rem;
+}
+
+section.profiles article div.sub_headline {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0 0.5rem 1rem 0;
+  padding: 0 0 0 2rem;
+}
+
+section.profiles article div.sub_headline:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0.1rem;
+  width: 0;
+  height: 0;
+}
+
+section.profiles article > div {
+  position: relative;
+}
+
+section.profiles article > div .ribbon {
+  display: inline-block;
+  position: absolute;
+  font-size: 1.3rem;
+  line-height: 1.95rem;
+  width: 100.3%;
+  height: 2rem;
+  top: 0.5rem;
+  left: -0.06rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+section.profiles article > div .ribbon .ribbon_left, section.profiles article > div .ribbon .ribbon_right {
+  display: inline-block;
+  position: absolute;
+  font-size: 1.3rem;
+  line-height: 1.95rem;
+  height: 100%;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.profiles article > div .ribbon .ribbon_left {
+  width: 25%;
+  left: 0;
+}
+
+section.profiles article > div .ribbon .ribbon_left:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+}
+
+section.profiles article > div .ribbon .ribbon_right {
+  --context: 'Character detailed';
+  width: 60%;
+  right: 0;
+}
+
+section.profiles article > div .ribbon .ribbon_right:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+section.profiles article > div .ribbon .ribbon_right:after {
+  position: absolute;
+  content: var(--context);
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-left: 2.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) {
+  min-height: 30rem;
+  padding: 1.4rem 1rem 1.4rem 2.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.profiles article > div > div:not(.ribbon) div.icon {
+  --width: 16rem;
+  --height: 18rem;
+  --align-items: flex-start;
+  --justify-content: start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: var(--width);
+  height: var(--height);
+  min-width: var(--width);
+  min-height: var(--height);
+  max-width: var(--width);
+  max-height: var(--height);
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: var(--align-items);
+      -ms-flex-align: var(--align-items);
+          align-items: var(--align-items);
+  -webkit-box-pack: var(--justify-content);
+      -ms-flex-pack: var(--justify-content);
+          justify-content: var(--justify-content);
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  background: var(--background);
+  -webkit-box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
+          box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
+  z-index: 10;
+}
+
+section.profiles article > div > div:not(.ribbon) div.icon img {
+  width: 100%;
+  height: auto;
+}
+
+section.profiles article > div > div:not(.ribbon) div.icon span {
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal {
+  width: 100%;
+  margin: 3rem 0 0 2.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin-bottom: 0;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div {
+  padding: 0.1rem 0.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div:first-child {
+  margin-left: 0.1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div:last-child {
+  margin-right: 0.1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.profile {
+  margin-left: 0.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode > *:not(:last-child), section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode > .headline {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline {
+  margin-left: 2rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline {
+  width: 10rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.1rem 0;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div {
+  position: relative;
+  padding: 0.1rem 0.5rem 0.1rem 8.7rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before {
+  content: 'プレイ内容';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7rem;
+  height: 100%;
+  margin: -0.1rem 0 0 0.1rem;
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.1rem;
+  height: 110%;
+  margin: -0.1rem 0.1rem 0 0;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline > div:not(:first-child) {
+  margin-left: 10.5rem;
+}
+
+section.profiles h4 span {
+  font-weight: 700;
+  color: #9b8f76;
+}
+
+section.profiles article {
+  color: #9b8f76;
+  background: #f5ead0 url(images/bg-side2.jpg) no-repeat bottom right;
+  border-color: #dcd0b6;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 0 0 1.1rem/4.2rem 0;
+  -webkit-box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
+          box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
+}
+
+section.profiles article p {
+  border-color: #776B53;
+  border-bottom-width: thin;
+  border-bottom-style: dashed;
+}
+
+section.profiles article a {
+  color: #9b8f76;
+  text-decoration: none;
+}
+
+section.profiles article a:hover {
+  text-decoration: underline;
+}
+
+section.profiles article div.headline {
+  color: #863016;
+  background-color: #ecdbb3;
+}
+
+section.profiles article div.headline:before {
+  border-width: 1.35rem 0 1.35rem 1.5rem;
+  border-color: #f5ead0 transparent #f5ead0 transparent;
+  border-style: solid;
+}
+
+section.profiles article div.sub_headline {
+  color: #863016;
+  border-color: #776B53;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+}
+
+section.profiles article div.sub_headline:before {
+  border-width: 1rem 1.5rem 0 0;
+  border-color: transparent #776B53;
+  border-style: solid;
+}
+
+section.profiles article > div .ribbon {
+  --color: #f4eddf;
+  --background: #442266;
+  color: var(--color);
+  border-color: var(--background);
+  border-width: thin;
+  border-style: solid;
+}
+
+section.profiles article > div .ribbon .ribbon_left, section.profiles article > div .ribbon .ribbon_right {
+  color: var(--color);
+  background-color: var(--background);
+}
+
+section.profiles article > div .ribbon .ribbon_left:before {
+  border-width: 0.9rem 0 0.9rem 2rem;
+  border-color: #f5ead0 transparent #f5ead0 transparent;
+  border-style: solid;
+}
+
+section.profiles article > div .ribbon .ribbon_right:before {
+  border-width: 0.9rem 0 0.9rem 2rem;
+  border-color: transparent #f5ead0 transparent #f5ead0;
+  border-style: solid;
+}
+
+section.profiles article > div > div:not(.ribbon) div.icon {
+  --color: #483613;
+  --background: #f5f5f5;
+  background: var(--background);
+}
+
+section.profiles article > div > div:not(.ribbon) div.icon span {
+  color: var(--color);
+  background: var(--background);
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status {
+  border: #776B53 thin solid;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div {
+  color: #9b8f76;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div:first-child {
+  border-left: #776B53 thin solid;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div:last-child {
+  border-right: #776B53 thin solid;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status div.status_headline {
+  color: #f4eddf;
+  background-color: #776B53;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.fire, section.profiles article > div > div:not(.ribbon) div.personal div.status span.attack, section.profiles article > div > div:not(.ribbon) div.personal div.status span.higher {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff0000 0.1rem 0.1rem 1rem, #ff0000 -0.1rem 0.1rem 1rem, #ff0000 0.1rem -0.1rem 1rem, #ff0000 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.water, section.profiles article > div > div:not(.ribbon) div.personal div.status span.lower {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #3366ff 0.1rem 0.1rem 1rem, #3366ff -0.1rem 0.1rem 1rem, #3366ff 0.1rem -0.1rem 1rem, #3366ff -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.wind, section.profiles article > div > div:not(.ribbon) div.personal div.status span.healer {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #00ff00 0.1rem 0.1rem 1rem, #00ff00 -0.1rem 0.1rem 1rem, #00ff00 0.1rem -0.1rem 1rem, #00ff00 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.thunder, section.profiles article > div > div:not(.ribbon) div.personal div.status span.balance {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #e2e23b 0.1rem 0.1rem 1rem, #e2e23b -0.1rem 0.1rem 1rem, #e2e23b 0.1rem -0.1rem 1rem, #e2e23b -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.light {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #9b8f76 0.1rem 0.1rem 1rem, #9b8f76 -0.1rem 0.1rem 1rem, #9b8f76 0.1rem -0.1rem 1rem, #9b8f76 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.darkness, section.profiles article > div > div:not(.ribbon) div.personal div.status span.tricky {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #cc99ff 0.1rem 0.1rem 1rem, #cc99ff -0.1rem 0.1rem 1rem, #cc99ff 0.1rem -0.1rem 1rem, #cc99ff -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.personal div.status span.defense {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9900 0.1rem 0.1rem 1rem, #ff9900 -0.1rem 0.1rem 1rem, #ff9900 0.1rem -0.1rem 1rem, #ff9900 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes p {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  border-color: #FFB6C1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode > .headline {
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  border-color: #FFB6C1;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  background: #ffe4e1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  background: #ffe4e1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  border-color: #FFB6C1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline:before {
+  border-width: 1.1rem 1.5rem 0 0;
+  border-color: transparent #FFB6C1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play {
+  border-color: #FFB6C1;
+  border-width: thin;
+  border-style: solid;
+  border-left-style: double;
+  border-right-style: double;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div {
+  position: relative;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before {
+  border-left: #FFB6C1 thin solid;
+  border-right: #FFB6C1 thin solid;
+  background-color: #ffe4e1;
+}
+
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after {
+  border-right: #FFB6C1 thin solid;
+}
