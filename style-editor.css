@@ -147,7 +147,7 @@ blockquote.wp-block-quote cite {
   line-height: 1.8rem;
   font-weight: 400;
   position: absolute;
-  width: 95%;
+  max-width: 95%;
   bottom: 0.3rem;
   right: 1rem;
   display: block;
