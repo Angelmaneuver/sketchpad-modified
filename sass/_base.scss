@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  font-size: $default_font_size;
   @include Background;
 }
 
