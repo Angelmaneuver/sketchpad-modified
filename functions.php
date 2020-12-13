@@ -104,6 +104,11 @@ function sketchpad_script() {
 	wp_enqueue_script( 'sketchpad-script', get_template_directory_uri() . '/js/sketchpad-ready.js', array( 'jquery' ), false, true );
 }
 
+/* Load scripts and styles for admin pages */
+function sketchpad_admin_script() {
+	wp_enqueue_style( 'sketchpad-admin-style', get_template_directory_uri() . '/style-admin.css' );
+}
+
 /* style for site title */
 function sketchpad_header() { ?>
 	<style type="text/css">
@@ -127,6 +132,7 @@ add_action( 'after_setup_theme', 'sketchpad_setup' );
 add_action( 'widgets_init', 'register_sketchpad_widgets' );
 add_action( 'widget_text', 'do_shortcode' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
+add_action( 'admin_enqueue_scripts', 'sketchpad_admin_script' );
 add_action( 'wp_head', 'sketchpad_header' );
 
 require get_template_directory() . '/includes/load.php';
