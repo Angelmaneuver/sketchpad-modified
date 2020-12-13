@@ -1,3 +1,10 @@
-.control-section .accordion-section-title, .customize-pane-child .accordion-section-title {
-    padding-right: 25px;
+form#customize-controls {
+    .control-section .accordion-section-title, .customize-pane-child .accordion-section-title {
+        padding-right: 25px;
+    }
+
+    textarea[id^="_customize-input-sketchpad_"] {
+        height: 20rem;
+        word-break: break-all;
+    }
 }
