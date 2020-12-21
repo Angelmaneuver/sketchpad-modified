@@ -54,9 +54,11 @@ EOM;
 	}
 }
 
-add_filter( 'wp_head', 'sketchpad_head_insert_head' );
-add_filter( 'admin_head', 'sketchpad_head_insert_head' );
-add_filter( 'embed_head', 'sketchpad_head_insert_head' );
+$priority = get_theme_mod( 'sketchpad_head_insert_priority', 10 );
+
+add_filter( 'wp_head', 'sketchpad_head_insert_head', $priority );
+add_filter( 'admin_head', 'sketchpad_head_insert_head', $priority );
+add_filter( 'embed_head', 'sketchpad_head_insert_head', $priority );
 
 /**
  * Add to embed css.

@@ -36,6 +36,28 @@ function sketchpad_customize4insert_head_tag_register( $wp_customize ) {
 			'type'    => 'textarea',
 		)
 	);
+	$wp_customize->add_setting(
+		'sketchpad_head_insert_priority',
+		array(
+			'default'           => 10,
+			'sanitize_callback' => 'absint',
+		)
+	);
+	$wp_customize->add_control(
+		'sketchpad_head_insert_priority',
+		array(
+			'setting'     => 'sketchpad_head_insert_priority',
+			'section'     => 'sketchpad_head_section',
+			'label'       => __( 'Priority', 'sketchpad-modified' ),
+			'description' => __( 'The more you slide to the left, the faster it will be output to the Head tag.', 'sketchpad-modified' ),
+			'type'        => 'range',
+			'input_attrs' => array(
+				'min'  => 0,
+				'max'  => 10,
+				'step' => 1,
+			),
+		)
+	);
 }
 
 /**

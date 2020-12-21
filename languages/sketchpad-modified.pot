@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-10-08T02:40:31+00:00\n"
+"POT-Creation-Date: 2020-12-21T05:35:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -124,94 +124,94 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: content-aside.php:20
-#: content-audio.php:20
-#: content-chat.php:20
-#: content-gallery.php:20
-#: content-image.php:20
-#: content-link.php:20
-#: content-quote.php:20
-#: content-status.php:20
-#: content-video.php:20
-#: content.php:39
-#: content.php:48
-#: image.php:20
+#: content-aside.php:29
+#: content-audio.php:29
+#: content-chat.php:29
+#: content-gallery.php:29
+#: content-image.php:29
+#: content-link.php:29
+#: content-quote.php:29
+#: content-status.php:29
+#: content-video.php:29
+#: content.php:32
+#: content.php:52
+#: image.php:21
 msgid "edit"
 msgstr ""
 
-#: content-aside.php:22
-#: content-audio.php:22
-#: content-chat.php:22
-#: content-gallery.php:22
-#: content-image.php:22
-#: content-link.php:22
-#: content-quote.php:22
-#: content-status.php:22
-#: content-video.php:22
-#: content.php:31
-#: content.php:50
-#: image.php:22
+#: content-aside.php:32
+#: content-audio.php:32
+#: content-chat.php:32
+#: content-gallery.php:32
+#: content-image.php:32
+#: content-link.php:32
+#: content-quote.php:32
+#: content-status.php:32
+#: content-video.php:32
+#: content.php:35
+#: content.php:55
+#: image.php:24
 msgid "posted by "
 msgstr ""
 
-#: content-aside.php:25
-#: content-audio.php:25
-#: content-chat.php:25
-#: content-gallery.php:25
-#: content-image.php:25
-#: content-link.php:25
-#: content-quote.php:25
-#: content-status.php:25
-#: content-video.php:25
-#: content.php:34
-#: content.php:53
-#: image.php:25
+#: content-aside.php:35
+#: content-audio.php:35
+#: content-chat.php:35
+#: content-gallery.php:35
+#: content-image.php:35
+#: content-link.php:35
+#: content-quote.php:35
+#: content-status.php:35
+#: content-video.php:35
+#: content.php:38
+#: content.php:58
+#: image.php:27
 msgid " in "
 msgstr ""
 
-#: content-aside.php:44
-#: content-audio.php:37
-#: content-chat.php:45
-#: content-gallery.php:40
-#: content-image.php:37
-#: content-link.php:44
-#: content-quote.php:44
-#: content-status.php:44
-#: content-video.php:37
-#: content.php:73
-#: image.php:61
+#: content-aside.php:54
+#: content-audio.php:47
+#: content-chat.php:55
+#: content-gallery.php:50
+#: content-image.php:47
+#: content-link.php:54
+#: content-quote.php:54
+#: content-status.php:54
+#: content-video.php:47
+#: content.php:78
+#: image.php:63
 msgid "Pages:"
 msgstr ""
 
-#: content-aside.php:49
-#: content-audio.php:42
-#: content-chat.php:51
-#: content-gallery.php:45
-#: content-image.php:42
-#: content-link.php:49
-#: content-quote.php:49
-#: content-status.php:49
-#: content-video.php:42
-#: content.php:79
+#: content-aside.php:59
+#: content-audio.php:52
+#: content-chat.php:61
+#: content-gallery.php:55
+#: content-image.php:52
+#: content-link.php:59
+#: content-quote.php:59
+#: content-status.php:59
+#: content-video.php:52
+#: content.php:85
 msgid "read comments"
 msgstr ""
 
-#: content-aside.php:55
-#: content-audio.php:48
-#: content-chat.php:59
-#: content-gallery.php:51
-#: content-image.php:48
-#: content-link.php:55
-#: content-quote.php:55
-#: content-status.php:55
-#: content-video.php:48
-#: content.php:87
-#: image.php:67
+#: content-aside.php:65
+#: content-audio.php:58
+#: content-chat.php:69
+#: content-gallery.php:61
+#: content-image.php:58
+#: content-link.php:65
+#: content-quote.php:65
+#: content-status.php:65
+#: content-video.php:58
+#: content.php:96
+#: image.php:69
 msgid "Tags: "
 msgstr ""
 
-#: content-chat.php:54
-#: content.php:82
+#: content-chat.php:64
+#: content.php:90
 msgid "more"
 msgstr ""
 
@@ -219,142 +219,150 @@ msgstr ""
 msgid "Page: "
 msgstr ""
 
-#: footer.php:17
-msgid "Powered by %s (Original is %s) and %s"
+#: footer-content.php:15
+msgid "Powered by %s"
+msgstr ""
+
+#: footer-content.php:16
+msgid " (Original is %s) "
+msgstr ""
+
+#: footer-content.php:17
+msgid "and %s"
 msgstr ""
 
 #: functions.php:24
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:77
-msgid "Header Postit Widget"
-msgstr ""
-
-#: functions.php:79
-msgid "Header Postit Widget Area (Warning! This Widget only use custom Html.)"
-msgstr ""
-
-#: functions.php:88
+#: functions.php:84
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:86
 msgid "Right Widget Area"
 msgstr ""
 
-#: image.php:34
+#: image.php:36
 msgid "Full size is %s pixels"
 msgstr ""
 
-#: image.php:37
+#: image.php:39
 msgid "Link to full-size image"
 msgstr ""
 
-#: image.php:44
+#: image.php:46
 msgid "Click to full-size image: "
 msgstr ""
 
-#: image.php:54
+#: image.php:56
 msgid "Previous Image"
 msgstr ""
 
-#: image.php:56
+#: image.php:58
 msgid "Next Image"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:17
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:19
 msgid "Admin Page Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:18
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:20
 msgid "Please enter if you want to background image for the admin panel."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:29
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:37
 msgid "Activate the background image setting in the admin panel."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:57
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:83
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:104
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:86
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:121
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:151
 msgid "Reset"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:69
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:104
 msgid "Opacity"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:70
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:105
 msgid "The more you slide to the left, the higher the transparency."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:95
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:139
 msgid "Transparent DOM"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:96
+#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:140
 msgid "Enter the DOM element you want to make transparent."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:17
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:19
 msgid "Blog Card Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:18
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:20
 msgid "Configure settings for the Blog Card."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:28
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:36
 msgid "Blog Card Image Size setting enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:38
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:52
 #: includes/admin/theme-customizer/sm-rss.php:62
 msgid "Image Size"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:55
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:75
 msgid "Blog Card Image Form Type setting enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:66
+#: includes/admin/theme-customizer/sm-basic/blog-card.php:92
 msgid "Form Type"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:17
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:19
 msgid "Head Tag Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:18
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:20
 msgid "Please enter if you want to insert in the head tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:17
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:51
+msgid "Priority"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+msgid "The more you slide to the left, the faster it will be output to the Head tag."
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/top-button.php:19
 msgid "Top Button Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:18
+#: includes/admin/theme-customizer/sm-basic/top-button.php:20
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:28
+#: includes/admin/theme-customizer/sm-basic/top-button.php:36
 msgid "Top Button enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:38
+#: includes/admin/theme-customizer/sm-basic/top-button.php:52
 msgid "Top Button Mark"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:48
+#: includes/admin/theme-customizer/sm-basic/top-button.php:70
 msgid "Top Button Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:57
+#: includes/admin/theme-customizer/sm-basic/top-button.php:88
 msgid "Top Button Hover Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:66
+#: includes/admin/theme-customizer/sm-basic/top-button.php:106
 msgid "Top Button Border Color"
 msgstr ""
 
@@ -496,11 +504,11 @@ msgstr ""
 msgid "Indent"
 msgstr ""
 
-#: includes/sm-basic.php:20
+#: includes/sm-basic.php:24
 msgid "Sketchpad - modified Basic Setting"
 msgstr ""
 
-#: includes/utils/sm-utility.php:25
+#: includes/utils/sm-utility.php:41
 msgid "more &raquo;"
 msgstr ""
 
