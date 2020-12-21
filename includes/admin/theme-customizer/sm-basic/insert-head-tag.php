@@ -40,6 +40,7 @@ function sketchpad_customize4insert_head_tag_register( $wp_customize ) {
 		'sketchpad_head_insert_priority',
 		array(
 			'default'           => 10,
+			'transport'         => 'postMessage',
 			'sanitize_callback' => 'absint',
 		)
 	);
