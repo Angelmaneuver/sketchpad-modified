@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-12-21T05:35:55+00:00\n"
+"POT-Creation-Date: 2020-12-21T07:12:39+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -275,6 +275,27 @@ msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する
 msgid "Form Type"
 msgstr "フォ－ムタイプ"
 
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
+msgid "Body Tag Setting"
+msgstr "Body タグ設定"
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:20
+msgid "Please enter if you want to insert in directly under the body tag"
+msgstr "Body タグ直下に挿入する場合は入力してください。"
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:36
+msgid "Directly Under the Body Tag"
+msgstr "Body タグ直下"
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:53
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+msgid "Priority"
+msgstr "優先度"
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:54
+msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
+msgstr "左にスライドするほどBody タグ直下への出力が早くなります。"
+
 #: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:19
 msgid "Head Tag Setting"
 msgstr "Head タグ設定"
@@ -283,11 +304,7 @@ msgstr "Head タグ設定"
 msgid "Please enter if you want to insert in the head tag"
 msgstr "Head タグに挿入する場合は入力してください。"
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:51
-msgid "Priority"
-msgstr "優先度"
-
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:53
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr "左にスライドするほどHead タグへの出力が早くなります。"
 

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-12-21T05:35:55+00:00\n"
+"POT-Creation-Date: 2020-12-21T07:12:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -322,6 +322,27 @@ msgstr ""
 msgid "Form Type"
 msgstr ""
 
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
+msgid "Body Tag Setting"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:20
+msgid "Please enter if you want to insert in directly under the body tag"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:36
+msgid "Directly Under the Body Tag"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:53
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+msgid "Priority"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:54
+msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
+msgstr ""
+
 #: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:19
 msgid "Head Tag Setting"
 msgstr ""
@@ -330,11 +351,7 @@ msgstr ""
 msgid "Please enter if you want to insert in the head tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:51
-msgid "Priority"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:53
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr ""
 

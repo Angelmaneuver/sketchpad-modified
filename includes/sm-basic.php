@@ -32,6 +32,7 @@ if ( is_admin() || is_customize_preview() ) {
 
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/admin-page-setting.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-head-tag.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-body-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/blog-card.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/top-button.php';
 }
@@ -54,11 +55,33 @@ EOM;
 	}
 }
 
-$priority = get_theme_mod( 'sketchpad_head_insert_priority', 10 );
+$insert_head_priority = get_theme_mod( 'sketchpad_head_insert_priority', 10 );
 
-add_filter( 'wp_head', 'sketchpad_head_insert_head', $priority );
-add_filter( 'admin_head', 'sketchpad_head_insert_head', $priority );
-add_filter( 'embed_head', 'sketchpad_head_insert_head', $priority );
+add_filter( 'wp_head', 'sketchpad_head_insert_head', $insert_head_priority );
+add_filter( 'admin_head', 'sketchpad_head_insert_head', $insert_head_priority );
+add_filter( 'embed_head', 'sketchpad_head_insert_head', $insert_head_priority );
+
+/**
+ * Insert Body tag.
+ *
+ * @subpackage insert-body-tag
+ * @since 1.0.0
+ */
+function sketchpad_body_insert_body() {
+	$insert_body_directly_under = get_theme_mod( 'sketchpad_body_insert_directly_under_body', '' );
+
+	if ( '' !== $insert_body_directly_under ) {
+		$value = <<<EOM
+{$insert_body_directly_under}
+
+EOM;
+		sketchpad_echo( $value );
+	}
+}
+
+$insert_body_directly_under_priority = get_theme_mod( 'sketchpad_body_insert_directly_under_body_priority', 10 );
+
+add_filter( 'wp_body_open', 'sketchpad_body_insert_body', $insert_body_directly_under_priority );
 
 /**
  * Add to embed css.
