@@ -46,10 +46,11 @@ function sketchpad_head_insert_head() {
 	$insert_head = get_theme_mod( 'sketchpad_head_insert_head', '' );
 
 	if ( '' !== $insert_head ) {
-		echo <<<EOM
+		$value = <<<EOM
 	{$insert_head}
-    
+
 EOM;
+		sketchpad_echo( $value );
 	}
 }
 
@@ -142,9 +143,12 @@ function sketchpad_output_top_button() {
 	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_top_button_hover_background_color', Sm_Basic_Constant::TOP_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
 	$border           = get_theme_mod( 'sketchpad_top_button_border_color', Sm_Basic_Constant::TOP_BUTTON_BORDER_COLOR );
 	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::TOP_BUTTON_MARK ) );
-	echo <<<EOM
+
+	$value = <<<EOM
 	<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover} onClick="return false;">{$mark}</button>
 EOM;
+
+	sketchpad_echo( $value );
 	?>
 <script type="text/javascript">(function($){let top_button = $('.top_button');top_button.hide();$(window).scroll(function(){if($(this).scrollTop() > 100){top_button.fadeIn();}else{top_button.fadeOut();}});top_button.click(function(){$('body, html').animate({scrollTop: 0}, 500);return false;});})(jQuery);</script>
 	<?php

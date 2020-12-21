@@ -167,7 +167,7 @@ function sketchpad_admin_style() {
 	$targets   = get_theme_mod( 'sketchpad_admin_background_image_opacity_targets', Sm_Basic_Constant::ADMIN_BACKGROUND_OPACITY_TARGETS );
 
 	if ( get_theme_mod( 'sketchpad_admin_page_background_image', false ) && ! empty( $image_url ) ) {
-		echo <<<EOM
+		$value = <<<EOM
 <style type="text/css">
 		#wpwrap:before {
 			content:" ";
@@ -187,6 +187,7 @@ function sketchpad_admin_style() {
 	</style>
 
 EOM;
+		sketchpad_echo( $value );
 	}
 }
 

@@ -8,6 +8,19 @@
  */
 
 /**
+ * Wrapper methods (echo).
+ * This method echo without sanitize.
+ *
+ * @since 1.0.0
+ * @param string $value Content to be output.
+ */
+function sketchpad_echo( $value ) {
+	if ( isset( $value ) ) {
+		echo $value;
+	}
+}
+
+/**
  * Get current url.
  *
  * @since 1.0.0
