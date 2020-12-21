@@ -6,27 +6,43 @@
  * @since 1.0.0
  */
 
-// utils
+/**
+ * Utils.
+ */
 require get_template_directory() . '/includes/utils/sm-utility.php';
 require get_template_directory() . '/includes/utils/sm-sanitizer.php';
 
-// filter
+/**
+ * Filters.
+ */
 require get_template_directory() . '/includes/filter/sm-dropdown-categories.php';
 require get_template_directory() . '/includes/filter/sm-tag-cloud.php';
 
-// block style
+/**
+ * Block styles.
+ */
 require get_template_directory() . '/includes/block-style/sm-style.php';
 
-// functions
+/**
+ * Functions.
+ */
 require get_template_directory() . '/includes/sm-basic.php';
 require get_template_directory() . '/includes/sm-breadcrumb.php';
 require get_template_directory() . '/includes/sm-rss.php';
 
-// widgets
+/**
+ * Widgets.
+ */
 require get_template_directory() . '/includes/widgets/class-sm-widget-recent-posts.php';
 
+/**
+ * Register Recent Posts Widgets.
+ *
+ * @since 1.0.0
+ * @see widgets/class-sm-widget-recent-posts.php
+ */
 function register_sketchpad_recent_posts_widgets() {
-  register_widget( 'SM_Widget_Recent_Posts' );
+	register_widget( 'SM_Widget_Recent_Posts' );
 }
 
 add_action( 'widgets_init', 'register_sketchpad_recent_posts_widgets' );
