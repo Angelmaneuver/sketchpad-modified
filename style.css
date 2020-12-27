@@ -608,6 +608,11 @@ article.tag-r18 .post-content h2, article.tag-r18 .post-content h3, article.tag-
   outline-color: #FFB6C1;
 }
 
+article.tag-r18 .post-content button {
+  -webkit-box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+          box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
 article.tag-r18 .post-content li::marker {
   color: #FFFFFF;
   font-weight: 700;

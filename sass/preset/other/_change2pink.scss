@@ -8,6 +8,10 @@
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
 }
 
+@mixin Change2PinkBoxStyle {
+	box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
 @mixin Change2PinkQuoteSimbol {
   color: #FFFFFF;
 }
@@ -105,6 +109,10 @@
         @include Change2PinkTextStyle;
         @include Change2PinkBorderColor;
       }
+
+	  button {
+		  @include Change2PinkBoxStyle;
+	  }
 
       li::marker {
         @include Change2PinkTextStyle;
