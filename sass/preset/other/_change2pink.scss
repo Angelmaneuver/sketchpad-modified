@@ -62,10 +62,10 @@
           padding-right: 0;
           background: none;
         }
-  
+
         span.r18 {
           font-size: 1.65rem;
-  
+
           > span {
             margin-top: -0.1rem;
             margin-left: -0.1rem;
@@ -101,7 +101,7 @@
     }
 
     .post-content {
-      h2, h3, h4, h5, h6, p, a, ul, ol, li, table, thead, tbody, tr, th, td, span, div {
+      h2, h3, h4, h5, h6, p, em, a, ul, ol, li, table, thead, tbody, tr, th, td, span, div {
         @include Change2PinkTextStyle;
         @include Change2PinkBorderColor;
       }
@@ -167,7 +167,7 @@
     .sharedaddy .sd-block .sd-content ul li a.sd-button {
       background-color: #AF9F88;
       border: transparent thin solid;
-  
+
       &:hover {
         border: #999999 thin solid;
       }

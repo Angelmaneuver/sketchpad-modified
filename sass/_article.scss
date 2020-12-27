@@ -24,7 +24,7 @@
         }
       }
     }
-    
+
     margin-bottom: 1rem;
   }
 
@@ -118,6 +118,10 @@ blockquote.wp-block-quote {
   border-left-width: 2rem;
   border-left-style: solid;
   @include BlockQuoteShadow;
+
+  &.is-style-large {
+	  padding: 0 3rem;
+  }
 
   &:before {
     position: absolute;

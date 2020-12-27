@@ -600,7 +600,7 @@ article.tag-r18 footer .post-tag a {
   background: #FF9A93;
 }
 
-article.tag-r18 .post-content h2, article.tag-r18 .post-content h3, article.tag-r18 .post-content h4, article.tag-r18 .post-content h5, article.tag-r18 .post-content h6, article.tag-r18 .post-content p, article.tag-r18 .post-content a, article.tag-r18 .post-content ul, article.tag-r18 .post-content ol, article.tag-r18 .post-content li, article.tag-r18 .post-content table, article.tag-r18 .post-content thead, article.tag-r18 .post-content tbody, article.tag-r18 .post-content tr, article.tag-r18 .post-content th, article.tag-r18 .post-content td, article.tag-r18 .post-content span, article.tag-r18 .post-content div {
+article.tag-r18 .post-content h2, article.tag-r18 .post-content h3, article.tag-r18 .post-content h4, article.tag-r18 .post-content h5, article.tag-r18 .post-content h6, article.tag-r18 .post-content p, article.tag-r18 .post-content em, article.tag-r18 .post-content a, article.tag-r18 .post-content ul, article.tag-r18 .post-content ol, article.tag-r18 .post-content li, article.tag-r18 .post-content table, article.tag-r18 .post-content thead, article.tag-r18 .post-content tbody, article.tag-r18 .post-content tr, article.tag-r18 .post-content th, article.tag-r18 .post-content td, article.tag-r18 .post-content span, article.tag-r18 .post-content div {
   color: #FFFFFF;
   font-weight: 700;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
@@ -2217,6 +2217,10 @@ blockquote.wp-block-quote {
   border-left-style: solid;
   -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
           box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
+}
+
+blockquote.wp-block-quote.is-style-large {
+  padding: 0 3rem;
 }
 
 blockquote.wp-block-quote:before {

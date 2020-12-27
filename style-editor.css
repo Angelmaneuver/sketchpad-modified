@@ -124,6 +124,10 @@ blockquote.wp-block-quote {
           box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
 }
 
+blockquote.wp-block-quote.is-style-large {
+  padding: 0 3rem;
+}
+
 blockquote.wp-block-quote:before {
   position: absolute;
   display: inline-block;
