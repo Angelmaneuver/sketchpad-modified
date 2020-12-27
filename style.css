@@ -997,29 +997,8 @@ article.tag-r18 .post-content .no-change section.profiles article > div > div:no
   border-right: #FFB6C1 thin solid;
 }
 
-article.tag-r18 .post-content .sd-block .sd-content ul li a.sd-button {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-  border-color: #FFB6C1;
-  outline-color: #FFB6C1;
-}
-
-article.tag-r18 .post-content .sd-block .sd-content ul li a.sd-button:hover {
-  border-color: #FF9A93;
-}
-
 article:not(.tag-r18) span.r18 {
   display: none;
-}
-
-article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button {
-  background-color: #AF9F88;
-  border: transparent thin solid;
-}
-
-article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button:hover {
-  border: #999999 thin solid;
 }
 
 article .post-header {
@@ -3016,12 +2995,38 @@ p.grav-about {
           box-shadow: 0 1rem 0.6rem -0.6rem #777777;
 }
 
-.sharedaddy h3.sd-title::before {
+article .sharedaddy h3.sd-title::before {
   border-top: none !important;
 }
 
-.sharedaddy .sd-block .sd-content ul li a.sd-button {
+article .sharedaddy .sd-block .sd-content ul li a.sd-button {
   color: #ffffff !important;
+}
+
+article.tag-r18 .sharedaddy .sd-block .sd-content ul li a.sd-button {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+article.tag-r18 .sharedaddy .sd-block .sd-content ul li a.sd-button:hover {
+  background: #FF9A93;
+  border-color: #FF9A93;
+}
+
+article.tag-r18 .sharedaddy .sd-block .sd-content ul li a.sd-button:hover * {
+  background: #FF9A93;
+}
+
+article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button {
+  background-color: #9b8f76;
+  border: transparent thin solid;
+}
+
+article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button:hover {
+  background-color: #776b53;
 }
 
 .infinite-scroll div.pagination {

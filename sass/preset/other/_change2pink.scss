@@ -9,7 +9,7 @@
 }
 
 @mixin Change2PinkBoxStyle {
-	box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
 @mixin Change2PinkQuoteSimbol {
@@ -110,9 +110,9 @@
         @include Change2PinkBorderColor;
       }
 
-	  button {
-		  @include Change2PinkBoxStyle;
-	  }
+      button {
+        @include Change2PinkBoxStyle;
+      }
 
       li::marker {
         @include Change2PinkTextStyle;
@@ -155,15 +155,6 @@
 
         @include RestoreColor;
       }
-
-      .sd-block .sd-content ul li a.sd-button {
-        @include Change2PinkTextStyle;
-        @include Change2PinkBorderColor;
-
-        &:hover {
-          @include Change2PinkHoverBorderColor;
-        }
-      }
     }
   }
 
@@ -172,13 +163,5 @@
       display: none;
     }
 
-    .sharedaddy .sd-block .sd-content ul li a.sd-button {
-      background-color: #AF9F88;
-      border: transparent thin solid;
-
-      &:hover {
-        border: #999999 thin solid;
-      }
-    }
   }
 }

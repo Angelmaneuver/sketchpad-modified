@@ -91,13 +91,42 @@ p.grav-about {
   box-shadow: 0 1rem 0.6rem -0.6rem #777777;
 }
 
-.sharedaddy {
-  h3.sd-title::before {
-    border-top: none !important;
+article {
+  .sharedaddy {
+    h3.sd-title::before {
+      border-top: none !important;
+    }
+
+    .sd-block .sd-content ul li a.sd-button {
+      color: #ffffff !important;
+    }
   }
 
-  .sd-block .sd-content ul li a.sd-button {
-    color: #ffffff !important;
+  &.tag-r18 {
+    .sharedaddy .sd-block .sd-content ul li a.sd-button {
+      @include Change2PinkTextStyle;
+      @include Change2PinkBorderColor;
+
+      &:hover {
+        @include Change2PinkBackground;
+        @include Change2PinkHoverBorderColor;
+
+        * {
+          @include Change2PinkBackground;
+        }
+      }
+    }
+  }
+
+  &:not(.tag-r18) {
+    .sharedaddy .sd-block .sd-content ul li a.sd-button {
+      @include ButtonBackgroundColor;
+      border: transparent thin solid;
+
+      &:hover {
+        @include ButtonHoverBackgroundColor;
+      }
+    }
   }
 }
 
@@ -109,7 +138,7 @@ p.grav-about {
   #navigation, &.neverending #footer {
     display: none;
   }
-  
+
   .infinity-end.neverending #footer {
     display: block;
   }
@@ -117,7 +146,7 @@ p.grav-about {
   #infinite-handle {
     text-align: center;
     vertical-align: middle;
-    
+
     span {
       @include GetFontPreSet(1.2rem, 700);
       font-family: Arial;
@@ -141,7 +170,7 @@ div.content > aside > div.sidebar > section.toc_widget {
   > ul.toc_widget_list > li {
     > ul {
       margin-left: 2.5rem;
-    
+
       li > ul {
         margin-left: 2.5rem;
       }
