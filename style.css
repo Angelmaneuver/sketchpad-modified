@@ -432,6 +432,7 @@ article form.search {
   -webkit-box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
           box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
   vertical-align: top;
+  word-break: break-all;
 }
 
 .content .main-content div {

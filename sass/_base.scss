@@ -118,7 +118,7 @@ body {
     display: block;
     width: 36rem;
     max-width: 36rem;
-  
+
     a {
       display: block;
       margin: 0;
@@ -149,7 +149,7 @@ form.search {
   input.search-text {
     @include InputForm;
   }
-  
+
   #searchsubmit, input.search-button {
     @include Button;
   }
@@ -181,11 +181,12 @@ article form.search {
     @include SketchpadBackground;
     @include SketchpadShadow;
     vertical-align: top;
-  
+    word-break: break-all;
+
     div {
       max-width: $main_width;
     }
-  }  
+  }
 
   .main-navigation {
     $font-size: 1.2rem;
@@ -204,27 +205,27 @@ article form.search {
       @include DelimiterBorderColor1;
       @include ThinBorderStyle;
       list-style: none;
-  
+
       a:hover {
         text-decoration: none;
       }
-  
+
       li {
         position: relative;
         float: left;
         margin-top: 0.1rem;
-  
+
         a {
           display: block;
           padding: 0.5rem;
           @include LinkColor1;
         }
-  
+
         &:hover {
           @include NavigationHoverBackgroundColor;
         }
       }
-  
+
       ul {
         position: absolute;
         display: none;
@@ -233,7 +234,7 @@ article form.search {
         @include DelimiterBorderColor2;
         @include ThinBorderStyle;
       }
-  
+
       li ul ul {
         position: absolute;
         display: none;
@@ -241,27 +242,27 @@ article form.search {
         left: 100%;
       }
     }
-  
+
     ul li:hover > ul {
       display: block;
       @include SketchpadBackground;
     }
-  
+
     li ul li {
       display: block;
       clear: both;
       width: 100%;
     }
-  
+
     .current-menu-item, .current_page_item, .current-menu-ancestor, .current_page_parent, .current_page_ancestor {
       @include NavigationHoverBackgroundColor;
     }
-  
+
     ul {
       .menu-item-has-children > a::after {
         content: ' \025BE';
       }
-  
+
       ul .menu-item-has-children > a::after {
         content: '\025B8';
         float: right;
@@ -300,20 +301,20 @@ article {
   .post-header {
     @include DelimiterBorderColor1;
     @include ThinBorderBottomStyle;
-  
+
     .post-title {
       a {
         padding-right: 2.5rem;
         background: url(images/mark3.png) no-repeat right center;
         @include HeadlineColor2;
-  
+
         &.external {
           @if $font-awesome {
             font-size: 1.5rem;
             padding-right: 0;
             background: none;
             padding-left: 1rem;
-  
+
             &:before {
               content: "\f35d";
               @include FontAwesome;
@@ -335,16 +336,16 @@ article {
     align-items: center;
     margin-top: 0.5rem;
     margin-bottom: 2.5rem;
-  
+
     time {
       vertical-align: middle;
     }
-  
+
     .post-edit-link {
       @include Button;
       padding: 0.1rem 0.5rem;
     }
-  
+
     .by-author {
       @include MetaColor1;
       vertical-align: middle;
@@ -361,7 +362,7 @@ article {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0 0 0;
-  
+
     a {
       @include GetFontPreSet(1.2rem);
       @include ArialFontFamily;
@@ -374,7 +375,7 @@ article {
     @include ArialFontFamily;
     @include MetaColor1;
     margin-top: 2rem;
-  
+
     a {
       padding-right: 0.5rem;
       @include FillInStringColor;
@@ -382,7 +383,7 @@ article {
       vertical-align: middle;
       border-radius: 1rem 0 0 1rem;
       text-decoration: none;
-  
+
       &:before {
         content: "●";
         @include PostTagColor;
@@ -413,7 +414,7 @@ main#articles {
         border-radius: 0.2rem;
         text-align: center;
         overflow: hidden;
-      
+
         a img {
           width: 20rem;
           height: 20rem * 0.5625;
@@ -426,11 +427,11 @@ main#articles {
           text-align: center;
           object-fit: fill;
           transition: 1s all;
-        
+
           &:hover {
             transform: scale(1.2, 1.2);
             transition: 1s all;
-          } 
+          }
         }
       }
     }
@@ -456,13 +457,13 @@ main#articles {
     @include PaginationBackground;
     text-decoration: none;
   }
-  
+
   .current, .page-numbers:hover, a:hover {
     @include PaginationColor;
     padding: 0.6rem;
     border-radius: 0.3rem;
     @include PaginationHoverBackground;
-  }  
+  }
 }
 
 /**
@@ -494,17 +495,17 @@ aside {
       border-style: solid;
       background-color: $sidebar_background_color;
       @include SketchpadShadow;
-    
+
       &:first-child {
         border-radius: 1.5rem/6.8rem 0 0 0;
         background: $sidebar_background_color url(images/bg-side1.jpg) no-repeat top left;
       }
-    
+
       &:last-child {
         border-radius: 0 0 1.1rem/4.2rem 0;
         background: $sidebar_background_color url(images/bg-side2.jpg) no-repeat bottom right;
       }
-    
+
       h4 {
         @include GetFontPreSet(1.2rem, 700);
         @include HeadlineColor4;
@@ -551,7 +552,7 @@ aside {
 
       li:not(.recentcomments):not(.sm_widget_recent_entries) {
         min-height: 3.5rem;
-        
+
         a:not(.rsswidget) {
           @include SidebarPostit;
           margin-bottom: 0.25rem;
@@ -583,31 +584,31 @@ aside {
       .postit-royalblue {
         @include PostitBlue;
       }
-      
+
       .postit-gold {
         @include PostitYellow;
       }
-      
+
       .postit-lightgreen {
         @include PostitGreen;
       }
-      
+
       .postit-darkorange {
         @include PostitOrange;
       }
-      
+
       .postit-lavender {
         @include PostitLavender;
       }
-      
+
       .postit-mistyrose {
         @include PostitMistyrose;
       }
-      
+
       .postit-mintcream {
         @include PostitMintcream;
       }
-      
+
       .postit-black {
         @include PostitBlack;
       }
@@ -630,13 +631,13 @@ aside {
           &:not(:last-child) {
             margin-bottom: 0.5rem;
           }
-      
+
           .rss-date, cite {
             @include GetFontPreSet(1rem);
             display: block;
             text-align: right;
           }
-      
+
           .rssSummary {
             display: block;
           }
@@ -713,7 +714,7 @@ aside {
             @include ThinBorderRightStyle;
           }
         }
-        
+
         a {
           @include GetFontPreSet(1.2rem, 700);
           @include SidebarCalendarLinkColor;
@@ -759,14 +760,14 @@ aside {
 
             &.right {
               margin-top: 0.5rem;
-  
+
               .original {
                 display: none;
               }
             }
           }
         }
-      }    
+      }
     }
   }
 }
@@ -792,7 +793,7 @@ aside {
     font-style: italic;
     padding-top: 1.7rem;
     text-align: center;
-  
+
     a {
       @include LinkColor2;
     }
@@ -825,7 +826,7 @@ aside {
       margin-left: 1.5rem;
       list-style: none;
     }
-    
+
     .comment-author .fn {
       @include GetFontPreSet(1.4rem, 900);
       @include LinkColor3;
@@ -833,7 +834,7 @@ aside {
 
     .comment-author {
       position: relative;
-    
+
       .avatar {
         float: left;
         margin-right: 0.5rem;
@@ -851,7 +852,7 @@ aside {
 
     .comment-meta {
       padding: 0.5rem 0;
-    
+
       a {
         @include MetaColor2;
       }
@@ -863,7 +864,7 @@ aside {
 
     .reply {
       margin: 0 1rem 2.5rem;
-    
+
       a {
         @include LinkColor3;
       }
@@ -879,7 +880,7 @@ aside {
       @include CommentInfoBorderColor;
       @include ThinBorderStyle;
   }
-  
+
     > {
       li:first-child > article, .pingback:first-child, .trackback:first-child {
         border-top: 0;
@@ -896,17 +897,17 @@ aside {
     .comment-content {
       word-wrap: break-word;
       hyphens: auto;
-    
+
       ul, ol {
         margin: 0 0 2.4rem 2.2rem;
       }
-    
+
       li > {
         ul, ol {
           margin-bottom: 0;
         }
       }
-    
+
       > :last-child {
         margin-bottom: 0;
       }
@@ -922,7 +923,7 @@ aside {
         float: right;
         overflow: hidden;
         @include LinkColor3;
-      
+
         &:hover {
           @include CommentCancelLinkHoverColor;
         }
@@ -947,7 +948,7 @@ aside {
       .form-allowed-tags {
         @include GetFontPreSet(1.2rem);
         text-align: left;
-      
+
         code {
           @include GetFontPreSet(1.5rem);
           text-align: left;
@@ -969,7 +970,7 @@ aside {
     .comment-notes, .comment-awaiting-moderation, .logged-in-as {
       @include GetFontPreSet(1.4rem);
     }
-    
+
     .logged-in-as a {
       @include LinkColor3;
     }
@@ -988,7 +989,7 @@ aside {
     @include CommentColor;
     margin-bottom: 4.8rem;
     text-transform: uppercase;
-  
+
     .nav-next {
       display: inline-block;
 
@@ -997,17 +998,17 @@ aside {
         margin-right: 1rem;
       }
     }
-  
+
     .nav-previous {
       display: inline-block;
-  
+
       a {
         @include CommentColor;
         margin-right: 1rem;
       }
     }
   }
-  
+
   #comment-nav-above {
     margin-top: 3.6rem;
     margin-bottom: 0;
@@ -1017,7 +1018,7 @@ aside {
     @include Button(1.2rem, auto, 2rem, none, 0.4rem);
     padding: 0.3rem;
   }
-  
+
   .must-log-in a {
     @include LinkColor3;
   }
