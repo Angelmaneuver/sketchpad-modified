@@ -394,7 +394,7 @@ article {
 }
 
 main#articles {
-  article {
+  article.format-standard {
     .post-content {
       display: flex;
       flex-direction: row;

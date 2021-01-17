@@ -1123,7 +1123,7 @@ article .post-tag a:before {
   margin: 0 0.4rem;
 }
 
-main#articles article .post-content {
+main#articles article.format-standard .post-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1136,7 +1136,7 @@ main#articles article .post-content {
           align-items: flex-start;
 }
 
-main#articles article .post-content .thumb-box {
+main#articles article.format-standard .post-content .thumb-box {
   width: 20rem;
   height: 11.25rem;
   max-width: 20rem;
@@ -1153,7 +1153,7 @@ main#articles article .post-content .thumb-box {
   overflow: hidden;
 }
 
-main#articles article .post-content .thumb-box a img {
+main#articles article.format-standard .post-content .thumb-box a img {
   width: 20rem;
   height: 11.25rem;
   max-width: 20rem;
@@ -1169,7 +1169,7 @@ main#articles article .post-content .thumb-box a img {
   transition: 1s all;
 }
 
-main#articles article .post-content .thumb-box a img:hover {
+main#articles article.format-standard .post-content .thumb-box a img:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   -webkit-transition: 1s all;
