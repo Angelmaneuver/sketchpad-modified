@@ -554,6 +554,40 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.o
   margin-left: 10.5rem;
 }
 
+h2.is-style-ssr, h2.is-style-sr, h2.is-style-r {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+h2.is-style-ssr span, h2.is-style-sr span, h2.is-style-r span {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+h2.is-style-ssr {
+  text-shadow: #E6B422 0.1rem 0.1rem 1rem, #E6B422 -0.1rem 0.1rem 1rem, #E6B422 0.1rem -0.1rem 1rem, #E6B422 -0.1rem -0.1rem 1rem;
+}
+
+h2.is-style-ssr span {
+  text-shadow: #E6B422 0.1rem 0.1rem 1rem, #E6B422 -0.1rem 0.1rem 1rem, #E6B422 0.1rem -0.1rem 1rem, #E6B422 -0.1rem -0.1rem 1rem;
+}
+
+h2.is-style-sr {
+  text-shadow: #C0C0C0 0.1rem 0.1rem 1rem, #C0C0C0 -0.1rem 0.1rem 1rem, #C0C0C0 0.1rem -0.1rem 1rem, #C0C0C0 -0.1rem -0.1rem 1rem;
+}
+
+h2.is-style-sr span {
+  text-shadow: #C0C0C0 0.1rem 0.1rem 1rem, #C0C0C0 -0.1rem 0.1rem 1rem, #C0C0C0 0.1rem -0.1rem 1rem, #C0C0C0 -0.1rem -0.1rem 1rem;
+}
+
+h2.is-style-r {
+  text-shadow: #8C4841 0.1rem 0.1rem 1rem, #8C4841 -0.1rem 0.1rem 1rem, #8C4841 0.1rem -0.1rem 1rem, #8C4841 -0.1rem -0.1rem 1rem;
+}
+
+h2.is-style-r span {
+  text-shadow: #8C4841 0.1rem 0.1rem 1rem, #8C4841 -0.1rem 0.1rem 1rem, #8C4841 0.1rem -0.1rem 1rem, #8C4841 -0.1rem -0.1rem 1rem;
+}
+
 section.profiles h4 span {
   font-weight: 700;
   color: #9b8f76;
@@ -726,7 +760,7 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode > .he
   background: #ffe4e1;
 }
 
-section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline {
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline, section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline * {
   color: #FFFFFF;
   font-weight: 700;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
@@ -759,19 +793,19 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.o
   border-right-style: double;
 }
 
-section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div {
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div, section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div * {
   position: relative;
   color: #FFFFFF;
   font-weight: 700;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
 }
 
-section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before {
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before, section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:before {
   border-left: #FFB6C1 thin solid;
   border-right: #FFB6C1 thin solid;
   background-color: #ffe4e1;
 }
 
-section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after {
+section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after, section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:after {
   border-right: #FFB6C1 thin solid;
 }
