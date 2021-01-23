@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2020-12-21T07:12:39+00:00\n"
+"POT-Creation-Date: 2021-01-23T07:42:36+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -436,40 +436,44 @@ msgstr "\"media:content\" タグを追加する"
 msgid "to incluede the \"enclosure\" tag"
 msgstr "\"enclosure\" タグを追加する"
 
-#: includes/block-style/sm-style.php:20
+#: includes/block-style/sm-style.php:19
 msgid "Under Line"
 msgstr "下線付き"
 
-#: includes/block-style/sm-style.php:27 includes/block-style/sm-style.php:64
-#: includes/block-style/sm-style.php:89
+#: includes/block-style/sm-style.php:26 includes/block-style/sm-style.php:63
+#: includes/block-style/sm-style.php:95
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
-#: includes/block-style/sm-style.php:34
+#: includes/block-style/sm-style.php:33
 msgid "Close the gap to the top"
 msgstr "余白無し (上)"
 
-#: includes/block-style/sm-style.php:41
+#: includes/block-style/sm-style.php:40
 msgid "Font style h5"
 msgstr "H5 スタイル"
 
-#: includes/block-style/sm-style.php:48
+#: includes/block-style/sm-style.php:47
 msgid "Font sytle h5 and close the gap between the two"
 msgstr "H5 スタイル (余白無し)"
 
-#: includes/block-style/sm-style.php:55
+#: includes/block-style/sm-style.php:54
 msgid "Font sytle h5 and close the gap to the top"
 msgstr "H5 スタイル (上余白無し)"
 
-#: includes/block-style/sm-style.php:71
+#: includes/block-style/sm-style.php:70
 msgid "Open one character between line"
 msgstr "行間を1文字開ける"
 
-#: includes/block-style/sm-style.php:80
+#: includes/block-style/sm-style.php:77
+msgid "Change the display to R18."
+msgstr "R18表示に変更する"
+
+#: includes/block-style/sm-style.php:86
 msgid "Postit"
 msgstr "ポストイット"
 
-#: includes/block-style/sm-style.php:98
+#: includes/block-style/sm-style.php:104
 msgid "Indent"
 msgstr "インデント"
 

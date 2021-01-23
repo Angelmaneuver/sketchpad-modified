@@ -175,6 +175,10 @@ blockquote.wp-block-quote {
   line-height: 2;
 }
 
+.is-style-r18-paragraph {
+  @include Change2PinkTextStyle;
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }

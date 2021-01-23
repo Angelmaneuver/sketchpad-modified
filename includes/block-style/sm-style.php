@@ -7,95 +7,101 @@
  * @since 1.0.0
  */
 
-  /**
+/**
  * Custom block style register.
- *
  */
 function register_sketchpad_block_style() {
-	// heading
+	// heading.
 	register_block_style(
 		'core/heading',
 		array(
 			'name'  => 'under-line',
-			'label'	=> __( 'Under Line', 'sketchpad-modified' ),
+			'label' => __( 'Under Line', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/heading',
 		array(
-			'name'	=> 'mtb0',
-			'label'	=> __( 'Close the gap between the two', 'sketchpad-modified' ),
+			'name'  => 'mtb0',
+			'label' => __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/heading',
 		array(
-			'name'	=> 'mt0',
-			'label'	=> __( 'Close the gap to the top', 'sketchpad-modified' ),
+			'name'  => 'mt0',
+			'label' => __( 'Close the gap to the top', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/heading',
 		array(
-			'name'	=> 'h5',
-			'label'	=> __( 'Font style h5', 'sketchpad-modified' ),
+			'name'  => 'h5',
+			'label' => __( 'Font style h5', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/heading',
 		array(
-			'name'	=> 'h5-and-mtb0',
-			'label'	=> __( 'Font sytle h5 and close the gap between the two', 'sketchpad-modified' ),
+			'name'  => 'h5-and-mtb0',
+			'label' => __( 'Font sytle h5 and close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/heading',
 		array(
-			'name'	=> 'h5-and-mt0',
-			'label'	=> __( 'Font sytle h5 and close the gap to the top', 'sketchpad-modified' ),
+			'name'  => 'h5-and-mt0',
+			'label' => __( 'Font sytle h5 and close the gap to the top', 'sketchpad-modified' ),
 		)
 	);
 
-	// paragraph
+	// paragraph.
 	register_block_style(
 		'core/paragraph',
 		array(
-			'name'	=> 'mb0',
-			'label'	=> __( 'Close the gap between the two', 'sketchpad-modified' ),
+			'name'  => 'mb0',
+			'label' => __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 	register_block_style(
 		'core/paragraph',
 		array(
-			'name'	=> 'single-character-line-spacing',
-			'label'	=> __( 'Open one character between line', 'sketchpad-modified' ),
+			'name'  => 'single-character-line-spacing',
+			'label' => __( 'Open one character between line', 'sketchpad-modified' ),
+		)
+	);
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'r18-paragraph',
+			'label' => __( 'Change the display to R18.', 'sketchpad-modified' ),
 		)
 	);
 
-	// image
+	// image.
 	register_block_style(
 		'core/image',
 		array(
-			'name'	=> 'image-postit',
-			'label'	=> __( 'Postit', 'sketchpad-modified' ),
+			'name'  => 'image-postit',
+			'label' => __( 'Postit', 'sketchpad-modified' ),
 		)
 	);
 
-	// columns
+	// columns.
 	register_block_style(
 		'core/columns',
 		array(
-			'name'	=> 'mtb0',
-			'label'	=> __( 'Close the gap between the two', 'sketchpad-modified' ),
+			'name'  => 'mtb0',
+			'label' => __( 'Close the gap between the two', 'sketchpad-modified' ),
 		)
 	);
 
-	// group
+	// group.
 	register_block_style(
 		'core/group',
 		array(
-			'name'	=> 'indent',
-			'label'	=> __( 'Indent', 'sketchpad-modified' ),
+			'name'  => 'indent',
+			'label' => __( 'Indent', 'sketchpad-modified' ),
 		)
 	);
 };
