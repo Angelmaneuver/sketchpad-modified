@@ -940,9 +940,7 @@ aside {
       }
 
       textarea#comment {
-        width: $main_width;
-        min-width: $main_width;
-        max-width: $main_width;
+        width: 100%;
       }
 
       .form-allowed-tags {

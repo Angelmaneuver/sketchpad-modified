@@ -2008,9 +2008,7 @@ aside .sidebar section div.footer .site-info > span.right .original {
 }
 
 .comments-area .comment-respond .comment-form textarea#comment {
-  width: 59rem;
-  min-width: 59rem;
-  max-width: 59rem;
+  width: 100%;
 }
 
 .comments-area .comment-respond .comment-form .form-allowed-tags {
