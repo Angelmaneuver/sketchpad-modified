@@ -39,7 +39,10 @@ function sketchpad_content_feed( $content ) {
 	global $post;
 
 	$permalink = esc_url( get_permalink( $post ) );
-	$content   = sketchpad_content2more_read( $post->post_content, $permalink );
+
+	if ( get_option( 'rss_use_excerpt' ) ) {
+		$content = sketchpad_content2more_read( $post->post_content, $permalink );
+	}
 
 	if ( get_theme_mod( 'sketchpad_rss_output_post_tumbnail', false ) ) {
 
