@@ -13,17 +13,25 @@ I like this theme so I dicided to customize it. Not a job but a hobby...
 My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/)
 
 ## Todo
+### Design
 
-- [x] Add a Postit design
-- [x] Add a Eyecacting image to RSS Feed
-- [x] Corrected to output the article text until the continuation is read
-- [x] Add a Breadcrumb list
-- [x] Add a Return to Top Button
-- [x] Customize to Blog Card design
+- [x] Postit design
+
+### Feature
+
+- [x] Breadcrumb List
+- [x] RSS feeds are now outputted up to read more tag
+- [x] Output EyeCatch image to RSS Feed
+- [x] Return to Top Button
+- [x] HTML can be inserted into the Head tags from the admin panel
+- [x] HTML can be inserted into the Body tags from the admin panel
+- [x] Blog card settings can be configured from the admin panel
+- [ ] Output Structured Data (maybe JSON-LD)
+- [ ] Responsive
+
+### Repeal
+
 - [x] Exclude IE from the target browser
-- [ ] Add a Output Structured Data (maybe JSON-LD)
-- [ ] Add a Responsive
-- [ ] Move Shortcode to plugin
 
 ## Requirement
 
