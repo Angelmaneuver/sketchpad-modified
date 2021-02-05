@@ -40,8 +40,8 @@ function sketchpad_customize4hamburger_menu_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_hamburger_menu_button_open_mark',
 		array(
-			'default'           => sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_OPEN_MARK ),
-			'sanitize_callback' => 'sketchpad_sanitize_top_button_template',
+			'default'           => sketchpad_sanitize_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_OPEN_MARK ),
+			'sanitize_callback' => 'sketchpad_sanitize_button_template',
 		)
 	);
 	$wp_customize->add_control(
@@ -56,8 +56,8 @@ function sketchpad_customize4hamburger_menu_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_hamburger_menu_button_close_mark',
 		array(
-			'default'           => sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ),
-			'sanitize_callback' => 'sketchpad_sanitize_top_button_template',
+			'default'           => sketchpad_sanitize_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ),
+			'sanitize_callback' => 'sketchpad_sanitize_button_template',
 		)
 	);
 	$wp_customize->add_control(

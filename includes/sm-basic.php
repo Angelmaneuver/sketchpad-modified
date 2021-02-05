@@ -168,7 +168,7 @@ function sketchpad_output_return2top_button() {
 	$background_color = get_theme_mod( 'sketchpad_top_button_background_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_BACKGROUND_COLOR );
 	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onClick="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_top_button_hover_background_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
 	$border           = get_theme_mod( 'sketchpad_top_button_border_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_BORDER_COLOR );
-	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ) );
+	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ) );
 
 	$value = <<<EOM
 	<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$mark}</button>
@@ -202,8 +202,8 @@ function sketchpad_output_hamburger_menu_button() {
 	$background_color = get_theme_mod( 'sketchpad_hamburger_menu_button_background_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_BACKGROUND_COLOR );
 	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onClick="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_hamburger_menu_button_hover_background_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
 	$border           = get_theme_mod( 'sketchpad_hamburger_menu_button_border_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_BORDER_COLOR );
-	$open_mark        = get_theme_mod( 'sketchpad_hamburger_menu_button_open_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_OPEN_MARK ) );
-	$close_mark       = get_theme_mod( 'sketchpad_hamburger_menu_button_close_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ) );
+	$open_mark        = get_theme_mod( 'sketchpad_hamburger_menu_button_open_mark', sketchpad_sanitize_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_OPEN_MARK ) );
+	$close_mark       = get_theme_mod( 'sketchpad_hamburger_menu_button_close_mark', sketchpad_sanitize_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ) );
 
 	$value = <<<EOM
 	<button class="hamburger_menu open" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$open_mark}</button>

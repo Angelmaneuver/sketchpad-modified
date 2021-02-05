@@ -40,8 +40,8 @@ function sketchpad_customize4top_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_top_button_mark',
 		array(
-			'default'           => sketchpad_sanitize_top_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ),
-			'sanitize_callback' => 'sketchpad_sanitize_top_button_template',
+			'default'           => sketchpad_sanitize_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ),
+			'sanitize_callback' => 'sketchpad_sanitize_button_template',
 		)
 	);
 	$wp_customize->add_control(
