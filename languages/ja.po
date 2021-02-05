@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-01-23T07:42:36+00:00\n"
+"POT-Creation-Date: 2021-02-05T13:35:42+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -263,7 +263,7 @@ msgid "Blog Card Image Size setting enable"
 msgstr "ブログカ－ドの画像設定を有効化する"
 
 #: includes/admin/theme-customizer/sm-basic/blog-card.php:52
-#: includes/admin/theme-customizer/sm-rss.php:62
+#: includes/admin/theme-customizer/sm-rss.php:88
 msgid "Image Size"
 msgstr "画像サイズ"
 
@@ -274,6 +274,38 @@ msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する
 #: includes/admin/theme-customizer/sm-basic/blog-card.php:92
 msgid "Form Type"
 msgstr "フォ－ムタイプ"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:19
+msgid "Hamburger menu Button Setting"
+msgstr "ハンバ－ガ－メニュ－ボタン設定"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:20
+msgid "Configure settings for the button that hamburger menu of the page."
+msgstr "ハンバ－ガ－メニュ－ボタンの設定"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:36
+msgid "Hamburger menu Button enable"
+msgstr "ハンバ－ガ－メニュ－ボタンを有効化する"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:52
+msgid "Hamburger menu Button Open Mark"
+msgstr "ハンバ－ガ－メニュ－ (開く) ボタンのマ－ク"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:68
+msgid "Hamburger menu Button Close Mark"
+msgstr "ハンバ－ガ－メニュ－ (閉じる) ボタンのマ－ク"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:86
+msgid "Hamburger menu Button Background Color"
+msgstr "ハンバ－ガ－メニュ－ボタンの背景色"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:104
+msgid "Hamburger menu Button Hover Background Color"
+msgstr "ハンバ－ガ－メニュ－ボタンの背景色 (オンマウス時)"
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:122
+msgid "Hamburger menu Button Border Color"
+msgstr "ハンバ－ガ－メニュ－ボタンの枠線色"
 
 #: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
 msgid "Body Tag Setting"
@@ -308,31 +340,31 @@ msgstr "Head タグに挿入する場合は入力してください。"
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr "左にスライドするほどHead タグへの出力が早くなります。"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:19
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:19
 msgid "Top Button Setting"
 msgstr "トップへ戻るボタン設定"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:20
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:20
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr "ペ－ジの先頭に戻るボタンの設定"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:36
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:36
 msgid "Top Button enable"
 msgstr "トップへ戻るボタンを有効化する"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:52
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:52
 msgid "Top Button Mark"
 msgstr "トップへ戻るボタンのマ－ク"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:70
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:70
 msgid "Top Button Background Color"
 msgstr "トップへ戻るボタンの背景色"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:88
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:88
 msgid "Top Button Hover Background Color"
 msgstr "トップへ戻るボタンの背景色 (オンマウス時)"
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:106
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:106
 msgid "Top Button Border Color"
 msgstr "トップへ戻るボタンの枠線色"
 
@@ -416,23 +448,23 @@ msgstr "日付テンプレ－ト"
 msgid "Search Template"
 msgstr "検索テンプレ－ト"
 
-#: includes/admin/theme-customizer/sm-rss.php:17
+#: includes/admin/theme-customizer/sm-rss.php:19
 msgid "Sketchpad - modified RSS Feed Setting"
 msgstr "Sketchpad - modified RSS Feed 設定"
 
-#: includes/admin/theme-customizer/sm-rss.php:18
+#: includes/admin/theme-customizer/sm-rss.php:20
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr "アイキャッチ画像を RSS Feed に出力するかどうかの設定"
 
-#: includes/admin/theme-customizer/sm-rss.php:29
+#: includes/admin/theme-customizer/sm-rss.php:37
 msgid "output eye-catching image"
 msgstr "アイキャッチ画像を出力する"
 
-#: includes/admin/theme-customizer/sm-rss.php:40
+#: includes/admin/theme-customizer/sm-rss.php:54
 msgid "to incluede the \"media:content\" tag"
 msgstr "\"media:content\" タグを追加する"
 
-#: includes/admin/theme-customizer/sm-rss.php:51
+#: includes/admin/theme-customizer/sm-rss.php:71
 msgid "to incluede the \"enclosure\" tag"
 msgstr "\"enclosure\" タグを追加する"
 

@@ -34,7 +34,8 @@ if ( is_admin() || is_customize_preview() ) {
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-head-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-body-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/blog-card.php';
-	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/top-button.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/return2top-button.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php';
 }
 
 /**
@@ -146,37 +147,71 @@ add_filter( 'embed_thumbnail_image_shape', 'sketchpad_blog_card_image_form', 10,
 add_filter( 'the_excerpt_embed', 'sketchpad_blog_card_content' );
 
 /**
- * Output top button method wrapper.
+ * Output return to top button method wrapper.
  *
- * @subpackage top-button
+ * @subpackage return2top-button
  * @since 1.0.0
  */
-function sketchpad_top_button() {
+function sketchpad_return2top_button() {
 	if ( get_theme_mod( 'sketchpad_top_button_enable', false ) ) {
-		sketchpad_output_top_button();
+		sketchpad_output_return2top_button();
 	}
 }
 
 /**
- * Output top button html.
+ * Output return to top button html.
  *
- * @subpackage top-button
+ * @subpackage return2top-button
  * @since 1.0.0
  */
-function sketchpad_output_top_button() {
-	$background_color = get_theme_mod( 'sketchpad_top_button_background_color', Sm_Basic_Constant::TOP_BUTTON_BACKGROUND_COLOR );
-	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_top_button_hover_background_color', Sm_Basic_Constant::TOP_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
-	$border           = get_theme_mod( 'sketchpad_top_button_border_color', Sm_Basic_Constant::TOP_BUTTON_BORDER_COLOR );
-	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::TOP_BUTTON_MARK ) );
+function sketchpad_output_return2top_button() {
+	$background_color = get_theme_mod( 'sketchpad_top_button_background_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_BACKGROUND_COLOR );
+	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onClick="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_top_button_hover_background_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
+	$border           = get_theme_mod( 'sketchpad_top_button_border_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_BORDER_COLOR );
+	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ) );
 
 	$value = <<<EOM
-	<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover} onClick="return false;">{$mark}</button>
+	<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$mark}</button>
+
 EOM;
 
 	sketchpad_echo( $value );
-	?>
-<script type="text/javascript">(function($){let top_button = $('.top_button');top_button.hide();$(window).scroll(function(){if($(this).scrollTop() > 100){top_button.fadeIn();}else{top_button.fadeOut();}});top_button.click(function(){$('body, html').animate({scrollTop: 0}, 500);return false;});})(jQuery);</script>
-	<?php
 }
 
-add_filter( 'wp_footer', 'sketchpad_top_button' );
+add_filter( 'wp_footer', 'sketchpad_return2top_button' );
+
+/**
+ * Output hamburger menu button method wrapper.
+ *
+ * @subpackage hamburger-menu-button
+ * @since 1.0.0
+ */
+function sketchpad_hamburger_menu_button() {
+	if ( get_theme_mod( 'sketchpad_hamburger_menu_button_enable', false ) ) {
+		sketchpad_output_hamburger_menu_button();
+	}
+}
+
+/**
+ * Output hamburger menu button html.
+ *
+ * @subpackage hamburger-menu-button
+ * @since 1.0.0
+ */
+function sketchpad_output_hamburger_menu_button() {
+	$background_color = get_theme_mod( 'sketchpad_hamburger_menu_button_background_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_BACKGROUND_COLOR );
+	$hover            = 'onMouseOut="this.style.background=' . "'" . $background_color . "';" . '" onClick="this.style.background=' . "'" . $background_color . "';" . '" onMouseOver="this.style.background=' . "'" . get_theme_mod( 'sketchpad_hamburger_menu_button_hover_background_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_HOVER_BACKGROUND_COLOR ) . "'" . ';"';
+	$border           = get_theme_mod( 'sketchpad_hamburger_menu_button_border_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_BORDER_COLOR );
+	$open_mark        = get_theme_mod( 'sketchpad_hamburger_menu_button_open_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_OPEN_MARK ) );
+	$close_mark       = get_theme_mod( 'sketchpad_hamburger_menu_button_close_mark', sketchpad_sanitize_top_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ) );
+
+	$value = <<<EOM
+	<button class="hamburger_menu open" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$open_mark}</button>
+	<button class="hamburger_menu close" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$close_mark}</button>
+
+EOM;
+
+	sketchpad_echo( $value );
+}
+
+add_filter( 'wp_footer', 'sketchpad_hamburger_menu_button' );

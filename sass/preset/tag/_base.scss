@@ -2,8 +2,14 @@
 
 @mixin BasicTags {
   .is-style-h1 {
-    @include GetFont(2.4rem);
     @include BaseFontFamily;
+
+    @include responsive() {
+      @include GetFont(2.4rem);
+    }
+    @include responsive('md') {
+      @include GetFont(2rem);
+    }
   }
 
   h1 {
@@ -11,8 +17,14 @@
   }
 
   .is-style-h2 {
-    @include GetFont(2.4rem);
     @include BaseFontFamily;
+
+    @include responsive() {
+      @include GetFont(2.4rem);
+    }
+    @include responsive('md') {
+      @include GetFont(2rem);
+    }
   }
 
   h2 {
@@ -20,8 +32,14 @@
   }
 
   .is-style-h3 {
-    @include GetFont(2.2rem);
     @include BaseFontFamily;
+
+    @include responsive() {
+      @include GetFont(2.2rem);
+    }
+    @include responsive('md') {
+      @include GetFont(1.9rem);
+    }
   }
 
   h3 {
@@ -29,8 +47,14 @@
   }
 
   .is-style-h4 {
-    @include GetFont(2.0rem);
     @include BaseFontFamily;
+
+    @include responsive() {
+      @include GetFont(2.0rem);
+    }
+    @include responsive('md') {
+      @include GetFont(1.8rem);
+    }
   }
 
   h4 {
@@ -38,8 +62,14 @@
   }
 
   .is-style-h5 {
-    @include GetFont(1.8rem);
     @include BaseFontFamily;
+
+    @include responsive() {
+      @include GetFont(1.8rem);
+    }
+    @include responsive('md') {
+      @include GetFont(1.7rem);
+    }
   }
 
   h5 {
@@ -139,6 +169,13 @@
     margin: 1.2rem 0;
     padding: 1rem;
     @include ThinBorderStyle;
+
+    @include responsive() {
+      white-space: pre;
+    }
+    @include responsive('md') {
+      white-space: pre-wrap;
+    }
   }
 
   ins {

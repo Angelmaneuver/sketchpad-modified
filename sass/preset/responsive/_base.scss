@@ -1,0 +1,6 @@
+// Responsive Property
+@mixin responsive($key: lg, $breakpoints: $breakpoints) {
+  @media #{map-get($breakpoints, $key)} {
+    @content;
+  }
+}

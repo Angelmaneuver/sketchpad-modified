@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-01-23T07:42:36+00:00\n"
+"POT-Creation-Date: 2021-02-05T13:35:42+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -310,7 +310,7 @@ msgid "Blog Card Image Size setting enable"
 msgstr ""
 
 #: includes/admin/theme-customizer/sm-basic/blog-card.php:52
-#: includes/admin/theme-customizer/sm-rss.php:62
+#: includes/admin/theme-customizer/sm-rss.php:88
 msgid "Image Size"
 msgstr ""
 
@@ -320,6 +320,38 @@ msgstr ""
 
 #: includes/admin/theme-customizer/sm-basic/blog-card.php:92
 msgid "Form Type"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:19
+msgid "Hamburger menu Button Setting"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:20
+msgid "Configure settings for the button that hamburger menu of the page."
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:36
+msgid "Hamburger menu Button enable"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:52
+msgid "Hamburger menu Button Open Mark"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:68
+msgid "Hamburger menu Button Close Mark"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:86
+msgid "Hamburger menu Button Background Color"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:104
+msgid "Hamburger menu Button Hover Background Color"
+msgstr ""
+
+#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:122
+msgid "Hamburger menu Button Border Color"
 msgstr ""
 
 #: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
@@ -355,31 +387,31 @@ msgstr ""
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:19
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:19
 msgid "Top Button Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:20
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:20
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:36
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:36
 msgid "Top Button enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:52
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:52
 msgid "Top Button Mark"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:70
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:70
 msgid "Top Button Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:88
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:88
 msgid "Top Button Hover Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/top-button.php:106
+#: includes/admin/theme-customizer/sm-basic/return2top-button.php:106
 msgid "Top Button Border Color"
 msgstr ""
 
@@ -463,23 +495,23 @@ msgstr ""
 msgid "Search Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:17
+#: includes/admin/theme-customizer/sm-rss.php:19
 msgid "Sketchpad - modified RSS Feed Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:18
+#: includes/admin/theme-customizer/sm-rss.php:20
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:29
+#: includes/admin/theme-customizer/sm-rss.php:37
 msgid "output eye-catching image"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:40
+#: includes/admin/theme-customizer/sm-rss.php:54
 msgid "to incluede the \"media:content\" tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:51
+#: includes/admin/theme-customizer/sm-rss.php:71
 msgid "to incluede the \"enclosure\" tag"
 msgstr ""
 

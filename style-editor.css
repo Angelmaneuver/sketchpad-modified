@@ -3,12 +3,6 @@
 * Article
 * -----------------------------------------------------------------------------------------------
 */
-.post-content h2, .comment-body h2 {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-}
-
 .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6, .comment-body h2, .comment-body h3, .comment-body h4, .comment-body h5, .comment-body h6 {
   margin-bottom: 1rem;
 }
@@ -148,6 +142,10 @@ blockquote.wp-block-quote p {
 
 blockquote.wp-block-quote p:first-child {
   margin-top: 0.5rem;
+}
+
+blockquote.wp-block-quote p:last-of-type {
+  margin-bottom: 5rem;
 }
 
 blockquote.wp-block-quote cite {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Top button.
+ * Return to top button.
  *
  * @package sketchpad - modified
  * @subpackage sm-basic
@@ -40,7 +40,7 @@ function sketchpad_customize4top_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_top_button_mark',
 		array(
-			'default'           => sketchpad_sanitize_top_button_template( Sm_Basic_Constant::TOP_BUTTON_MARK ),
+			'default'           => sketchpad_sanitize_top_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ),
 			'sanitize_callback' => 'sketchpad_sanitize_top_button_template',
 		)
 	);
@@ -56,7 +56,7 @@ function sketchpad_customize4top_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_top_button_background_color',
 		array(
-			'default'           => Sm_Basic_Constant::TOP_BUTTON_BACKGROUND_COLOR,
+			'default'           => Sm_Basic_Constant::RETURN2TOP_BUTTON_BACKGROUND_COLOR,
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -74,7 +74,7 @@ function sketchpad_customize4top_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_top_button_hover_background_color',
 		array(
-			'default'           => Sm_Basic_Constant::TOP_BUTTON_HOVER_BACKGROUND_COLOR,
+			'default'           => Sm_Basic_Constant::RETURN2TOP_BUTTON_HOVER_BACKGROUND_COLOR,
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -92,7 +92,7 @@ function sketchpad_customize4top_button_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'sketchpad_top_button_border_color',
 		array(
-			'defult'            => Sm_Basic_Constant::TOP_BUTTON_BORDER_COLOR,
+			'defult'            => Sm_Basic_Constant::RETURN2TOP_BUTTON_BORDER_COLOR,
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);

@@ -7,11 +7,6 @@
 @import './customised/init';
 
 .post-content, .comment-body {
-  h2 {
-    @include GetFont(2.4rem);
-    @include BaseFontFamily;
-  }
-
   h2, h3, h4, h5, h6 {
     &:not(:first-child) {
       margin-top: 5rem;
@@ -151,6 +146,10 @@ blockquote.wp-block-quote {
     }
 
     margin-bottom: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 5rem;
+    }
   }
 
   cite {

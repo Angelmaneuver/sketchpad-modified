@@ -1,15 +1,52 @@
-/** Auto height .content for left vertical background image **/
 ( function( $ ){
 	'use strict';
 
 	$( document ).ready( function() {
 		height_adjustment();
+
+		/** Hamburger menu button event */
+		$( '.hamburger_menu' + '.close' ).hide();
+
+		$( '.hamburger_menu' ).click( function(){
+			let is_menu = $( 'div#main-content' ).hasClass( 'show_sidebar' );
+
+			if( !is_menu ){
+				$( 'div#main-content' ).data( 'scroll-position', $( document ).scrollTop() );
+				$( '.hamburger_menu' + '.open' ).hide();
+				$( '.hamburger_menu' + '.close' ).show();
+			}
+
+			$( 'div#main-content' ).toggleClass( 'show_sidebar' );
+
+			if( is_menu ){
+				$( '.hamburger_menu' + '.open' ).show();
+				$( '.hamburger_menu' + '.close' ).hide();
+				$( 'body, html' ).animate( { scrollTop: $( 'div#main-content' ).data( 'scroll-position' ) }, 500);
+			}
+		});
+
+		/** Return to Top button event */
+		let return2top_button = $( '.top_button' );
+
+		$( window ).scroll( function(){
+			if( $( this ).scrollTop() > 100 ){
+				return2top_button.fadeIn();
+			}else{
+				return2top_button.fadeOut();
+			}
+		});
+
+		return2top_button.click( function(){
+			$( 'body, html' ).animate( { scrollTop: 0} , 500 );
+			return false;
+		});
 	});
 
 	$( document.body ).on( 'post-load', function () {
 		height_adjustment();
 	});
 
+	/** Auto height .content for left vertical background image */
 	function height_adjustment() {
 		$( ".content" ).height( function( i, val ){
 			return Math.ceil( val / 74 ) * 74;
@@ -46,7 +83,7 @@
 
 	window.owihl.OverwriteIframeHeightLimit = function( e ) {
 		var data = e.data;
-	
+
 		// Check if all needed data is provided
 		if ( !( data.secret || data.message || data.value ) ) {
 			return;
