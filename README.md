@@ -27,8 +27,8 @@ My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/)
 - [x] HTML can be inserted into the Body tags from the admin panel
 - [x] Blog card settings can be configured from the admin panel
 - [x] Infinite scroll (JetPack Plugin)
+- [x] Responsive
 - [ ] Output Structured Data (maybe JSON-LD)
-- [ ] Responsive
 
 ### Repeal
 
