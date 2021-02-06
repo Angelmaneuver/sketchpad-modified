@@ -2626,11 +2626,6 @@ section.profiles h3, section.profiles h3 > span {
   visibility: hidden;
 }
 
-section.profiles h4 {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-}
-
 section.profiles h4:first-of-type {
   margin-top: 0;
 }
@@ -2669,8 +2664,6 @@ section.profiles article .row-rebarse {
 }
 
 section.profiles article p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
   display: inline;
 }
 
@@ -2693,24 +2686,6 @@ section.profiles article div.headline:before {
 
 section.profiles article div.headline + * {
   margin-left: 1.5rem;
-}
-
-section.profiles article div.sub_headline {
-  position: relative;
-  font-size: 1rem;
-  line-height: 1rem;
-  font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  margin: 0 0.5rem 1rem 0;
-  padding: 0 0 0 2rem;
-}
-
-section.profiles article div.sub_headline:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0.1rem;
-  width: 0;
-  height: 0;
 }
 
 section.profiles article > div {
@@ -2779,15 +2754,11 @@ section.profiles article > div .ribbon .ribbon_right:after {
 }
 
 section.profiles article > div > div:not(.ribbon) {
-  min-height: 30rem;
-  padding: 1.4rem 1rem 1.4rem 2.6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 section.profiles article > div > div:not(.ribbon) div.icon {
-  --width: 16rem;
-  --height: 18rem;
   --align-items: flex-start;
   --justify-content: start;
   -webkit-box-sizing: border-box;
@@ -2829,7 +2800,6 @@ section.profiles article > div > div:not(.ribbon) div.icon span {
 
 section.profiles article > div > div:not(.ribbon) div.personal {
   width: 100%;
-  margin: 3rem 0 0 2.5rem;
 }
 
 section.profiles article > div > div:not(.ribbon) div.personal > *:not(:last-child) {
@@ -2918,8 +2888,78 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.o
   margin: -0.1rem 0.1rem 0 0;
 }
 
-section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline > div:not(:first-child) {
-  margin-left: 10.5rem;
+@media (min-width: 1024px) {
+  section.profiles h4 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  section.profiles article p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  section.profiles article div.sub_headline {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: "Sriracha", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0 0.5rem 1rem 0;
+    padding: 0 0 0 2rem;
+  }
+  section.profiles article div.sub_headline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0.1rem;
+    width: 0;
+    height: 0;
+  }
+  section.profiles article > div > div:not(.ribbon) {
+    min-height: 30rem;
+    padding: 1.4rem 1rem 1.4rem 2.6rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.icon {
+    --width: 16rem;
+    --height: 18rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.personal {
+    margin: 3rem 0 0 2.5rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline > div:not(:first-child) {
+    margin-left: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  section.profiles h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  section.profiles article p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  section.profiles article div.sub_headline {
+    display: none;
+  }
+  section.profiles article > div > div:not(.ribbon) {
+    padding: 1.4rem 1rem 1.4rem 1rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.icon {
+    --width: 10rem;
+    --height: 12rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.personal {
+    margin: 1.5rem 0 0 1rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.personal > div:first-of-type {
+    display: none;
+  }
+  section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.headline:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+  section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline > div:not(:first-child) {
+    margin-left: 0.5rem;
+  }
 }
 
 h2.is-style-ssr, h2.is-style-sr, h2.is-style-r {
