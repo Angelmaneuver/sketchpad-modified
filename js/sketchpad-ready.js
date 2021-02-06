@@ -25,6 +25,17 @@
 			}
 		});
 
+		/** TOC+ Widget's event at Hamburger menu */
+		$( 'ul.toc_widget_list a' ).click( function(){
+			let is_menu = $( 'div#main-content' ).hasClass( 'show_sidebar' );
+
+			if( is_menu ){
+				$( 'div#main-content' ).toggleClass( 'show_sidebar' );
+				$( '.hamburger_menu' + '.open' ).show();
+				$( '.hamburger_menu' + '.close' ).hide();
+			}
+		});
+
 		/** Return to Top button event */
 		let return2top_button = $( '.top_button' );
 
