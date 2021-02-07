@@ -337,8 +337,8 @@ article form.search {
       }
     }
 
-    .main {
-      width: $main_width;
+    main {
+      max-width: $main_width;
     }
   }
   @include responsive('md') {

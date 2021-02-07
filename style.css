@@ -643,8 +643,8 @@ article form.search {
     content: '\025B8';
     float: right;
   }
-  .content .main {
-    width: 59rem;
+  .content main {
+    max-width: 59rem;
   }
 }
 
