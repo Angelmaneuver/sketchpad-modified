@@ -2,7 +2,6 @@
 	'use strict';
 
 	$( document ).ready( function() {
-		height_adjustment();
 
 		/** Hamburger menu button event */
 		$( '.hamburger_menu' + '.close' ).hide();
@@ -53,8 +52,18 @@
 		});
 	});
 
-	$( document.body ).on( 'post-load', function () {
+	$( window ).on( 'load', function() {
 		height_adjustment();
+
+		const element  = $( '.content' ).get( 0 );
+
+		const observer = new ResizeObserver( ( entries ) => {
+			height_adjustment();
+		});
+
+		if ( element ) {
+			observer.observe( element );
+		}
 	});
 
 	/** Auto height .content for left vertical background image */
