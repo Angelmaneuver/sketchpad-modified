@@ -576,18 +576,22 @@ article form.search {
   .content .main-navigation {
     position: relative;
     display: block;
-    z-index: 1000;
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-family: 'Arial';
     width: 59rem;
+    border-color: #776B53;
+    border-top-width: 0.2rem;
+    border-top-style: solid;
+    z-index: 1000;
+  }
+  .content .main-navigation > div > ul:before, .content .main-navigation > div > ul:after {
+    content: "";
+    clear: both;
+    display: block;
   }
   .content .main-navigation ul {
     display: block;
-    width: 59rem;
-    border-color: #776B53;
-    border-width: thin;
-    border-style: solid;
     list-style: none;
   }
   .content .main-navigation ul a:hover {
@@ -596,7 +600,6 @@ article form.search {
   .content .main-navigation ul li {
     position: relative;
     float: left;
-    margin-top: 0.1rem;
   }
   .content .main-navigation ul li a {
     display: block;

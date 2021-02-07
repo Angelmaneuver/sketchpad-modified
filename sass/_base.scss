@@ -254,17 +254,24 @@ article form.search {
 
       position: relative;
       display: block;
-      @include SketchpadTopmostLayer;
       font-size: $font-size;
       line-height: $font-size * $default_line-height-ratio;
       @include ArialFontFamily;
       width: $main_width;
+      @include DelimiterBorderColor1;
+      @include ThinBorderTopStyle(0.2rem);
+      @include SketchpadTopmostLayer;
+
+      > div > ul {
+        &:before, &:after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+      }
 
       ul {
         display: block;
-        width: $main_width;
-        @include DelimiterBorderColor1;
-        @include ThinBorderStyle;
         list-style: none;
 
         a:hover {
@@ -274,7 +281,6 @@ article form.search {
         li {
           position: relative;
           float: left;
-          margin-top: 0.1rem;
 
           a {
             display: block;
