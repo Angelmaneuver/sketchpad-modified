@@ -55,11 +55,11 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 		if ( ! $number ) {
 			$number = 5;
 		}
-		$add_slug = isset( $instance['add_slug'] ) ? $instance['add_slug'] : false;
+		$add_slug              = isset( $instance['add_slug'] ) ? $instance['add_slug'] : false;
 		$not_show_current_post = isset( $instance['not_show_current_post'] ) ? $instance['not_show_current_post'] : false;
-		$show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
-		$show_categories = isset( $instance['show_categories'] ) ? $instance['show_categories'] : array();
-		$show_thumbnail = isset( $instance['show_thumbnail'] ) ? $instance['show_thumbnail'] : false;
+		$show_date             = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
+		$show_categories       = isset( $instance['show_categories'] ) ? $instance['show_categories'] : array();
+		$show_thumbnail        = isset( $instance['show_thumbnail'] ) ? $instance['show_thumbnail'] : false;
 
 		$base_condition = array(
 			'posts_per_page'      => $number,
@@ -68,13 +68,13 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			'ignore_sticky_posts' => true,
 		);
 
-		$option_condition = [];
+		$option_condition = array();
 
-		if ( $not_show_current_post && is_single() ){
+		if ( $not_show_current_post && is_single() ) {
 			$option_condition['post__not_in'] = array( get_the_ID() );
 		}
 
-		if( !empty( $show_categories && !in_array( 0, $show_categories ) ) ){
+		if ( ! empty( $show_categories && ! in_array( 0, $show_categories ) ) ) {
 			$option_condition['category__in'] = $show_categories;
 		}
 
@@ -115,7 +115,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 
 		if ( 'html5' === $format ) {
 			// The title may be filtered: Strip out HTML and make sure the aria-label is never empty.
-			$title      = trim( strip_tags( $title ) );
+			$title      = trim( wp_all_strip_tags( $title ) );
 			$aria_label = $title ? $title : $default_title;
 			echo '<nav role="navigation" aria-label="' . esc_attr( $aria_label ) . '">';
 		}
@@ -126,17 +126,17 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 				<?php
 				$post_title   = get_the_title( $recent_post->ID );
 				$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
-				$tags					= get_the_tags( $recent_post->ID );
-				$tags2class		= ' class="' . $this->alt_option_name . '" ';
+				$tags         = get_the_tags( $recent_post->ID );
+				$tags2class   = ' class="' . $this->alt_option_name . '" ';
 				$aria_current = '';
 
 				if ( get_queried_object_id() === $recent_post->ID ) {
 					$aria_current = ' aria-current="page"';
 				}
 
-				if ( $add_slug && $tags ){
-					$slugs = [];
-					foreach( $tags as $tag ){
+				if ( $add_slug && $tags ) {
+					$slugs = array();
+					foreach ( $tags as $tag ) {
 						$slugs[] = esc_attr( 'tag-' . $tag->slug );
 					}
 					$tags2class = ' class="' . $this->alt_option_name . ' ' . implode( ' ', $slugs ) . '" ';
@@ -146,7 +146,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 				?>
 				<li<?php echo $tags2class; ?>>
 					<a href="<?php the_permalink( $recent_post->ID ); ?>"<?php echo $aria_current; ?>>
-						<?php echo ($show_thumbnail && !empty( $thumbnail )) ? $thumbnail : ''; ?>
+						<?php echo ( $show_thumbnail && ! empty( $thumbnail ) ) ? $thumbnail : ''; ?>
 						<span class="post-title"><?php echo $title; ?></span>
 					</a>
 					<?php if ( $show_date ) : ?>
@@ -175,13 +175,13 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 	 * @return array Updated settings to save.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance              						 = $old_instance;
-		$instance['title']     						 = sanitize_text_field( $new_instance['title'] );
-		$instance['number']    						 = (int) $new_instance['number'];
-		$instance['add_slug']  						 = isset( $new_instance['add_slug'] ) ? (bool) $new_instance['add_slug'] : false;
+		$instance                          = $old_instance;
+		$instance['title']                 = sanitize_text_field( $new_instance['title'] );
+		$instance['number']                = (int) $new_instance['number'];
+		$instance['add_slug']              = isset( $new_instance['add_slug'] ) ? (bool) $new_instance['add_slug'] : false;
 		$instance['not_show_current_post'] = isset( $new_instance['not_show_current_post'] ) ? (bool) $new_instance['not_show_current_post'] : false;
-		$instance['show_date'] 						 = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
-		$instance['show_categories']			 = isset( $new_instance['show_categories'] ) ? array_map( 'absint', $new_instance['show_categories'] ) : array();
+		$instance['show_date']             = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
+		$instance['show_categories']       = isset( $new_instance['show_categories'] ) ? array_map( 'absint', $new_instance['show_categories'] ) : array();
 		$instance['show_thumbnail']        = isset( $new_instance['show_thumbnail'] ) ? (bool) $new_instance['show_thumbnail'] : false;
 		return $instance;
 	}
@@ -194,14 +194,21 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 	 * @param array $instance Current settings.
 	 */
 	public function form( $instance ) {
-		$title     						 = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
-		$number    						 = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
-		$add_slug  						 = isset( $instance['add_slug'] ) ? (bool) $instance['add_slug'] : false;
+		$title                 = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
+		$number                = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
+		$add_slug              = isset( $instance['add_slug'] ) ? (bool) $instance['add_slug'] : false;
 		$not_show_current_post = isset( $instance['not_show_current_post'] ) ? (bool) $instance['not_show_current_post'] : false;
-		$show_date 						 = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;
+		$show_date             = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;
 		$show_categories       = isset( $instance['show_categories'] ) ? $instance['show_categories'] : array();
-		$categories            = count( get_categories( array( 'hierarchical' => true, 'number' => 10) ) );
-		$categories						 = ( 10 > $categories ) ? $categories + 1 : $categories;
+		$categories            = count(
+			get_categories(
+				array(
+					'hierarchical' => true,
+					'number'       => 10,
+				)
+			)
+		);
+		$categories            = ( 10 > $categories ) ? $categories + 1 : $categories;
 		$show_thumbnail        = isset( $instance['show_thumbnail'] ) ? $instance['show_thumbnail'] : false;
 		?>
 
@@ -228,25 +235,29 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 		</p>
 		<h4><?php _e( 'Filter by categories', 'sketchpad-modified' ); ?></h4>
 		<p>
-			<?php wp_dropdown_categories( array(
-					'name'								=> $this->get_field_name( 'show_categories[]' ),
-					'id'									=> $this->get_field_id( 'show_categories' ),
-					'class'								=> 'widefat',
-					'depth'								=> 0,
-					'show_option_all'			=> __( 'Show all categories.', 'sketchpad-modified' ),
-					'selected'						=> false,
-					'hide_if_empty'				=> true,
-					'hierarchical'				=> true,
-					'echo'								=> true,
-					'sketchpad_multiple'	=> true,
-					'sketchpad_size'			=> $categories,
-					'sketchpad_selected'	=> $show_categories,
-				) );
+			<?php
+			wp_dropdown_categories(
+				array(
+					'name'               => $this->get_field_name( 'show_categories[]' ),
+					'id'                 => $this->get_field_id( 'show_categories' ),
+					'class'              => 'widefat',
+					'depth'              => 0,
+					'show_option_all'    => __( 'Show all categories.', 'sketchpad-modified' ),
+					'selected'           => false,
+					'hide_if_empty'      => true,
+					'hierarchical'       => true,
+					'echo'               => true,
+					'sketchpad_multiple' => true,
+					'sketchpad_size'     => $categories,
+					'sketchpad_selected' => $show_categories,
+				)
+			);
 			?>
 		</p>
 		<p>
 			<input class="checkbox" type="checkbox"<?php checked( $show_thumbnail ); ?> id="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>" name="<?php echo $this->get_field_name( 'show_thumbnail' ); ?>" />
 			<label for="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>"><?php _e( 'Display a thumbnail image.', 'sketchpad-modified' ); ?></label>
 		</p>
-	<?php }
+		<?php
+	}
 }
