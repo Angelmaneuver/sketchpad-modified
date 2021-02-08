@@ -344,6 +344,12 @@ ins *:not(a) {
   height: 100%;
 }
 
+@media (min-width: 1024px) {
+  #main-content {
+    overflow-x: hidden;
+  }
+}
+
 #wrapper {
   position: relative;
   margin: auto;
