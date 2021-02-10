@@ -3752,7 +3752,6 @@ div.wp-caption {
 
 .wp-block-table th, .wp-block-table td {
   padding: .5em;
-  word-break: normal;
   border-width: thin;
   border-style: solid;
 }
