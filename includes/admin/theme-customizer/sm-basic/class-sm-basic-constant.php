@@ -21,7 +21,6 @@ body,
 .edit-post-header,
 .components-notice,
 .interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper,
-.interface-interface-skeleton__sidebar, .components-panel__header, .interface-complementary-area-header, .interface-complementary-area, .edit-post-sidebar, .edit-post-sidebar__panel-tabs, .components-panel,
 .edit-post-layout__footer
 EOM;
 	const RETURN2TOP_BUTTON_MARK                       = 'TOP';
