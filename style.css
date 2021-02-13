@@ -1957,6 +1957,17 @@ aside .sidebar section.sm_widget_recent_entries li > a {
   transition: 1s all;
 }
 
+aside .sidebar section.sm_widget_recent_entries li > a::after {
+  content: 'No Image';
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
 aside .sidebar section.sm_widget_recent_entries li > a:hover {
   color: #996633;
 }
@@ -1978,6 +1989,7 @@ aside .sidebar section.sm_widget_recent_entries li img {
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
+  z-index: 16;
 }
 
 aside .sidebar section.sm_widget_recent_entries li span {
@@ -1998,6 +2010,7 @@ aside .sidebar section.sm_widget_recent_entries li span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0.8;
+  z-index: 17;
 }
 
 aside .sidebar section.sm_widget_recent_entries li.tag-r18 {
@@ -3533,6 +3546,17 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
   transition: 1s all;
 }
 
+.related-posts ul li > a::after {
+  content: 'No Image';
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
 .related-posts ul li > a:hover {
   color: #996633;
 }
@@ -3554,6 +3578,7 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
+  z-index: 16;
 }
 
 .related-posts ul li span {
@@ -3574,6 +3599,7 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0.8;
+  z-index: 17;
 }
 
 .related-posts ul li.tag-r18 {

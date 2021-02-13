@@ -1,21 +1,21 @@
 // Z-Index Property
 
-@mixin SketchpadLowLayer {
-  z-index: 5;
+@mixin SketchpadLowLayer($plus: 0) {
+  z-index: 5 + $plus;
 }
 
-@mixin SketchpadMiddleLayer {
-  z-index: 10;
+@mixin SketchpadMiddleLayer($plus: 0) {
+  z-index: 10 + $plus;
 }
 
-@mixin SketchpadSidebarLayer {
-  z-index: 15;
+@mixin SketchpadSidebarLayer($plus: 0) {
+  z-index: 15 + $plus;
 }
 
-@mixin SketchpadTopmostLayer {
-  z-index: 1000;
+@mixin SketchpadTopmostLayer($plus: 0) {
+  z-index: 1000 + $plus;
 }
 
-@mixin SketchpadSuperLayer {
-  z-index: 10000;
+@mixin SketchpadSuperLayer($plus: 0) {
+  z-index: 10000 + $plus;
 }
