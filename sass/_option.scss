@@ -233,7 +233,13 @@ div.content > aside > div.sidebar > section.toc_widget {
       }
     }
 
-    @include RecentPost(14rem, 13.5rem);
+    @include RecentPost(
+      $width: 14rem,
+      $height: 13.5rem,
+      $font-size: 1.4rem,
+    ){
+      @include SketchpadBackground;
+    };
   }
 
   @include responsive() {

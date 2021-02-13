@@ -1961,6 +1961,7 @@ aside .sidebar section.sm_widget_recent_entries li > a::after {
   content: 'No Image';
   font-size: 1.6rem;
   line-height: 2.4rem;
+  font-weight: 400;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1989,7 +1990,8 @@ aside .sidebar section.sm_widget_recent_entries li img {
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
-  z-index: 16;
+  background-color: #f5ead0;
+  z-index: 1;
 }
 
 aside .sidebar section.sm_widget_recent_entries li span {
@@ -2010,7 +2012,7 @@ aside .sidebar section.sm_widget_recent_entries li span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0.8;
-  z-index: 17;
+  z-index: 2;
 }
 
 aside .sidebar section.sm_widget_recent_entries li.tag-r18 {
@@ -3548,8 +3550,9 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
 
 .related-posts ul li > a::after {
   content: 'No Image';
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3578,7 +3581,8 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
-  z-index: 16;
+  background: #F4EDDF;
+  z-index: 1;
 }
 
 .related-posts ul li span {
@@ -3599,7 +3603,7 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0.8;
-  z-index: 17;
+  z-index: 2;
 }
 
 .related-posts ul li.tag-r18 {

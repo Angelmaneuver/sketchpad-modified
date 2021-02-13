@@ -20,8 +20,6 @@ $sketchpad_width: $binder_width + $main_width + $main_padding_right_width;
 $content_width: $main_width + $main_padding_right_width + $sidebar_width + $sidebar_margin_left_width;
 $wrapper_width: $binder_width + $content_width;
 
-$default_font_size: 1.6rem;
-
 // Smart Phone
 $sp_main_width: 95%;
 $sp_main_padding_left_width: 2rem;
@@ -31,5 +29,6 @@ $sp_main_padding_footer_bottom: 0.5rem;
 $sp_content_margin: 0 auto 0 auto;
 
 // default constant
+$default_font_size: 1.6rem;
 $default_font_weight: 400;
 $default_line_height_ratio: 1.5;
