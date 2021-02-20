@@ -136,7 +136,16 @@
         }
       }
 
-      .no-change {
+      $restore: '';
+      @each $element in $restoreChange2pinkElements {
+        @if '' != $restore {
+          $restore: $restore + ', '
+        }
+
+        $restore: $restore + $element;
+      }
+
+      #{$restore} {
         * {
           font-weight: initial;
           color: initial;

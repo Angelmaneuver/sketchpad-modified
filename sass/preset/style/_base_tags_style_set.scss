@@ -4,72 +4,102 @@
   h1 {
     @include GetFontWeight(700);
     @include HeadlineColor1;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor1;
+    }
   }
 
   h2 {
     @include GetFontWeight(700);
     @include HeadlineColor1;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor1;
+    }
   }
 
   h3 {
     @include GetFontWeight(700);
     @include HeadlineColor2;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor2;
+    }
   }
 
   h4 {
     @include GetFontWeight(700);
     @include HeadlineColor3;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor3;
+    }
   }
 
   h5 {
     @include GetFontWeight(700);
     @include HeadlineColor3;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor3;
+    }
   }
 
   h6 {
     @include GetFontWeight(700);
     @include HeadlineColor3;
+
+    * {
+      @include GetFontWeight(700);
+      @include HeadlineColor3;
+    }
   }
 
   p {
     @include SentenceColor1;
   }
-  
+
   address {
     @include SentenceColor1;
   }
-  
+
   table {
     @include SentenceColor1;
     @include TableBorderColor1;
     @include ThinBorderStyle;
   }
-  
+
   th {
     @include SentenceColor1;
   }
-  
+
   th, td {
     @include SentenceColor1;
   }
-  
+
   dl {
     @include SentenceColor1;
   }
-  
+
   a {
     @include LinkColor1;
   }
-  
+
   pre {
     @include PreBorderColor1;
     @include ThinBorderStyle;
   }
-  
+
   ins {
     *:not(a) {
       @include InsBorderColor;
       @include ExternalContentBackgroundColor1;
     }
-  }  
+  }
 }

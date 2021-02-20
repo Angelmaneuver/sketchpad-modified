@@ -244,6 +244,104 @@ blockquote.wp-block-quote cite {
   border-color: #B3A279;
 }
 
+.related-posts ul li {
+  position: relative;
+  display: block;
+  width: 14rem;
+  height: 13.5rem;
+  max-width: 14rem;
+  max-height: 13.5rem;
+  border-color: #dddddd;
+  border-width: thin;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.related-posts ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.related-posts ul li > a {
+  display: block;
+  width: 14rem;
+  height: 13.5rem;
+  max-width: 14rem;
+  max-height: 13.5rem;
+  margin: 0;
+  color: #e47911;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.related-posts ul li > a::after {
+  content: 'No Image';
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.related-posts ul li > a:hover {
+  color: #996633;
+}
+
+.related-posts ul li > a:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.related-posts ul li img {
+  position: absolute;
+  height: 99%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: #F4EDDF;
+  z-index: 1;
+}
+
+.related-posts ul li span {
+  font-size: 1.1rem;
+  line-height: 1.65rem;
+  font-weight: 700;
+  color: #e47911;
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 0.4rem;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.related-posts ul li.tag-r18 {
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+.related-posts ul li.tag-r18 > a > span {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+}
+
 /**
 * User Defintion Article
 * -----------------------------------------------------------------------------------------------

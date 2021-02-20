@@ -14,7 +14,7 @@
     > ul, > div.wp-block-group ul {
       @include SentenceColor1;
     }
-  
+
     > ol, > div.wp-block-group ol {
       @include SentenceColor1;
     }
@@ -30,11 +30,11 @@
     @include QuoteColor;
     @include QuoteBackgroundColor;
     @include QuoteBorderColor;
-  
+
     &:before {
       @include QuoteSimbolColor;
     }
-  
+
     cite {
       @include QuoteCiteColor;
     }
@@ -42,5 +42,17 @@
 
   .is-style-under-line {
     @include DelimiterBorderColor2;
+  }
+
+  .related-posts {
+    ul {
+      @include RecentPost(
+        $width: 14rem,
+        $height: 13.5rem,
+        $font-size: 1.4rem,
+      ){
+        @include SketchpadBackground;
+      };
+    }
   }
 }
