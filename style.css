@@ -4089,7 +4089,7 @@ div.wp-caption {
   color: inherit;
 }
 
-*[class^='has-'][class$='-font-size'] {
+*[class*='has-'][class*='-font-size'] {
   line-height: initial;
 }
 
