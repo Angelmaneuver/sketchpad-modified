@@ -73,6 +73,20 @@ function register_sketchpad_block_style() {
 	register_block_style(
 		'core/paragraph',
 		array(
+			'name'  => 'black-border',
+			'label' => __( 'Black single line', 'sketchpad-modified' ),
+		)
+	);
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name'  => 'black-double-border',
+			'label' => __( 'Black double line', 'sketchpad-modified' ),
+		)
+	);
+	register_block_style(
+		'core/paragraph',
+		array(
 			'name'  => 'r18-paragraph',
 			'label' => __( 'Change the display to R18.', 'sketchpad-modified' ),
 		)

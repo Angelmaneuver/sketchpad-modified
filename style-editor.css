@@ -172,6 +172,19 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   line-height: 2;
 }
 
+.is-style-black-border {
+  border-width: thin;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.is-style-black-double-border {
+  padding: 0.5rem;
+  border-width: medium;
+  border-style: double;
+  border-color: #000000;
+}
+
 .is-style-r18-paragraph {
   color: #FFFFFF;
   font-weight: 700;

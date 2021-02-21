@@ -20,6 +20,12 @@
   border-right-style: $border-style;
 }
 
+@mixin DoubleBorderStyle($padding: 0.5rem, $border-width: medium, $border-style: double) {
+  padding: $padding;
+  border-width: $border-width;
+  border-style: $border-style;
+}
+
 @mixin DottedBorderBottomStyle($border-width: thin, $border-style: dotted) {
   border-bottom-width: $border-width;
   border-bottom-style: $border-style;

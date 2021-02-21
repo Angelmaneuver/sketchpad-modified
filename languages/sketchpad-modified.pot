@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-05T13:35:42+00:00\n"
+"POT-Creation-Date: 2021-02-21T06:22:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -231,15 +231,15 @@ msgstr ""
 msgid "and %s"
 msgstr ""
 
-#: functions.php:24
+#: functions.php:34
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:114
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:116
 msgid "Right Widget Area"
 msgstr ""
 
@@ -521,7 +521,7 @@ msgstr ""
 
 #: includes/block-style/sm-style.php:26
 #: includes/block-style/sm-style.php:63
-#: includes/block-style/sm-style.php:95
+#: includes/block-style/sm-style.php:109
 msgid "Close the gap between the two"
 msgstr ""
 
@@ -546,14 +546,22 @@ msgid "Open one character between line"
 msgstr ""
 
 #: includes/block-style/sm-style.php:77
+msgid "Black single line"
+msgstr ""
+
+#: includes/block-style/sm-style.php:84
+msgid "Black double line"
+msgstr ""
+
+#: includes/block-style/sm-style.php:91
 msgid "Change the display to R18."
 msgstr ""
 
-#: includes/block-style/sm-style.php:86
+#: includes/block-style/sm-style.php:100
 msgid "Postit"
 msgstr ""
 
-#: includes/block-style/sm-style.php:104
+#: includes/block-style/sm-style.php:118
 msgid "Indent"
 msgstr ""
 
@@ -574,31 +582,31 @@ msgstr ""
 msgid "Recent Posts (Sketchpad - modified)"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:208
+#: includes/widgets/class-sm-widget-recent-posts.php:215
 msgid "Display Options"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:219
+#: includes/widgets/class-sm-widget-recent-posts.php:226
 msgid "Output the tag to the class."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:223
+#: includes/widgets/class-sm-widget-recent-posts.php:230
 msgid "Don't show the currently viewed articles in the list."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:227
+#: includes/widgets/class-sm-widget-recent-posts.php:234
 msgid "Show the date of posting."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:229
+#: includes/widgets/class-sm-widget-recent-posts.php:236
 msgid "Filter by categories"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:236
+#: includes/widgets/class-sm-widget-recent-posts.php:245
 msgid "Show all categories."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:249
+#: includes/widgets/class-sm-widget-recent-posts.php:259
 msgid "Display a thumbnail image."
 msgstr ""
 
