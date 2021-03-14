@@ -163,6 +163,13 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   text-align: right;
 }
 
+.wp-block-pullquote {
+  border-top: 0.4rem solid;
+  border-bottom: 0.4rem solid;
+  margin-bottom: 0.175rem;
+  color: currentColor;
+}
+
 .is-style-under-line {
   border-bottom-width: thin;
   border-bottom-style: solid;
