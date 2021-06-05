@@ -3,7 +3,7 @@
  * The template for displaying 404 pages (Not Found)
  *
  * @package sketchpad
- * @since   1.7
+ * @since   1.7.0
  */
 
 get_header(); ?>

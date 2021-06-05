@@ -2,10 +2,34 @@
 /**
  * Utility.
  *
- * @package sketchpad - modified
+ * @package sketchpad
  * @subpackage utils
- * @since 1.0.0
+ * @since 2.1.0
  */
+
+/**
+ * Wrapper methods (paginate_links).
+ * This method does the escape and echo.
+ *
+ * @since 2.1.0
+ * @param array $args paginate_liks's parameter.
+ * @see https://developer.wordpress.org/reference/functions/paginate_links/
+ */
+function the_paginate_links( $args ) {
+	echo wp_kses(
+		paginate_links( $args ),
+		array(
+			'span' => array(
+				'class'        => array(),
+				'aria-current' => array(),
+			),
+			'a'    => array(
+				'class' => array(),
+				'href'  => array(),
+			),
+		),
+	);
+}
 
 /**
  * Wrapper methods (echo).
