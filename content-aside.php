@@ -82,7 +82,7 @@
 		}
 		if ( has_tag() ) { /* display if has tags */
 			echo '<div class="post-tag">';
-			the_tags( __( 'Tags: ', 'sketchpad-modified' ) );
+			the_tags( __( 'Tags: ', 'sketchpad-modified' ), ' ' );
 			echo '</div>';
 		}
 		?>
