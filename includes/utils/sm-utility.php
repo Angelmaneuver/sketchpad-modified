@@ -54,6 +54,24 @@ function the_esc_html_paginate_links( $string ): void {
 }
 
 /**
+ * Escaping a link (a tag) html strings and output it.
+ *
+ * @since 2.1.0
+ * @param string $string link html (a tag) strings.
+ */
+function the_esc_html_a( $string ): void {
+	echo wp_kses(
+		$string,
+		array(
+			'a' => array(
+				'class' => array(),
+				'href'  => array(),
+			),
+		),
+	);
+}
+
+/**
  * Wrapper methods (echo).
  * This method echo without sanitize.
  *
