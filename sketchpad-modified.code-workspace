@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "sketchpad-modified",
+			"name": "sketchpad modified",
 			"path": "."
 		}
 	],
@@ -10,15 +10,12 @@
 		"editor.detectIndentation": false,
 		"files.insertFinalNewline": true,
 		"files.trimFinalNewlines": true,
-		"auto-rename-tag.activationOnLanguage": [
-	
-			"*"
-		],
+		"auto-rename-tag.activationOnLanguage": ["*"],
 		"liveSassCompile.settings.formats": [
 			{
 				"format": "expanded",
 				"extensionName": ".css",
-				"savePath": "./"
+				"savePath": "/"
 			}
 		],
 		"liveSassCompile.settings.generateMap": false,
