@@ -12,12 +12,34 @@
  * This method does the escape and echo.
  *
  * @since 2.1.0
- * @param array $args paginate_liks's parameter.
+ * @param array $args paginate_link's parameter.
  * @see https://developer.wordpress.org/reference/functions/paginate_links/
  */
-function the_paginate_links( $args ) {
+function the_paginate_links( $args ): void {
+	the_esc_html_paginate_links( paginate_links( $args ) );
+}
+
+/**
+ * Wrapper methods (paginate_comments_links).
+ * This method does the escape and echo.
+ *
+ * @since 2.1.0
+ * @param array $args paginate_comments_links's parameter.
+ * @see https://developer.wordpress.org/reference/functions/paginate_comments_links/
+ */
+function the_paginate_comments_links( $args ): void {
+	the_esc_html_paginate_links( paginate_comments_links( $args ) );
+}
+
+/**
+ * Escaping a paginate html strings and output it.
+ *
+ * @since 2.1.0
+ * @param string $string paginate html strings.
+ */
+function the_esc_html_paginate_links( $string ): void {
 	echo wp_kses(
-		paginate_links( $args ),
+		$string,
 		array(
 			'span' => array(
 				'class'        => array(),
