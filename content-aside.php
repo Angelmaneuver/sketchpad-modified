@@ -61,7 +61,7 @@
 	</div><!--.post-content-->
 	<footer>
 		<?php
-		/*post pagination*/
+		/* post pagination */
 		wp_link_pages(
 			array(
 				'before' => '<div class="pagination">' . __( 'Pages:', 'sketchpad-modified' ),
