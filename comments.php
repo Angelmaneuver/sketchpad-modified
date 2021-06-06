@@ -17,7 +17,7 @@ if ( post_password_required() ) {
 	return;
 } ?>
 <div id="comments" class="comments-area">
-	<?php if ( ! comments_open() ) { ?>
+	<?php if ( ! comments_open() && ! is_page() ) { ?>
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'sketchpad-modified' ); ?></p>
 		<?php
 		return;
