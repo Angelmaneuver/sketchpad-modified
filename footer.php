@@ -2,9 +2,10 @@
 /**
  * The template for displaying the footer
  *
- * @subpackage Sketchpad
- * @since      Sketchpad - modified 1.0
+ * @package sketchpad
+ * @since   1.0.0
  */
+
 ?>
 </div><!--.content-->
 <footer>
