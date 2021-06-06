@@ -3,7 +3,16 @@
 * -----------------------------------------------------------------------------------------------
 */
 
+input[type="search"], input[type="password"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+
+	@include InputForm;
+}
+
 input[type="submit"], input[type="button"], input[type="reset"] {
   -webkit-appearance: none;
   border-radius: 0;
+
+  @include Button;
 }
