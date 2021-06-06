@@ -63,9 +63,18 @@ function the_esc_html_a( $string ): void {
 	echo wp_kses(
 		$string,
 		array(
-			'a' => array(
+			'span' => array(
 				'class' => array(),
-				'href'  => array(),
+			),
+			'a'    => array(
+				'class'  => array(),
+				'href'   => array(),
+				'rel'    => array(),
+				'target' => array(),
+			),
+			'i'    => array(
+				'class'       => array(),
+				'aria-hidden' => array(),
 			),
 		),
 	);
