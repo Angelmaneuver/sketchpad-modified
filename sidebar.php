@@ -30,7 +30,7 @@
 		?>
 		<?php if ( ! is_singular() && ( get_option( 'infinite_scroll' ) === '1' ) ) { ?>
 		<section class="widget">
-			<?php get_template_part( 'footer', 'content' ); ?>
+			<?php get_template_part( 'template/footer', 'content' ); ?>
 		</section>
 		<?php } ?>
 	</div><!--.sidebar-->

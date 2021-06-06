@@ -9,7 +9,7 @@
 ?>
 </div><!--.content-->
 <footer>
-<?php get_template_part( 'footer', 'content' ); ?>
+<?php get_template_part( 'template/footer', 'content' ); ?>
 </footer>
 </div><!--#wrapper-->
 </div><!--#main-->
