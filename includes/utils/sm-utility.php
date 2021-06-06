@@ -68,6 +68,7 @@ function the_esc_html_a( $string ): void {
 			),
 			'a'    => array(
 				'class'  => array(),
+				'title'  => array(),
 				'href'   => array(),
 				'rel'    => array(),
 				'target' => array(),
