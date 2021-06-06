@@ -98,7 +98,7 @@
 		/* post pagination */
 		wp_link_pages(
 			array(
-				'before' => '<div class="pagination">' . __( 'Pages:', 'sketchpad-modified' ),
+				'before' => '<div class="pagination">',
 				'after'  => '</div>',
 			)
 		);
