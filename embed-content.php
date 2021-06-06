@@ -5,10 +5,10 @@
  * When a post is embedded in an iframe, this file is used to create the content template part
  * output if the active theme does not include an embed-content.php template.
  *
- * @package    Sketchpad - modified
- * @subpackage Sketchpad - modified 1.0
- * @since      Sketchpad - modified 1.0
+ * @package sketchpad
+ * @since   2.1.0
  */
+
 ?>
 	<div <?php post_class( 'wp-embed' ); ?>>
 		<?php
