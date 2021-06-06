@@ -416,6 +416,7 @@ article {
     @include GetFontPreSet(1.2rem);
     @include ArialFontFamily;
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.5rem;
