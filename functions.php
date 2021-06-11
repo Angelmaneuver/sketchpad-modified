@@ -184,7 +184,7 @@ function sketchpad_header() { ?>
 			.site-title a,
 			.site-title p,
 			.site-description {
-				color: <?php echo '#' . get_header_textcolor(); ?>;
+				color: <?php echo '#' . esc_html( get_header_textcolor() ); ?>;
 			}
 		<?php } ?>
 	</style>
