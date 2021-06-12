@@ -13,7 +13,7 @@
 require_once get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-abstract-theme-customizer-initializer.php';
 
 /**
- * Class for abstract theme customizer initialize.
+ * Class for Breadcrumb theme customizer initialize.
  *
  * @since 2.1.0
  */
