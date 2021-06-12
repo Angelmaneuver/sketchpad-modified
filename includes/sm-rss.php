@@ -11,7 +11,8 @@
  * Set up the panel.
  */
 if ( is_admin() || is_customize_preview() ) {
-	require get_template_directory() . '/includes/admin/theme-customizer/sm-rss.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-rss-initializer.php';
+	add_action( 'customize_register', array( new SM_RSS_Initializer(), 'init' ), 100 );
 }
 
 /**
