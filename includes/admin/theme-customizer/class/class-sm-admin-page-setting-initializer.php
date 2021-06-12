@@ -68,7 +68,7 @@ class SM_Admin_Page_Setting_Initializer extends SM_Abstract_Theme_Customizer_Ini
 	protected function get_controls( WP_Customize_Manager $wp_customize ) {
 		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_admin_page_background_image'                         => array( 'setting' => 'sketchpad_admin_page_background_image',             'section' => 'sketchpad_admin_page_setting_section', 'label' => __( 'Activate the background image setting in the admin panel.', 'sketchpad-modified' ),                                                                                                              'type' => 'checkbox' ),
+			'sketchpad_admin_page_background_image'                         => array( 'setting' => 'sketchpad_admin_page_background_image',             'section' => 'sketchpad_admin_page_setting_section', 'label' => __( 'Activate the background image setting in the admin panel.', 'sketchpad-modified' ),                                                                                                              'type' => 'checkbox', 'priority' => 0 ),
 			parent::WP_OBJECT_START_WITH . '001'                            => new WP_Customize_Upload_Control(
 				$wp_customize,
 				'sketchpad_admin_page_background_image_url',
