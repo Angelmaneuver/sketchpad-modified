@@ -8,6 +8,16 @@
  */
 
 /**
+ * Non sanitizer.
+ * This method does't sanitize.
+ *
+ * @param value $value The customize setting value.
+ */
+function sketchpad_non_sanitize( $value ) {
+	return $value;
+}
+
+/**
  * Head tag sanitizer.
  *
  * @param value $value The customize setting value.
