@@ -73,25 +73,13 @@ class SM_Hamburger_Menu_Button_Initializer extends SM_Abstract_Theme_Customizer_
 			'sketchpad_hamburger_menu_button_open_mark'  => array( 'setting' => 'sketchpad_hamburger_menu_button_open_mark',  'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button Open Mark', 'sketchpad-modified' ),  'type' => 'text' ),
 			'sketchpad_hamburger_menu_button_close_mark' => array( 'setting' => 'sketchpad_hamburger_menu_button_close_mark', 'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button Close Mark', 'sketchpad-modified' ), 'type'    => 'text' ),
 			parent::WP_OBJECT_START_WITH . '001'         => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_hamburger_menu_button_background_color',
-				array(
-					'setting' => 'sketchpad_hamburger_menu_button_background_color',
-					'section' => 'sketchpad_hamburger_menu_button_section',
-					'label'   => __( 'Hamburger menu Button Background Color', 'sketchpad-modified' ),
-				)
+				array( 'setting' => 'sketchpad_hamburger_menu_button_background_color',       'section' => 'sketchpad_hamburger_menu_button_section', 'label'   => __( 'Hamburger menu Button Background Color', 'sketchpad-modified' ), )
 			),
 			parent::WP_OBJECT_START_WITH . '002'         => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_hamburger_menu_button_hover_background_color',
-				array(
-					'setting' => 'sketchpad_hamburger_menu_button_hover_background_color',
-					'section' => 'sketchpad_hamburger_menu_button_section',
-					'label'   => __( 'Hamburger menu Button Hover Background Color', 'sketchpad-modified' ),
-				)
+				array( 'setting' => 'sketchpad_hamburger_menu_button_hover_background_color', 'section' => 'sketchpad_hamburger_menu_button_section', 'label'   => __( 'Hamburger menu Button Hover Background Color', 'sketchpad-modified' ), )
 			),
 			parent::WP_OBJECT_START_WITH . '003'         => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_hamburger_menu_button_border_color',
-				array(
-					'setting' => 'sketchpad_hamburger_menu_button_border_color',
-					'section' => 'sketchpad_hamburger_menu_button_section',
-					'label'   => __( 'Hamburger menu Button Border Color', 'sketchpad-modified' ),
-				)
+				array( 'setting' => 'sketchpad_hamburger_menu_button_border_color',           'section' => 'sketchpad_hamburger_menu_button_section', 'label'   => __( 'Hamburger menu Button Border Color', 'sketchpad-modified' ), )
 			),
 		);
 		// @codingStandardsIgnoreEnd
