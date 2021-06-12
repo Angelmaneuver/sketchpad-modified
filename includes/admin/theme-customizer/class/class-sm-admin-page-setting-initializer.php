@@ -69,23 +69,11 @@ class SM_Admin_Page_Setting_Initializer extends SM_Abstract_Theme_Customizer_Ini
 		// @codingStandardsIgnoreStart
 		return array(
 			'sketchpad_admin_page_background_image'                         => array( 'setting' => 'sketchpad_admin_page_background_image',             'section' => 'sketchpad_admin_page_setting_section', 'label' => __( 'Activate the background image setting in the admin panel.', 'sketchpad-modified' ),                                                                                                              'type' => 'checkbox', 'priority' => 0 ),
-			parent::WP_OBJECT_START_WITH . '001'                            => new WP_Customize_Upload_Control(
-				$wp_customize,
-				'sketchpad_admin_page_background_image_url',
-				array(
-					'setting' => 'sketchpad_admin_page_background_image_url',
-					'section' => 'sketchpad_admin_page_setting_section',
-					'label'   => __( 'Background' ) . __( 'Image' ),
-				)
+			parent::WP_OBJECT_START_WITH . '001'                            => new WP_Customize_Upload_Control( $wp_customize, 'sketchpad_admin_page_background_image_url',
+				array( 'setting' => 'sketchpad_admin_page_background_image_url', 'section' => 'sketchpad_admin_page_setting_section', 'label'   => __( 'Background' ) . __( 'Image' ), )
 			),
-			parent::WP_OBJECT_START_WITH . '002'                            => new WP_Customize_Color_Control(
-				$wp_customize,
-				'sketchpad_admin_page_background_image_color',
-				array(
-					'setting' => 'sketchpad_admin_page_background_image_color',
-					'section' => 'sketchpad_admin_page_setting_section',
-					'label'   => __( 'Color' ),
-				)
+			parent::WP_OBJECT_START_WITH . '002'                            => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_admin_page_background_image_color',
+				array( 'setting' => 'sketchpad_admin_page_background_image_color', 'section' => 'sketchpad_admin_page_setting_section', 'label'   => __( 'Color' ), )
 			),
 			'sketchpad_admin_background_image_color_reset_button'           => array( 'settings' => array(),                                            'section' => 'sketchpad_admin_page_setting_section',                                                                                                                                                                                                                  'type' => 'button',  'input_attrs' => array( 'value' => __( 'Reset', 'sketchpad-modified' ), 'class' => 'button button-primary', ) ),
 			'sketchpad_admin_page_background_image_opacity'                 => array( 'setting'  => 'sketchpad_admin_page_background_image_opacity',    'section' => 'sketchpad_admin_page_setting_section', 'label' => __( 'Opacity', 'sketchpad-modified' ),                                                   'description' => __( 'The more you slide to the left, the higher the transparency.', 'sketchpad-modified' ), 'type' => 'range',   'input_attrs' => array( 'min' => 0, 'max' => 1, 'step' => 0.01 ) ),
