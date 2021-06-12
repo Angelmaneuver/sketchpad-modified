@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-21T06:22:23+00:00\n"
+"POT-Creation-Date: 2021-06-12T15:47:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sketchpad-modified\n"
 
 #. Theme Name of the theme
@@ -39,13 +39,13 @@ msgid "Page not Found..."
 msgstr ""
 
 #: 404.php:15
-#: archive.php:37
-#: index.php:38
+#: archive.php:19
+#: index.php:21
 msgid "Try using the search form"
 msgstr ""
 
-#: archive.php:35
-#: index.php:36
+#: archive.php:18
+#: index.php:20
 msgid "Not Found..."
 msgstr ""
 
@@ -53,182 +53,120 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:26
-msgid "One response to &ldquo;%2$s&rdquo;"
+#. translators: %1$s: comments number, %2$s: article title
+#: comments.php:32
+msgid "%1$s Response to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:39
+#: comments.php:44
 msgid "Reply"
 msgstr ""
 
-#: comments.php:40
+#: comments.php:45
 msgid "Log in to Reply"
 msgstr ""
 
-#: comments.php:53
+#: comments.php:66
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: comments.php:54
+#: comments.php:67
 msgid "You must be "
 msgstr ""
 
-#: comments.php:54
+#: comments.php:67
 msgid "logged in"
 msgstr ""
 
-#: comments.php:54
+#: comments.php:67
 msgid " to post a comment."
 msgstr ""
 
-#: comments.php:55
+#: comments.php:68
 msgid "Logged in as "
 msgstr ""
 
-#: comments.php:55
+#: comments.php:68
 msgid "Log out of this account"
 msgstr ""
 
-#: comments.php:55
+#: comments.php:68
 msgid " Log out?"
 msgstr ""
 
-#: comments.php:56
+#: comments.php:69
 msgid "Your email address will not be published."
 msgstr ""
 
-#: comments.php:57
+#. translators: %s: allowed tags and attributes string
+#: comments.php:71
 msgid "You may use these "
 msgstr ""
 
-#: comments.php:57
+#. translators: %s: allowed tags and attributes string
+#: comments.php:71
 msgid " tags and attributes: %s"
 msgstr ""
 
-#: comments.php:58
+#: comments.php:72
 msgid "Leave a Reply"
 msgstr ""
 
-#: comments.php:59
+#. translators: %s: comment user name
+#: comments.php:74
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: comments.php:60
+#: comments.php:75
 msgid "Cancel reply"
 msgstr ""
 
-#: comments.php:61
+#: comments.php:76
 msgid "Post Comment"
 msgstr ""
 
-#: content-aside.php:29
-#: content-audio.php:29
-#: content-chat.php:29
-#: content-gallery.php:29
-#: content-image.php:29
-#: content-link.php:29
-#: content-quote.php:29
-#: content-status.php:29
-#: content-video.php:29
-#: content.php:32
-#: content.php:52
-#: image.php:21
-msgid "edit"
-msgstr ""
-
-#: content-aside.php:32
-#: content-audio.php:32
-#: content-chat.php:32
-#: content-gallery.php:32
-#: content-image.php:32
-#: content-link.php:32
-#: content-quote.php:32
-#: content-status.php:32
-#: content-video.php:32
-#: content.php:35
-#: content.php:55
-#: image.php:24
-msgid "posted by "
-msgstr ""
-
-#: content-aside.php:35
-#: content-audio.php:35
-#: content-chat.php:35
-#: content-gallery.php:35
-#: content-image.php:35
-#: content-link.php:35
-#: content-quote.php:35
-#: content-status.php:35
-#: content-video.php:35
-#: content.php:38
-#: content.php:58
-#: image.php:27
-msgid " in "
-msgstr ""
-
-#: content-aside.php:54
-#: content-audio.php:47
-#: content-chat.php:55
-#: content-gallery.php:50
-#: content-image.php:47
-#: content-link.php:54
-#: content-quote.php:54
-#: content-status.php:54
-#: content-video.php:47
-#: content.php:78
-#: image.php:63
-msgid "Pages:"
-msgstr ""
-
-#: content-aside.php:59
-#: content-audio.php:52
-#: content-chat.php:61
-#: content-gallery.php:55
-#: content-image.php:52
-#: content-link.php:59
-#: content-quote.php:59
-#: content-status.php:59
-#: content-video.php:52
-#: content.php:85
-msgid "read comments"
-msgstr ""
-
-#: content-aside.php:65
-#: content-audio.php:58
-#: content-chat.php:69
-#: content-gallery.php:61
-#: content-image.php:58
-#: content-link.php:65
-#: content-quote.php:65
-#: content-status.php:65
-#: content-video.php:58
-#: content.php:96
-#: image.php:69
-msgid "Tags: "
-msgstr ""
-
-#: content-chat.php:64
-#: content.php:90
-msgid "more"
-msgstr ""
-
-#: content.php:18
+#: content.php:24
 msgid "Page: "
 msgstr ""
 
-#: footer-content.php:15
-msgid "Powered by %s"
+#: content.php:41
+#: content.php:67
+#: image.php:28
+#: template/article.php:41
+msgid "edit"
 msgstr ""
 
-#: footer-content.php:16
-msgid " (Original is %s) "
+#: content.php:45
+#: content.php:71
+#: image.php:32
+#: template/article.php:45
+msgid "posted by "
 msgstr ""
 
-#: footer-content.php:17
-msgid "and %s"
+#: content.php:48
+#: content.php:74
+#: image.php:35
+#: template/article.php:48
+msgid " in "
+msgstr ""
+
+#: content.php:112
+#: template/article.php:84
+msgid "read comments"
+msgstr ""
+
+#: content.php:119
+#: template/article.php:92
+msgid "more"
+msgstr ""
+
+#: content.php:126
+#: image.php:93
+#: template/article.php:100
+msgid "Tags: "
 msgstr ""
 
 #: functions.php:34
@@ -243,24 +181,109 @@ msgstr ""
 msgid "Right Widget Area"
 msgstr ""
 
-#: image.php:36
+#. translators: %s: image size
+#: image.php:49
 msgid "Full size is %s pixels"
 msgstr ""
 
-#: image.php:39
+#: image.php:54
 msgid "Link to full-size image"
 msgstr ""
 
-#: image.php:46
+#: image.php:63
 msgid "Click to full-size image: "
 msgstr ""
 
-#: image.php:56
+#: image.php:76
 msgid "Previous Image"
 msgstr ""
 
-#: image.php:58
+#: image.php:78
 msgid "Next Image"
+msgstr ""
+
+#: image.php:86
+msgid "Pages:"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:29
+msgid "Sketchpad - modified Breadcrumb Setting"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:43
+msgid "General"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:48
+msgid "Post Type"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:53
+msgid "Taxonomies"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:58
+msgid "Other"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:99
+msgid "output breadcrumb"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+msgid "Breadcrumb Separator"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+msgid "Placed between each piece of breadcrumbs."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:101
+msgid "Breadcrumb around the tag"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:102
+msgid "Breadcrumb close tag"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:103
+msgid "Homepage Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:104
+msgid "include homepage in breadcrumb"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:105
+msgid "Post Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:106
+msgid "Page Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:107
+msgid "Media Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:108
+msgid "Category Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:109
+msgid "Tag Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:110
+msgid "Author Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:111
+msgid "Date Template"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:112
+msgid "Search Template"
 msgstr ""
 
 #: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:19
@@ -415,86 +438,6 @@ msgstr ""
 msgid "Top Button Border Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-breadcrumb.php:18
-msgid "Sketchpad - modified Breadcrumb Setting"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:22
-msgid "General"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:34
-msgid "output breadcrumb"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:45
-msgid "Breadcrumb Separator"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:46
-msgid "Placed between each piece of breadcrumbs."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:57
-msgid "Breadcrumb around the tag"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:68
-msgid "Breadcrumb close tag"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:79
-msgid "Homepage Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:90
-msgid "include homepage in breadcrumb"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:95
-msgid "Post Type"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:107
-msgid "Post Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:118
-msgid "Page Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:129
-msgid "Media Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:134
-msgid "Taxonomies"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:146
-msgid "Category Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:157
-msgid "Tag Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:162
-msgid "Other"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:174
-msgid "Author Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:185
-msgid "Date Template"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-breadcrumb.php:196
-msgid "Search Template"
-msgstr ""
-
 #: includes/admin/theme-customizer/sm-rss.php:19
 msgid "Sketchpad - modified RSS Feed Setting"
 msgstr ""
@@ -569,7 +512,7 @@ msgstr ""
 msgid "Sketchpad - modified Basic Setting"
 msgstr ""
 
-#: includes/utils/sm-utility.php:41
+#: includes/utils/sm-utility.php:126
 msgid "more &raquo;"
 msgstr ""
 
@@ -610,15 +553,15 @@ msgstr ""
 msgid "Display a thumbnail image."
 msgstr ""
 
-#: search.php:12
+#: search.php:14
 msgid "Search results for: "
 msgstr ""
 
-#: search.php:36
+#: search.php:23
 msgid "Sorry, no results for your search request..."
 msgstr ""
 
-#: search.php:38
+#: search.php:24
 msgid "Try to search again"
 msgstr ""
 
@@ -628,4 +571,19 @@ msgstr ""
 
 #: searchform.php:12
 msgid "search"
+msgstr ""
+
+#. translators: %s: developer site url
+#: template/footer-content.php:15
+msgid "Powered by %s"
+msgstr ""
+
+#. translators: %s: original developer site url
+#: template/footer-content.php:17
+msgid " (Original is %s) "
+msgstr ""
+
+#. translators: %s: WordPress site url
+#: template/footer-content.php:19
+msgid "and %s"
 msgstr ""

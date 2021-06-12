@@ -2,9 +2,9 @@
 /**
  * Sketchpad - modified Basic.
  *
- * @package sketchpad - modified
+ * @package    sketchpad
  * @subpackage sm-basic
- * @since 1.0.0
+ * @since      2.1.0
  */
 
 /**
@@ -42,7 +42,7 @@ if ( is_admin() || is_customize_preview() ) {
  * Insert head tag.
  *
  * @subpackage insert-head-tag
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_head_insert_head() {
 	$insert_head = get_theme_mod( 'sketchpad_head_insert_head', '' );
@@ -52,7 +52,7 @@ function sketchpad_head_insert_head() {
 	{$insert_head}
 
 EOM;
-		sketchpad_echo( $value );
+		hazardous_e( $value );
 	}
 }
 
@@ -66,7 +66,7 @@ add_filter( 'embed_head', 'sketchpad_head_insert_head', $insert_head_priority );
  * Insert Body tag.
  *
  * @subpackage insert-body-tag
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_body_insert_body() {
 	$insert_body_directly_under = get_theme_mod( 'sketchpad_body_insert_directly_under_body', '' );
@@ -76,7 +76,7 @@ function sketchpad_body_insert_body() {
 {$insert_body_directly_under}
 
 EOM;
-		sketchpad_echo( $value );
+		hazardous_e( $value );
 	}
 }
 
@@ -88,7 +88,7 @@ add_filter( 'wp_body_open', 'sketchpad_body_insert_body', $insert_body_directly_
  * Add to embed css.
  *
  * @subpackage blog-card
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_embed_styles() {
 	wp_enqueue_style(
@@ -104,11 +104,11 @@ function sketchpad_embed_styles() {
  * Customize to blog card image size.
  *
  * @subpackage blog-card
- * @since 1.0.0
- * @param string $image_size   Thumbnail image size.
- * @param int    $thumbnail_id Attachment ID.
- * @return string Thumbnail image size after filtering.
- * @see https://developer.wordpress.org/reference/hooks/embed_thumbnail_image_size/
+ * @since      2.1.0
+ * @param      string $image_size   Thumbnail image size.
+ * @param      int    $thumbnail_id Attachment ID.
+ * @return     string Thumbnail image size after filtering.
+ * @see        https://developer.wordpress.org/reference/hooks/embed_thumbnail_image_size/
  */
 function sketchpad_blog_card_image_size( $image_size, $thumbnail_id ) {
 	return get_theme_mod( 'sketchpad_blog_card_image_size_setting_enable', false ) === true ? get_theme_mod( 'sketchpad_blog_card_image_size', 'thumbnail' ) : $image_size;
@@ -118,11 +118,11 @@ function sketchpad_blog_card_image_size( $image_size, $thumbnail_id ) {
  * Customize to blog card image form.
  *
  * @subpackage blog-card
- * @since 1.0.0
- * @param string $shape        image shape. Either 'rectangular' or 'square'.
- * @param int    $thumbnail_id Attachment ID.
- * @return string image shape after filtering.
- * @see https://developer.wordpress.org/reference/hooks/embed_thumbnail_image_shape/
+ * @since      2.1.0
+ * @param      string $shape        image shape. Either 'rectangular' or 'square'.
+ * @param      int    $thumbnail_id Attachment ID.
+ * @return     string image shape after filtering.
+ * @see        https://developer.wordpress.org/reference/hooks/embed_thumbnail_image_shape/
  */
 function sketchpad_blog_card_image_form( $shape, $thumbnail_id ) {
 	return get_theme_mod( 'sketchpad_blog_card_image_form_type_setting_enable', false ) === true ? get_theme_mod( 'sketchpad_blog_card_image_form', 'rectangular' ) : $shape;
@@ -132,9 +132,9 @@ function sketchpad_blog_card_image_form( $shape, $thumbnail_id ) {
  * Customize to blog card image content.
  *
  * @subpackage blog-card
- * @since 1.0.0
- * @return string content string after filtering.
- * @see https://developer.wordpress.org/reference/functions/the_excerpt_embed/
+ * @since      2.1.0
+ * @return     string content string after filtering.
+ * @see        https://developer.wordpress.org/reference/functions/the_excerpt_embed/
  */
 function sketchpad_blog_card_content() {
 	global $post;
@@ -150,7 +150,7 @@ add_filter( 'the_excerpt_embed', 'sketchpad_blog_card_content' );
  * Output return to top button method wrapper.
  *
  * @subpackage return2top-button
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_return2top_button() {
 	if ( get_theme_mod( 'sketchpad_top_button_enable', false ) ) {
@@ -162,7 +162,7 @@ function sketchpad_return2top_button() {
  * Output return to top button html.
  *
  * @subpackage return2top-button
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_output_return2top_button() {
 	$background_color = get_theme_mod( 'sketchpad_top_button_background_color', Sm_Basic_Constant::RETURN2TOP_BUTTON_BACKGROUND_COLOR );
@@ -175,7 +175,7 @@ function sketchpad_output_return2top_button() {
 
 EOM;
 
-	sketchpad_echo( $value );
+	hazardous_e( $value );
 }
 
 add_filter( 'wp_footer', 'sketchpad_return2top_button' );
@@ -184,7 +184,7 @@ add_filter( 'wp_footer', 'sketchpad_return2top_button' );
  * Output hamburger menu button method wrapper.
  *
  * @subpackage hamburger-menu-button
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_hamburger_menu_button() {
 	if ( get_theme_mod( 'sketchpad_hamburger_menu_button_enable', false ) ) {
@@ -196,7 +196,7 @@ function sketchpad_hamburger_menu_button() {
  * Output hamburger menu button html.
  *
  * @subpackage hamburger-menu-button
- * @since 1.0.0
+ * @since      2.1.0
  */
 function sketchpad_output_hamburger_menu_button() {
 	$background_color = get_theme_mod( 'sketchpad_hamburger_menu_button_background_color', Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_BACKGROUND_COLOR );
@@ -211,7 +211,7 @@ function sketchpad_output_hamburger_menu_button() {
 
 EOM;
 
-	sketchpad_echo( $value );
+	hazardous_e( $value );
 }
 
 add_filter( 'wp_footer', 'sketchpad_hamburger_menu_button' );

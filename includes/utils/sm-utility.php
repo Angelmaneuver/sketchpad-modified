@@ -2,9 +2,9 @@
 /**
  * Utility.
  *
- * @package sketchpad
- * @subpackage utils
- * @since 2.1.0
+ * @package    sketchpad
+ * @subpackage sm-utils
+ * @since      2.1.0
  */
 
 /**
@@ -13,7 +13,7 @@
  *
  * @since 2.1.0
  * @param array $args paginate_link's parameter.
- * @see https://developer.wordpress.org/reference/functions/paginate_links/
+ * @see   https://developer.wordpress.org/reference/functions/paginate_links/
  */
 function the_paginate_links( $args ): void {
 	the_esc_html_paginate_links( paginate_links( $args ) );
@@ -25,7 +25,7 @@ function the_paginate_links( $args ): void {
  *
  * @since 2.1.0
  * @param array $args paginate_comments_links's parameter.
- * @see https://developer.wordpress.org/reference/functions/paginate_comments_links/
+ * @see   https://developer.wordpress.org/reference/functions/paginate_comments_links/
  */
 function the_paginate_comments_links( $args ): void {
 	the_esc_html_paginate_links( paginate_comments_links( $args ) );
@@ -85,30 +85,41 @@ function the_esc_html_a( $string ): void {
  * Wrapper methods (echo).
  * This method echo without sanitize.
  *
- * @since 1.0.0
+ * @since 2.1.0
  * @param string $value Content to be output.
  */
-function sketchpad_echo( $value ) {
+function hazardous_e( $value ) {
 	if ( isset( $value ) ) {
+		// @codingStandardsIgnoreStart
 		echo $value;
+		// @codingStandardsIgnoreEnd
 	}
 }
 
 /**
- * Get current url.
+ * Get the current url.
  *
- * @since 1.0.0
+ * @since  2.1.0
+ * @return string current url.
  */
-function sketchpad_get_current_url() {
-	return home_url() . $_SERVER['REQUEST_URI'];
+function get_the_current_url() {
+	$request_uri = '';
+
+	if ( isset( $_SERVER['REQUEST_URI'] ) ) {
+		// @codingStandardsIgnoreStart
+		$request_uri = wp_unslash( $_SERVER['REQUEST_URI'] );
+		// @codingStandardsIgnoreEnd
+	}
+
+	return home_url() . $request_uri;
 }
 
 /**
  * Content to more read convert.
  *
- * @since 1.0.0
- * @param string $post_content Post Content.
- * @param string $link         Post link.
+ * @since  2.1.0
+ * @param  string $post_content Post Content.
+ * @param  string $link         Post link.
  * @return string String up to the read more tag.
  */
 function sketchpad_content2more_read( $post_content, $link ) {
@@ -128,8 +139,8 @@ EOM;
 /**
  * Color code to rgba convert.
  *
- * @since 1.0.0
- * @param string $color_code Color code.
+ * @since  1.0.0
+ * @param  string $color_code Color code.
  * @return array RGB Array.
  *               [0] or ['red']   : Red
  *               [1] or ['green'] : Green

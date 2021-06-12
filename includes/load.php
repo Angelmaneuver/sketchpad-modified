@@ -2,8 +2,8 @@
 /**
  * These functions are needed to load sketchpad - modified Theme.
  *
- * @package sketchpad - modified
- * @since 1.0.0
+ * @package sketchpad
+ * @since   2.1.0
  */
 
 /**
@@ -38,8 +38,8 @@ require get_template_directory() . '/includes/widgets/class-sm-widget-recent-pos
 /**
  * Register Recent Posts Widgets.
  *
- * @since 1.0.0
- * @see widgets/class-sm-widget-recent-posts.php
+ * @since 2.1.0
+ * @see   widgets/class-sm-widget-recent-posts.php
  */
 function register_sketchpad_recent_posts_widgets() {
 	register_widget( 'SM_Widget_Recent_Posts' );

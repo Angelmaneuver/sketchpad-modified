@@ -2,9 +2,9 @@
 /**
  * Sketchpad - modified RSS.
  *
- * @package sketchpad - modified
+ * @package    sketchpad
  * @subpackage sm-rss
- * @since 1.0.0
+ * @since      2.1.0
  */
 
 /**
@@ -17,7 +17,7 @@ if ( is_admin() || is_customize_preview() ) {
 /**
  * Support rss feed namespaces.
  *
- * @since 1.0.0
+ * @since 2.1.0
  */
 function sketchpad_support_rss_namespaces() {
 	if ( get_theme_mod( 'sketchpad_rss_output_post_tumbnail', false ) ) {
@@ -25,14 +25,14 @@ function sketchpad_support_rss_namespaces() {
 xmlns:media="http://search.yahoo.com/mrss/"
 
 EOM;
-		sketchpad_echo( $value );
+		hazardous_e( $value );
 	}
 }
 
 /**
  * Customize to rss feed.
  *
- * @since 1.0.0
+ * @since 2.1.0
  * @param String $content The Post content strings.
  */
 function sketchpad_content_feed( $content ) {
@@ -72,7 +72,7 @@ EOM;
 /**
  * Output media element to rss feed.
  *
- * @since 1.0.0
+ * @since 2.1.0
  */
 function sketchpad_output_thumbnail_element_2_feed() {
 	if ( get_theme_mod( 'sketchpad_rss_output_post_tumbnail', false ) ) {
@@ -102,7 +102,7 @@ EOM;
 			}
 
 			if ( isset( $value ) ) {
-				sketchpad_echo( $value );
+				hazardous_e( $value );
 			}
 		}
 	}
@@ -111,7 +111,7 @@ EOM;
 /**
  * Get post thumbnail information.
  *
- * @since 1.0.0
+ * @since 2.1.0
  * @param String $post_id        The Post id strings.
  * @param Object $thumbnail_size The Post thumbnail image size.
  */

@@ -2,291 +2,200 @@
 /**
  * Sketchpad - modified Breadcrumb.
  *
- * @package sketchpad - modified
+ * @package    sketchpad
  * @subpackage sm-breadcrumb
- * @since 1.0.0
+ * @since      2.1.0
  */
 
-require get_template_directory() . '/includes/admin/theme-customizer/class-sm-breadcrumb-constant.php';
+/**
+ * These modules are needed to load this function.
+ */
+require get_template_directory() . '/includes/class/class-sm-breadcrumb.php';
 
-if( is_admin() || is_customize_preview() ){
-  require get_template_directory() . '/includes/admin/theme-customizer/sm-breadcrumb.php';
+if ( is_admin() || is_customize_preview() ) {
+	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php';
+	add_action( 'customize_register', array( new SM_Breadcrumb_Initializer(), 'init' ), 100 );
 }
 
 /**
  * Output breadcrumb method wrapper.
  *
- * @subpackage sm-breadcrumb
- * @since 1.0.0
+ * @since 2.1.0
  */
 function sketchpad_breadcrumb() {
-  if ( get_theme_mod( 'sketchpad_breadcrumb_output_breadcrumb', false ) && !( is_home() || is_front_page() ) ) {
-    sketchpad_output_breadcrumb();
-  }
+	if ( get_theme_mod( 'sketchpad_breadcrumb_output_breadcrumb', false ) && ! ( is_home() || is_front_page() ) ) {
+		sketchpad_output_breadcrumb();
+	}
 }
 
 /**
  * Output breadcrumb.
  *
- * @subpackage sm-breadcrumb
- * @since 1.0.0
+ * @since 2.1.0
  */
 function sketchpad_output_breadcrumb() {
-  $wp_obj = get_queried_object();
+	$wp_obj     = get_queried_object();
+	$separator  = sprintf(
+		' %s ',
+		esc_html( get_theme_mod( 'sketchpad_breadcrumb_separator', SM_Breadcrumb::SEPARATOR ) )
+	);
+	$breadcrumb = new SM_Breadcrumb(
+		$separator,
+		sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_around_the_tag', SM_Breadcrumb::AROUND_THE_TAG ) ),
+		sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_close_tag', SM_Breadcrumb::CLOSE_TAG ) )
+	);
 
-  $breadcrumb_content = 1;
-  $breadcrumb_separator = sprintf( ' %s ', esc_html( get_theme_mod( 'sketchpad_breadcrumb_separator', SmBreadcrumbConstantClass::SEPARATOR ) ) );
-  $breadcurmb_currnet_page_link = esc_url( sketchpad_get_current_url() );
+	if ( get_theme_mod( 'sketchpad_breadcrumb_output_home', true ) ) {
+		$replacement = array(
+			'%link%'     => esc_url( home_url() ),
+			'%position%' => $breadcrumb->get_layer,
+		);
 
-  // around tag
-  $breadcrumb_temp = sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_around_the_tag', SmBreadcrumbConstantClass::AROUND_THE_TAG ) );
+		$breadcrumb->push(
+			str_replace(
+				array_keys( $replacement ),
+				array_values( $replacement ),
+				get_theme_mod( 'sketchpad_breadcrumb_homepage_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::HOME_PAGE ) )
+			)
+		);
+	}
 
-  // home
-  if ( get_theme_mod ( 'sketchpad_breadcrumb_output_home', true ) ) {
-    $replacement = array(
-      '%link%'      => esc_url( home_url() ),
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_home = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_homepage_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::HOME_PAGE ) ) );
+	if ( is_attachment() ) {
+		$breadcrumb->regist_link(
+			get_theme_mod( 'sketchpad_breadcrumb_media_type_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::MEDIA_TYPE ) ),
+			apply_filters( 'the_title', $wp_obj->post_title ),
+			apply_filters( 'the_title', $wp_obj->post_title ),
+			get_the_permalink()
+		);
+	} elseif ( is_single() ) {
+		$post_id    = $wp_obj->ID;
+		$post_type  = $wp_obj->post_type;
+		$post_title = apply_filters( 'the_title', $wp_obj->post_title );
 
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_home . $breadcrumb_separator;
-  }
+		if ( 'post' !== $post_type ) {
+			$taxonomies = 'category';
+		} else {
+			$taxonomies = 'category';
+		}
 
-  // attachment
-  if ( is_attachment() ) {
-    $replacement = array(
-      '%title%'     => apply_filters( 'the_title', $wp_obj->post_title ),
-      '%htitle%'    => apply_filters( 'the_title', $wp_obj->post_title ),
-      '%link%'      => $breadcurmb_currnet_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_attachment = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_media_type_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::MEDIA_TYPE ) ) );
+		$terms = get_the_terms( $post_id, $taxonomies );
 
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_attachment;
+		if ( count( $terms ) === 1 ) {
+			$format = get_theme_mod(
+				'sketchpad_breadcrumb_taxonomies_category_template',
+				sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::CATEGORY )
+			);
 
-  // post
-  } elseif ( is_single() ) {
-    $post_id    = $wp_obj->ID;
-    $post_type  = $wp_obj->post_type;
-    $post_title = apply_filters( 'the_title', $wp_obj->post_title );
+			if ( 0 !== $terms[0]->parent ) {
+				$tree = array_reverse( get_ancestors( $terms[0]->term_id, $taxonomies ) );
 
-    // custom post type
-    if ( $post_type !== 'post' ) {
-      $taxonomies = 'category';
+				foreach ( $tree as $term_id ) {
+					$name = esc_html( get_term( $term_id, $taxonomies )->name );
 
-    // normal post type
-    } else {
-      $taxonomies = 'category';
-    }
+					$breadcrumb->regist_link( $format, $name, $name, get_term_link( $term_id, $taxonomies ) );
+				}
+			}
 
-    $terms = get_the_terms( $post_id, $taxonomies );
+			$name = $terms[0]->name;
+			$breadcrumb->regist_link( $format, $name, $name, get_term_link( $terms[0]->term_id, $taxonomies ) );
+		}
 
-    // output category breadcrumbs only for one category
-    if ( count( $terms ) == 1 ) {
-      $breadcrumb_taxonomies_template = get_theme_mod ( 'sketchpad_breadcrumb_taxonomies_category_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::CATEGORY ) );
+		$breadcrumb->regist_link(
+			get_theme_mod( 'sketchpad_breadcrumb_post_type_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::POST_TYPE ) ),
+			$post_title,
+			$post_title,
+			get_the_permalink()
+		);
+	} elseif ( is_page() || is_home() ) {
+		$page_id    = $wp_obj->ID;
+		$page_title = apply_filters( 'the_title', $wp_obj->post_title );
 
-      if ( $terms[0]->parent != 0 ) {
-        $taxonomies_tree = array_reverse( get_ancestors( $terms[0]->term_id, $taxonomies ) );
+		if ( 0 !== $wp_obj->post_parent ) {
+			$tree = array_reverse( get_post_ancestors( $page_id ) );
 
-        foreach ( $taxonomies_tree as  $term_id ) {
-          $taxonomies_name = esc_html( get_term($term_id, $taxonomies)->name );
-          $replacement = array(
-            '%title%'     => $taxonomies_name,
-            '%htitle%'    => $taxonomies_name,
-            '%link%'      => esc_url( get_term_link( $term_id, $taxonomies ) ),
-            '%position%'  => $breadcrumb_content,
-          );
-          $breadcrumb_categories = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_taxonomies_template );
+			foreach ( $tree as $page_id ) {
+				$name = get_the_title( $page_id );
 
-          $breadcrumb_content += 1;
-          $breadcrumb_temp .= $breadcrumb_categories . $breadcrumb_separator;
-        }
-      }
+				$breadcrumb->regist_link(
+					get_theme_mod( 'sketchpad_breadcrumb_page_type_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::PAGE_TYPE ) ),
+					$name,
+					$name,
+					get_permalink( $page_id )
+				);
+			}
+		}
 
-      $taxonomies_name = esc_html( $terms[0]->name );
-      $replacement = array(
-        '%title%'     => $taxonomies_name,
-        '%htitle%'    => $taxonomies_name,
-        '%link%'      => esc_url( get_term_link( $terms[0]->term_id, $taxonomies ) ),
-        '%position%'  => $breadcrumb_content,
-      );
-      $breadcrumb_categories = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_taxonomies_template );
+		$breadcrumb->regist_link(
+			get_theme_mod( 'sketchpad_breadcrumb_page_type_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::PAGE_TYPE ) ),
+			$page_title,
+			$page_title,
+			get_the_permalink()
+		);
+	} elseif ( is_author() ) {
+		$title = $wp_obj->display_name;
 
-      $breadcrumb_content += 1;
-      $breadcrumb_temp .= $breadcrumb_categories . $breadcrumb_separator;
-    }
+		$breadcrumb->regist_link(
+			get_theme_mod( 'sketchpad_breadcrumb_other_author_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::AUTHOR ) ),
+			$title,
+			$title,
+			get_the_current_url()
+		);
+	} elseif ( is_date() ) {
+		$year   = get_query_var( 'year' );
+		$month  = get_query_var( 'monthnum' );
+		$day    = get_query_var( 'day' );
+		$format = get_theme_mod( 'sketchpad_breadcrumb_other_date_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::DATE ) );
 
-    $title_name = esc_html( $post_title );
-    $replacement = array(
-      '%title%'     => $title_name,
-      '%htitle%'    => $title_name,
-      '%link%'      => $breadcurmb_currnet_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_post = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_post_type_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::POST_TYPE ) ) );
+		if ( 0 < $year ) {
+			$breadcrumb->regist_link( $format, $year, $year, get_year_link( $year ) );
+		}
 
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_post;
+		if ( 0 < $month ) {
+			$breadcrumb->regist_link( $format, $month, $month, get_month_link( $year, $month ) );
+		}
 
-  // page
-  } elseif ( is_page() || is_home() ) {
-    $page_id    = $wp_obj->ID;
-    $page_title = apply_filters( 'the_title', $wp_obj->post_title );
+		if ( 0 < $day ) {
+			$breadcrumb->regist_link( $format, $day, $day, get_day_link( $year, $month, $day ) );
+		}
+	} elseif ( is_archive() ) {
+		$term_id    = $wp_obj->term_id;
+		$term_name  = $wp_obj->name;
+		$parent     = $wp_obj->parent;
+		$taxonomies = $wp_obj->taxonomy;
+		$format     = (
+			'category' === $taxonomies
+			? get_theme_mod(
+				'sketchpad_breadcrumb_taxonomies_category_template',
+				sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::CATEGORY )
+			) : get_theme_mod(
+				'sketchpad_breadcrumb_taxonomies_tag_template',
+				sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::TAG )
+			)
+		);
 
-    if ( $wp_obj->post_parent != 0 ) {
-      $page_tree = array_reverse( get_post_ancestors( $page_id ) );
+		if ( 0 !== $parent ) {
+			$tree = array_reverse( get_ancestors( $term_id, $taxonomies ) );
 
-      foreach( $page_tree as $page_id ) {
-        $title_name = esc_html( get_the_title( $page_id ) );
-        $replacement = array(
-          '%title%'     => $title_name,
-          '%htitle%'    => $title_name,
-          '%link%'      => esc_url( get_permalink( $page_id ) ),
-          '%position%'  => $breadcrumb_content,
-        );
-        $breadcrumb_page = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_page_type_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::PAGE_TYPE ) ) );
+			foreach ( $tree as $term_id ) {
+				$name = get_term( $term_id, $taxonomies )->name;
 
-        $breadcrumb_content += 1;
-        $breadcrumb_temp .= $breadcrumb_page . $breadcrumb_separator;
-        }
-    }
+				$breadcrumb->regist_link( $format, $name, $name, get_term_link( $term_id, $taxonomies ) );
+			}
+		}
 
-    $replacement = array(
-      '%title%'     => $page_title,
-      '%htitle%'    => $page_title,
-      '%link%'      => $breadcurmb_currnet_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_page = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_page_type_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::PAGE_TYPE ) ) );
+		$breadcrumb->regist_link( $format, $term_name, $term_name, get_the_current_url() );
+	} elseif ( is_search() || is_404() ) {
+		$title = get_search_query();
 
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_page;
+		$breadcrumb->regist_link(
+			get_theme_mod( 'sketchpad_breadcrumb_other_search_template', sketchpad_sanitize_breadcrumb_template( SM_Breadcrumb::SEARCH ) ),
+			$title,
+			$title,
+			get_the_current_url()
+		);
+	}
 
-  // post type archive
-  } elseif ( is_post_type_archive() ) {
-
-  // case : author archive
-  } elseif ( is_author() ) {
-    $page_title = esc_html( $wp_obj->display_name );
-    $replacement = array(
-      '%title%'     => $page_title,
-      '%htitle%'    => $page_title,
-      '%link%'      => $breadcurmb_currnet_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_author = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_other_author_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::AUTHOR ) ) );
-
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_author;
-    
-  // date arvhive
-  } elseif ( is_date() ) {
-    $year  = get_query_var('year');
-    $month = get_query_var('monthnum');
-    $day   = get_query_var('day');
-
-    $breadcrumb_date_template = get_theme_mod ( 'sketchpad_breadcrumb_other_date_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::DATE ) );
-
-    if ( $year > 0 ) {
-      $replacement = array(
-        '%title%'     => $year,
-        '%htitle%'    => $year,
-        '%link%'      => esc_url( get_year_link( $yaer ) ),
-        '%position%'  => $breadcrumb_content,
-      );
-      $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
-
-      $breadcrumb_content += 1;
-      $breadcrumb_temp .= $breadcrumb_date;
-    }
-    
-    if ( $month > 0) {
-      $replacement = array(
-        '%title%'     => $month,
-        '%htitle%'    => $month,
-        '%link%'      => esc_url( get_month_link( $year, $month ) ),
-        '%position%'  => $breadcrumb_content,
-      );
-      $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
-
-      $breadcrumb_content += 1;
-      $breadcrumb_temp .=  $breadcrumb_separator . $breadcrumb_date;
-    }
-    
-    if ( $day > 0) {
-      $replacement = array(
-        '%title%'     => $day,
-        '%htitle%'    => $day,
-        '%link%'      => $breadcurmb_currnet_page_link,
-        '%position%'  => $breadcrumb_content,
-      );
-      $breadcrumb_date = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_date_template );
-
-      $breadcrumb_content += 1;
-      $breadcrumb_temp .=  $breadcrumb_separator . $breadcrumb_date;
-    }
-
-  // term archive
-  } elseif ( is_archive() ) {
-    $term_id   = $wp_obj->term_id;
-    $term_name = $wp_obj->name;
-    $parent = $wp_obj->parent;
-    $taxonomies  = $wp_obj->taxonomy;
-
-    $breadcrumb_taxonomies_template = ( $taxonomies == 'category' ) ? get_theme_mod ( 'sketchpad_breadcrumb_taxonomies_category_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::CATEGORY ) ) : get_theme_mod ( 'sketchpad_breadcrumb_taxonomies_tag_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::TAG ) ) ;
-
-    if ( $parent != 0 ) {
-
-      $taxonomies_tree = array_reverse( get_ancestors( $term_id, $taxonomies ) );
-
-      foreach ( $taxonomies_tree as  $term_id ) {
-        $taxonomies_name = esc_html( get_term($term_id, $taxonomies)->name );
-        $replacement = array(
-          '%title%'     => $taxonomies_name,
-          '%htitle%'    => $taxonomies_name,
-          '%link%'      => esc_url( get_term_link( $term_id, $taxonomies ) ),
-          '%position%'  => $breadcrumb_content,
-        );
-        $breadcrumb_taxonomies = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_taxonomies_template );
-
-        $breadcrumb_content += 1;
-        $breadcrumb_temp .= $breadcrumb_taxonomies . $breadcrumb_separator;
-      }
-    }
-
-    $taxonomies_name = esc_html( $term_name );
-    $replacement = array(
-      '%title%'     => $taxonomies_name,
-      '%htitle%'    => $taxonomies_name,
-      '%link%'      => $breadcurmb_currnet_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_taxonomies = str_replace( array_keys( $replacement ), array_values( $replacement), $breadcrumb_taxonomies_template );
-
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_taxonomies;
-
-  // search result
-  } elseif ( is_search() || is_404 ) {
-    $page_title = esc_html( get_search_query() );
-    $replacement = array(
-      '%title%'     => $page_title,
-      '%htitle%'    => $page_title,
-      '%link%'      => $breadcrumb_current_page_link,
-      '%position%'  => $breadcrumb_content,
-    );
-    $breadcrumb_search_result = str_replace( array_keys( $replacement ), array_values( $replacement), get_theme_mod ( 'sketchpad_breadcrumb_other_search_template', sketchpad_sanitize_breadcrumb_template( SmBreadcrumbConstantClass::SEARCH ) ) );
-
-    $breadcrumb_content += 1;
-    $breadcrumb_temp .= $breadcrumb_search_result;
-  }
-
-  // close tag
-  $breadcrumb_temp .= sketchpad_sanitize_breadcrumb_template( get_theme_mod( 'sketchpad_breadcrumb_close_tag', SmBreadcrumbConstantClass::CLOSE_TAG ) );
-
-  echo $breadcrumb_temp;
+	hazardous_e( $breadcrumb->get_breadcrumbs() );
 }
 
 add_action( 'sketchpad_modified_breadcrumb', 'sketchpad_breadcrumb' );

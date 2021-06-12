@@ -187,7 +187,7 @@ function sketchpad_admin_style() {
 	</style>
 
 EOM;
-		sketchpad_echo( $value );
+		hazardous_e( $value );
 	}
 }
 
