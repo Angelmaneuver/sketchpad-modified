@@ -30,6 +30,9 @@ function sketchpad_customizer4basic_register( $wp_customize ) {
 if ( is_admin() || is_customize_preview() ) {
 	add_action( 'customize_register', 'sketchpad_customizer4basic_register', 10 );
 
+	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php';
+	add_action( 'customize_register', array( new SM_Admin_Page_Setting_Initializer(), 'init' ), 100 );
+
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/admin-page-setting.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-head-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-body-tag.php';

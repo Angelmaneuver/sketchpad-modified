@@ -87,9 +87,10 @@ class SM_Breadcrumb_Initializer extends SM_Abstract_Theme_Customizer_Initializer
 	/**
 	 * Return the controls definition.
 	 *
+	 * @param  WP_Customize_Manager $wp_customize given by the "customize_register" hook.
 	 * @return array array( string $id, array $args )
 	 */
-	protected function get_controls() {
+	protected function get_controls( WP_Customize_Manager $wp_customize ) {
 		// @codingStandardsIgnoreStart
 		return array(
 			'sketchpad_breadcrumb_output_breadcrumb'            => array( 'setting' => 'sketchpad_breadcrumb_output_breadcrumb',            'section' => 'sketchpad_breadcrumb_general_section',    'label' => __( 'output breadcrumb', 'sketchpad-modified' ),                                                                                                        'type' => 'checkbox' ),

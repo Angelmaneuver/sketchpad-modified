@@ -13,6 +13,8 @@
  * @since 2.1.0
  */
 abstract class SM_Abstract_Theme_Customizer_Initializer {
+	const WP_OBJECT_START_WITH = 'WP_OBJECT';
+
 	/**
 	 * Sets up a new instance.
 	 */
@@ -42,9 +44,10 @@ abstract class SM_Abstract_Theme_Customizer_Initializer {
 	/**
 	 * Return the controls definition (abstract method).
 	 *
+	 * @param  WP_Customize_Manager $wp_customize given by the "customize_register" hook.
 	 * @return array array( string $id, array $args )
 	 */
-	abstract protected function get_controls();
+	abstract protected function get_controls( WP_Customize_Manager $wp_customize );
 
 	/**
 	 * Sets up a theme customizer.
@@ -65,8 +68,12 @@ abstract class SM_Abstract_Theme_Customizer_Initializer {
 			$wp_customize->add_setting( $key, $value );
 		}
 
-		foreach ( $this->get_controls() as $key => $value ) {
-			$wp_customize->add_control( $key, $value );
+		foreach ( $this->get_controls( $wp_customize ) as $key => $value ) {
+			if ( 0 === strpos( $key, self::WP_OBJECT_START_WITH ) ) {
+				$wp_customize->add_control( $value );
+			} else {
+				$wp_customize->add_control( $key, $value );
+			}
 		}
 	}
 }
