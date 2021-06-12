@@ -2,10 +2,33 @@
 /**
  * Sanitizer for theme customizers.
  *
- * @package sketchpad - modified
- * @subpackage utils
- * @since 1.0.0
+ * @package    sketchpad
+ * @subpackage sanitizer
+ * @since      2.1.0
  */
+
+/**
+ * Head tag sanitizer.
+ *
+ * @param value $value The customize setting value.
+ */
+function sketchpad_sanitize_head( $value ) {
+	$allow = array(
+		'link'   => array(
+			'rel'   => array(),
+			'type'  => array(),
+			'href'  => array(),
+			'media' => array(),
+		),
+		'script' => array(
+			'type'        => array(),
+			'src'         => array(),
+			'crossorigin' => array(),
+		),
+	);
+
+	return wp_kses( $value, $allow );
+}
 
 /**
  * Checkbox sanitizer.

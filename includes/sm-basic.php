@@ -31,14 +31,15 @@ if ( is_admin() || is_customize_preview() ) {
 	add_action( 'customize_register', 'sketchpad_customizer4basic_register', 10 );
 
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php';
 	add_action( 'customize_register', array( new SM_Admin_Page_Setting_Initializer(), 'init' ), 100 );
+	add_action( 'customize_register', array( new SM_Insert_Head_Tag_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Blog_Card_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Hamburger_Menu_Button_Initializer(), 'init' ), 100 );
 
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/admin-page-setting.php';
-	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-head-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/insert-body-tag.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/return2top-button.php';
 }
