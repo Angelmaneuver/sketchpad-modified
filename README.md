@@ -13,11 +13,6 @@ I like this theme so I dicided to customize it. Not a job but a hobby...
 ## Changes from the original
 ### Responsive Support
 
-<div style="display:flex;justify-content:space-around;align-items:flex-start;margin:20px;">
-<img src="images/readme/screenshot02.png" sytle="width:auto;height:auto;max-width:100%;max-height:100%;">
-<img src="images/readme/screenshot03.png" sytle="width:auto;height:auto;max-width:100%;max-height:100%;">
-</div>
-
 Smartphone screens are now supported.
 
 The sidebar can displayed via the hamburger menu.
