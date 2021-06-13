@@ -69,7 +69,7 @@ class SM_Hamburger_Menu_Button_Initializer extends SM_Abstract_Theme_Customizer_
 	protected function get_controls( WP_Customize_Manager $wp_customize ) {
 		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_hamburger_menu_button_enable'     => array( 'setting' => 'sketchpad_hamburger_menu_button_enable',     'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button enable', 'sketchpad-modified' ),     'type' => 'checkbox' ),
+			'sketchpad_hamburger_menu_button_enable'     => array( 'setting' => 'sketchpad_hamburger_menu_button_enable',     'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button enable', 'sketchpad-modified' ),     'type' => 'checkbox', 'priority' => 0 ),
 			'sketchpad_hamburger_menu_button_open_mark'  => array( 'setting' => 'sketchpad_hamburger_menu_button_open_mark',  'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button Open Mark', 'sketchpad-modified' ),  'type' => 'text' ),
 			'sketchpad_hamburger_menu_button_close_mark' => array( 'setting' => 'sketchpad_hamburger_menu_button_close_mark', 'section' => 'sketchpad_hamburger_menu_button_section', 'label' => __( 'Hamburger menu Button Close Mark', 'sketchpad-modified' ), 'type'    => 'text' ),
 			parent::WP_OBJECT_START_WITH . '001'         => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_hamburger_menu_button_background_color',

@@ -68,7 +68,7 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 	protected function get_controls( WP_Customize_Manager $wp_customize ) {
 		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_top_button_enable'        => array( 'setting' => 'sketchpad_top_button_enable', 'section' => 'sketchpad_top_button_section', 'label' => __( 'Top Button enable', 'sketchpad-modified' ), 'type' => 'checkbox' ),
+			'sketchpad_top_button_enable'        => array( 'setting' => 'sketchpad_top_button_enable', 'section' => 'sketchpad_top_button_section', 'label' => __( 'Top Button enable', 'sketchpad-modified' ), 'type' => 'checkbox', 'priority' => 0 ),
 			'sketchpad_top_button_mark'          => array( 'setting' => 'sketchpad_top_button_mark',   'section' => 'sketchpad_top_button_section', 'label' => __( 'Top Button Mark', 'sketchpad-modified' ),   'type' => 'text' ),
 			parent::WP_OBJECT_START_WITH . '001' => new WP_Customize_Color_Control( $wp_customize, 'sketchpad_top_button_background_color',
 				array( 'setting' => 'sketchpad_top_button_background_color', 'section' => 'sketchpad_top_button_section', 'label' => __( 'Top Button Background Color', 'sketchpad-modified' ) )
