@@ -71,40 +71,49 @@ EOM;
 }
 
 /**
+ * Output media element to rss feed method wrapper.
+ *
+ * @since  2.1.0
+ */
+function sketchpad_thumbnail_element2feed() {
+	if ( get_theme_mod( 'sketchpad_rss_output_post_tumbnail', false ) ) {
+		sketchpad_output_thumbnail_element2feed();
+	}
+}
+
+/**
  * Output media element to rss feed.
  *
  * @since 2.1.0
  */
-function sketchpad_output_thumbnail_element_2_feed() {
-	if ( get_theme_mod( 'sketchpad_rss_output_post_tumbnail', false ) ) {
-		global $post;
+function sketchpad_output_thumbnail_element2feed() {
+	global $post;
 
-		if ( has_post_thumbnail( $post->ID ) ) {
-			$thumbnail          = sketchpad_get_thumbnail_info( $post->ID, get_theme_mod( 'sketchpad_rss_media_image_size', 'thumbnail' ) );
-			$thumbnail_url      = esc_url( $thumbnail['url'] );
-			$thumbnail_width    = esc_attr( $thumbnail['width'] );
-			$thumbnail_height   = esc_attr( $thumbnail['height'] );
-			$thumbnail_size     = esc_attr( $thumbnail['size'] );
-			$thumbnail_mimetype = esc_attr( $thumbnail['mimetype'] );
-			$value              = null;
+	if ( has_post_thumbnail( $post->ID ) ) {
+		$thumbnail          = sketchpad_get_thumbnail_info( $post->ID, get_theme_mod( 'sketchpad_rss_media_image_size', 'thumbnail' ) );
+		$thumbnail_url      = esc_url( $thumbnail['url'] );
+		$thumbnail_width    = esc_attr( $thumbnail['width'] );
+		$thumbnail_height   = esc_attr( $thumbnail['height'] );
+		$thumbnail_size     = esc_attr( $thumbnail['size'] );
+		$thumbnail_mimetype = esc_attr( $thumbnail['mimetype'] );
+		$value              = null;
 
-			if ( get_theme_mod( 'sketchpad_rss_output_media_content_tag', false ) ) {
-				$value = <<<EOM
+		if ( get_theme_mod( 'sketchpad_rss_output_media_content_tag', false ) ) {
+			$value = <<<EOM
 <enclosure url="{$thumbnail_url}" length="{$thumbnail_size}" type="{$thumbnail_mimetype}" />
 
 EOM;
-			}
+		}
 
-			if ( get_theme_mod( 'sketchpad_rss_output_enclosure_tag', false ) ) {
-				$value .= <<<EOM
+		if ( get_theme_mod( 'sketchpad_rss_output_enclosure_tag', false ) ) {
+			$value .= <<<EOM
 <media:content url="{$thumbnail_url}" width="{$thumbnail_width}" height="{$thumbnail_height}" type="{$thumbnail_mimetype}" medium="image" />
 
 EOM;
-			}
+		}
 
-			if ( isset( $value ) ) {
-				hazardous_e( $value );
-			}
+		if ( isset( $value ) ) {
+			hazardous_e( $value );
 		}
 	}
 }
@@ -135,6 +144,6 @@ function sketchpad_get_thumbnail_info( $post_id, $thumbnail_size ) {
 }
 
 add_action( 'rss2_ns', 'sketchpad_support_rss_namespaces' );
-add_action( 'rss2_item', 'sketchpad_output_thumbnail_element_2_feed' );
+add_action( 'rss2_item', 'sketchpad_thumbnail_element2feed' );
 add_filter( 'the_excerpt_rss', 'sketchpad_content_feed' );
 add_filter( 'the_content_feed', 'sketchpad_content_feed' );
