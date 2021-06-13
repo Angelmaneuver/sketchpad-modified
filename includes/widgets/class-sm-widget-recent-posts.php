@@ -45,8 +45,8 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			$args['widget_id'] = $this->id;
 		}
 
-		$default_title = __( 'Recent Posts (Sketchpad - modified)', 'sketchpad-modified' );
-		$title         = $instance['title'];
+		$default_title = __( 'Recent Posts', 'sketchpad-modified' );
+		$title         = isset( $instance['title'] ) ? $instance['title'] : $default_title;
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
