@@ -19,7 +19,28 @@ function sketchpad_admin_style() {
 	$targets   = get_theme_mod( 'sketchpad_admin_background_image_opacity_targets', Sm_Basic_Constant::ADMIN_BACKGROUND_OPACITY_TARGETS );
 
 	if ( get_theme_mod( 'sketchpad_admin_page_background_image', false ) && ! empty( $image_url ) ) {
-		$value = <<<EOM
+		hazardous_e( get_sketchpad_admin_style( $image_url, $opacity, $rgba, $targets ) );
+	}
+}
+
+/**
+ * Return the admin page added style.
+ *
+ * @param  string $image_url Background image file url.
+ * @param  float  $opacity   Opacity.
+ * @param  string $rgba      Background color code (comma separated).
+ * @param  string $targets   Target to be made transparent.
+ * @return string Style HTML.
+ *
+ * @since  2.1.0
+ */
+function get_sketchpad_admin_style(
+	string $image_url,
+	float $opacity,
+	string $rgba,
+	string $targets
+): string {
+	return <<<EOM
 <style type="text/css">
 		#wpwrap:before {
 			content:" ";
@@ -30,17 +51,15 @@ function sketchpad_admin_style() {
 			height:100%;
 			background-image:
 				linear-gradient(rgba({$rgba}, {$opacity}), rgba({$rgba}, {$opacity})), url("{$image_url}");
-          	background-repeat: no-repeat;
+				background-repeat: no-repeat;
 			background-size: cover;
 		}
 		{$targets} {
 			background-color: rgba(255, 255, 255, 0) !important;
 		}
 	</style>
-
+	
 EOM;
-		hazardous_e( $value );
-	}
 }
 
 /**
