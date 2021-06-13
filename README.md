@@ -1,43 +1,53 @@
 # sketchpad-modified
 
-This is a modified theme of Sketchpad from BestLayout.com. Original [Sketchpad](https://bestweblayout.com/products/sketchpad/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/69c47e077dda30f4bfe8/maintainability)](https://codeclimate.com/github/Angelmaneuver/sketchpad-modified/maintainability) ![GitHub](https://img.shields.io/github/license/angelmaneuver/sketchpad-modified)
 
-## Description
+This is a modified theme of Sketchpad from BestLayout.com. Original is [it](https://bestweblayout.com/products/sketchpad/).
+
+![Screen Shot](screenshot.png)
 
 Original Sketchpad theme has stopped updating. (Last Update V2.0 – 25.08.2016)
 
 I like this theme so I dicided to customize it. Not a job but a hobby...
 
-## Demo
+## Changes from the original
+### Responsive Support
 
-My Blog Site [Meaningless Notebook](https://gokugetsu.plala.jp/)
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin:20px;">
+<img src="images/readme/screenshot02.png">
+<img src="images/readme/screenshot03.png">
+</div>
 
-## Todo
+Smartphone screens are now supported.
+
+The sidebar can displayed via the hamburger menu.
+
 ### Design
 
-- [x] Postit design
+I changed the size of the text and eye catching image to make them easier to read, and added post-it and other designs to make it more notepad-like.
 
 ### Feature
 
-- [x] Breadcrumb List
-- [x] RSS feeds are now outputted up to read more tag
-- [x] Output EyeCatch image to RSS Feed
-- [x] Return to Top Button
-- [x] HTML can be inserted into the Head tags from the admin panel
-- [x] HTML can be inserted into the Body tags from the admin panel
-- [x] Blog card settings can be configured from the admin panel
-- [x] Infinite scroll (JetPack Plugin)
-- [x] Responsive
-- [ ] Output Structured Data (maybe JSON-LD)
+The following features have been added.
+
+ - Breadcrumb
+ - Return to Top Button
+ - Hamburger Menu
+ - Output more read links to RSS feeds when you select excerpt
+ - Output Eye catching image to RSS feeds
+ - Setting up a Blog Card
+ - HTML can be inserted into the Head tags
+ - HTML can be inserted into the Body tags
+ - Infinite Scroll (JetPack Plugin)
 
 ### Repeal
 
-- [x] Exclude IE from the target browser
+The following features have been removed.
+
+ - IE Support
 
 ## Requirement
 
-- [Font Awesome 5 Free](https://fontawesome.com/)
+The following libraries are required for this theme.
 
-## License
-
-[GNU General Public License V3](https://www.gnu.org/licenses/gpl-3.0.html)
+ - [Font Awesome 5 Free](https://fontawesome.com/)
