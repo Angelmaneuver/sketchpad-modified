@@ -45,7 +45,7 @@ abstract class SM_Abstract_Theme_Customizer_Initializer {
 	 * Return the controls definition (abstract method).
 	 *
 	 * @param  WP_Customize_Manager $wp_customize given by the "customize_register" hook.
-	 * @return array array( string $id, array $args )
+	 * @return array array( string $id, WP_Customize_Control|array $value Customize Control object, or Parameter of the control )
 	 */
 	abstract protected function get_controls( WP_Customize_Manager $wp_customize );
 
@@ -69,11 +69,27 @@ abstract class SM_Abstract_Theme_Customizer_Initializer {
 		}
 
 		foreach ( $this->get_controls( $wp_customize ) as $key => $value ) {
-			if ( 0 === strpos( $key, self::WP_OBJECT_START_WITH ) ) {
-				$wp_customize->add_control( $value );
-			} else {
-				$wp_customize->add_control( $key, $value );
-			}
+			$this->add_control( $wp_customize, $key, $value );
+		}
+	}
+
+	/**
+	 * Add a customize control.
+	 *
+	 * @param  WP_Customize_Manager       $wp_customize given by the "customize_register" hook.
+	 * @param  string                     $key          ID of the control to be added.
+	 * @param  WP_Customize_Control|array $value        Customize Control object, or Parameter of the control.
+	 * @return void
+	 */
+	private function add_control(
+		WP_Customize_Manager $wp_customize,
+		string $key,
+		$value
+	) {
+		if ( 0 === strpos( $key, self::WP_OBJECT_START_WITH ) ) {
+			$wp_customize->add_control( $value );
+		} else {
+			$wp_customize->add_control( $key, $value );
 		}
 	}
 }
