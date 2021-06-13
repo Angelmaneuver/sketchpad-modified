@@ -13,10 +13,7 @@ I like this theme so I dicided to customize it. Not a job but a hobby...
 ## Changes from the original
 ### Responsive Support
 
-<div style="display:flex;justify-content:space-between;align-items:flex-start;margin:20px;">
-<img src="images/readme/screenshot02.png">
-<img src="images/readme/screenshot03.png">
-</div>
+![Screen Shot](images/readme/screenshot02.png) ![Screen Shot](images/readme/screenshot03.png)
 
 Smartphone screens are now supported.
 
