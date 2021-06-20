@@ -26,7 +26,7 @@ function sketchpad_support_rss_namespaces() {
 xmlns:media="http://search.yahoo.com/mrss/"
 
 EOM;
-		hazardous_e( $value );
+		hazardous_echo( $value );
 	}
 }
 
@@ -113,7 +113,7 @@ EOM;
 		}
 
 		if ( isset( $value ) ) {
-			hazardous_e( $value );
+			hazardous_echo( $value );
 		}
 	}
 }

@@ -60,7 +60,7 @@ function sketchpad_head_insert_head() {
 	{$insert_head}
 
 EOM;
-		hazardous_e( $value );
+		hazardous_echo( $value );
 	}
 }
 
@@ -84,7 +84,7 @@ function sketchpad_body_insert_body() {
 {$insert_body_directly_under}
 
 EOM;
-		hazardous_e( $value );
+		hazardous_echo( $value );
 	}
 }
 
@@ -183,7 +183,7 @@ function sketchpad_output_return2top_button() {
 
 EOM;
 
-	hazardous_e( $value );
+	hazardous_echo( $value );
 }
 
 add_filter( 'wp_footer', 'sketchpad_return2top_button' );
@@ -219,7 +219,7 @@ function sketchpad_output_hamburger_menu_button() {
 
 EOM;
 
-	hazardous_e( $value );
+	hazardous_echo( $value );
 }
 
 add_filter( 'wp_footer', 'sketchpad_hamburger_menu_button' );

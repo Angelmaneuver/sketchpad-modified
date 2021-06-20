@@ -19,7 +19,7 @@ function sketchpad_admin_style() {
 	$targets   = get_theme_mod( 'sketchpad_admin_background_image_opacity_targets', Sm_Basic_Constant::ADMIN_BACKGROUND_OPACITY_TARGETS );
 
 	if ( get_theme_mod( 'sketchpad_admin_page_background_image', false ) && ! empty( $image_url ) ) {
-		hazardous_e( get_sketchpad_admin_style( $image_url, $opacity, $rgba, $targets ) );
+		hazardous_echo( get_sketchpad_admin_style( $image_url, $opacity, $rgba, $targets ) );
 	}
 }
 

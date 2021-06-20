@@ -88,7 +88,7 @@ function the_esc_html_a( $string ): void {
  * @since 2.1.0
  * @param string $value Content to be output.
  */
-function hazardous_e( $value ) {
+function hazardous_echo( $value ) {
 	if ( isset( $value ) ) {
 		// @codingStandardsIgnoreStart
 		echo $value;
@@ -139,7 +139,7 @@ EOM;
 /**
  * Color code to rgba convert.
  *
- * @since  1.0.0
+ * @since  2.1.0
  * @param  string $color_code Color code.
  * @return array RGB Array.
  *               [0] or ['red']   : Red

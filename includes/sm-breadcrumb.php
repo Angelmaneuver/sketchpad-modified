@@ -195,7 +195,7 @@ function sketchpad_output_breadcrumb() {
 		);
 	}
 
-	hazardous_e( $breadcrumb->get_breadcrumbs() );
+	hazardous_echo( $breadcrumb->get_breadcrumbs() );
 }
 
 add_action( 'sketchpad_modified_breadcrumb', 'sketchpad_breadcrumb' );
