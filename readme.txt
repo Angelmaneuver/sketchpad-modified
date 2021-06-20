@@ -1,19 +1,22 @@
-=== Sketchpad ===
-Contributors: BestWebLayout, BestWebSoft
-Author URI: http://bestweblayout.com/
-Donate link: http://bestwebsoft.com/donate/
-Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, translation-ready
-Requires at least: 4.2
-Tested up to: 4.6
-Stable tag: 2.0
+=== Sketchpad - modified ===
+Contributors: Angelmaneuver
+Author URI: https://github.com/Angelmaneuver
+Donate link:
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, breadcrumb, responsive, translation-ready
+Requires at least: 7.4.12
+Tested up to: Latest
+Stable tag: 2.1.0
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Sketchpad WordPress Theme, Copyright 2016 BestWebLayout.com
-Theme Sketchpad is distributed under the terms of the GNU GPL
+
+Sketchpad - modified WordPress Theme, Copyright 2021 Angelmaneuver
+
+Original Sketchpad WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Sketchpad - modified is distributed under the terms of the GNU GPL
 
 == Description ==
 
-If you are looking for a great theme to note down your thoughts, experience or best practices, there hardly is a better option that Sketchpad - a convenient all-in-one solution to making your website look stylish and uncluttered at the same time. This theme is designed as a twenty-first-century notepad, combining the traditional elegance of notetaking with a nouveau worldview. This way, any ideas of yours will fit in harmoniously, and your readers will appreciate a polished yet completely unintrusive interface. Sketchpad will be most well-suited for business news, journalist reviews, morning news, personal opinion blogs, event reviews, business ideas, case studies, cuisine, book stores, book reviews and many, many more. Check out Sketchpad at: http://wp-demo-theme.bestweblayout.com/sketchpad/
+If you are looking for a great theme to note down your thoughts, experience or best practices, there hardly is a better option that Sketchpad - a convenient all-in-one solution to making your website look stylish and uncluttered at the same time. This theme is designed as a twenty-first-century notepad, combining the traditional elegance of notetaking with a nouveau worldview. This way, any ideas of yours will fit in harmoniously, and your readers will appreciate a polished yet completely unintrusive interface. Sketchpad will be most well-suited for business news, journalist reviews, morning news, personal opinion blogs, event reviews, business ideas, case studies, cuisine, book stores, book reviews and many, many more. Check out Sketchpad at: https://github.com/Angelmaneuver/sketchpad-modified
 
 = Features =
 
@@ -21,6 +24,8 @@ If you are looking for a great theme to note down your thoughts, experience or b
 * Two-column design
 * Fixed-layout
 * Translation-ready
+* Responsive
+* Breadcrumb
 * Pagination
 * Customizable background and color of site title
 * Customizable header image
@@ -30,9 +35,9 @@ If you are looking for a great theme to note down your thoughts, experience or b
 
 = Translation =
 
-* Russian (ru_RU)
+* Japanese (ja)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="https://github.com/Angelmaneuver/sketchpad-modified" target="_blank">GitHub</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Copyrights for Resources used in this theme =
 
@@ -40,16 +45,6 @@ If you would like to create your own language pack or update the existing one, y
   	- Open Sans - http://www.google.com/fonts/specimen/Open+Sans
       License: Apache License Version 2.0
       Copyright: Steve Matteson, https://profiles.google.com/107777320916704234605/about
-
-* The following js-files from "/js" Folder are used in the Theme:
-    - 'pie.htc' in the "ie" folder
-      License: Apache License Version 2.0 and GPL Version 3.
-      Copyright: Jason Johnston, https://raw.github.com/lojjic/PIE/master/LICENSE-APACHE2.txt
-    - 'html5.js':
-      License:  MIT/GPL2 Licensed
-      Source: https://github.com/aFarkas/html5shiv
-      Copyright: HTML5 Shiv v3.6 | @afarkas @jdalton @jon_neal @rem
-    - 'content-height.js'
 
 * The following images are used in the "img" folder in the Sketchpad Theme
     License:  GNU General Public License v2 or later
@@ -59,12 +54,12 @@ If you would like to create your own language pack or update the existing one, y
 
 Manual installation:
 
-1. Upload the `Sketchpad` folder to the `/wp-content/themes/` directory
+1. Upload the `Sketchpad - modified` folder to the `/wp-content/themes/` directory
 
 Installation using "Add New Theme"
 
 1. From your Admin UI (Dashboard), use the menu to select Themes -> Add New
-2. Search for ‘Sketchpad’
+2. Search for ‘Sketchpad - modified’
 3. Click the 'Install' button to open the theme's repository listing
 4. Click the 'Install' button
 
@@ -85,7 +80,7 @@ By default in the sidebar the following widgets will be displayed: pages.
 
 == Frequently Asked Questions ==
 
-= How can I change language from English into Russian? =
+= How can I change language from English into Japanese? =
 
 Change the language in the admin settings screen. Settings > General > Site Language.
 
@@ -114,6 +109,9 @@ From your Admin Panel, use the menu to select Plugins -> Add New. Search the nec
 1. Theme home page.
 
 == Changelog ==
+
+= V2.1.0 =
+Release date of Sketchpad - modified.
 
 = V2.0 - 25.08.2016 =
 * Update : All functionality for WordPress 4.6 was updated.
