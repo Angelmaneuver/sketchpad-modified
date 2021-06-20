@@ -2,15 +2,15 @@
 /**
  * Widget API: SM_Widget_Recent_Posts class
  *
- * @package Sketchpad - modified
+ * @package    sketchpad
  * @subpackage widgets
- * @since 1.0.0
+ * @since      2.1.0
  */
 
 /**
  * Core class used to implement a Recent Posts widget.
  *
- * @since 1.0.0
+ * @since 2.1.0
  *
  * @see WP_Widget
  */
@@ -19,7 +19,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 	/**
 	 * Sets up a new Recent Posts widget instance.
 	 *
-	 * @since 1.0.0
+	 * @since 2.1.0
 	 */
 	public function __construct() {
 		$widget_ops = array(
@@ -34,7 +34,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 	/**
 	 * Outputs the content for the current Recent Posts widget instance.
 	 *
-	 * @since 1.0.0
+	 * @since 2.1.0
 	 *
 	 * @param array $args     Display arguments including 'before_title', 'after_title',
 	 *                        'before_widget', and 'after_widget'.
@@ -46,7 +46,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 		}
 
 		$default_title = __( 'Recent Posts', 'sketchpad-modified' );
-		$title         = isset( $instance['title'] ) ? $instance['title'] : $default_title;
+		$title         = esc_html( isset( $instance['title'] ) ? $instance['title'] : $default_title );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -74,7 +74,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			$option_condition['post__not_in'] = array( get_the_ID() );
 		}
 
-		if ( ! empty( $show_categories && ! in_array( 0, $show_categories ) ) ) {
+		if ( ! empty( $show_categories && ! in_array( 0, $show_categories, true ) ) ) {
 			$option_condition['category__in'] = $show_categories;
 		}
 
@@ -82,7 +82,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			/**
 			 * Filters the arguments for the Recent Posts widget.
 			 *
-			 * @since 1.0.0
+			 * @since 2.1.0
 			 *
 			 * @see WP_Query::get_posts()
 			 *
@@ -101,11 +101,11 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 		}
 		?>
 
-		<?php echo $args['before_widget']; ?>
+		<?php hazardous_echo( $args['before_widget'] ); ?>
 
 		<?php
 		if ( $title ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			hazardous_echo( $args['before_title'] . $title . $args['after_title'] );
 		}
 
 		$format = current_theme_supports( 'html5', 'navigation-widgets' ) ? 'html5' : 'xhtml';
@@ -115,7 +115,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 
 		if ( 'html5' === $format ) {
 			// The title may be filtered: Strip out HTML and make sure the aria-label is never empty.
-			$title      = trim( wp_all_strip_tags( $title ) );
+			$title      = trim( wp_strip_all_tags( $title ) );
 			$aria_label = $title ? $title : $default_title;
 			echo '<nav role="navigation" aria-label="' . esc_attr( $aria_label ) . '">';
 		}
@@ -125,7 +125,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			<?php foreach ( $r->posts as $recent_post ) : ?>
 				<?php
 				$post_title   = get_the_title( $recent_post->ID );
-				$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
+				$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)', 'sketchpad-modified' );
 				$tags         = get_the_tags( $recent_post->ID );
 				$tags2class   = ' class="' . $this->alt_option_name . '" ';
 				$aria_current = '';
@@ -144,10 +144,10 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 
 				$thumbnail = get_the_post_thumbnail( $recent_post->ID, array( 130, 130 ) );
 				?>
-				<li<?php echo $tags2class; ?>>
-					<a href="<?php the_permalink( $recent_post->ID ); ?>"<?php echo $aria_current; ?>>
-						<?php echo ( $show_thumbnail && ! empty( $thumbnail ) ) ? $thumbnail : ''; ?>
-						<span class="post-title"><?php echo $title; ?></span>
+				<li<?php hazardous_echo( $tags2class ); ?>>
+					<a href="<?php the_permalink( $recent_post->ID ); ?>"<?php hazardous_echo( $aria_current ); ?>>
+						<?php hazardous_echo( ( $show_thumbnail && ! empty( $thumbnail ) ) ? $thumbnail : '' ); ?>
+						<span class="post-title"><?php echo( esc_html( $title ) ); ?></span>
 					</a>
 					<?php if ( $show_date ) : ?>
 						<span class="post-date"><?php echo get_the_date( '', $recent_post->ID ); ?></span>
@@ -161,17 +161,16 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			echo '</nav>';
 		}
 
-		echo $args['after_widget'];
+		hazardous_echo( $args['after_widget'] );
 	}
 
 	/**
 	 * Handles updating the settings for the current Recent Posts widget instance.
 	 *
-	 * @since 1.0.0
+	 * @since 2.1.0
 	 *
-	 * @param array $new_instance New settings for this instance as input by the user via
-	 *                            WP_Widget::form().
-	 * @param array $old_instance Old settings for this instance.
+	 * @param  array $new_instance New settings for this instance as input by the user via WP_Widget::form().
+	 * @param  array $old_instance Old settings for this instance.
 	 * @return array Updated settings to save.
 	 */
 	public function update( $new_instance, $old_instance ) {
@@ -189,7 +188,7 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 	/**
 	 * Outputs the settings form for the Recent Posts widget.
 	 *
-	 * @since 1.0.0
+	 * @since 2.1.0
 	 *
 	 * @param array $instance Current settings.
 	 */
@@ -212,28 +211,28 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 		$show_thumbnail        = isset( $instance['show_thumbnail'] ) ? $instance['show_thumbnail'] : false;
 		?>
 
-		<h4><?php _e( 'Display Options', 'sketchpad-modified' ); ?></h4>
+		<h4><?php esc_html_e( 'Display Options', 'sketchpad-modified' ); ?></h4>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'title' ) ) ); ?>"><?php esc_html_e( 'Title:', 'sketchpad-modified' ); ?></label>
+			<input class="widefat" id="<?php echo( esc_attr( $this->get_field_id( 'title' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'title' ) ) ); ?>" type="text" value="<?php echo( esc_attr( $title ) ); ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts to show:' ); ?></label>
-			<input class="tiny-text" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="number" step="1" min="1" value="<?php echo $number; ?>" size="3" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'number' ) ) ); ?>"><?php esc_html_e( 'Number of posts to show:', 'sketchpad-modified' ); ?></label>
+			<input class="tiny-text" id="<?php echo( esc_attr( $this->get_field_id( 'number' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'number' ) ) ); ?>" type="number" step="1" min="1" value="<?php echo( esc_attr( $number ) ); ?>" size="3" />
 		</p>
 		<p>
-			<input class="checkbox" type="checkbox"<?php checked( $add_slug ); ?> id="<?php echo $this->get_field_id( 'add_slug' ); ?>" name="<?php echo $this->get_field_name( 'add_slug' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'add_slug' ); ?>"><?php _e( 'Output the tag to the class.', 'sketchpad-modified' ); ?></label>
+			<input class="checkbox" type="checkbox"<?php checked( $add_slug ); ?> id="<?php echo( esc_attr( $this->get_field_id( 'add_slug' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'add_slug' ) ) ); ?>" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'add_slug' ) ) ); ?>"><?php esc_html_e( 'Output the tag to the class.', 'sketchpad-modified' ); ?></label>
 		</p>
 		<p>
-			<input class="checkbox" type="checkbox"<?php checked( $not_show_current_post ); ?> id="<?php echo $this->get_field_id( 'not_show_current_post' ); ?>" name="<?php echo $this->get_field_name( 'not_show_current_post' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'not_show_current_post' ); ?>"><?php _e( 'Don\'t show the currently viewed articles in the list.', 'sketchpad-modified' ); ?></label>
+			<input class="checkbox" type="checkbox"<?php checked( $not_show_current_post ); ?> id="<?php echo( esc_attr( $this->get_field_id( 'not_show_current_post' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'not_show_current_post' ) ) ); ?>" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'not_show_current_post' ) ) ); ?>"><?php esc_html_e( 'Don\'t show the currently viewed articles in the list.', 'sketchpad-modified' ); ?></label>
 		</p>
 		<p>
-			<input class="checkbox" type="checkbox"<?php checked( $show_date ); ?> id="<?php echo $this->get_field_id( 'show_date' ); ?>" name="<?php echo $this->get_field_name( 'show_date' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Show the date of posting.', 'sketchpad-modified' ); ?></label>
+			<input class="checkbox" type="checkbox"<?php checked( $show_date ); ?> id="<?php echo( esc_attr( $this->get_field_id( 'show_date' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'show_date' ) ) ); ?>" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'show_date' ) ) ); ?>"><?php esc_html_e( 'Show the date of posting.', 'sketchpad-modified' ); ?></label>
 		</p>
-		<h4><?php _e( 'Filter by categories', 'sketchpad-modified' ); ?></h4>
+		<h4><?php esc_html_e( 'Filter by categories', 'sketchpad-modified' ); ?></h4>
 		<p>
 			<?php
 			wp_dropdown_categories(
@@ -255,8 +254,8 @@ class SM_Widget_Recent_Posts extends WP_Widget {
 			?>
 		</p>
 		<p>
-			<input class="checkbox" type="checkbox"<?php checked( $show_thumbnail ); ?> id="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>" name="<?php echo $this->get_field_name( 'show_thumbnail' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>"><?php _e( 'Display a thumbnail image.', 'sketchpad-modified' ); ?></label>
+			<input class="checkbox" type="checkbox"<?php checked( $show_thumbnail ); ?> id="<?php echo( esc_attr( $this->get_field_id( 'show_thumbnail' ) ) ); ?>" name="<?php echo( esc_attr( $this->get_field_name( 'show_thumbnail' ) ) ); ?>" />
+			<label for="<?php echo( esc_attr( $this->get_field_id( 'show_thumbnail' ) ) ); ?>"><?php esc_html_e( 'Display a thumbnail image.', 'sketchpad-modified' ); ?></label>
 		</p>
 		<?php
 	}

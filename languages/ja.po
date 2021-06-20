@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-06-12T15:47:18+00:00\n"
+"POT-Creation-Date: 2021-06-20T10:26:08+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -130,27 +130,27 @@ msgstr ""
 msgid "Page: "
 msgstr ""
 
-#: content.php:41 content.php:67 image.php:28 template/article.php:41
+#: content.php:41 content.php:61 image.php:28 template/article.php:35
 msgid "edit"
 msgstr ""
 
-#: content.php:45 content.php:71 image.php:32 template/article.php:45
+#: content.php:45 content.php:65 image.php:32 template/article.php:39
 msgid "posted by "
 msgstr ""
 
-#: content.php:48 content.php:74 image.php:35 template/article.php:48
+#: content.php:48 content.php:68 image.php:35 template/article.php:42
 msgid " in "
 msgstr ""
 
-#: content.php:112 template/article.php:84
+#: content.php:106 template/article.php:78
 msgid "read comments"
 msgstr ""
 
-#: content.php:119 template/article.php:92
+#: content.php:113 template/article.php:86
 msgid "more"
 msgstr ""
 
-#: content.php:126 image.php:93 template/article.php:100
+#: content.php:120 image.php:93 template/article.php:94
 msgid "Tags: "
 msgstr ""
 
@@ -191,6 +191,65 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:38
+msgid "Admin Page Setting"
+msgstr "管理画面設定"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:39
+msgid "Please enter if you want to background image for the admin panel."
+msgstr "管理画面に背景画像が必要な場合は入力してください。"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:71
+msgid "Activate the background image setting in the admin panel."
+msgstr "管理画面で背景画像の設定を有効にする。"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:78
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:80
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:82
+msgid "Reset"
+msgstr "初期値に戻す"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:79
+msgid "Opacity"
+msgstr "透過率"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:79
+msgid "The more you slide to the left, the higher the transparency."
+msgstr "左にスライドするほど透明度が高くなります。"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:81
+msgid "Transparent DOM"
+msgstr "透過させる DOM"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:81
+msgid "Enter the DOM element you want to make transparent."
+msgstr "透過させたい DOM 要素を入力してください。"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:38
+msgid "Blog Card Setting"
+msgstr "ブログカ－ド設定"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:39
+msgid "Configure settings for the Blog Card."
+msgstr "ブログカ－ドの設定"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:70
+msgid "Blog Card Image Size setting enable"
+msgstr "ブログカ－ドの画像設定を有効化する"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:71
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:73
+msgid "Image Size"
+msgstr "画像サイズ"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:72
+msgid "Blog Card Image Form Type setting enable"
+msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する"
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:73
+msgid "Form Type"
+msgstr "フォ－ムタイプ"
+
 #: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:29
 msgid "Sketchpad - modified Breadcrumb Setting"
 msgstr "Sketchpad - modified パンくずリスト設定"
@@ -199,296 +258,237 @@ msgstr "Sketchpad - modified パンくずリスト設定"
 msgid "General"
 msgstr "一般"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:48
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:47
 msgid "Post Type"
 msgstr "投稿タイプ"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:53
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:51
 msgid "Taxonomies"
 msgstr "タクソノミ－"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:58
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:55
 msgid "Other"
 msgstr "その他"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:99
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:96
 msgid "output breadcrumb"
 msgstr "パンくずリストを出力する"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:97
 msgid "Breadcrumb Separator"
 msgstr "パンくずリスト区切り文字"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:97
 msgid "Placed between each piece of breadcrumbs."
 msgstr "パンくずリスト間に出力されます。"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:101
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:98
 msgid "Breadcrumb around the tag"
 msgstr "パンくずリストを包含する要素の開始タグ"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:102
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:99
 msgid "Breadcrumb close tag"
 msgstr "パンくずリストを包含する要素の終了タグ"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:103
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
 msgid "Homepage Template"
 msgstr "ホ－ムペ－ジテンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:104
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:101
 msgid "include homepage in breadcrumb"
 msgstr "パンくずリストにホ－ムペ－ジを含む"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:105
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:102
 msgid "Post Template"
 msgstr "投稿テンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:106
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:103
 msgid "Page Template"
 msgstr "ペ－ジテンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:107
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:104
 msgid "Media Template"
 msgstr "メディアテンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:108
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:105
 msgid "Category Template"
 msgstr "カテゴリ－テンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:109
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:106
 msgid "Tag Template"
 msgstr "タグテンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:110
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:107
 msgid "Author Template"
 msgstr "投稿者テンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:111
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:108
 msgid "Date Template"
 msgstr "日付テンプレ－ト"
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:112
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:109
 msgid "Search Template"
 msgstr "検索テンプレ－ト"
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:19
-msgid "Admin Page Setting"
-msgstr "管理画面設定"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:20
-msgid "Please enter if you want to background image for the admin panel."
-msgstr "管理画面に背景画像が必要な場合は入力してください。"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:37
-msgid "Activate the background image setting in the admin panel."
-msgstr "管理画面で背景画像の設定を有効にする。"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:86
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:121
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:151
-msgid "Reset"
-msgstr "初期値に戻す"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:104
-msgid "Opacity"
-msgstr "透過率"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:105
-msgid "The more you slide to the left, the higher the transparency."
-msgstr "左にスライドするほど透明度が高くなります。"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:139
-msgid "Transparent DOM"
-msgstr "透過させる DOM"
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:140
-msgid "Enter the DOM element you want to make transparent."
-msgstr "透過させたい DOM 要素を入力してください。"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:19
-msgid "Blog Card Setting"
-msgstr "ブログカ－ド設定"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:20
-msgid "Configure settings for the Blog Card."
-msgstr "ブログカ－ドの設定"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:36
-msgid "Blog Card Image Size setting enable"
-msgstr "ブログカ－ドの画像設定を有効化する"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:52
-#: includes/admin/theme-customizer/sm-rss.php:88
-msgid "Image Size"
-msgstr "画像サイズ"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:75
-msgid "Blog Card Image Form Type setting enable"
-msgstr "ブログカ－ドの画像フォ－ムタイプ設定を有効化する"
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:92
-msgid "Form Type"
-msgstr "フォ－ムタイプ"
-
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:19
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:38
 msgid "Hamburger menu Button Setting"
 msgstr "ハンバ－ガ－メニュ－ボタン設定"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:20
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:39
 msgid "Configure settings for the button that hamburger menu of the page."
 msgstr "ハンバ－ガ－メニュ－ボタンの設定"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:36
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:72
 msgid "Hamburger menu Button enable"
 msgstr "ハンバ－ガ－メニュ－ボタンを有効化する"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:52
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:73
 msgid "Hamburger menu Button Open Mark"
 msgstr "ハンバ－ガ－メニュ－ (開く) ボタンのマ－ク"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:68
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:74
 msgid "Hamburger menu Button Close Mark"
 msgstr "ハンバ－ガ－メニュ－ (閉じる) ボタンのマ－ク"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:86
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:76
 msgid "Hamburger menu Button Background Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの背景色"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:104
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:79
 msgid "Hamburger menu Button Hover Background Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの背景色 (オンマウス時)"
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:122
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:82
 msgid "Hamburger menu Button Border Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの枠線色"
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:38
 msgid "Body Tag Setting"
 msgstr "Body タグ設定"
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:20
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:39
 msgid "Please enter if you want to insert in directly under the body tag"
 msgstr "Body タグ直下に挿入する場合は入力してください。"
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:36
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:68
 msgid "Directly Under the Body Tag"
 msgstr "Body タグ直下"
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:53
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:69
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:69
 msgid "Priority"
 msgstr "優先度"
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:54
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:69
 msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
 msgstr "左にスライドするほどBody タグ直下への出力が早くなります。"
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:19
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:38
 msgid "Head Tag Setting"
 msgstr "Head タグ設定"
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:20
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:39
 msgid "Please enter if you want to insert in the head tag"
 msgstr "Head タグに挿入する場合は入力してください。"
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:53
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:69
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr "左にスライドするほどHead タグへの出力が早くなります。"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:19
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:38
 msgid "Top Button Setting"
 msgstr "トップへ戻るボタン設定"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:20
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:39
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr "ペ－ジの先頭に戻るボタンの設定"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:36
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:71
 msgid "Top Button enable"
 msgstr "トップへ戻るボタンを有効化する"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:52
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:72
 msgid "Top Button Mark"
 msgstr "トップへ戻るボタンのマ－ク"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:70
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:74
 msgid "Top Button Background Color"
 msgstr "トップへ戻るボタンの背景色"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:88
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:77
 msgid "Top Button Hover Background Color"
 msgstr "トップへ戻るボタンの背景色 (オンマウス時)"
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:106
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:80
 msgid "Top Button Border Color"
 msgstr "トップへ戻るボタンの枠線色"
 
-#: includes/admin/theme-customizer/sm-rss.php:19
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:38
 msgid "Sketchpad - modified RSS Feed Setting"
 msgstr "Sketchpad - modified RSS Feed 設定"
 
-#: includes/admin/theme-customizer/sm-rss.php:20
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:39
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr "アイキャッチ画像を RSS Feed に出力するかどうかの設定"
 
-#: includes/admin/theme-customizer/sm-rss.php:37
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:70
 msgid "output eye-catching image"
 msgstr "アイキャッチ画像を出力する"
 
-#: includes/admin/theme-customizer/sm-rss.php:54
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:71
 msgid "to incluede the \"media:content\" tag"
 msgstr "\"media:content\" タグを追加する"
 
-#: includes/admin/theme-customizer/sm-rss.php:71
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:72
 msgid "to incluede the \"enclosure\" tag"
 msgstr "\"enclosure\" タグを追加する"
 
-#: includes/block-style/sm-style.php:19
+#: includes/block-style/sm-style.php:17
 msgid "Under Line"
 msgstr "下線付き"
 
-#: includes/block-style/sm-style.php:26 includes/block-style/sm-style.php:63
-#: includes/block-style/sm-style.php:109
+#: includes/block-style/sm-style.php:18 includes/block-style/sm-style.php:25
+#: includes/block-style/sm-style.php:35
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
-#: includes/block-style/sm-style.php:33
+#: includes/block-style/sm-style.php:19
 msgid "Close the gap to the top"
 msgstr "余白無し (上)"
 
-#: includes/block-style/sm-style.php:40
+#: includes/block-style/sm-style.php:20
 msgid "Font style h5"
 msgstr "H5 スタイル"
 
-#: includes/block-style/sm-style.php:47
+#: includes/block-style/sm-style.php:21
 msgid "Font sytle h5 and close the gap between the two"
 msgstr "H5 スタイル (余白無し)"
 
-#: includes/block-style/sm-style.php:54
+#: includes/block-style/sm-style.php:22
 msgid "Font sytle h5 and close the gap to the top"
 msgstr "H5 スタイル (上余白無し)"
 
-#: includes/block-style/sm-style.php:70
+#: includes/block-style/sm-style.php:26
 msgid "Open one character between line"
 msgstr "行間を1文字開ける"
 
-#: includes/block-style/sm-style.php:77
+#: includes/block-style/sm-style.php:27
 msgid "Black single line"
 msgstr "黒縁 (単線)"
 
-#: includes/block-style/sm-style.php:84
+#: includes/block-style/sm-style.php:28
 msgid "Black double line"
 msgstr "黒縁 (二重線)"
 
-#: includes/block-style/sm-style.php:91
+#: includes/block-style/sm-style.php:29
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
-#: includes/block-style/sm-style.php:100
+#: includes/block-style/sm-style.php:32
 msgid "Postit"
 msgstr "ポストイット"
 
-#: includes/block-style/sm-style.php:118
+#: includes/block-style/sm-style.php:38
 msgid "Indent"
 msgstr "インデント"
 
@@ -505,35 +505,50 @@ msgid "Your site&#8217;s most recent Posts. (Sketchpad - modified)"
 msgstr "直近の投稿 (Sketchpad - modified)。"
 
 #: includes/widgets/class-sm-widget-recent-posts.php:30
-#: includes/widgets/class-sm-widget-recent-posts.php:48
 msgid "Recent Posts (Sketchpad - modified)"
 msgstr "最近の投稿 (Sketchpad - modified)"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:215
+#: includes/widgets/class-sm-widget-recent-posts.php:48
+msgid "Recent Posts"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:128
+msgid "(no title)"
+msgstr "(タイトルなし)"
+
+#: includes/widgets/class-sm-widget-recent-posts.php:214
 msgid "Display Options"
 msgstr "表示オプション"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:226
+#: includes/widgets/class-sm-widget-recent-posts.php:216
+msgid "Title:"
+msgstr "タイトル:"
+
+#: includes/widgets/class-sm-widget-recent-posts.php:220
+msgid "Number of posts to show:"
+msgstr "表示する投稿数:"
+
+#: includes/widgets/class-sm-widget-recent-posts.php:225
 msgid "Output the tag to the class."
 msgstr "タグをクラスに出力する。"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:230
+#: includes/widgets/class-sm-widget-recent-posts.php:229
 msgid "Don't show the currently viewed articles in the list."
 msgstr "現在閲覧中の記事を一覧に表示しないようにする。"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:234
+#: includes/widgets/class-sm-widget-recent-posts.php:233
 msgid "Show the date of posting."
 msgstr "投稿日時を表示する。"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:236
+#: includes/widgets/class-sm-widget-recent-posts.php:235
 msgid "Filter by categories"
 msgstr "カテゴリ－で絞り込む"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:245
+#: includes/widgets/class-sm-widget-recent-posts.php:244
 msgid "Show all categories."
 msgstr "全てのカテゴリ－を表示する"
 
-#: includes/widgets/class-sm-widget-recent-posts.php:259
+#: includes/widgets/class-sm-widget-recent-posts.php:258
 msgid "Display a thumbnail image."
 msgstr "サムネイル画像を表示する。"
 

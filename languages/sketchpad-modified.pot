@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License V3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sketchpad - modified 1.0\n"
+"Project-Id-Version: Sketchpad - modified 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-06-12T15:47:18+00:00\n"
+"POT-Creation-Date: 2021-06-20T10:26:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -133,39 +133,39 @@ msgid "Page: "
 msgstr ""
 
 #: content.php:41
-#: content.php:67
+#: content.php:61
 #: image.php:28
-#: template/article.php:41
+#: template/article.php:35
 msgid "edit"
 msgstr ""
 
 #: content.php:45
-#: content.php:71
+#: content.php:65
 #: image.php:32
-#: template/article.php:45
+#: template/article.php:39
 msgid "posted by "
 msgstr ""
 
 #: content.php:48
-#: content.php:74
+#: content.php:68
 #: image.php:35
-#: template/article.php:48
+#: template/article.php:42
 msgid " in "
 msgstr ""
 
-#: content.php:112
-#: template/article.php:84
+#: content.php:106
+#: template/article.php:78
 msgid "read comments"
 msgstr ""
 
-#: content.php:119
-#: template/article.php:92
+#: content.php:113
+#: template/article.php:86
 msgid "more"
 msgstr ""
 
-#: content.php:126
+#: content.php:120
 #: image.php:93
-#: template/article.php:100
+#: template/article.php:94
 msgid "Tags: "
 msgstr ""
 
@@ -206,6 +206,65 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:38
+msgid "Admin Page Setting"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:39
+msgid "Please enter if you want to background image for the admin panel."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:71
+msgid "Activate the background image setting in the admin panel."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:78
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:80
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:82
+msgid "Reset"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:79
+msgid "Opacity"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:79
+msgid "The more you slide to the left, the higher the transparency."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:81
+msgid "Transparent DOM"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:81
+msgid "Enter the DOM element you want to make transparent."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:38
+msgid "Blog Card Setting"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:39
+msgid "Configure settings for the Blog Card."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:70
+msgid "Blog Card Image Size setting enable"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:71
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:73
+msgid "Image Size"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:72
+msgid "Blog Card Image Form Type setting enable"
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php:73
+msgid "Form Type"
+msgstr ""
+
 #: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:29
 msgid "Sketchpad - modified Breadcrumb Setting"
 msgstr ""
@@ -214,297 +273,238 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:48
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:47
 msgid "Post Type"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:53
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:51
 msgid "Taxonomies"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:58
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:55
 msgid "Other"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:99
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:96
 msgid "output breadcrumb"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:97
 msgid "Breadcrumb Separator"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:97
 msgid "Placed between each piece of breadcrumbs."
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:101
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:98
 msgid "Breadcrumb around the tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:102
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:99
 msgid "Breadcrumb close tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:103
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:100
 msgid "Homepage Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:104
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:101
 msgid "include homepage in breadcrumb"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:105
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:102
 msgid "Post Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:106
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:103
 msgid "Page Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:107
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:104
 msgid "Media Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:108
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:105
 msgid "Category Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:109
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:106
 msgid "Tag Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:110
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:107
 msgid "Author Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:111
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:108
 msgid "Date Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:112
+#: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:109
 msgid "Search Template"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:19
-msgid "Admin Page Setting"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:20
-msgid "Please enter if you want to background image for the admin panel."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:37
-msgid "Activate the background image setting in the admin panel."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:86
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:121
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:151
-msgid "Reset"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:104
-msgid "Opacity"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:105
-msgid "The more you slide to the left, the higher the transparency."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:139
-msgid "Transparent DOM"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/admin-page-setting.php:140
-msgid "Enter the DOM element you want to make transparent."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:19
-msgid "Blog Card Setting"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:20
-msgid "Configure settings for the Blog Card."
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:36
-msgid "Blog Card Image Size setting enable"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:52
-#: includes/admin/theme-customizer/sm-rss.php:88
-msgid "Image Size"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:75
-msgid "Blog Card Image Form Type setting enable"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/blog-card.php:92
-msgid "Form Type"
-msgstr ""
-
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:19
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:38
 msgid "Hamburger menu Button Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:20
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:39
 msgid "Configure settings for the button that hamburger menu of the page."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:36
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:72
 msgid "Hamburger menu Button enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:52
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:73
 msgid "Hamburger menu Button Open Mark"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:68
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:74
 msgid "Hamburger menu Button Close Mark"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:86
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:76
 msgid "Hamburger menu Button Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:104
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:79
 msgid "Hamburger menu Button Hover Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/hamburger-menu-button.php:122
+#: includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php:82
 msgid "Hamburger menu Button Border Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:19
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:38
 msgid "Body Tag Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:20
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:39
 msgid "Please enter if you want to insert in directly under the body tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:36
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:68
 msgid "Directly Under the Body Tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:53
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:52
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:69
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:69
 msgid "Priority"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-body-tag.php:54
+#: includes/admin/theme-customizer/class/class-sm-insert-body-tag-initializer.php:69
 msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:19
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:38
 msgid "Head Tag Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:20
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:39
 msgid "Please enter if you want to insert in the head tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/insert-head-tag.php:53
+#: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:69
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:19
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:38
 msgid "Top Button Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:20
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:39
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:36
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:71
 msgid "Top Button enable"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:52
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:72
 msgid "Top Button Mark"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:70
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:74
 msgid "Top Button Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:88
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:77
 msgid "Top Button Hover Background Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-basic/return2top-button.php:106
+#: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:80
 msgid "Top Button Border Color"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:19
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:38
 msgid "Sketchpad - modified RSS Feed Setting"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:20
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:39
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:37
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:70
 msgid "output eye-catching image"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:54
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:71
 msgid "to incluede the \"media:content\" tag"
 msgstr ""
 
-#: includes/admin/theme-customizer/sm-rss.php:71
+#: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:72
 msgid "to incluede the \"enclosure\" tag"
 msgstr ""
 
-#: includes/block-style/sm-style.php:19
+#: includes/block-style/sm-style.php:17
 msgid "Under Line"
 msgstr ""
 
-#: includes/block-style/sm-style.php:26
-#: includes/block-style/sm-style.php:63
-#: includes/block-style/sm-style.php:109
+#: includes/block-style/sm-style.php:18
+#: includes/block-style/sm-style.php:25
+#: includes/block-style/sm-style.php:35
 msgid "Close the gap between the two"
 msgstr ""
 
-#: includes/block-style/sm-style.php:33
+#: includes/block-style/sm-style.php:19
 msgid "Close the gap to the top"
 msgstr ""
 
-#: includes/block-style/sm-style.php:40
+#: includes/block-style/sm-style.php:20
 msgid "Font style h5"
 msgstr ""
 
-#: includes/block-style/sm-style.php:47
+#: includes/block-style/sm-style.php:21
 msgid "Font sytle h5 and close the gap between the two"
 msgstr ""
 
-#: includes/block-style/sm-style.php:54
+#: includes/block-style/sm-style.php:22
 msgid "Font sytle h5 and close the gap to the top"
 msgstr ""
 
-#: includes/block-style/sm-style.php:70
+#: includes/block-style/sm-style.php:26
 msgid "Open one character between line"
 msgstr ""
 
-#: includes/block-style/sm-style.php:77
+#: includes/block-style/sm-style.php:27
 msgid "Black single line"
 msgstr ""
 
-#: includes/block-style/sm-style.php:84
+#: includes/block-style/sm-style.php:28
 msgid "Black double line"
 msgstr ""
 
-#: includes/block-style/sm-style.php:91
+#: includes/block-style/sm-style.php:29
 msgid "Change the display to R18."
 msgstr ""
 
-#: includes/block-style/sm-style.php:100
+#: includes/block-style/sm-style.php:32
 msgid "Postit"
 msgstr ""
 
-#: includes/block-style/sm-style.php:118
+#: includes/block-style/sm-style.php:38
 msgid "Indent"
 msgstr ""
 
@@ -521,35 +521,50 @@ msgid "Your site&#8217;s most recent Posts. (Sketchpad - modified)"
 msgstr ""
 
 #: includes/widgets/class-sm-widget-recent-posts.php:30
-#: includes/widgets/class-sm-widget-recent-posts.php:48
 msgid "Recent Posts (Sketchpad - modified)"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:215
+#: includes/widgets/class-sm-widget-recent-posts.php:48
+msgid "Recent Posts"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:128
+msgid "(no title)"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:214
 msgid "Display Options"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:226
+#: includes/widgets/class-sm-widget-recent-posts.php:216
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:220
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets/class-sm-widget-recent-posts.php:225
 msgid "Output the tag to the class."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:230
+#: includes/widgets/class-sm-widget-recent-posts.php:229
 msgid "Don't show the currently viewed articles in the list."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:234
+#: includes/widgets/class-sm-widget-recent-posts.php:233
 msgid "Show the date of posting."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:236
+#: includes/widgets/class-sm-widget-recent-posts.php:235
 msgid "Filter by categories"
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:245
+#: includes/widgets/class-sm-widget-recent-posts.php:244
 msgid "Show all categories."
 msgstr ""
 
-#: includes/widgets/class-sm-widget-recent-posts.php:259
+#: includes/widgets/class-sm-widget-recent-posts.php:258
 msgid "Display a thumbnail image."
 msgstr ""
 
