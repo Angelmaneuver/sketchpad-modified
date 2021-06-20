@@ -2,7 +2,7 @@
 Contributors: Angelmaneuver
 Author URI: https://github.com/Angelmaneuver
 Donate link:
-Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, breadcrumb, responsive, translation-ready
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, translation-ready
 Requires at least: 7.4.12
 Tested up to: Latest
 Stable tag: 2.1.0
