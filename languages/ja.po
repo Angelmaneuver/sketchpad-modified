@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-06-20T10:26:08+00:00\n"
+"POT-Creation-Date: 2021-06-20T10:39:22+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -202,6 +202,18 @@ msgstr "管理画面に背景画像が必要な場合は入力してください
 #: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:71
 msgid "Activate the background image setting in the admin panel."
 msgstr "管理画面で背景画像の設定を有効にする。"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:73
+msgid "Background"
+msgstr "背景"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:73
+msgid "Image"
+msgstr "画像"
+
+#: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:76
+msgid "Color"
+msgstr "色"
 
 #: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:78
 #: includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php:80
