@@ -65,11 +65,40 @@ abstract class SM_Abstract_Theme_Customizer_Initializer {
 		}
 
 		foreach ( $this->get_settings() as $key => $value ) {
-			$wp_customize->add_setting( $key, $value );
+			$this->add_setting( $wp_customize, $key, $value );
 		}
 
 		foreach ( $this->get_controls( $wp_customize ) as $key => $value ) {
 			$this->add_control( $wp_customize, $key, $value );
+		}
+	}
+
+	/**
+	 * Add a customize setting.
+	 *
+	 * @param  WP_Customize_Manager $wp_customize given by the "customize_register" hook.
+	 * @param  string               $key          ID of the setting to be added.
+	 * @param  array                $value        Parameter of the setting.
+	 * @return void
+	 */
+	private function add_setting(
+		WP_Customize_Manager $wp_customize,
+		string $key,
+		array $value
+	) {
+		if ( array_key_exists( 'sanitize_callback', $value ) ) {
+			$sanitizer = $value['sanitize_callback'];
+			unset( $value['sanitize_callback'] );
+
+			$wp_customize->add_setting(
+				$key,
+				array_merge(
+					$value,
+					array(
+						'sanitize_callback' => $sanitizer,
+					)
+				)
+			);
 		}
 	}
 
