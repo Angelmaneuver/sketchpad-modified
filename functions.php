@@ -36,12 +36,6 @@ function sketchpad_setup() {
 	/** This theme supports for post thumbnails. */
 	add_theme_support( 'post-thumbnails' );
 
-	/** This theme supports for wide alignment. */
-	add_theme_support( 'align-wide' );
-
-	/** Adds RSS feed links to <head> for posts and comments. */
-	add_theme_support( 'automatic-feed-links' );
-
 	/** This theme supports a variety of post formats. */
 	add_theme_support(
 		'post-formats',
@@ -58,6 +52,15 @@ function sketchpad_setup() {
 		)
 	);
 
+	/** This theme supports for wide alignment. */
+	add_theme_support( 'align-wide' );
+
+	/** This theme supports for responsive. */
+	add_theme_support( 'responsive-embeds' );
+
+	/** Adds RSS feed links to <head> for posts and comments. */
+	add_theme_support( 'automatic-feed-links' );
+
 	/** This theme supports custom logo image. */
 	$args = array(
 		'width'              => 715,
@@ -70,22 +73,29 @@ function sketchpad_setup() {
 
 	add_theme_support( 'custom-header', $args );
 
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 72,
-			'width'       => 162,
-			'flex-height' => false,
-			'flex-width'  => false,
-			'header-text' => array( 'site-title', 'site-description' ),
-		)
+	$args = array(
+		'height'      => 72,
+		'width'       => 162,
+		'flex-height' => false,
+		'flex-width'  => false,
+		'header-text' => array( 'site-title', 'site-description' ),
 	);
+
+	add_theme_support( 'custom-logo', $args );
 
 	/** This theme supports custom background color and image. */
 	add_theme_support( 'custom-background', array( 'default-color' => 'AF9F88' ) );
 
 	/** This theme supports manage the document title tag. */
 	add_theme_support( 'title-tag' );
+
+	/** This theme supports for html5. */
+	$args = array(
+		'script',
+		'style',
+	);
+
+	add_theme_support( 'html5', $args );
 
 	/* This theme supports to JetPack's infinite scroll. */
 	add_theme_support(
