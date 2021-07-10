@@ -36,12 +36,14 @@ if ( is_admin() || is_customize_preview() ) {
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-blog-card-initializer.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php';
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-hamburger-menu-button-initializer.php';
+	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php';
 	add_action( 'customize_register', array( new SM_Admin_Page_Setting_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Insert_Head_Tag_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Insert_Body_Tag_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Blog_Card_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Return2Top_Button_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Hamburger_Menu_Button_Initializer(), 'init' ), 100 );
+	add_action( 'customize_register', array( new SM_Other_Setting_Initializer(), 'init' ), 100 );
 
 	require get_template_directory() . '/includes/admin/theme-customizer/sm-basic/admin-page-setting.php';
 }
@@ -223,3 +225,8 @@ EOM;
 }
 
 add_filter( 'wp_footer', 'sketchpad_hamburger_menu_button' );
+
+// Remove wlwmanifest.xml link.
+if ( get_theme_mod( 'sketchpad_other_setting_wlwmanifest_disable', false ) ) {
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+}
