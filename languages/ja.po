@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-06-20T10:39:22+00:00\n"
+"POT-Creation-Date: 2021-07-10T10:42:19+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -158,11 +158,11 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:215
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:217
 msgid "Right Widget Area"
 msgstr ""
 
@@ -406,6 +406,22 @@ msgstr "Head タグに挿入する場合は入力してください。"
 #: includes/admin/theme-customizer/class/class-sm-insert-head-tag-initializer.php:69
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr "左にスライドするほどHead タグへの出力が早くなります。"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:38
+msgid "Other Setting Setting"
+msgstr "その他の設定"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:39
+msgid "Configure settings for Other setting of the page."
+msgstr "その他の設定"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:68
+msgid "Remove the EditURI link"
+msgstr "EditURI リンクを無効化する"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+msgid "Remove the wlwmanifest.xml link"
+msgstr "wlwmanifest.xml リンクを無効化する"
 
 #: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:38
 msgid "Top Button Setting"
