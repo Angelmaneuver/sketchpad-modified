@@ -113,35 +113,58 @@ function sketchpad_setup() {
 }
 
 /**
- * Widgets initialize timing process.
+ * Resource hints set process.
  *
- * @see https://developer.wordpress.org/reference/hooks/widgets_init/
+ * @param  array  $urls          URLs to print for resource hints.
+ * @param  string $relation_type The relation type the URLs are printed for, e.g. 'preconnect' or 'prerender'.
+ * @return array                 After conversion the URLs.
+ *
+ * @see    https://developer.wordpress.org/reference/hooks/wp_resource_hints/
  */
-function register_sketchpad_widgets() {
-	/** This theme support widget sidebar. */
-	register_sidebar(
-		array(
-			'name'          => __( 'Right Sidebar Widget', 'sketchpad-modified' ),
-			'id'            => 'sidebar',
-			'description'   => __( 'Right Widget Area', 'sketchpad-modified' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<header><h4 class="widgettitle">',
-			'after_title'   => '</h4></header>',
-		)
-	);
+function sketchpad_resource_hints( $urls, $relation_type ): array {
+	if ( ! is_admin() ) {
+		if ( 'dns-prefetch' === $relation_type ) {
+			$urls[] = '//fonts.gstatic.com';
+		}
+
+		asort( $urls, SORT_STRING );
+	}
+
+	return $urls;
+}
+
+/**
+ * Style for site title.
+ */
+function sketchpad_header() {
+	$value = '<style>';
+
+	if ( ! display_header_text() ) {
+		$value .= 'div#main-content > div#wrapper > header .header h1.site-title, div#main-content > div#wrapper > header .header h2.site-description { display: none; }';
+	} else {
+		$value .= '.site-title a, .site-title p, .site-description { color: #' . esc_html( get_header_textcolor() ) . ' }';
+	}
+
+	$value .= <<<EOM
+</style>
+
+EOM;
+
+	hazardous_echo( $value );
 }
 
 /**
  * Scripts and styles enqueue process.
  *
  * @see https://developer.wordpress.org/reference/functions/wp_enqueue_style/
+ * @see https://developer.wordpress.org/reference/functions/wp_enqueue_script/
  */
 function sketchpad_script() {
 	wp_enqueue_style(
 		'google-open-sans',
-		'//fonts.googleapis.com/css?family=Open+Sans',
-		array()
+		'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap',
+		array(),
+		null
 	);
 
 	wp_enqueue_style(
@@ -181,32 +204,32 @@ function sketchpad_admin_script() {
 }
 
 /**
- * Style for site title.
+ * Widgets initialize timing process.
+ *
+ * @see https://developer.wordpress.org/reference/hooks/widgets_init/
  */
-function sketchpad_header() { ?>
-	<style type="text/css">
-		<?php if ( ! display_header_text() ) { ?>
-			div#main-content > div#wrapper > header .header h1.site-title,
-			div#main-content > div#wrapper > header .header h2.site-description {
-				display: none;
-			}
-		<?php } else { ?>
-			.site-title a,
-			.site-title p,
-			.site-description {
-				color: <?php echo '#' . esc_html( get_header_textcolor() ); ?>;
-			}
-		<?php } ?>
-	</style>
-	<?php
+function register_sketchpad_widgets() {
+	/** This theme support widget sidebar. */
+	register_sidebar(
+		array(
+			'name'          => __( 'Right Sidebar Widget', 'sketchpad-modified' ),
+			'id'            => 'sidebar',
+			'description'   => __( 'Right Widget Area', 'sketchpad-modified' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<header><h4 class="widgettitle">',
+			'after_title'   => '</h4></header>',
+		)
+	);
 }
 
 add_action( 'init', 'sketchpad_init' );
 add_action( 'after_setup_theme', 'sketchpad_setup' );
-add_action( 'widgets_init', 'register_sketchpad_widgets' );
-add_action( 'widget_text', 'do_shortcode' );
+add_filter( 'wp_resource_hints', 'sketchpad_resource_hints', 10, 2 );
+add_action( 'wp_head', 'sketchpad_header' );
 add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
 add_action( 'admin_enqueue_scripts', 'sketchpad_admin_script' );
-add_action( 'wp_head', 'sketchpad_header' );
+add_action( 'widgets_init', 'register_sketchpad_widgets' );
+add_action( 'widget_text', 'do_shortcode' );
 
 require get_template_directory() . '/includes/load.php';

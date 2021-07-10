@@ -57,7 +57,7 @@ function sketchpad_head_insert_head() {
 
 	if ( '' !== $insert_head ) {
 		$value = <<<EOM
-	{$insert_head}
+{$insert_head}
 
 EOM;
 		hazardous_echo( $value );
@@ -179,7 +179,7 @@ function sketchpad_output_return2top_button() {
 	$mark             = get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_button_template( Sm_Basic_Constant::RETURN2TOP_BUTTON_MARK ) );
 
 	$value = <<<EOM
-	<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$mark}</button>
+<button class="top_button" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$mark}</button>
 
 EOM;
 
@@ -214,8 +214,8 @@ function sketchpad_output_hamburger_menu_button() {
 	$close_mark       = get_theme_mod( 'sketchpad_hamburger_menu_button_close_mark', sketchpad_sanitize_button_template( Sm_Basic_Constant::HAMBURGER_MENU_BUTTON_CLOSE_MARK ) );
 
 	$value = <<<EOM
-	<button class="hamburger_menu open" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$open_mark}</button>
-	<button class="hamburger_menu close" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$close_mark}</button>
+<button class="hamburger_menu open" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$open_mark}</button>
+<button class="hamburger_menu close" style="background-color:{$background_color}; border: 1px solid {$border};" {$hover}>{$close_mark}</button>
 
 EOM;
 
