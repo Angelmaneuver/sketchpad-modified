@@ -232,4 +232,6 @@ add_action( 'admin_enqueue_scripts', 'sketchpad_admin_script' );
 add_action( 'widgets_init', 'register_sketchpad_widgets' );
 add_action( 'widget_text', 'do_shortcode' );
 
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
 require get_template_directory() . '/includes/load.php';
