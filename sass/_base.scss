@@ -388,9 +388,13 @@ article {
 
     .post-title {
       a {
-        padding-right: 2.5rem;
-        background: url(images/mark3.png) no-repeat right center;
         @include HeadlineColor2;
+		@include Left2RightStyle(#9b8f76);
+
+		&:first-of-type::after {
+			content: url(images/mark3.png);
+			padding-left: 0.5rem;
+		}
 
         &.external {
           @if $font-awesome {

@@ -63,9 +63,13 @@
       > div.post-header > h3.post-title {
         > a {
           @include Change2PinkTextStyle;
-          padding-right: 0;
-          background: none;
-        }
+		  @include Left2RightStyle(#FF9A93);
+
+		  &:first-of-type::after {
+			content: "";
+			padding-left: initial;
+		  }
+		}
 
         span.r18 {
           font-size: 1.65rem;

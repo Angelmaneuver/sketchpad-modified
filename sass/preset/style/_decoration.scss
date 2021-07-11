@@ -1,0 +1,14 @@
+// Decoration Style Property
+
+@mixin Left2RightStyle($color, $padding-bottom: 0.01rem, $under-line-size: 2px) {
+	& {
+		text-decoration: none;
+		padding-bottom: $padding-bottom;
+		background: linear-gradient($color, $color) 0 100% / 0 $under-line-size no-repeat;
+		transition: background .5s;
+
+		&:hover {
+			background-size: 100% $under-line-size;
+		}
+	}
+}
