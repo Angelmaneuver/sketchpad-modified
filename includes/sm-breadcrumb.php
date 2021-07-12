@@ -48,7 +48,7 @@ function sketchpad_output_breadcrumb() {
 	if ( get_theme_mod( 'sketchpad_breadcrumb_output_home', true ) ) {
 		$replacement = array(
 			'%link%'     => esc_url( home_url() ),
-			'%position%' => $breadcrumb->get_layer,
+			'%position%' => $breadcrumb->get_layer(),
 		);
 
 		$breadcrumb->push(
