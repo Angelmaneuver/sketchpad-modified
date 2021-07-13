@@ -400,8 +400,9 @@ article {
           @if $font-awesome {
             font-size: 1.5rem;
             padding-right: 0;
-            background: none;
             padding-left: 1rem;
+            background: none;
+			transition: initial;
 
             &:before {
               content: "\f35d";

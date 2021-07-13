@@ -69,6 +69,13 @@
 			content: "";
 			padding-left: initial;
 		  }
+
+		  &.external {
+			@if $font-awesome {
+			  background: none;
+			  transition: initial;
+			}
+		  }
 		}
 
         span.r18 {

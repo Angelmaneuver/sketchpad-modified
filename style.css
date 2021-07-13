@@ -749,6 +749,12 @@ article.tag-r18 header > div.post-header > h3.post-title > a:first-of-type::afte
   padding-left: initial;
 }
 
+article.tag-r18 header > div.post-header > h3.post-title > a.external {
+  background: none;
+  -webkit-transition: initial;
+  transition: initial;
+}
+
 article.tag-r18 header > div.post-header > h3.post-title span.r18 {
   font-size: 1.65rem;
 }
@@ -1382,8 +1388,10 @@ article .post-header .post-title a:first-of-type::after {
 article .post-header .post-title a.external {
   font-size: 1.5rem;
   padding-right: 0;
-  background: none;
   padding-left: 1rem;
+  background: none;
+  -webkit-transition: initial;
+  transition: initial;
 }
 
 article .post-header .post-title a.external:before {
