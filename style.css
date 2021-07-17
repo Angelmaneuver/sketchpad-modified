@@ -1587,9 +1587,7 @@ main#articles article.format-standard .post-content .thumb-box a img:hover {
     width: 100%;
     height: auto;
     max-width: 100%;
-    max-height: auto;
     min-width: 100%;
-    min-height: auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1597,7 +1595,6 @@ main#articles article.format-standard .post-content .thumb-box a img:hover {
     width: 100%;
     height: auto;
     max-width: 100%;
-    max-height: auto;
     min-width: 100%;
     min-height: auto;
   }
