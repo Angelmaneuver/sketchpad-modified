@@ -2271,7 +2271,7 @@ aside .sidebar section div.footer .site-info > span.right .original {
     display: none;
   }
   div.show_sidebar div#wrapper > div.content > div.main-content > main {
-    padding-left: -12.9rem;
+    margin-left: -2rem;
   }
   div.show_sidebar div#wrapper > div.content > aside {
     position: fixed;
