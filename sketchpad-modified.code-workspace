@@ -10,6 +10,10 @@
 		"editor.detectIndentation": false,
 		"files.insertFinalNewline": true,
 		"files.trimFinalNewlines": true,
+		"[scss]": {
+			"editor.insertSpaces": true,
+			"editor.tabSize": 2,
+		},
 		"auto-rename-tag.activationOnLanguage": ["*"],
 		"liveSassCompile.settings.formats": [
 			{

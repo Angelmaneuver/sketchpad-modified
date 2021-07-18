@@ -1,28 +1,32 @@
 // Font Base
 
-@mixin GetFont($font-size: $default_font_size,
-               $line-height-ratio: $default_line_height_ratio) {
-    font-size: $font-size;
-    line-height: $font-size * $line-height-ratio;
+@mixin GetFont(
+  $font-size: $default_font_size,
+  $line-height-ratio: $default_line_height_ratio
+) {
+  font-size: $font-size;
+  line-height: $font-size * $line-height-ratio;
 }
 
 @mixin GetFontWeight($font-weight: $default_font_weight) {
-    font-weight: $font-weight;
+  font-weight: $font-weight;
 }
 
-@mixin GetFontPreSet($font-size: $default_font_size,
-                     $font-weight: $default_font_weight,
-                     $line-height-ratio: $default_line_height_ratio) {
-    @include GetFont($font-size, $line-height-ratio);
-    @include GetFontWeight($font-weight);
+@mixin GetFontPreSet(
+  $font-size: $default_font_size,
+  $font-weight: $default_font_weight,
+  $line-height-ratio: $default_line_height_ratio
+) {
+  @include GetFont($font-size, $line-height-ratio);
+  @include GetFontWeight($font-weight);
 }
 
 @mixin BaseFontFamily {
-  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 }
 
 @mixin ArialFontFamily {
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 @mixin SansSerifFontFamily {
@@ -34,7 +38,12 @@
 }
 
 @mixin MontserratFontFamily {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
+}
+
+@mixin DashIcons {
+  font-family: "dashicons";
+  font-weight: 100;
 }
 
 @mixin FontAwesome {

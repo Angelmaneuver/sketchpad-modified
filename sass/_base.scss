@@ -18,7 +18,7 @@
   Theme Sketchpad - modified is distributed under the terms of the GNU GPL
 */
 
-@import './preset/init';
+@import "./preset/init";
 
 /**
 * Basic Structure
@@ -30,7 +30,19 @@
   padding: 0;
 }
 
-html, body, article, aside, details, figcaption, figure, footer, header, nav, section, summary, main {
+html,
+body,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary,
+main {
   display: block;
 }
 
@@ -67,7 +79,7 @@ body {
   @include responsive() {
     width: $wrapper_width;
   }
-  @include responsive('md') {
+  @include responsive("md") {
     width: $sp_main_width;
     border: none;
     border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
@@ -110,7 +122,7 @@ body {
       }
     }
   }
-  @include responsive('md') {
+  @include responsive("md") {
     display: none;
   }
 }
@@ -172,7 +184,7 @@ div#wrapper {
         }
       }
     }
-    @include responsive('md') {
+    @include responsive("md") {
       width: 100%;
 
       .header {
@@ -200,7 +212,8 @@ form.search {
     @include InputForm;
   }
 
-  #searchsubmit, input.search-button {
+  #searchsubmit,
+  input.search-button {
     @include Button;
   }
 }
@@ -267,7 +280,8 @@ article form.search {
       @include SketchpadTopmostLayer;
 
       > div > ul {
-        &:before, &:after {
+        &:before,
+        &:after {
           content: "";
           clear: both;
           display: block;
@@ -325,17 +339,21 @@ article form.search {
         width: 100%;
       }
 
-      .current-menu-item, .current_page_item, .current-menu-ancestor, .current_page_parent, .current_page_ancestor {
+      .current-menu-item,
+      .current_page_item,
+      .current-menu-ancestor,
+      .current_page_parent,
+      .current_page_ancestor {
         @include NavigationHoverBackgroundColor;
       }
 
       ul {
         .menu-item-has-children > a::after {
-          content: ' \025BE';
+          content: " \025BE";
         }
 
         ul .menu-item-has-children > a::after {
-          content: '\025B8';
+          content: "\025B8";
           float: right;
         }
       }
@@ -345,7 +363,7 @@ article form.search {
       max-width: $main_width;
     }
   }
-  @include responsive('md') {
+  @include responsive("md") {
     width: 100%;
 
     .main-content {
@@ -379,7 +397,7 @@ article form.search {
 }
 
 article {
-  padding: 1.0rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
   @include Change2PinkArticle;
 
   .post-header {
@@ -389,28 +407,22 @@ article {
     .post-title {
       a {
         @include HeadlineColor2;
-		@include Left2RightStyle(#9b8f76);
+        @include Left2RightStyle(#9b8f76);
 
-		&:first-of-type::after {
-			content: url(images/mark3.png);
-			padding-left: 0.5rem;
-		}
+        &:first-of-type::after {
+          content: url(images/mark3.png);
+          padding-left: 0.5rem;
+        }
 
         &.external {
-          @if $font-awesome {
-            font-size: 1.5rem;
-            padding-right: 0;
-            padding-left: 1rem;
-            background: none;
-			transition: initial;
+          padding: 0 0 0.01rem 1rem;
+          background: none;
+          transition: initial;
 
-            &:before {
-              content: "\f35d";
-              @include FontAwesome;
-            }
-          }
-          @else {
-            display: none;
+          &:before {
+            content: "\f504";
+            @include DashIcons;
+            vertical-align: bottom;
           }
         }
       }
@@ -421,7 +433,7 @@ article {
     @include GetFontPreSet(1.2rem);
     @include ArialFontFamily;
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.5rem;
@@ -485,7 +497,7 @@ article {
   @include responsive() {
     width: $main_width;
   }
-  @include responsive('md') {
+  @include responsive("md") {
     width: 100%;
     margin: 0 auto;
   }
@@ -542,7 +554,7 @@ main#articles {
           }
         }
       }
-      @include responsive('md') {
+      @include responsive("md") {
         flex-direction: column;
 
         .thumb-box {
@@ -570,13 +582,15 @@ main#articles {
 * -----------------------------------------------------------------------------------------------
 */
 
-.pagination, .post-content .pagination {
+.pagination,
+.post-content .pagination {
   @include GetFontPreSet(1.4rem, 700);
   @include ArialFontFamily;
   margin: 2rem 2rem;
   text-align: center;
 
-  .page-numbers:not(.current), a {
+  .page-numbers:not(.current),
+  a {
     @include PaginationColor;
     padding: 0.6rem;
     border-radius: 0.3rem;
@@ -584,7 +598,9 @@ main#articles {
     text-decoration: none;
   }
 
-  .current, .page-numbers:hover, a:hover {
+  .current,
+  .page-numbers:hover,
+  a:hover {
     @include PaginationColor;
     padding: 0.6rem;
     border-radius: 0.3rem;
@@ -594,7 +610,7 @@ main#articles {
   @include responsive() {
     width: $main_width - 2rem * 2;
   }
-  @include responsive('md') {
+  @include responsive("md") {
     width: 100%;
   }
 }
@@ -632,12 +648,14 @@ aside {
 
       &:first-child {
         border-radius: 1.5rem/6.8rem 0 0 0;
-        background: $sidebar_background_color url(images/bg-side1.jpg) no-repeat top left;
+        background: $sidebar_background_color url(images/bg-side1.jpg) no-repeat
+          top left;
       }
 
       &:last-child {
         border-radius: 0 0 1.1rem/4.2rem 0;
-        background: $sidebar_background_color url(images/bg-side2.jpg) no-repeat bottom right;
+        background: $sidebar_background_color url(images/bg-side2.jpg) no-repeat
+          bottom right;
       }
 
       h4 {
@@ -674,7 +692,8 @@ aside {
       ul {
         list-style: none;
 
-        &.children, &.sub-menu {
+        &.children,
+        &.sub-menu {
           margin-left: 2.5rem;
         }
 
@@ -700,7 +719,8 @@ aside {
         }
       }
 
-      > ul > li:not(.recentcomments):not(.sm_widget_recent_entries),  > div > ul > li:not(.recentcomments):not(.sm_widget_recent_entries) {
+      > ul > li:not(.recentcomments):not(.sm_widget_recent_entries),
+      > div > ul > li:not(.recentcomments):not(.sm_widget_recent_entries) {
         @include SidebarPostitColorSeries4a;
       }
 
@@ -757,8 +777,9 @@ aside {
         @include SidebarPostitColorSeries;
       }
 
-      &.widget_rss, ul#recentcomments {
-        li  {
+      &.widget_rss,
+      ul#recentcomments {
+        li {
           @include SidebarPostit;
           @include SidebarPostitColorSeries;
 
@@ -766,7 +787,8 @@ aside {
             margin-bottom: 0.5rem;
           }
 
-          .rss-date, cite {
+          .rss-date,
+          cite {
             @include GetFontPreSet(1rem);
             display: block;
             text-align: right;
@@ -809,7 +831,8 @@ aside {
           text-transform: uppercase;
         }
 
-        th, td {
+        th,
+        td {
           @include MontserratFontFamily;
           padding: 0.6rem;
 
@@ -823,7 +846,7 @@ aside {
           tr {
             @include SidebarCalendarBorderColor;
             @include ThinBorderBottomStyle;
-              }
+          }
 
           th {
             @include GetFontPreSet(1.1rem);
@@ -864,20 +887,24 @@ aside {
         align-items: center;
       }
 
-      &.widget_media_image, &.widget_media_gallery, &.widget_media_video, &.widget_media_audio, &.widget_calendar {
+      &.widget_media_image,
+      &.widget_media_gallery,
+      &.widget_media_video,
+      &.widget_media_audio,
+      &.widget_calendar {
         width: 25.2rem;
         box-sizing: content-box;
       }
 
       &.sm_widget_recent_entries {
-        @include RecentPost{
+        @include RecentPost {
           background-color: $sidebar_background_color;
-        };
+        }
       }
 
       div.footer {
         position: relative;
-		@include SketchpadSidebarLayer;
+        @include SketchpadSidebarLayer;
         width: 100%;
         height: 100%;
         padding: 0;
@@ -909,7 +936,7 @@ aside {
   }
 }
 
-@include responsive('md') {
+@include responsive("md") {
   div.content > aside {
     display: none;
   }
@@ -928,7 +955,7 @@ aside {
       > div.content {
         > div.main-content {
           > main {
-			margin-left: -2rem;
+            margin-left: -2rem;
           }
         }
 
@@ -962,7 +989,7 @@ footer {
       padding: 0 5.2rem 1rem 9.6rem;
       background: url(images/bg-footer.png) no-repeat;
     }
-    @include responsive('md') {
+    @include responsive("md") {
       width: 100%;
       margin: 0 0 1rem 0;
       padding-bottom: $sp_main_padding_footer_bottom;
@@ -978,7 +1005,6 @@ footer {
     }
   }
 }
-
 
 .footer {
   position: relative;
@@ -1018,7 +1044,11 @@ footer {
     margin: 2rem 0 3rem 0;
     list-style: none;
 
-    .comment-author, .comment-awaiting-moderation, .comment-content, .comment-list .reply, .comment-metadata {
+    .comment-author,
+    .comment-awaiting-moderation,
+    .comment-content,
+    .comment-list .reply,
+    .comment-metadata {
       padding-left: 0;
     }
 
@@ -1070,19 +1100,24 @@ footer {
       }
     }
 
-    .trackback a, .pingback a {
+    .trackback a,
+    .pingback a {
       @include LinkColor3;
     }
 
-    article, .pingback, .trackback {
+    article,
+    .pingback,
+    .trackback {
       margin-bottom: 2.4rem;
       padding-top: 2.4rem;
       @include CommentInfoBorderColor;
       @include ThinBorderStyle;
-  }
+    }
 
     > {
-      li:first-child > article, .pingback:first-child, .trackback:first-child {
+      li:first-child > article,
+      .pingback:first-child,
+      .trackback:first-child {
         border-top: 0;
       }
     }
@@ -1098,12 +1133,14 @@ footer {
       word-wrap: break-word;
       hyphens: auto;
 
-      ul, ol {
+      ul,
+      ol {
         margin: 0 0 2.4rem 2.2rem;
       }
 
       li > {
-        ul, ol {
+        ul,
+        ol {
           margin-bottom: 0;
         }
       }
@@ -1159,13 +1196,17 @@ footer {
       }
 
       input {
-        &[type="text"], &[type="email"], &[type="url"] {
+        &[type="text"],
+        &[type="email"],
+        &[type="url"] {
           display: block;
         }
       }
     }
 
-    .comment-notes, .comment-awaiting-moderation, .logged-in-as {
+    .comment-notes,
+    .comment-awaiting-moderation,
+    .logged-in-as {
       @include GetFontPreSet(1.4rem);
     }
 
@@ -1212,7 +1253,8 @@ footer {
     margin-bottom: 0;
   }
 
-  .form-submit input[type="submit"], .post-password-form input[type="submit"] {
+  .form-submit input[type="submit"],
+  .post-password-form input[type="submit"] {
     @include Button(1.2rem, auto, 2rem, none, 0.4rem);
     padding: 0.3rem;
   }

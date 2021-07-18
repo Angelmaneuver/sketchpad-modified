@@ -167,6 +167,8 @@ function sketchpad_script() {
 		null
 	);
 
+	wp_enqueue_style( 'dashicons' );
+
 	wp_enqueue_style(
 		'sketchpad-style',
 		get_template_directory_uri() . '/style.css',
