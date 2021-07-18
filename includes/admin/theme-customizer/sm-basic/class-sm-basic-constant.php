@@ -23,13 +23,13 @@ body,
 .interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper,
 .edit-post-layout__footer
 EOM;
-	const RETURN2TOP_BUTTON_MARK                       = 'TOP';
-	const RETURN2TOP_BUTTON_BACKGROUND_COLOR           = '#4169e1';
-	const RETURN2TOP_BUTTON_HOVER_BACKGROUND_COLOR     = '#dc143c';
+	const RETURN2TOP_BUTTON_MARK                       = '<span class="dashicons dashicons-arrow-up-alt2"></span>';
+	const RETURN2TOP_BUTTON_BACKGROUND_COLOR           = '#999999';
+	const RETURN2TOP_BUTTON_HOVER_BACKGROUND_COLOR     = '#666666';
 	const RETURN2TOP_BUTTON_BORDER_COLOR               = '#ffffff';
-	const HAMBURGER_MENU_BUTTON_OPEN_MARK              = 'Menu';
-	const HAMBURGER_MENU_BUTTON_CLOSE_MARK             = 'Close';
-	const HAMBURGER_MENU_BUTTON_BACKGROUND_COLOR       = '#4169e1';
-	const HAMBURGER_MENU_BUTTON_HOVER_BACKGROUND_COLOR = '#dc143c';
+	const HAMBURGER_MENU_BUTTON_OPEN_MARK              = '<span class="dashicons dashicons-menu-alt"></span>';
+	const HAMBURGER_MENU_BUTTON_CLOSE_MARK             = '<span class="dashicons dashicons-no-alt"></span>';
+	const HAMBURGER_MENU_BUTTON_BACKGROUND_COLOR       = '#999999';
+	const HAMBURGER_MENU_BUTTON_HOVER_BACKGROUND_COLOR = '#666666';
 	const HAMBURGER_MENU_BUTTON_BORDER_COLOR           = '#ffffff';
 }
