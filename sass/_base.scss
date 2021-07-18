@@ -422,6 +422,7 @@ article {
           &:before {
             content: "\f504";
             @include DashIcons;
+            line-height: initial;
             vertical-align: bottom;
           }
         }

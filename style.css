@@ -1414,6 +1414,7 @@ article .post-header .post-title a.external:before {
   content: "\f504";
   font-family: "dashicons";
   font-weight: 100;
+  line-height: initial;
   vertical-align: bottom;
 }
 
