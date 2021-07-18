@@ -50,8 +50,9 @@ class SM_Other_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 	protected function get_settings() {
 		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_other_setting_edituri_disable'     => array( 'default' => false, 'sanitize_callback' => 'sketchpad_sanitize_checkbox' ),
-			'sketchpad_other_setting_wlwmanifest_disable' => array( 'default' => false, 'sanitize_callback' => 'sketchpad_sanitize_checkbox' ),
+			'sketchpad_other_setting_external_link_enable' => array( 'default' => false, 'sanitize_callback' => 'sketchpad_sanitize_checkbox' ),
+			'sketchpad_other_setting_edituri_disable'      => array( 'default' => false, 'sanitize_callback' => 'sketchpad_sanitize_checkbox' ),
+			'sketchpad_other_setting_wlwmanifest_disable'  => array( 'default' => false, 'sanitize_callback' => 'sketchpad_sanitize_checkbox' ),
 		);
 		// @codingStandardsIgnoreEnd
 	}
@@ -65,8 +66,9 @@ class SM_Other_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 	protected function get_controls( WP_Customize_Manager $wp_customize ) {
 		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_other_setting_edituri_disable'     => array( 'setting' => 'sketchpad_other_setting_edituri_disable',     'section' => 'sketchpad_other_setting_section', 'label' => __( 'Remove the EditURI link', 'sketchpad-modified' ),         'type' => 'checkbox', 'priority' => 0 ),
-			'sketchpad_other_setting_wlwmanifest_disable' => array( 'setting' => 'sketchpad_other_setting_wlwmanifest_disable', 'section' => 'sketchpad_other_setting_section', 'label' => __( 'Remove the wlwmanifest.xml link', 'sketchpad-modified' ), 'type' => 'checkbox', 'priority' => 0 ),
+			'sketchpad_other_setting_external_link_enable' => array( 'setting' => 'sketchpad_other_setting_external_link_enable', 'section' => 'sketchpad_other_setting_section', 'label' => __( 'Add external links to article headlines.', 'sketchpad-modified' ), 'type' => 'checkbox', 'priority' => 0 ),
+			'sketchpad_other_setting_edituri_disable'      => array( 'setting' => 'sketchpad_other_setting_edituri_disable',      'section' => 'sketchpad_other_setting_section', 'label' => __( 'Remove the EditURI link',                  'sketchpad-modified' ), 'type' => 'checkbox', 'priority' => 0 ),
+			'sketchpad_other_setting_wlwmanifest_disable'  => array( 'setting' => 'sketchpad_other_setting_wlwmanifest_disable',  'section' => 'sketchpad_other_setting_section', 'label' => __( 'Remove the wlwmanifest.xml link',          'sketchpad-modified' ), 'type' => 'checkbox', 'priority' => 0 ),
 		);
 		// @codingStandardsIgnoreEnd
 	}

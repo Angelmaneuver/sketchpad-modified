@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-07-10T10:42:19+00:00\n"
+"POT-Creation-Date: 2021-07-18T13:32:37+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -130,27 +130,27 @@ msgstr ""
 msgid "Page: "
 msgstr ""
 
-#: content.php:41 content.php:61 image.php:28 template/article.php:35
+#: content.php:44 content.php:64 image.php:28 template/article.php:38
 msgid "edit"
 msgstr ""
 
-#: content.php:45 content.php:65 image.php:32 template/article.php:39
+#: content.php:48 content.php:68 image.php:32 template/article.php:42
 msgid "posted by "
 msgstr ""
 
-#: content.php:48 content.php:68 image.php:35 template/article.php:42
+#: content.php:51 content.php:71 image.php:35 template/article.php:45
 msgid " in "
 msgstr ""
 
-#: content.php:106 template/article.php:78
+#: content.php:109 template/article.php:81
 msgid "read comments"
 msgstr ""
 
-#: content.php:113 template/article.php:86
+#: content.php:116 template/article.php:89
 msgid "more"
 msgstr ""
 
-#: content.php:120 image.php:93 template/article.php:94
+#: content.php:123 image.php:93 template/article.php:97
 msgid "Tags: "
 msgstr ""
 
@@ -158,11 +158,11 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:217
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:219
 msgid "Right Widget Area"
 msgstr ""
 
@@ -415,11 +415,15 @@ msgstr "その他の設定"
 msgid "Configure settings for Other setting of the page."
 msgstr "その他の設定"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:68
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+msgid "Add external links to article headlines."
+msgstr "記事の見出しに外部リンクを追加する"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
 msgid "Remove the EditURI link"
 msgstr "EditURI リンクを無効化する"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:71
 msgid "Remove the wlwmanifest.xml link"
 msgstr "wlwmanifest.xml リンクを無効化する"
 

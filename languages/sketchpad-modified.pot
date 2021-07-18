@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-07-10T10:42:19+00:00\n"
+"POT-Creation-Date: 2021-07-18T13:32:37+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: sketchpad-modified\n"
@@ -132,40 +132,40 @@ msgstr ""
 msgid "Page: "
 msgstr ""
 
-#: content.php:41
-#: content.php:61
+#: content.php:44
+#: content.php:64
 #: image.php:28
-#: template/article.php:35
+#: template/article.php:38
 msgid "edit"
-msgstr ""
-
-#: content.php:45
-#: content.php:65
-#: image.php:32
-#: template/article.php:39
-msgid "posted by "
 msgstr ""
 
 #: content.php:48
 #: content.php:68
-#: image.php:35
+#: image.php:32
 #: template/article.php:42
+msgid "posted by "
+msgstr ""
+
+#: content.php:51
+#: content.php:71
+#: image.php:35
+#: template/article.php:45
 msgid " in "
 msgstr ""
 
-#: content.php:106
-#: template/article.php:78
+#: content.php:109
+#: template/article.php:81
 msgid "read comments"
 msgstr ""
 
-#: content.php:113
-#: template/article.php:86
+#: content.php:116
+#: template/article.php:89
 msgid "more"
 msgstr ""
 
-#: content.php:120
+#: content.php:123
 #: image.php:93
-#: template/article.php:94
+#: template/article.php:97
 msgid "Tags: "
 msgstr ""
 
@@ -173,11 +173,11 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:217
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:219
 msgid "Right Widget Area"
 msgstr ""
 
@@ -430,11 +430,15 @@ msgstr ""
 msgid "Configure settings for Other setting of the page."
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:68
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+msgid "Add external links to article headlines."
+msgstr ""
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
 msgid "Remove the EditURI link"
 msgstr ""
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:71
 msgid "Remove the wlwmanifest.xml link"
 msgstr ""
 

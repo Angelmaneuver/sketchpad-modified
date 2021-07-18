@@ -22,7 +22,10 @@
 					echo '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>';
 				} else {
 					the_esc_html_a( '<a href="' . get_permalink() . '">' . get_the_title() . '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span></a>' );
-					the_esc_html_a( '<a class="external" href="' . get_permalink() . '" rel="noopener" target="_blank"></a>' );
+
+					if ( get_theme_mod( 'sketchpad_other_setting_external_link_enable', false ) ) {
+						the_esc_html_a( '<a class="external" href="' . get_permalink() . '" rel="noopener" target="_blank"></a>' );
+					}
 				}
 				?>
 			</h3>
