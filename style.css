@@ -3723,6 +3723,12 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.o
   outline: 0;
 }
 
+.top_button .dashicons {
+  font-size: 3rem;
+  width: initial;
+  height: initial;
+}
+
 @media (min-width: 1024px) {
   .hamburger_menu {
     display: none;
@@ -3749,6 +3755,11 @@ section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.o
   }
   .hamburger_menu:focus {
     outline: 0;
+  }
+  .hamburger_menu .dashicons {
+    font-size: 3rem;
+    width: initial;
+    height: initial;
   }
 }
 
@@ -3839,7 +3850,8 @@ article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button:hover 
   display: none;
 }
 
-.infinite-scroll #navigation, .infinite-scroll.neverending #footer {
+.infinite-scroll #navigation,
+.infinite-scroll.neverending #footer {
   display: none;
 }
 

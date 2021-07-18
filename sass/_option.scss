@@ -3,7 +3,7 @@
 * -----------------------------------------------------------------------------------------------
 */
 
-@import './preset/init';
+@import "./preset/init";
 
 .breadcrumbs {
   @include GetFontPreSet(1.2rem);
@@ -47,13 +47,19 @@
   &:focus {
     outline: 0;
   }
+
+  .dashicons {
+    font-size: 3rem;
+    width: initial;
+    height: initial;
+  }
 }
 
 .hamburger_menu {
   @include responsive() {
     display: none;
   }
-  @include responsive('md') {
+  @include responsive("md") {
     @include GetFontPreSet(2rem);
     @include BaseFontFamily;
     position: fixed;
@@ -71,6 +77,11 @@
     &:focus {
       outline: 0;
     }
+    .dashicons {
+      font-size: 3rem;
+      width: initial;
+      height: initial;
+    }  
   }
 }
 
@@ -117,7 +128,12 @@ p.grav-about {
   box-shadow: 0 1rem 0.6rem -0.6rem #777777;
 }
 
-div#main-content > div#wrapper > div.content > div.main-content > main > article {
+div#main-content
+  > div#wrapper
+  > div.content
+  > div.main-content
+  > main
+  > article {
   .wp-block-jetpack-slideshow {
     display: grid;
   }
@@ -167,7 +183,8 @@ article {
     display: none;
   }
 
-  #navigation, &.neverending #footer {
+  #navigation,
+  &.neverending #footer {
     display: none;
   }
 
@@ -233,13 +250,9 @@ div.content > aside > div.sidebar > section.toc_widget {
       }
     }
 
-    @include RecentPost(
-      $width: 14rem,
-      $height: 13.5rem,
-      $font-size: 1.4rem,
-    ){
+    @include RecentPost($width: 14rem, $height: 13.5rem, $font-size: 1.4rem) {
       @include SketchpadBackground;
-    };
+    }
   }
 
   @include responsive() {
@@ -251,7 +264,7 @@ div.content > aside > div.sidebar > section.toc_widget {
       }
     }
   }
-  @include responsive('md') {
+  @include responsive("md") {
     ul {
       justify-content: space-around;
     }
