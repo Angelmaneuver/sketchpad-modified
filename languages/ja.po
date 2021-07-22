@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-07-18T13:32:37+00:00\n"
+"POT-Creation-Date: 2021-07-22T06:12:37+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -126,31 +126,27 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: content.php:24
-msgid "Page: "
-msgstr ""
-
-#: content.php:44 content.php:64 image.php:28 template/article.php:38
+#: content.php:27 content.php:47 image.php:28 template/article.php:25
 msgid "edit"
 msgstr ""
 
-#: content.php:48 content.php:68 image.php:32 template/article.php:42
+#: content.php:31 content.php:51 image.php:32 template/article.php:29
 msgid "posted by "
 msgstr ""
 
-#: content.php:51 content.php:71 image.php:35 template/article.php:45
+#: content.php:34 content.php:54 image.php:35 template/article.php:32
 msgid " in "
 msgstr ""
 
-#: content.php:109 template/article.php:81
+#: content.php:92 template/article.php:68
 msgid "read comments"
 msgstr ""
 
-#: content.php:116 template/article.php:89
+#: content.php:99 template/article.php:76
 msgid "more"
 msgstr ""
 
-#: content.php:123 image.php:93 template/article.php:97
+#: content.php:106 image.php:93 template/article.php:84
 msgid "Tags: "
 msgstr ""
 
@@ -415,15 +411,23 @@ msgstr "その他の設定"
 msgid "Configure settings for Other setting of the page."
 msgstr "その他の設定"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
+msgid "Headline Settings"
+msgstr "見出し設定"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
+msgid "If you want to add wording after the article headlines, please enter it."
+msgstr "記事の見出しに文言を追加したい場合は入力してください。"
+
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:71
 msgid "Add external links to article headlines."
 msgstr "記事の見出しに外部リンクを追加する"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:72
 msgid "Remove the EditURI link"
 msgstr "EditURI リンクを無効化する"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:71
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:73
 msgid "Remove the wlwmanifest.xml link"
 msgstr "wlwmanifest.xml リンクを無効化する"
 
@@ -617,4 +621,8 @@ msgstr ""
 #. translators: %s: WordPress site url
 #: template/footer-content.php:19
 msgid "and %s"
+msgstr ""
+
+#: template/parts/headline.php:13
+msgid "Page: "
 msgstr ""

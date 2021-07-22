@@ -15,20 +15,7 @@
 		}
 		?>
 		<div class="post-header">
-			<h3 class="post-title">
-				<?php
-				if ( is_singular() ) {
-					the_title();
-					echo '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>';
-				} else {
-					the_esc_html_a( '<a href="' . get_permalink() . '">' . get_the_title() . '<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span></a>' );
-
-					if ( get_theme_mod( 'sketchpad_other_setting_external_link_enable', false ) ) {
-						the_esc_html_a( '<a class="external" href="' . get_permalink() . '" rel="noopener" target="_blank"></a>' );
-					}
-				}
-				?>
-			</h3>
+			<h3 class="post-title"><?php get_template_part( 'template/parts/headline' ); ?></h3>
 		</div><!--.post-header-->
 		<div class="post-meta">
 			<span>
