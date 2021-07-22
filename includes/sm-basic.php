@@ -27,7 +27,7 @@ function sketchpad_customizer4basic_register( $wp_customize ) {
 	);
 }
 
-if ( is_admin() || is_customize_preview() ) {
+if ( current_user_can( 'edit_theme_options' ) & ( is_admin() || is_customize_preview() ) ) {
 	add_action( 'customize_register', 'sketchpad_customizer4basic_register', 10 );
 
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-admin-page-setting-initializer.php';

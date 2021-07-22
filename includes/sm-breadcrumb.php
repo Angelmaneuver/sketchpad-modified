@@ -12,7 +12,7 @@
  */
 require get_template_directory() . '/includes/class/class-sm-breadcrumb.php';
 
-if ( is_admin() || is_customize_preview() ) {
+if ( current_user_can( 'edit_theme_options' ) & ( is_admin() || is_customize_preview() ) ) {
 	require get_template_directory() . '/includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php';
 	add_action( 'customize_register', array( new SM_Breadcrumb_Initializer(), 'init' ), 100 );
 }
