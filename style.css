@@ -2774,18 +2774,24 @@ blockquote.wp-block-quote {
 }
 
 blockquote.wp-block-quote.is-style-large {
-  padding: 0 3rem;
+  padding: 0 4rem;
+}
+
+blockquote.wp-block-quote.is-style-large:before {
+  font-size: 3.5rem;
+  top: 0.7rem;
+  left: 0rem;
 }
 
 blockquote.wp-block-quote:before {
+  content: "\f205";
+  font-family: "dashicons";
+  font-weight: 100;
   position: absolute;
   display: inline-block;
   vertical-align: middle;
-  content: "\f10d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  top: 0.7rem;
-  left: 0.7rem;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 blockquote.wp-block-quote p {

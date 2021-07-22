@@ -115,27 +115,23 @@ blockquote.wp-block-quote {
   @include BlockQuoteShadow;
 
   &.is-style-large {
-	  padding: 0 3rem;
+	  padding: 0 4rem;
+
+    &:before {
+      font-size: 3.5rem;
+      top: 0.7rem;
+      left: 0rem;
+    }
   }
 
   &:before {
+    content: "\f205";
+    @include DashIcons;
     position: absolute;
     display: inline-block;
     vertical-align: middle;
-
-    @if $font-awesome {
-      content: "\f10d";
-      @include FontAwesome;
-      top: 0.7rem;
-      left: 0.7rem;
-    }
-    @else {
-      content: "“";
-      @include GetFontPreSet(8rem, 400, 1);
-      @include SansSerifFontFamily;
-      top: 0;
-      left: 0;
-    }
+    top: 0.5rem;
+    left: 0.5rem;
   }
 
   p {
