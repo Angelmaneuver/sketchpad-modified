@@ -611,7 +611,7 @@ article form.search {
   .content {
     width: 78.9rem;
     padding: 0 0 0 9.6rem;
-    background: url(images/bg-main.png) top left repeat-y;
+    background: url(images/bg-main.webp) top left repeat-y;
   }
   .content .main-content {
     width: 59rem;
@@ -1399,7 +1399,7 @@ article .post-header .post-title a:hover {
 }
 
 article .post-header .post-title a:first-of-type::after {
-  content: url(images/mark3.png);
+  content: url(images/mark3.webp);
   padding-left: 0.5rem;
 }
 
@@ -1704,12 +1704,12 @@ aside .sidebar section {
 
 aside .sidebar section:first-child {
   border-radius: 1.5rem/6.8rem 0 0 0;
-  background: #f5ead0 url(images/bg-side1.jpg) no-repeat top left;
+  background: #f5ead0 url(images/bg-side1.webp) no-repeat top left;
 }
 
 aside .sidebar section:last-child {
   border-radius: 0 0 1.1rem/4.2rem 0;
-  background: #f5ead0 url(images/bg-side2.jpg) no-repeat bottom right;
+  background: #f5ead0 url(images/bg-side2.webp) no-repeat bottom right;
 }
 
 aside .sidebar section h4 {
@@ -2350,7 +2350,7 @@ aside .sidebar section div.footer .site-info > span.right .original {
   footer .footer {
     width: 59rem;
     padding: 0 5.2rem 1rem 9.6rem;
-    background: url(images/bg-footer.png) no-repeat;
+    background: url(images/bg-footer.webp) no-repeat;
   }
 }
 

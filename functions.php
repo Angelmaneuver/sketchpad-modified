@@ -68,7 +68,7 @@ function sketchpad_setup() {
 		'uploads'            => true,
 		'default-text-color' => '776B53',
 		'header-text'        => true,
-		'default-image'      => get_template_directory_uri() . '/images/bg-logo.png',
+		'default-image'      => get_template_directory_uri() . '/images/bg-logo.webp',
 	);
 
 	add_theme_support( 'custom-header', $args );
