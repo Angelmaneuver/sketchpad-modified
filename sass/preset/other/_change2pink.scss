@@ -1,45 +1,48 @@
-@import '../../customised/restore4color';
+@import "../../customised/restore4color";
 
 // Change to Pink Property
 
 @mixin Change2PinkTextStyle {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem,
+    #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
 @mixin Change2PinkBoxStyle {
-  box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem,
+    #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
 @mixin Change2PinkQuoteSimbol {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @mixin Change2PinkBorderColor {
-  border-color: #FFB6C1;
-  outline-color: #FFB6C1;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
 }
 
 @mixin Change2PinkBorderColorImportant {
-  border-color: #FFB6C1 !important;
-  outline-color: #FFB6C1 !important;
+  border-color: #ffb6c1 !important;
+  outline-color: #ffb6c1 !important;
 }
 
 @mixin Change2PinkHoverBorderColor {
-  border-color: #FF9A93;
+  border-color: #ff9a93;
 }
 
 @mixin Change2PinkBackground {
-  background: #FF9A93
+  background: #ff9a93;
 }
 
 @mixin Change2PinkPostTagBackground {
-  background: #FF9A93
+  background: #ff9a93;
 }
 
 @mixin Change2PinkImagePostit {
-  border-image: linear-gradient(to bottom, #FFB6C1 0rem, #FFFFFF 0.1rem) 1 / 1 0 0 0;
+  border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1 / 1 0
+    0 0;
 }
 
 @mixin Change2PinkRecentPost {
@@ -63,20 +66,20 @@
       > div.post-header > h3.post-title {
         > a {
           @include Change2PinkTextStyle;
-		  @include Left2RightStyle(#FF9A93);
+          @include Left2RightStyle(#ff9a93);
 
-		  &:first-of-type::after {
-			content: "";
-			padding-left: initial;
-		  }
+          &:first-of-type::after {
+            content: "";
+            padding-left: initial;
+          }
 
-		  &.external {
-			@if $font-awesome {
-			  background: none;
-			  transition: initial;
-			}
-		  }
-		}
+          &.external {
+            @if $font-awesome {
+              background: none;
+              transition: initial;
+            }
+          }
+        }
 
         span.r18 {
           font-size: 1.65rem;
@@ -105,7 +108,8 @@
         @include Change2PinkBorderColor;
       }
 
-      a.comments-link, a.more-link {
+      a.comments-link,
+      a.more-link {
         @include Change2PinkTextStyle;
         @include Change2PinkBorderColor;
       }
@@ -116,7 +120,28 @@
     }
 
     .post-content {
-      h2, h3, h4, h5, h6, p, em, a, ul, ol, li, table, thead, tbody, tr, th, td, span, div {
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      em,
+      ruby,
+      rp,
+      rt,
+      a,
+      ul,
+      ol,
+      li,
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td,
+      span,
+      div {
         @include Change2PinkTextStyle;
         @include Change2PinkBorderColor;
       }
@@ -142,15 +167,16 @@
       }
 
       .is-style-image-postit {
-        img, svg {
+        img,
+        svg {
           @include Change2PinkImagePostit;
         }
       }
 
-      $restore: '';
+      $restore: "";
       @each $element in $restoreChange2pinkElements {
-        @if '' != $restore {
-          $restore: $restore + ', '
+        @if "" != $restore {
+          $restore: $restore + ", ";
         }
 
         $restore: $restore + $element;
@@ -182,6 +208,5 @@
     span.r18 {
       display: none;
     }
-
   }
 }

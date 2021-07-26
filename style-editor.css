@@ -199,9 +199,9 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
 }
 
 .is-style-r18-paragraph {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
 .is-style-mt0 {
@@ -358,14 +358,14 @@ blockquote.wp-block-quote cite {
 }
 
 .related-posts ul li.tag-r18 {
-  border-color: #FFB6C1;
-  outline-color: #FFB6C1;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
 }
 
 .related-posts ul li.tag-r18 > a > span {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
 /**
