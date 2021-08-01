@@ -20,7 +20,7 @@ body,
 .postbox, #activity-widget, #the-comment-list, .comment-item, .community-events ul,
 .edit-post-header,
 .components-notice,
-.interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper,
+.interface-interface-skeleton__content, .edit-post-visual-editor, .editor-styles-wrapper, .edit-post-visual-editor__content-area > div,
 .edit-post-layout__footer
 EOM;
 	const RETURN2TOP_BUTTON_MARK                       = '<span class="dashicons dashicons-arrow-up-alt2"></span>';
