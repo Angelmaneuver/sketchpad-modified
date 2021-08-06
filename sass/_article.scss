@@ -35,24 +35,7 @@
     @include GetFontPreSet;
     margin: 0 0 0 2.5rem;
     list-style-position: outside;
-
-    @if $font-awesome {
-      @include FontAwesome;
-      list-style: none;
-
-      li {
-        display: flex;
-
-        &:before {
-          content: "\f00c";
-          padding-right: 0.5rem;
-        }
-      }
-    }
-    @else {
-      @include BaseFontFamily;
-      list-style: square;
-    }
+    list-style: square;
   }
 
   > ol, > div.wp-block-group ol {

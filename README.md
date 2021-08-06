@@ -40,9 +40,3 @@ The following features have been added.
 The following features have been removed.
 
  - IE Support
-
-## Requirement
-
-The following libraries are required for this theme.
-
- - [Font Awesome 5 Free](https://fontawesome.com/)

@@ -74,10 +74,8 @@
           }
 
           &.external {
-            @if $font-awesome {
-              background: none;
-              transition: initial;
-            }
+            background: none;
+            transition: initial;
           }
         }
 

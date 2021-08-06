@@ -29,20 +29,7 @@
   font-weight: 400;
   margin: 0 0 0 2.5rem;
   list-style-position: outside;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  list-style: none;
-}
-
-.post-content > ul li, .post-content > div.wp-block-group ul li, .comment-body > ul li, .comment-body > div.wp-block-group ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.post-content > ul li:before, .post-content > div.wp-block-group ul li:before, .comment-body > ul li:before, .comment-body > div.wp-block-group ul li:before {
-  content: "\f00c";
-  padding-right: 0.5rem;
+  list-style: square;
 }
 
 .post-content > ol, .post-content > div.wp-block-group ol, .comment-body > ol, .comment-body > div.wp-block-group ol {
