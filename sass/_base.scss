@@ -516,10 +516,22 @@ article {
 
 main#articles {
   article {
-    .post-content {
-      display: flex;
-      align-items: flex-start;
+    &:not(.format-gallery):not(.format-image):not(.format-video) {
+      .post-content {
+        display: flex;
+        align-items: flex-start;
 
+        @include responsive() {
+          flex-direction: row;
+        }
+
+        @include responsive("md") {
+          flex-direction: column;
+        }
+      }      
+    }
+
+    .post-content {
       .thumb-box {
         padding: 0.5rem;
         @include ThumbnailBorderColor;
@@ -544,8 +556,6 @@ main#articles {
       }
 
       @include responsive() {
-        flex-direction: row;
-
         .thumb-box {
           width: 20rem;
           height: 20rem * 0.5625;
@@ -566,8 +576,6 @@ main#articles {
         }
       }
       @include responsive("md") {
-        flex-direction: column;
-
         .thumb-box {
           width: 100%;
           height: auto;
