@@ -31,6 +31,8 @@
     }
   }
 
+  @include WordPressBlockArticleStyle;
+
   > ul, > div.wp-block-group ul {
     @include GetFontPreSet;
     margin: 0 0 0 2.5rem;
@@ -47,7 +49,7 @@
 }
 
 .post-content, div.wp-block-group > div.wp-block-group__inner-container {
-  > p, > ul, > ol, > table, > div:not(.wp-block-spacer), > blockquote,  > figure, > iframe {
+  > p, > ul, > ol, > table, > div:not(.wp-block-spacer), > blockquote,  > figure, > form, > iframe {
 
     &:not(:last-child) {
 

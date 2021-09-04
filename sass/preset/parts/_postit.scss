@@ -19,7 +19,6 @@
   margin-left: 0.5rem;
   padding: $padding;
   background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
-  @include PostitRed;
   border-right-width: 2rem;
   border-right-style: solid;
   box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
@@ -76,6 +75,10 @@
 }
 
 @mixin SidebarPostitColorSeries {
+  &:not([class*='postit-']):nth-child(9n + 1) {
+    @include PostitRed;
+  }
+
   &:not([class*='postit-']):nth-child(9n + 2) {
     @include PostitBlue;
   }
@@ -105,40 +108,6 @@
   }
 
   &:not([class*='postit-']):nth-child(9n + 9) {
-    @include PostitBlack;
-  }
-}
-
-@mixin SidebarPostitColorSeries4a {
-  &:not([class*='postit-']):nth-child(9n + 2) a {
-    @include PostitBlue;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 3) a {
-    @include PostitYellow;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 4) a {
-    @include PostitGreen;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 5) a {
-    @include PostitOrange;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 6) a {
-    @include PostitLavender;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 7) a {
-    @include PostitMistyrose;
-  }
-  
-  &:not([class*='postit-']):nth-child(9n + 8) a {
-    @include PostitMintcream;
-  }
-
-  &:not([class*='postit-']):nth-child(9n + 9) a {
     @include PostitBlack;
   }
 }

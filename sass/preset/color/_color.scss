@@ -54,6 +54,7 @@
 
 @mixin FillInStringColor($color: #ffffff) {
   color: $color;
+  fill: $color;
 }
 
 @mixin MetaColor1 {
@@ -76,16 +77,24 @@
   color: #483613;
 }
 
-@mixin SidebarColor1 {
-  color: #71634e;
-}
-
-@mixin SidebarCalendarCaptionColor {
+@mixin CalendarCaptionColor {
   color: #F6E9DC;
 }
 
-@mixin SidebarCalendarLinkColor {
-  color: #000000;
+@mixin CalendarSaturdayColor {
+  color: #426ab3;
+}
+
+@mixin CalendarSundayColor {
+  color: #c0392b;
+}
+
+@mixin CalendarTodayColor {
+  color: #F4EDDF;
+}
+
+@mixin SidebarColor1 {
+  color: #71634e;
 }
 
 @mixin FooterColor1 {

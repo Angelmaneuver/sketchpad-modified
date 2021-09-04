@@ -597,6 +597,13 @@ main#articles {
 }
 
 /**
+* Block
+* -----------------------------------------------------------------------------------------------
+*/
+
+@include WordPressBlock;
+
+/**
 * Pagination
 * -----------------------------------------------------------------------------------------------
 */
@@ -651,7 +658,7 @@ aside {
     display: block;
     margin: 0.2rem 0 0 $sidebar_margin_left_width;
 
-    section {
+    section.widget_block {
       $sidebar_background_color: #f5ead0;
 
       display: block;
@@ -683,9 +690,13 @@ aside {
         } @else {
           background: $sidebar_background_color url(images/bg-side2.jpg) no-repeat bottom right;
         }  
+
+        > div {
+          padding-bottom: 3.5rem;
+        }
       }
 
-      h4 {
+      h1, h2, h3, h4, h5, h6 {
         @include GetFontPreSet(1.2rem, 700);
         @include HeadlineColor4;
         margin: 0 1rem 0.5rem 0;
@@ -693,34 +704,12 @@ aside {
         @include ThinBorderBottomStyle(0.2rem);
       }
 
-      form {
-        flex-direction: column;
-        width: 14.9rem;
-
-        * {
-          margin: 0.5rem 0;
-        }
-
-        .search-button {
-          width: 14.5rem;
-        }
-      }
-
-      select {
-        @include SidebarInputForm(1.2rem, 14.9rem, auto, 0);
-
-        option {
-          @include GetFontPreSet(1.2rem);
-          @include ArialFontFamily;
-          @include SidebarColor1;
-        }
-      }
-
-      ul {
+      ul, ol {
         list-style: none;
 
         &.children,
-        &.sub-menu {
+        &.sub-menu,
+        &.submenu-container {
           margin-left: 2.5rem;
         }
 
@@ -728,27 +717,6 @@ aside {
           @include GetFontPreSet(1.2rem);
           @include ArialFontFamily;
         }
-      }
-
-      li:not(.recentcomments):not(.sm_widget_recent_entries) {
-        min-height: 3.5rem;
-
-        a:not(.rsswidget) {
-          @include SidebarPostit;
-          margin-bottom: 0.25rem;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-
-          img {
-            vertical-align: middle;
-          }
-        }
-      }
-
-      > ul > li:not(.recentcomments):not(.sm_widget_recent_entries),
-      > div > ul > li:not(.recentcomments):not(.sm_widget_recent_entries) {
-        @include SidebarPostitColorSeries4a;
       }
 
       .postit {
@@ -804,116 +772,6 @@ aside {
         @include SidebarPostitColorSeries;
       }
 
-      &.widget_rss,
-      ul#recentcomments {
-        li {
-          @include SidebarPostit;
-          @include SidebarPostitColorSeries;
-
-          &:not(:last-child) {
-            margin-bottom: 0.5rem;
-          }
-
-          .rss-date,
-          cite {
-            @include GetFontPreSet(1rem);
-            display: block;
-            text-align: right;
-          }
-
-          .rssSummary {
-            display: block;
-          }
-
-          &.recentcomments {
-            @include GetFontPreSet(1rem);
-            text-align: right;
-
-            a {
-              @include GetFontPreSet(1.2rem);
-              display: block !important;
-              text-align: left;
-            }
-          }
-        }
-      }
-
-      #calendar_wrap table {
-        @include GetFontPreSet(1.2rem);
-        @include MontserratFontFamily;
-        @include SidebarColor1;
-        width: 14.9rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        @include SidebarCalendarBorderColor;
-        @include ThinBorderStyle;
-
-        caption {
-          @include GetFontPreSet(1.6rem);
-          @include SidebarCalendarCaptionColor;
-          width: 60%;
-          margin: 0.5rem 20%;
-          @include SidebarCalendarCaptionBackgroundColor;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-        }
-
-        th,
-        td {
-          @include MontserratFontFamily;
-          padding: 0.6rem;
-
-          &#today {
-            @include SidebarCalendarCaptionColor;
-            @include SidebarCalendarCaptionBackgroundColor;
-          }
-        }
-
-        thead {
-          tr {
-            @include SidebarCalendarBorderColor;
-            @include ThinBorderBottomStyle;
-          }
-
-          th {
-            @include GetFontPreSet(1.1rem);
-            padding-top: 0.2rem;
-            padding-bottom: 1rem;
-
-            &:not(:last-child) {
-              @include SidebarCalendarBorderColor;
-              @include ThinBorderRightStyle;
-            }
-          }
-        }
-
-        tbody {
-          tr:not(:last-child) {
-            @include SidebarCalendarBorderColor;
-            @include ThinBorderBottomStyle;
-          }
-
-          td:not(:last-child) {
-            @include SidebarCalendarBorderColor;
-            @include ThinBorderRightStyle;
-          }
-        }
-
-        a {
-          @include GetFontPreSet(1.2rem, 700);
-          @include SidebarCalendarLinkColor;
-          clear: both;
-        }
-      }
-
-      .wp-calendar-nav {
-        @include GetFontPreSet(1.6rem);
-        @include MontserratFontFamily;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
       &.widget_media_image,
       &.widget_media_gallery,
       &.widget_media_video,
@@ -961,6 +819,8 @@ aside {
       }
     }
   }
+
+  @include WordPressBlockSidebarStyle;
 }
 
 @include responsive("md") {

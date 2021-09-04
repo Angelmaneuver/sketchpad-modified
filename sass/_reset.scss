@@ -16,3 +16,8 @@ input[type="submit"], input[type="button"], input[type="reset"] {
 
   @include Button;
 }
+
+select {
+  @include InputForm;
+  width: 100%;
+}

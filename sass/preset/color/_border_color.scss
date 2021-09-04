@@ -1,5 +1,9 @@
 // Border Color Property
 
+@mixin BorderColorNone {
+  border-color: transparent;
+}
+
 @mixin TableBorderColor1 {
   border-color: #483613;
 }
