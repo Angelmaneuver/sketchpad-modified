@@ -374,7 +374,7 @@
       }
     }
 
-    &:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.submenu-container):not(.children) {
+    &[class*="wp-"]:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.submenu-container):not(.children) {
       li {
         @include SidebarPostit;
         @include SidebarPostitColorSeries;

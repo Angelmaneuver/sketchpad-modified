@@ -217,6 +217,8 @@ article {
 
 div.content > aside > div.sidebar > section.toc_widget {
   > ul.toc_widget_list > li {
+    @include SidebarPostitColorSeries;
+
     > ul {
       margin-left: 2.5rem;
 
@@ -226,6 +228,8 @@ div.content > aside > div.sidebar > section.toc_widget {
     }
 
     a {
+      @include SidebarPostit;
+      margin-bottom: 0.5rem;
       white-space: normal;
     }
   }
