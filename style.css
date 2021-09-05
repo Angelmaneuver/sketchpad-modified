@@ -2471,10 +2471,6 @@ aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-chil
   border-right-color: #000000;
 }
 
-aside ul.wp-block-categories-list > li.cat-item:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 aside ul.wp-block-categories-list > li.cat-item div.cat-item {
   font-style: italic;
   display: inline-block;
@@ -2487,9 +2483,6 @@ aside ul.wp-block-categories-list > li.cat-item div.cat-item {
   -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
           box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
   width: 17.5rem;
-}
-
-aside ul.wp-block-categories-list > li.cat-item div.cat-item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 

@@ -445,16 +445,9 @@
       > li.cat-item {
         @include SidebarPostitColorSeries;
 
-        &:not(:last-child) {
-          margin-bottom: 0.5rem;
-        }
-
         div.cat-item {
           @include SidebarPostit;
-
-          &:not(:last-child) {
-            margin-bottom: 0.5rem;
-          }
+          margin-bottom: 0.5rem;
         }
       }
     }
