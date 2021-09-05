@@ -374,7 +374,7 @@
       }
     }
 
-    &:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.children) {
+    &:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.submenu-container):not(.children) {
       li {
         @include SidebarPostit;
         @include SidebarPostitColorSeries;
@@ -445,13 +445,17 @@
       > li {
         @include SidebarPostitColorSeries;
 
-        a {
-          @include SidebarPostit;
-
-          &:not(:last-child) {
-            margin-bottom: 1rem;
-          }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
         }
+
+        ul.submenu-container {
+          display: none;
+        }
+      }
+
+      a {
+        @include SidebarPostit;
       }
     }
 
