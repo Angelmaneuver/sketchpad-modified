@@ -374,7 +374,7 @@
       }
     }
 
-    &:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) {
+    &:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.children) {
       li {
         @include SidebarPostit;
         @include SidebarPostitColorSeries;
@@ -441,6 +441,20 @@
 
 
   ul {
+    &.wp-block-page-list {
+      > li {
+        @include SidebarPostitColorSeries;
+
+        a {
+          @include SidebarPostit;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
     &.wp-block-categories-list {
       > li.cat-item {
         @include SidebarPostitColorSeries;
