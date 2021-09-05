@@ -29,7 +29,7 @@
 		}
 		?>
 		<?php if ( ! is_singular() && ( get_option( 'infinite_scroll' ) === '1' ) ) { ?>
-		<section class="widget">
+		<section class="widget_block">
 			<?php get_template_part( 'template/footer', 'content' ); ?>
 		</section>
 		<?php } ?>
