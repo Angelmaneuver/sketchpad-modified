@@ -75,39 +75,48 @@
 }
 
 @mixin SidebarPostitColorSeries {
-  &:not([class*='postit-']):nth-child(9n + 1) {
+  &:not([class*='postit-']):nth-child(9n + 1),
+  &:not([class*='postit-']):nth-child(9n + 1) * {
     @include PostitRed;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 2) {
+  &:not([class*='postit-']):nth-child(9n + 2),
+  &:not([class*='postit-']):nth-child(9n + 2) * {
     @include PostitBlue;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 3) {
+  &:not([class*='postit-']):nth-child(9n + 3),
+  &:not([class*='postit-']):nth-child(9n + 3) * {
     @include PostitYellow;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 4) {
+  &:not([class*='postit-']):nth-child(9n + 4),
+  &:not([class*='postit-']):nth-child(9n + 4) * {
     @include PostitGreen;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 5) {
+  &:not([class*='postit-']):nth-child(9n + 5),
+  &:not([class*='postit-']):nth-child(9n + 5) * {
     @include PostitOrange;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 6) {
+  &:not([class*='postit-']):nth-child(9n + 6),
+  &:not([class*='postit-']):nth-child(9n + 6) * {
     @include PostitLavender;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 7) {
+  &:not([class*='postit-']):nth-child(9n + 7),
+  &:not([class*='postit-']):nth-child(9n + 7) * {
     @include PostitMistyrose;
   }
   
-  &:not([class*='postit-']):nth-child(9n + 8) {
+  &:not([class*='postit-']):nth-child(9n + 8),
+  &:not([class*='postit-']):nth-child(9n + 8) * {
     @include PostitMintcream;
   }
 
-  &:not([class*='postit-']):nth-child(9n + 9) {
+  &:not([class*='postit-']):nth-child(9n + 9),
+  &:not([class*='postit-']):nth-child(9n + 9) * {
     @include PostitBlack;
   }
 }

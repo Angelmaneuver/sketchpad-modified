@@ -15,7 +15,7 @@ require get_template_directory() . '/includes/utils/sm-sanitizer.php';
 /**
  * Filters.
  */
-require get_template_directory() . '/includes/filter/sm-dropdown-categories.php';
+require get_template_directory() . '/includes/filter/sm-categories.php';
 require get_template_directory() . '/includes/filter/sm-tag-cloud.php';
 
 /**

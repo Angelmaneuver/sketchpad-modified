@@ -1941,39 +1941,48 @@ aside .sidebar section.widget_block .postit * {
   max-width: var(--max-width);
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 1) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 1),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 1) * {
   border-color: #ff0000;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 2) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 2),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 2) * {
   border-color: #4169e1;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 3) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 3),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 3) * {
   border-color: #ffd700;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 4) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 4),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 4) * {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 5) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 5),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 5) * {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 6) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 6),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 6) * {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 7) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 7),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 7) * {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 8) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 8),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 8) * {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 9) {
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 9),
+aside .sidebar section.widget_block .postit:not([class*='postit-']):nth-child(9n + 9) * {
   border-right-color: #000000;
 }
 
@@ -2034,39 +2043,48 @@ aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link {
   white-space: nowrap;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 1) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 1),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 1) * {
   border-color: #ff0000;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 2) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 2),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 2) * {
   border-color: #4169e1;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 3) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 3),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 3) * {
   border-color: #ffd700;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 4) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 4),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 4) * {
   border-right-color: #90ee90;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 5) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 5),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 5) * {
   border-right-color: #ff8c00;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 6) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 6),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 6) * {
   border-right-color: #e6e6fa;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 7) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 7),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 7) * {
   border-right-color: #ffe4e1;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 8) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 8),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 8) * {
   border-right-color: #f5fffa;
 }
 
-aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 9) {
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 9),
+aside .sidebar section.widget_block div.tagcloud a.tag-cloud-link:not([class*='postit-']):nth-child(9n + 9) * {
   border-right-color: #000000;
 }
 
@@ -2290,7 +2308,7 @@ aside ol.wp-block-page-list span.wp-block-page-list__submenu-icon, aside ul.wp-b
   display: none;
 }
 
-aside ol:not(.wp-block-social-links) li, aside ul:not(.wp-block-social-links) li {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li {
   font-style: italic;
   display: inline-block;
   margin-left: 0.5rem;
@@ -2304,53 +2322,71 @@ aside ol:not(.wp-block-social-links) li, aside ul:not(.wp-block-social-links) li
   width: 17.5rem;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 1), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 1) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 1),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 1) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 1),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 1) * {
   border-color: #ff0000;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 2), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 2) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 2),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 2) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 2),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 2) * {
   border-color: #4169e1;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 3), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 3) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 3),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 3) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 3),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 3) * {
   border-color: #ffd700;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 4), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 4) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 4),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 4) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 4),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 4) * {
   border-right-color: #90ee90;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 5), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 5) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 5),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 5) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 5),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 5) * {
   border-right-color: #ff8c00;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 6), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 6) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 6),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 6) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 6),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 6) * {
   border-right-color: #e6e6fa;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 7), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 7) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 7),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 7) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 7),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 7) * {
   border-right-color: #ffe4e1;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 8), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 8) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 8),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 8) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 8),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 8) * {
   border-right-color: #f5fffa;
 }
 
-aside ol:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 9), aside ul:not(.wp-block-social-links) li:not([class*='postit-']):nth-child(9n + 9) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 9),
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 9) *, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 9),
+aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not([class*='postit-']):nth-child(9n + 9) * {
   border-right-color: #000000;
 }
 
-aside ol:not(.wp-block-social-links) li:not(:last-child), aside ul:not(.wp-block-social-links) li:not(:last-child) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not(:last-child), aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 
-aside ol:not(.wp-block-social-links) li article, aside ul:not(.wp-block-social-links) li article {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article {
   width: 17.5rem;
   margin: 0;
   padding: 0;
 }
 
-aside ol:not(.wp-block-social-links) li article footer, aside ul:not(.wp-block-social-links) li article footer {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2361,19 +2397,19 @@ aside ol:not(.wp-block-social-links) li article footer, aside ul:not(.wp-block-s
           justify-content: space-between;
 }
 
-aside ol:not(.wp-block-social-links) li article footer a, aside ul:not(.wp-block-social-links) li article footer a {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer a, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer a {
   width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-aside ol:not(.wp-block-social-links) li article footer time, aside ul:not(.wp-block-social-links) li article footer time {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer time, aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer time {
   width: 100%;
   text-align: right;
 }
 
-aside ol:not(.wp-block-social-links) li article footer :not(a):not(time), aside ul:not(.wp-block-social-links) li article footer :not(a):not(time) {
+aside ol:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer :not(a):not(time), aside ul:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) li article footer :not(a):not(time) {
   width: 20%;
 }
 
@@ -2388,6 +2424,73 @@ aside ol.has-avatars li.wp-block-latest-comments__comment img.avatar {
 aside ol.has-avatars li.wp-block-latest-comments__comment article > footer.wp-block-latest-comments__comment-meta,
 aside ol.has-avatars li.wp-block-latest-comments__comment article > div.wp-block-latest-comments__comment-excerpt {
   margin-left: initial;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 1),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 1) * {
+  border-color: #ff0000;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 2),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 2) * {
+  border-color: #4169e1;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 3),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 3) * {
+  border-color: #ffd700;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 4),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 4) * {
+  border-right-color: #90ee90;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 5),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 5) * {
+  border-right-color: #ff8c00;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 6),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 6) * {
+  border-right-color: #e6e6fa;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 7),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 7) * {
+  border-right-color: #ffe4e1;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 8),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 8) * {
+  border-right-color: #f5fffa;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 9),
+aside ul.wp-block-categories-list > li.cat-item:not([class*='postit-']):nth-child(9n + 9) * {
+  border-right-color: #000000;
+}
+
+aside ul.wp-block-categories-list > li.cat-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+aside ul.wp-block-categories-list > li.cat-item div.cat-item {
+  font-style: italic;
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 2.8rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
+  border-right-width: 2rem;
+  border-right-style: solid;
+  -webkit-box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.22);
+  width: 17.5rem;
+}
+
+aside ul.wp-block-categories-list > li.cat-item div.cat-item:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 aside ul.wp-block-latest-posts__list li div.wp-block-latest-posts__featured-image a {

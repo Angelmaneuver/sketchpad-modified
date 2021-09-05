@@ -8,6 +8,20 @@
  */
 
 /**
+ * List categories.
+ *
+ * @param String $output HTML output.
+ * @param Array  $args   An array of taxonomy-listing arguments. See wp_list_categories() for information on accepted arguments.
+ * @return String Converted HTML.
+ * @see https://developer.wordpress.org/reference/hooks/wp_list_categories/
+ */
+function sm_list_categories( $output, $args ) {
+	return preg_replace( '/(<li(?: .+?)?>)(.*?)(<\/li>|<ul)/s', '${1}<div class="cat-item">${2}</div>${3}', $output );
+}
+
+add_filter( 'wp_list_categories', 'sm_list_categories', 10, 2 );
+
+/**
  * Select list categories.
  *
  * @param String $output HTML output.

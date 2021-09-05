@@ -374,7 +374,7 @@
       }
     }
 
-    &:not(.wp-block-social-links) {
+    &:not(.wp-block-social-links):not(.wp-block-categories-list):not(.children) {
       li {
         @include SidebarPostit;
         @include SidebarPostitColorSeries;
@@ -441,6 +441,24 @@
 
 
   ul {
+    &.wp-block-categories-list {
+      > li.cat-item {
+        @include SidebarPostitColorSeries;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
+        div.cat-item {
+          @include SidebarPostit;
+
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
     &.wp-block-latest-posts__list {
       li {
         div.wp-block-latest-posts__featured-image {
