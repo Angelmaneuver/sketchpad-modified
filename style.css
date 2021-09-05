@@ -2472,7 +2472,7 @@ aside ul.wp-block-page-list > li:not([class*='postit-']):nth-child(9n + 9) * {
 }
 
 aside ul.wp-block-page-list > li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 aside ul.wp-block-page-list > li ul.submenu-container {
