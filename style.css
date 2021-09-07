@@ -1558,7 +1558,7 @@ article .post-tag a:before {
   }
 }
 
-main#articles article:not(.format-gallery):not(.format-image):not(.format-video) .post-content {
+main#articles article:not(.format-aside):not(.format-gallery):not(.format-image):not(.format-video) .post-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1568,7 +1568,7 @@ main#articles article:not(.format-gallery):not(.format-image):not(.format-video)
 }
 
 @media (min-width: 1024px) {
-  main#articles article:not(.format-gallery):not(.format-image):not(.format-video) .post-content {
+  main#articles article:not(.format-aside):not(.format-gallery):not(.format-image):not(.format-video) .post-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1577,7 +1577,7 @@ main#articles article:not(.format-gallery):not(.format-image):not(.format-video)
 }
 
 @media screen and (max-width: 1023px) {
-  main#articles article:not(.format-gallery):not(.format-image):not(.format-video) .post-content {
+  main#articles article:not(.format-aside):not(.format-gallery):not(.format-image):not(.format-video) .post-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -516,7 +516,7 @@ article {
 
 main#articles {
   article {
-    &:not(.format-gallery):not(.format-image):not(.format-video) {
+    &:not(.format-aside):not(.format-gallery):not(.format-image):not(.format-video) {
       .post-content {
         display: flex;
         align-items: flex-start;
