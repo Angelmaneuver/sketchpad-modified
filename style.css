@@ -1887,12 +1887,9 @@ aside .sidebar section:first-child {
 }
 
 aside .sidebar section:last-child {
+  padding-bottom: 4.2rem;
   border-radius: 0 0 1.1rem/4.2rem 0;
   background: #f5ead0 url(images/bg-side2.webp) no-repeat bottom right;
-}
-
-aside .sidebar section:last-child > div {
-  padding-bottom: 3.5rem;
 }
 
 aside .sidebar section h1, aside .sidebar section h2, aside .sidebar section h3, aside .sidebar section h4, aside .sidebar section h5, aside .sidebar section h6 {
@@ -2273,7 +2270,7 @@ aside form.wp-block-search div.wp-block-search__inside-wrapper input.wp-block-se
   vertical-align: middle;
 }
 
-aside div.wp-block-archives-dropdown, aside div.wp-block-categories-dropdown {
+aside div.wp-block-archives-dropdown, aside div.wp-block-categories-dropdown, aside div.wp-block-loginout {
   font-style: italic;
   display: inline-block;
   margin-left: 0.5rem;
@@ -2288,8 +2285,14 @@ aside div.wp-block-archives-dropdown, aside div.wp-block-categories-dropdown {
   border-color: #ff0000;
 }
 
-aside div.wp-block-archives-dropdown select, aside div.wp-block-categories-dropdown select {
+aside div.wp-block-archives-dropdown select, aside div.wp-block-categories-dropdown select, aside div.wp-block-loginout select {
   margin-bottom: 0.5rem;
+}
+
+aside div.wp-block-loginout {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
 }
 
 aside div.wp-block-calendar table thead tr th {

@@ -338,13 +338,18 @@
 
   div {
     &.wp-block-archives-dropdown,
-    &.wp-block-categories-dropdown {
+    &.wp-block-categories-dropdown,
+    &.wp-block-loginout {
       @include SidebarPostit;
       @include PostitRed;
 
       select {
         margin-bottom: 0.5rem;
       }
+    }
+
+    &.wp-block-loginout {
+      @include GetFontPreSet(1.2rem, 400);
     }
 
     &.wp-block-calendar {

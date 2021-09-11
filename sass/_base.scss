@@ -683,16 +683,13 @@ aside {
       }
 
       &:last-child {
+        padding-bottom: 4.2rem;
         border-radius: 0 0 1.1rem/4.2rem 0;
 
         @if $use_webp {
           background: $sidebar_background_color url(images/bg-side2.webp) no-repeat bottom right;
         } @else {
           background: $sidebar_background_color url(images/bg-side2.jpg) no-repeat bottom right;
-        }  
-
-        > div {
-          padding-bottom: 3.5rem;
         }
       }
 
