@@ -1082,14 +1082,14 @@ article.tag-r18 .post-content .no-change .related-posts ul li > a:hover img, art
 
 article.tag-r18 .post-content .no-change .related-posts ul li img, article.tag-r18 .post-content .yarpp-related .related-posts ul li img {
   position: absolute;
-  height: 99%;
+  height: 93%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   background: #F4EDDF;
   z-index: 1;
 }
@@ -2145,14 +2145,14 @@ aside .sidebar section.sm_widget_recent_entries li > a:hover img {
 
 aside .sidebar section.sm_widget_recent_entries li img {
   position: absolute;
-  height: 99%;
+  height: 93%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   background-color: #f5ead0;
   z-index: 1;
 }
@@ -3405,14 +3405,14 @@ blockquote.wp-block-quote cite {
 
 .related-posts ul li img {
   position: absolute;
-  height: 99%;
+  height: 93%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   background: #F4EDDF;
   z-index: 1;
 }
@@ -4461,14 +4461,14 @@ div.content > aside > div.sidebar > section.toc_widget > ul.toc_widget_list > li
 
 .related-posts ul li img {
   position: absolute;
-  height: 99%;
+  height: 93%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
   background: #F4EDDF;
   z-index: 1;
 }

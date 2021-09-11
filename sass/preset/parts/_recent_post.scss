@@ -52,13 +52,13 @@
 
       img {
         position: absolute;
-        height: 99%;
+        height: 93%;
         left: 0;
         right: 0;
         bottom: 0;
         margin: 0 auto;
         text-align: center;
-        object-fit: contain;
+        object-fit: fill;
         @content;
         z-index: 1;
       }
