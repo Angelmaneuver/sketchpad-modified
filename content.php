@@ -69,7 +69,9 @@
 				<div class="thumb-box"><a class="thumb-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a></div>
 				<?php
 			}
-			the_excerpt();
+			?>
+			<div><?php the_excerpt(); ?></div>
+			<?php
 		}
 		?>
 	</div><!--.post-content-->
