@@ -1887,7 +1887,7 @@ aside .sidebar section:first-child {
 }
 
 aside .sidebar section:last-child {
-  padding-bottom: 4.2rem;
+  min-height: 4.2rem;
   border-radius: 0 0 1.1rem/4.2rem 0;
   background: #f5ead0 url(images/bg-side2.webp) no-repeat bottom right;
 }
