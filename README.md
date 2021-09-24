@@ -1,4 +1,4 @@
-# sketchpad-modified
+# Sketchpad modified
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/69c47e077dda30f4bfe8/maintainability)](https://codeclimate.com/github/Angelmaneuver/sketchpad-modified/maintainability) ![GitHub](https://img.shields.io/github/license/angelmaneuver/sketchpad-modified)
 
