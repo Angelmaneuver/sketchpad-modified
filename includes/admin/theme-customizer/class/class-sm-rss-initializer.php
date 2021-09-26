@@ -35,7 +35,7 @@ class SM_RSS_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 	protected function get_sections() {
 		return array(
 			'sketchpad_rss_section' => array(
-				'title'       => __( 'Sketchpad - modified RSS Feed Setting', 'sketchpad-modified' ),
+				'title'       => __( 'Sketchpad modified RSS Feed Setting', 'sketchpad-modified' ),
 				'description' => __( 'Set whether to output an eye-catching image to RSS Feed.', 'sketchpad-modified' ),
 				'priority'    => 1000,
 			),

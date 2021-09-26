@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-09-19T12:18:53+00:00\n"
+"POT-Creation-Date: 2021-09-26T02:02:31+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Theme Name of the theme
-msgid "Sketchpad - modified"
+msgid "Sketchpad modified"
 msgstr ""
 
 #. Theme URI of the theme
@@ -25,8 +25,8 @@ msgid "https://github.com/Angelmaneuver/sketchpad-modified"
 msgstr ""
 
 #. Description of the theme
-msgid "\"Sketchpad - modified\" is a theme that has been improved by \"Sketchpad\" provided by BestLayout.com. More emphasis on the design as a notepad and some additional features. Original is: https://bestweblayout.com/products/sketchpad/"
-msgstr "\"Sketchpad - modified\" は、Bestlayout.com が提供する \"Sketchpad\" を改良したテーマです。メモ帳としてのデザインをより強調し、幾つかの機能を追加しています。オリジナルは、https://bestweblayout.com/products/sketchpad/ です。"
+msgid "\"Sketchpad modified\" is a theme that has been improved by \"Sketchpad\" provided by BestLayout.com. More emphasis on the design as a notepad and some additional features. Original is: https://bestweblayout.com/products/sketchpad/"
+msgstr "\"Sketchpad modified\" は、Bestlayout.com が提供する \"Sketchpad\" を改良したテーマです。メモ帳としてのデザインをより強調し、幾つかの機能を追加しています。オリジナルは、https://bestweblayout.com/products/sketchpad/ です。"
 
 #. Author of the theme
 msgid "Angelmaneuver"
@@ -259,8 +259,8 @@ msgid "Form Type"
 msgstr "フォ－ムタイプ"
 
 #: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:29
-msgid "Sketchpad - modified Breadcrumb Setting"
-msgstr "Sketchpad - modified パンくずリスト設定"
+msgid "Sketchpad modified Breadcrumb Setting"
+msgstr "Sketchpad modified パンくずリスト設定"
 
 #: includes/admin/theme-customizer/class/class-sm-breadcrumb-initializer.php:43
 msgid "General"
@@ -460,8 +460,8 @@ msgid "Top Button Border Color"
 msgstr "トップへ戻るボタンの枠線色"
 
 #: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:38
-msgid "Sketchpad - modified RSS Feed Setting"
-msgstr "Sketchpad - modified RSS Feed 設定"
+msgid "Sketchpad modified RSS Feed Setting"
+msgstr "Sketchpad modified RSS Feed 設定"
 
 #: includes/admin/theme-customizer/class/class-sm-rss-initializer.php:39
 msgid "Set whether to output an eye-catching image to RSS Feed."
@@ -529,8 +529,8 @@ msgid "Indent"
 msgstr "インデント"
 
 #: includes/sm-basic.php:24
-msgid "Sketchpad - modified Basic Setting"
-msgstr "Sketchpad - modified 基本設定"
+msgid "Sketchpad modified Basic Setting"
+msgstr "Sketchpad modified 基本設定"
 
 #: includes/utils/sm-utility.php:126
 msgid "more &raquo;"

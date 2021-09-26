@@ -26,7 +26,7 @@ class SM_Breadcrumb_Initializer extends SM_Abstract_Theme_Customizer_Initializer
 	protected function get_panels() {
 		return array(
 			'sketchpad_breadcrumb_panel' => array(
-				'title'    => __( 'Sketchpad - modified Breadcrumb Setting', 'sketchpad-modified' ),
+				'title'    => __( 'Sketchpad modified Breadcrumb Setting', 'sketchpad-modified' ),
 				'priority' => 1000,
 			),
 		);

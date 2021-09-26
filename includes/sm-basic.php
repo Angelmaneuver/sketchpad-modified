@@ -21,7 +21,7 @@ function sketchpad_customizer4basic_register( $wp_customize ) {
 	$wp_customize->add_panel(
 		Sm_Basic_Constant::PANEL,
 		array(
-			'title'    => __( 'Sketchpad - modified Basic Setting', 'sketchpad-modified' ),
+			'title'    => __( 'Sketchpad modified Basic Setting', 'sketchpad-modified' ),
 			'priority' => 1000,
 		)
 	);
