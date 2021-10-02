@@ -3069,14 +3069,14 @@ aside ul.wp-block-latest-posts[class*=" columns-"] li:not(:last-child) {
   font-weight: 400;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li, .post-content ul.wp-block-page-list li, .post-content ul.wp-block-archives-list li, .post-content ul.wp-block-categories-list li, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li, .comment-body ul.wp-block-page-list li, .comment-body ul.wp-block-archives-list li, .comment-body ul.wp-block-categories-list li {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li, .post-content ul.wp-block-page-list li, .post-content ul.wp-block-archives-list li, .post-content ul.wp-block-categories-list li, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li, .comment-body ul.wp-block-page-list li, .comment-body ul.wp-block-archives-list li, .comment-body ul.wp-block-categories-list li, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li {
   position: relative;
   display: block;
   -webkit-transition: padding .5s;
   transition: padding .5s;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li::before, .post-content ul.wp-block-page-list li::before, .post-content ul.wp-block-archives-list li::before, .post-content ul.wp-block-categories-list li::before, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li::before, .comment-body ul.wp-block-page-list li::before, .comment-body ul.wp-block-archives-list li::before, .comment-body ul.wp-block-categories-list li::before {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li::before, .post-content ul.wp-block-page-list li::before, .post-content ul.wp-block-archives-list li::before, .post-content ul.wp-block-categories-list li::before, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li::before, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li::before, .comment-body ul.wp-block-page-list li::before, .comment-body ul.wp-block-archives-list li::before, .comment-body ul.wp-block-categories-list li::before, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li::before {
   position: absolute;
   left: -3rem;
   font-size: 3rem;
@@ -3086,16 +3086,16 @@ aside ul.wp-block-latest-posts[class*=" columns-"] li:not(:last-child) {
   font-weight: 100;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li:hover, .post-content ul.wp-block-page-list li:hover, .post-content ul.wp-block-archives-list li:hover, .post-content ul.wp-block-categories-list li:hover, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li:hover, .comment-body ul.wp-block-page-list li:hover, .comment-body ul.wp-block-archives-list li:hover, .comment-body ul.wp-block-categories-list li:hover {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li:hover, .post-content ul.wp-block-page-list li:hover, .post-content ul.wp-block-archives-list li:hover, .post-content ul.wp-block-categories-list li:hover, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li:hover, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li:hover, .comment-body ul.wp-block-page-list li:hover, .comment-body ul.wp-block-archives-list li:hover, .comment-body ul.wp-block-categories-list li:hover, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li:hover {
   padding-left: 2%;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .post-content ul.wp-block-page-list li a, .post-content ul.wp-block-archives-list li a, .post-content ul.wp-block-categories-list li a, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .comment-body ul.wp-block-page-list li a, .comment-body ul.wp-block-archives-list li a, .comment-body ul.wp-block-categories-list li a {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .post-content ul.wp-block-page-list li a, .post-content ul.wp-block-archives-list li a, .post-content ul.wp-block-categories-list li a, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li a, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .comment-body ul.wp-block-page-list li a, .comment-body ul.wp-block-archives-list li a, .comment-body ul.wp-block-categories-list li a, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li a {
   width: 100%;
   margin: 0.3rem;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .post-content ul.wp-block-page-list li a, .post-content ul.wp-block-archives-list li a, .post-content ul.wp-block-categories-list li a, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .comment-body ul.wp-block-page-list li a, .comment-body ul.wp-block-archives-list li a, .comment-body ul.wp-block-categories-list li a {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .post-content ul.wp-block-page-list li a, .post-content ul.wp-block-archives-list li a, .post-content ul.wp-block-categories-list li a, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li a, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a, .comment-body ul.wp-block-page-list li a, .comment-body ul.wp-block-archives-list li a, .comment-body ul.wp-block-categories-list li a, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li a {
   text-decoration: none;
   padding-bottom: 0.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#776B53), to(#776B53)) 0 100%/0 1px no-repeat;
@@ -3104,7 +3104,7 @@ aside ul.wp-block-latest-posts[class*=" columns-"] li:not(:last-child) {
   transition: background .5s;
 }
 
-.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a:hover, .post-content ul.wp-block-page-list li a:hover, .post-content ul.wp-block-archives-list li a:hover, .post-content ul.wp-block-categories-list li a:hover, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a:hover, .comment-body ul.wp-block-page-list li a:hover, .comment-body ul.wp-block-archives-list li a:hover, .comment-body ul.wp-block-categories-list li a:hover {
+.post-content ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a:hover, .post-content ul.wp-block-page-list li a:hover, .post-content ul.wp-block-archives-list li a:hover, .post-content ul.wp-block-categories-list li a:hover, .post-content ul.wp-block-sketchpad-modified-blocks-tag-list li a:hover, .comment-body ul.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]) li a:hover, .comment-body ul.wp-block-page-list li a:hover, .comment-body ul.wp-block-archives-list li a:hover, .comment-body ul.wp-block-categories-list li a:hover, .comment-body ul.wp-block-sketchpad-modified-blocks-tag-list li a:hover {
   background-size: 100% 1px;
 }
 

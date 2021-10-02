@@ -268,7 +268,8 @@
     &.wp-block-latest-posts__list:not([class*=" has-"]):not([class*=" is-grid"]),
     &.wp-block-page-list,
     &.wp-block-archives-list,
-    &.wp-block-categories-list {
+    &.wp-block-categories-list,
+    &.wp-block-sketchpad-modified-blocks-tag-list {
       li {
         position: relative;
         display: block;
