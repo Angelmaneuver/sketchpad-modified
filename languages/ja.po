@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-09-26T02:02:31+00:00\n"
+"POT-Creation-Date: 2021-10-02T08:07:49+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -411,25 +411,17 @@ msgstr "その他の設定"
 msgid "Configure settings for Other setting of the page."
 msgstr "その他の設定"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:68
 msgid "Headline Settings"
 msgstr "見出し設定"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:70
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:68
 msgid "If you want to add wording after the article headlines, please enter it."
 msgstr "記事の見出しに文言を追加したい場合は入力してください。"
 
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:71
+#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:69
 msgid "Add external links to article headlines."
 msgstr "記事の見出しに外部リンクを追加する"
-
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:72
-msgid "Remove the EditURI link"
-msgstr "EditURI リンクを無効化する"
-
-#: includes/admin/theme-customizer/class/class-sm-other-setting-initializer.php:73
-msgid "Remove the wlwmanifest.xml link"
-msgstr "wlwmanifest.xml リンクを無効化する"
 
 #: includes/admin/theme-customizer/class/class-sm-return2top-button-initializer.php:38
 msgid "Top Button Setting"

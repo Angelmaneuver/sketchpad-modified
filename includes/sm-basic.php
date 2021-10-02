@@ -225,13 +225,3 @@ EOM;
 }
 
 add_filter( 'wp_footer', 'sketchpad_hamburger_menu_button' );
-
-// Remove EditURI link.
-if ( get_theme_mod( 'sketchpad_other_setting_edituri_disable', false ) ) {
-	remove_action( 'wp_head', 'rsd_link' );
-}
-
-// Remove wlwmanifest.xml link.
-if ( get_theme_mod( 'sketchpad_other_setting_wlwmanifest_disable', false ) ) {
-	remove_action( 'wp_head', 'wlwmanifest_link' );
-}
