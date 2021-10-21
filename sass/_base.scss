@@ -933,6 +933,10 @@ footer {
     margin: 2rem 0 3rem 0;
     list-style: none;
 
+    .comment-body p {
+      margin-bottom: 2rem;
+    }
+
     .comment-author,
     .comment-awaiting-moderation,
     .comment-content,

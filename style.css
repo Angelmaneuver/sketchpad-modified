@@ -2692,6 +2692,10 @@ aside ul.wp-block-latest-posts[class*=" columns-"] li:not(:last-child) {
   list-style: none;
 }
 
+.comments-area .comment-list .comment-body p {
+  margin-bottom: 2rem;
+}
+
 .comments-area .comment-list .comment-author,
 .comments-area .comment-list .comment-awaiting-moderation,
 .comments-area .comment-list .comment-content,
