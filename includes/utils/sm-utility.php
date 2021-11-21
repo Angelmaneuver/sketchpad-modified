@@ -129,7 +129,7 @@ function sketchpad_content2more_read( $post_content, $link ) {
 
 	if ( '' !== $split_content['extended'] ) {
 		$content = <<< EOM
-	{$content} <a href="{$link}">{$more_text}</a>
+	<span class="content">{$content}</span><a class="more" href="{$link}">{$more_text}</a>
 EOM;
 	}
 

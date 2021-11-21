@@ -85,12 +85,10 @@
 		<?php endif; ?>
 
 		<p class="wp-embed-heading">
-			<a href="<?php the_permalink(); ?>" target="_top">
-				<?php the_title(); ?>
-				<span class="r18 fa-stack"><i class="fas fa-ban fa-stack-2x"></i><span class="fa-stack-1x">18</span></span>
-			</a>
+			<a href="<?php the_permalink(); ?>" target="_top"><?php get_template_part( 'template/parts/headline', '' ); ?></a>
 		</p>
 
+		<div class="wp-embed-content">
 		<?php if ( $thumbnail_id && 'square' === $shape ) : ?>
 			<div class="wp-embed-featured-image square">
 				<a href="<?php the_permalink(); ?>" target="_top">
@@ -109,6 +107,8 @@
 		 */
 		do_action( 'embed_content' );
 		?>
+
+		</div>
 
 		<div class="wp-embed-footer">
 			<?php the_embed_site_title(); ?>

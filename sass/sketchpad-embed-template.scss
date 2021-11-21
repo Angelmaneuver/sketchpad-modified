@@ -92,38 +92,19 @@ body {
 }
 
 .wp-embed-featured-image {
-  margin-bottom: 20px;
-
-  img {
-    width: 100%;
-    height: auto;
-    border: none;
-  }
-
   &.square {
-    position: relative;
-    z-index: 10;
-    float: left;
-    margin: 1px 26px 20px 11px;
-    padding: 5px;
-    width: 11em;
-    height: calc(11em * 0.5625);
-    max-width: 11em;
-    max-height: calc(11em * 0.5625);
-    border: 2px solid #d1c6ab;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    padding: 0.5rem;
+    border-color: #d1c6ab;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 0.2rem;
     text-align: center;
     overflow: hidden;
 
-    img {
+    a img {
+      display: block;
       margin: 0;
       padding: 0;
-      width: 11em;
-      height: calc(11em * 0.5625);
-      max-width: 11em;
-      max-height: calc(11em * 0.5625);
       text-align: center;
       object-fit: fill;
       transition: 1s all;
@@ -159,13 +140,13 @@ p.wp-embed-heading {
 }
 
 .wp-embed-excerpt {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 
   > a {
-    position: absolute;
     font-size: 0.8em;
-    bottom: 0;
-    right: 0;
+    text-align: right;
   }
 }
 
@@ -367,8 +348,6 @@ textarea.wp-embed-share-input {
 html[dir="rtl"] {
   .wp-embed-featured-image.square {
     float: right;
-    margin-right: 0;
-    margin-left: 20px;
   }
 
   .wp-embed-site-title a {
@@ -385,10 +364,6 @@ html[dir="rtl"] {
 
   .wp-embed-meta {
     text-align: left;
-  }
-
-  .wp-embed-footer {
-
   }
 
   .wp-embed-share {
