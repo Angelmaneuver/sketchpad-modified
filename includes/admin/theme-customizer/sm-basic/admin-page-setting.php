@@ -41,7 +41,7 @@ function get_sketchpad_admin_style(
 	string $targets
 ): string {
 	return <<<EOM
-<style type="text/css">
+<style>
 		#wpwrap:before {
 			content:" ";
 			position: fixed;
