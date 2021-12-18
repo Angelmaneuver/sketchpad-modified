@@ -6,7 +6,7 @@
 		/** Hamburger menu button event */
 		$( '.hamburger_menu' + '.close' ).hide();
 
-		$( '.hamburger_menu' ).click( function(){
+		$( '.hamburger_menu' ).on( 'click', function() {
 			let is_menu = $( 'div#main-content' ).hasClass( 'show_sidebar' );
 
 			if( !is_menu ){
@@ -22,10 +22,10 @@
 				$( '.hamburger_menu' + '.close' ).hide();
 				$( 'body, html' ).animate( { scrollTop: $( 'div#main-content' ).data( 'scroll-position' ) }, 500);
 			}
-		});
+		} );
 
-		/** TOC+ Widget's event at Hamburger menu */
-		$( 'ul.toc_widget_list a' ).click( function(){
+		/** TOC Widget's event at Hamburger menu */
+		$( 'div.sidebar ul.wp-block-sketchpad-modified-blocks-table-of-contents a' ).on( 'click', function() {
 			let is_menu = $( 'div#main-content' ).hasClass( 'show_sidebar' );
 
 			if( is_menu ){
@@ -33,24 +33,24 @@
 				$( '.hamburger_menu' + '.open' ).show();
 				$( '.hamburger_menu' + '.close' ).hide();
 			}
-		});
+		} );
 
 		/** Return to Top button event */
 		let return2top_button = $( '.top_button' );
 
-		$( window ).scroll( function(){
+		$( window ).on( 'scroll', function() {
 			if( $( this ).scrollTop() > 100 ){
 				return2top_button.fadeIn();
 			}else{
 				return2top_button.fadeOut();
 			}
-		});
+		} );
 
-		return2top_button.click( function(){
+		return2top_button.on( 'click', function() {
 			$( 'body, html' ).animate( { scrollTop: 0} , 500 );
 			return false;
-		});
-	});
+		} );
+	} );
 
 	$( window ).on( 'load', function() {
 		height_adjustment();

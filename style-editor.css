@@ -527,7 +527,6 @@ section.profiles {
 }
 
 section.profiles h3, section.profiles h3 > span {
-  font-size: 0;
   height: 0;
   margin: 0;
   padding: 0;

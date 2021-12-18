@@ -211,31 +211,6 @@ article {
 }
 
 /**
-* Toc
-* -----------------------------------------------------------------------------------------------
-*/
-
-div.content > aside > div.sidebar > section.toc_widget {
-  > ul.toc_widget_list > li {
-    @include SidebarPostitColorSeries;
-
-    > ul {
-      margin-left: 2.5rem;
-
-      li > ul {
-        margin-left: 2.5rem;
-      }
-    }
-
-    a {
-      @include SidebarPostit;
-      margin-bottom: 0.5rem;
-      white-space: normal;
-    }
-  }
-}
-
-/**
 * Yarpp
 * -----------------------------------------------------------------------------------------------
 */

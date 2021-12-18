@@ -380,7 +380,7 @@
       }
     }
 
-    &[class*="wp-"]:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.submenu-container):not(.children) {
+    &[class*="wp-"]:not(.wp-block-page-list):not(.wp-block-categories-list):not(.wp-block-social-links):not(.submenu-container):not(.children):not(.wp-block-sketchpad-modified-blocks-table-of-contents) {
       li {
         @include SidebarPostit;
         @include SidebarPostitColorSeries;
@@ -510,6 +510,23 @@
 
       &:not(:last-child) {
         margin-bottom: 0.5rem;
+      }
+    }
+
+    &.wp-block-sketchpad-modified-blocks-table-of-contents {
+      > li {
+        display: inline-block;
+        @include SidebarPostitColorSeries;
+
+        div.toc-item {
+          @include SidebarPostit;
+          display: flex;
+          margin-bottom: 0.5rem;
+
+          > div.toc-element {
+            width: 100%
+          }
+        }
       }
     }
   }
