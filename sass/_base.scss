@@ -710,7 +710,7 @@ aside {
           margin-left: 2.5rem;
         }
 
-        li {
+        &:not([class*='has-']) li {
           @include GetFontPreSet(1.2rem);
           @include ArialFontFamily;
         }

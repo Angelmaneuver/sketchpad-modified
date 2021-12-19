@@ -1912,7 +1912,7 @@ aside .sidebar section ul.children, aside .sidebar section ul.sub-menu, aside .s
   margin-left: 2.5rem;
 }
 
-aside .sidebar section ul li, aside .sidebar section ol li {
+aside .sidebar section ul:not([class*='has-']) li, aside .sidebar section ol:not([class*='has-']) li {
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 400;
