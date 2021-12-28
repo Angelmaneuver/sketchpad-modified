@@ -814,6 +814,7 @@ article.tag-r18 footer .post-tag a {
   background: #ff9a93;
 }
 
+article.tag-r18 .post-content h1,
 article.tag-r18 .post-content h2,
 article.tag-r18 .post-content h3,
 article.tag-r18 .post-content h4,
@@ -835,6 +836,7 @@ article.tag-r18 .post-content tbody,
 article.tag-r18 .post-content tr,
 article.tag-r18 .post-content th,
 article.tag-r18 .post-content td,
+article.tag-r18 .post-content figcaption,
 article.tag-r18 .post-content cite,
 article.tag-r18 .post-content span,
 article.tag-r18 .post-content div {
