@@ -2559,7 +2559,7 @@ aside ul.wp-block-categories-list > li.cat-item div.cat-item {
   margin-bottom: 0.5rem;
 }
 
-aside ul.wp-block-latest-posts__list li div.wp-block-latest-posts__featured-image a {
+aside ul.wp-block-latest-posts__list li div.wp-block-latest-posts__featured-image, aside ul.wp-block-latest-posts__list li div.wp-block-latest-posts__featured-image a {
   overflow: hidden;
 }
 

@@ -479,7 +479,7 @@
     &.wp-block-latest-posts__list {
       li {
         div.wp-block-latest-posts__featured-image {
-          a {
+          &, & a {
             overflow: hidden;
           }
         }
