@@ -778,12 +778,6 @@ aside {
         box-sizing: content-box;
       }
 
-      &.sm_widget_recent_entries {
-        @include RecentPost {
-          background-color: $sidebar_background_color;
-        }
-      }
-
       div.footer {
         position: relative;
         @include SketchpadSidebarLayer;
