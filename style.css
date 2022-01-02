@@ -3265,6 +3265,10 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
+.is-style-text-indent {
+  text-indent: 1em;
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }
@@ -4213,7 +4217,7 @@ p.grav-about {
 
 .wp-block-jetpack-markdown p {
   margin-bottom: 2rem;
-  text-indent: 1.5rem;
+  text-indent: 1em;
 }
 
 .wp-block-jetpack-image-compare {

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2021-10-02T08:07:49+00:00\n"
+"POT-Creation-Date: 2022-01-02T16:51:24+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -476,7 +476,7 @@ msgid "Under Line"
 msgstr "下線付き"
 
 #: includes/block-style/sm-style.php:18 includes/block-style/sm-style.php:25
-#: includes/block-style/sm-style.php:35
+#: includes/block-style/sm-style.php:36
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
@@ -497,26 +497,30 @@ msgid "Font sytle h5 and close the gap to the top"
 msgstr "H5 スタイル (上余白無し)"
 
 #: includes/block-style/sm-style.php:26
+msgid "Single character indentation"
+msgstr "1文字字下げする"
+
+#: includes/block-style/sm-style.php:27
 msgid "Open one character between line"
 msgstr "行間を1文字開ける"
 
-#: includes/block-style/sm-style.php:27
+#: includes/block-style/sm-style.php:28
 msgid "Black single line"
 msgstr "黒縁 (単線)"
 
-#: includes/block-style/sm-style.php:28
+#: includes/block-style/sm-style.php:29
 msgid "Black double line"
 msgstr "黒縁 (二重線)"
 
-#: includes/block-style/sm-style.php:29
+#: includes/block-style/sm-style.php:30
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
-#: includes/block-style/sm-style.php:32
+#: includes/block-style/sm-style.php:33
 msgid "Postit"
 msgstr "ポストイット"
 
-#: includes/block-style/sm-style.php:38
+#: includes/block-style/sm-style.php:39
 msgid "Indent"
 msgstr "インデント"
 
@@ -527,58 +531,6 @@ msgstr "Sketchpad modified 基本設定"
 #: includes/utils/sm-utility.php:126
 msgid "more &raquo;"
 msgstr ""
-
-#: includes/widgets/class-sm-widget-recent-posts.php:27
-msgid "Your site&#8217;s most recent Posts. (Sketchpad - modified)"
-msgstr "直近の投稿 (Sketchpad - modified)。"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:30
-msgid "Recent Posts (Sketchpad - modified)"
-msgstr "最近の投稿 (Sketchpad - modified)"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:48
-msgid "Recent Posts"
-msgstr ""
-
-#: includes/widgets/class-sm-widget-recent-posts.php:128
-msgid "(no title)"
-msgstr "(タイトルなし)"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:214
-msgid "Display Options"
-msgstr "表示オプション"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:216
-msgid "Title:"
-msgstr "タイトル:"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:220
-msgid "Number of posts to show:"
-msgstr "表示する投稿数:"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:225
-msgid "Output the tag to the class."
-msgstr "タグをクラスに出力する。"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:229
-msgid "Don't show the currently viewed articles in the list."
-msgstr "現在閲覧中の記事を一覧に表示しないようにする。"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:233
-msgid "Show the date of posting."
-msgstr "投稿日時を表示する。"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:235
-msgid "Filter by categories"
-msgstr "カテゴリ－で絞り込む"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:244
-msgid "Show all categories."
-msgstr "全てのカテゴリ－を表示する"
-
-#: includes/widgets/class-sm-widget-recent-posts.php:258
-msgid "Display a thumbnail image."
-msgstr "サムネイル画像を表示する。"
 
 #: search.php:14
 msgid "Search results for: "

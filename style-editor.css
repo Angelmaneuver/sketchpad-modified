@@ -352,6 +352,10 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
+.is-style-text-indent {
+  text-indent: 1em;
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }

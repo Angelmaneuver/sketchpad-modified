@@ -176,6 +176,10 @@ blockquote.wp-block-quote {
   @include Change2PinkTextStyle;
 }
 
+.is-style-text-indent {
+  text-indent: 1em;
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }
