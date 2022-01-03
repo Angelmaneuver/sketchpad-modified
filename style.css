@@ -814,6 +814,27 @@ article.tag-r18 footer .post-tag a {
   background: #ff9a93;
 }
 
+article.tag-r18 footer .pagination * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 footer .pagination .post-page-numbers:not(.current) {
+  border-width: thin;
+  border-style: solid;
+  background: #F4EDDF;
+}
+
+article.tag-r18 footer .pagination .current,
+article.tag-r18 footer .pagination .post-page-numbers:hover,
+article.tag-r18 footer .pagination a:hover {
+  background: #ff9a93;
+  border-color: #ff9a93;
+}
+
 article.tag-r18 .post-content h1,
 article.tag-r18 .post-content h2,
 article.tag-r18 .post-content h3,
@@ -1815,8 +1836,10 @@ ul.children, ul.sub-menu, ul.submenu-container, ol.children, ol.sub-menu, ol.sub
 }
 
 .pagination .page-numbers:not(.current),
+.pagination .post-page-numbers:not(.current),
 .pagination a,
 .post-content .pagination .page-numbers:not(.current),
+.post-content .pagination .post-page-numbers:not(.current),
 .post-content .pagination a {
   color: #f4eddf;
   padding: 0.6rem;
@@ -1827,9 +1850,11 @@ ul.children, ul.sub-menu, ul.submenu-container, ol.children, ol.sub-menu, ol.sub
 
 .pagination .current,
 .pagination .page-numbers:hover,
+.pagination .post-page-numbers:hover,
 .pagination a:hover,
 .post-content .pagination .current,
 .post-content .pagination .page-numbers:hover,
+.post-content .pagination .post-page-numbers:hover,
 .post-content .pagination a:hover {
   color: #f4eddf;
   padding: 0.6rem;

@@ -115,6 +115,25 @@
       .post-tag a {
         @include Change2PinkPostTagBackground;
       }
+
+      .pagination {
+        * {
+          @include Change2PinkTextStyle;
+          @include Change2PinkBorderColor;
+        }
+
+        .post-page-numbers:not(.current) {
+          @include ThinBorderStyle;
+          @include SketchpadBackground;
+        }
+
+        .current,
+        .post-page-numbers:hover,
+        a:hover {
+          @include Change2PinkBackground;
+          @include Change2PinkHoverBorderColor;
+        }
+      }
     }
 
     .post-content {

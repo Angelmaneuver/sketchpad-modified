@@ -616,6 +616,7 @@ main#articles {
   text-align: center;
 
   .page-numbers:not(.current),
+  .post-page-numbers:not(.current),
   a {
     @include PaginationColor;
     padding: 0.6rem;
@@ -626,6 +627,7 @@ main#articles {
 
   .current,
   .page-numbers:hover,
+  .post-page-numbers:hover,
   a:hover {
     @include PaginationColor;
     padding: 0.6rem;
