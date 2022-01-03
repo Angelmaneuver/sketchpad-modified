@@ -25,6 +25,7 @@ function register_sketchpad_block_style() {
 	register_block_style( 'core/paragraph', array( 'name' => 'mb0',                           'label' => __( 'Close the gap between the two', 'sketchpad-modified' ) ) );
 	register_block_style( 'core/paragraph', array( 'name' => 'text-indent',                   'label' => __( 'Single character indentation', 'sketchpad-modified' ) ) );
 	register_block_style( 'core/paragraph', array( 'name' => 'single-character-line-spacing', 'label' => __( 'Open one character between line', 'sketchpad-modified' ) ) );
+	register_block_style( 'core/paragraph', array( 'name' => 'speech',                        'label' => __( 'Speech', 'sketchpad-modified' ) ) );	
 	register_block_style( 'core/paragraph', array( 'name' => 'black-border',                  'label' => __( 'Black single line', 'sketchpad-modified' ) ) );
 	register_block_style( 'core/paragraph', array( 'name' => 'black-double-border',           'label' => __( 'Black double line', 'sketchpad-modified' ) ) );
 	register_block_style( 'core/paragraph', array( 'name' => 'r18-paragraph',                 'label' => __( 'Change the display to R18.', 'sketchpad-modified' ) ) );

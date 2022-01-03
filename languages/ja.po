@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2022-01-02T16:51:24+00:00\n"
+"POT-Creation-Date: 2022-01-03T23:47:55+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -476,7 +476,7 @@ msgid "Under Line"
 msgstr "下線付き"
 
 #: includes/block-style/sm-style.php:18 includes/block-style/sm-style.php:25
-#: includes/block-style/sm-style.php:36
+#: includes/block-style/sm-style.php:37
 msgid "Close the gap between the two"
 msgstr "余白無し"
 
@@ -505,22 +505,26 @@ msgid "Open one character between line"
 msgstr "行間を1文字開ける"
 
 #: includes/block-style/sm-style.php:28
+msgid "Speech"
+msgstr "台詞"
+
+#: includes/block-style/sm-style.php:29
 msgid "Black single line"
 msgstr "黒縁 (単線)"
 
-#: includes/block-style/sm-style.php:29
+#: includes/block-style/sm-style.php:30
 msgid "Black double line"
 msgstr "黒縁 (二重線)"
 
-#: includes/block-style/sm-style.php:30
+#: includes/block-style/sm-style.php:31
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
-#: includes/block-style/sm-style.php:33
+#: includes/block-style/sm-style.php:34
 msgid "Postit"
 msgstr "ポストイット"
 
-#: includes/block-style/sm-style.php:39
+#: includes/block-style/sm-style.php:40
 msgid "Indent"
 msgstr "インデント"
 

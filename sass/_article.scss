@@ -180,6 +180,22 @@ blockquote.wp-block-quote {
   text-indent: 1em;
 }
 
+.is-style-speech {
+  display: flex;
+  align-content: stretch;
+
+  &::before {
+    content: '『';
+  }
+
+  &::after {
+    content: '』';
+    position: relative;
+    flex-grow: 1;
+    margin: auto auto 0;
+  }
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }

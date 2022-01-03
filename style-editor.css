@@ -356,6 +356,27 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   text-indent: 1em;
 }
 
+.is-style-speech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.is-style-speech::before {
+  content: '『';
+}
+
+.is-style-speech::after {
+  content: '』';
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: auto auto 0;
+}
+
 .is-style-mt0 {
   margin-top: 0 !important;
 }
