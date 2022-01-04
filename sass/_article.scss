@@ -181,8 +181,8 @@ blockquote.wp-block-quote {
 }
 
 .is-style-speech {
-  display: flex;
-  align-content: stretch;
+  text-indent: -1em;
+  padding-left: 1.5em;  
 
   &::before {
     content: '『';
@@ -190,10 +190,11 @@ blockquote.wp-block-quote {
 
   &::after {
     content: '』';
-    position: relative;
-    flex-grow: 1;
-    margin: auto auto 0;
   }
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block.is-style-speech::after {
+  position: relative;
 }
 
 .is-style-mt0 {

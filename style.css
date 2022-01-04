@@ -3295,11 +3295,8 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
 }
 
 .is-style-speech {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  text-indent: -1em;
+  padding-left: 1.5em;
 }
 
 .is-style-speech::before {
@@ -3308,11 +3305,10 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
 
 .is-style-speech::after {
   content: '』';
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block.is-style-speech::after {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: auto auto 0;
 }
 
 .is-style-mt0 {
