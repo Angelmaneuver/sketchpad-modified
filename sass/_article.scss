@@ -184,6 +184,10 @@ blockquote.wp-block-quote {
   text-indent: -1em;
   padding-left: 1.5em;  
 
+  &::first-letter {
+    font-size: inherit;
+  }
+
   &::before {
     content: '『';
   }

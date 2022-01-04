@@ -361,6 +361,10 @@ blockquote.wp-block-quote div.wp-block-quote__citation {
   padding-left: 1.5em;
 }
 
+.is-style-speech::first-letter {
+  font-size: inherit;
+}
+
 .is-style-speech::before {
   content: '『';
 }
