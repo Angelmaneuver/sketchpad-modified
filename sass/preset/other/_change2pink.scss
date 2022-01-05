@@ -32,6 +32,18 @@
   border-color: #ff9a93;
 }
 
+@mixin Change2PinkUnderBorderColor {
+  border: none;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    @include Change2PinkBoxStyle;
+  }
+}
+
 @mixin Change2PinkBackground {
   background: #ff9a93;
 }
