@@ -143,12 +143,13 @@ function sketchpad_blog_card_image_form( $shape, $thumbnail_id ) {
  *
  * @subpackage blog-card
  * @since      2.1.0
- * @return     string content string after filtering.
+ * @param      string $output The current post excerpt.
+ * @return     string         Content string after filtering.
  * @see        https://developer.wordpress.org/reference/functions/the_excerpt_embed/
  */
-function sketchpad_blog_card_content() {
+function sketchpad_blog_card_content( string $output ): string {
 	global $post;
-	return sketchpad_content2more_read( $post->post_content, esc_url( get_permalink( $post ) ) );
+	return sketchpad_content2more_read( $output, esc_url( get_permalink( $post ) ) );
 }
 
 add_action( 'embed_head', 'sketchpad_embed_styles' );

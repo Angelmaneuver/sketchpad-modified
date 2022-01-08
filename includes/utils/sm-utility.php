@@ -127,11 +127,9 @@ function sketchpad_content2more_read( $post_content, $link ) {
 	$split_content = get_extended( $post_content );
 	$content       = wp_strip_all_tags( $split_content['main'] );
 
-	if ( '' !== $split_content['extended'] ) {
-		$content = <<< EOM
+	$content = <<< EOM
 	<span class="content">{$content}</span><a class="more" href="{$link}">{$more_text}</a>
 EOM;
-	}
 
 	return $content;
 }
