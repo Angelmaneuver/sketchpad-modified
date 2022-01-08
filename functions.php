@@ -107,6 +107,9 @@ function sketchpad_setup() {
 		)
 	);
 
+	/** This theme supports to default gutenberg block style. */
+	add_theme_support( 'wp-block-styles' );
+
 	/** This theme supports to style the visual editor. */
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'style-editor.css' );

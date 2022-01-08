@@ -20,3 +20,7 @@ input[type="submit"], input[type="button"], input[type="reset"] {
 select {
   @include InputForm($width: 100%, $height: 100%);
 }
+
+*[class*='has-'][class*='-font-size'] {
+  line-height: initial;
+}
