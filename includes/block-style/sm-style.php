@@ -37,7 +37,8 @@ function register_sketchpad_block_style() {
 	register_block_style( 'core/columns', array( 'name' => 'mtb0', 'label' => __( 'Close the gap between the two', 'sketchpad-modified' ) ) );
 
 	// group.
-	register_block_style( 'core/group', array( 'name' => 'indent', 'label' => __( 'Indent', 'sketchpad-modified' ) ) );
+	register_block_style( 'core/group', array( 'name' => 'indent',     'label' => __( 'Indent', 'sketchpad-modified' ) ) );
+	register_block_style( 'core/group', array( 'name' => 'no-padding', 'label' => __( 'No inner frame margin', 'sketchpad-modified' ) ) );
 
 	// @codingStandardsIgnoreEnd
 };
