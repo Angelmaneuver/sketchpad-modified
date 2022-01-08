@@ -139,6 +139,14 @@ div#main-content
   }
 }
 
+div.wp-block-jetpack-slideshow.is-style-image-postit figure img {
+  width: calc(100% - 1rem);
+}
+
+div.wp-block-group.is-style-no-padding > div.wp-block-group__inner-container > div.wp-block-jetpack-slideshow {
+    margin-bottom: 0;
+}
+
 article {
   .sharedaddy {
     h3.sd-title::before {

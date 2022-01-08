@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2022-01-03T23:47:55+00:00\n"
+"POT-Creation-Date: 2022-01-08T05:17:42+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -154,11 +154,11 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:220
 msgid "Right Sidebar Widget"
 msgstr ""
 
-#: functions.php:219
+#: functions.php:222
 msgid "Right Widget Area"
 msgstr ""
 
@@ -527,6 +527,10 @@ msgstr "ポストイット"
 #: includes/block-style/sm-style.php:40
 msgid "Indent"
 msgstr "インデント"
+
+#: includes/block-style/sm-style.php:41
+msgid "No inner frame margin"
+msgstr "内枠余白無し"
 
 #: includes/sm-basic.php:24
 msgid "Sketchpad modified Basic Setting"
