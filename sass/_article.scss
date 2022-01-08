@@ -48,7 +48,7 @@
   }
 }
 
-.post-content, div.wp-block-group > div.wp-block-group__inner-container {
+.post-content, div.wp-block-group:not(.is-style-no-padding) > div.wp-block-group__inner-container {
   > p, > ul, > ol, > table, > div:not(.wp-block-spacer), > blockquote,  > figure, > form, > iframe {
 
     &:not(:last-child) {
@@ -201,7 +201,7 @@ blockquote.wp-block-quote {
   position: relative;
 }
 
-.wp-block-group.is-style-no-padding {
+div.wp-block-group.is-style-no-padding {
   padding: 0;
 }
 
