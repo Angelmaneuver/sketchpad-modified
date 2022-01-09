@@ -1,5 +1,3 @@
-@import "../../customised/restore4color";
-
 // Change to Pink Property
 
 @mixin Change2PinkTextStyle {
@@ -58,7 +56,7 @@
 }
 
 @mixin Change2PinkRecentPost {
-  &.tag-r18 {
+  &.#{$change2pink} {
     @include Change2PinkBorderColor;
 
     > a > span {
@@ -68,7 +66,7 @@
 }
 
 @mixin Change2PinkArticle {
-  &.tag-r18 {
+  &.#{$change2pink} {
     header {
       * {
         @include Change2PinkTextStyle;
@@ -149,54 +147,116 @@
     }
 
     .post-content {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      em,
-      s,
-      ruby,
-      rp,
-      rt,
-      a,
-      ul,
-      ol,
-      li,
-      table,
-      thead,
-      tbody,
-      tr,
-      th,
-      td,
-      figcaption,
-      cite,
-      span,
-      div {
-        @include Change2PinkTextStyle;
-        @include Change2PinkBorderColor;
+      > {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          &:not(#{$excludeKeyword}) {
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+        }
+
+        ul:not(#{$excludeKeyword}) {
+          ol, li {
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+        }
+
+        blockquote:not(#{$excludeKeyword}).wp-block-quote {
+          @include Change2PinkBorderColor;
+
+          &:before {
+            @include Change2PinkTextStyle;
+          }
+
+          * {
+            @include Change2PinkTextStyle;
+          }
+        }
       }
 
-      button {
-        @include Change2PinkBoxStyle;
-      }
+      > div {
+        &:not(#{$excludeKeyword}):not(.yarpp) {
+          @include Change2PinkTextStyle;
+          @include Change2PinkBorderColor;
 
-      li::marker {
-        @include Change2PinkTextStyle;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          p,
+          em,
+          s,
+          ruby,
+          rp,
+          rt,
+          a,
+          table,
+          thead,
+          tbody,
+          tr,
+          th,
+          td,
+          figcaption {
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+
+          ul:not(#{$excludeKeyword}) {
+            ol, li {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+  
+              * {
+                @include Change2PinkTextStyle;
+                @include Change2PinkBorderColor;
+              }
+            }
+          }
+
+          button {
+            @include Change2PinkBoxStyle;
+          }
+
+          blockquote:not(#{$excludeKeyword}).wp-block-quote {
+            @include Change2PinkBorderColor;
+
+            &:before {
+              @include Change2PinkTextStyle;
+            }
+
+            * {
+              @include Change2PinkTextStyle;
+            }
+          }
+        }
       }
 
       .thumb-box {
         @include Change2PinkBorderColorImportant;
-      }
-
-      blockquote.wp-block-quote {
-        @include Change2PinkBorderColor;
-
-        &:before {
-          @include Change2PinkTextStyle;
-        }
       }
 
       .is-style-image-postit {
@@ -205,39 +265,10 @@
           @include Change2PinkImagePostit;
         }
       }
-
-      $restore: "";
-      @each $element in $restoreChange2pinkElements {
-        @if "" != $restore {
-          $restore: $restore + ", ";
-        }
-
-        $restore: $restore + $element;
-      }
-
-      #{$restore} {
-        * {
-          font-weight: initial;
-          color: initial;
-          background-color: initial;
-          border-color: initial;
-          outline-color: initial;
-          text-shadow: initial;
-        }
-
-        @include BasicTagsStyleSet;
-        @include ArticleStyleSet;
-
-        .is-style-image-postit {
-          @include ImagePostit;
-        }
-
-        @include RestoreColor;
-      }
     }
   }
 
-  &:not(.tag-r18) {
+  &:not(#{$change2pink}) {
     span.r18 {
       display: none;
     }

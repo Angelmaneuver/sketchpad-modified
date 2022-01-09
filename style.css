@@ -835,32 +835,13 @@ article.tag-r18 footer .pagination a:hover {
   border-color: #ff9a93;
 }
 
-article.tag-r18 .post-content h1,
-article.tag-r18 .post-content h2,
-article.tag-r18 .post-content h3,
-article.tag-r18 .post-content h4,
-article.tag-r18 .post-content h5,
-article.tag-r18 .post-content h6,
-article.tag-r18 .post-content p,
-article.tag-r18 .post-content em,
-article.tag-r18 .post-content s,
-article.tag-r18 .post-content ruby,
-article.tag-r18 .post-content rp,
-article.tag-r18 .post-content rt,
-article.tag-r18 .post-content a,
-article.tag-r18 .post-content ul,
-article.tag-r18 .post-content ol,
-article.tag-r18 .post-content li,
-article.tag-r18 .post-content table,
-article.tag-r18 .post-content thead,
-article.tag-r18 .post-content tbody,
-article.tag-r18 .post-content tr,
-article.tag-r18 .post-content th,
-article.tag-r18 .post-content td,
-article.tag-r18 .post-content figcaption,
-article.tag-r18 .post-content cite,
-article.tag-r18 .post-content span,
-article.tag-r18 .post-content div {
+article.tag-r18 .post-content > h1:not(.no-change),
+article.tag-r18 .post-content > h2:not(.no-change),
+article.tag-r18 .post-content > h3:not(.no-change),
+article.tag-r18 .post-content > h4:not(.no-change),
+article.tag-r18 .post-content > h5:not(.no-change),
+article.tag-r18 .post-content > h6:not(.no-change),
+article.tag-r18 .post-content > p:not(.no-change) {
   color: #ffffff;
   font-weight: 700;
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
@@ -868,12 +849,148 @@ article.tag-r18 .post-content div {
   outline-color: #ffb6c1;
 }
 
-article.tag-r18 .post-content button {
+article.tag-r18 .post-content > h1:not(.no-change) *,
+article.tag-r18 .post-content > h2:not(.no-change) *,
+article.tag-r18 .post-content > h3:not(.no-change) *,
+article.tag-r18 .post-content > h4:not(.no-change) *,
+article.tag-r18 .post-content > h5:not(.no-change) *,
+article.tag-r18 .post-content > h6:not(.no-change) *,
+article.tag-r18 .post-content > p:not(.no-change) * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > ul:not(.no-change) ol, article.tag-r18 .post-content > ul:not(.no-change) li {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > ul:not(.no-change) ol *, article.tag-r18 .post-content > ul:not(.no-change) li * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > blockquote:not(.no-change).wp-block-quote {
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > blockquote:not(.no-change).wp-block-quote:before {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
+article.tag-r18 .post-content > blockquote:not(.no-change).wp-block-quote * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h1,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h2,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h3,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h4,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h5,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h6,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) p,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) em,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) s,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ruby,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) rp,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) rt,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) a,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) table,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) thead,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) tbody,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) tr,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) th,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) td,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) figcaption {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h1 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h2 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h3 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h4 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h5 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) h6 *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) p *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) em *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) s *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ruby *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) rp *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) rt *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) a *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) table *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) thead *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) tbody *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) tr *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) th *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) td *,
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) figcaption * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ul:not(.no-change) ol, article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ul:not(.no-change) li {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ul:not(.no-change) ol *, article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) ul:not(.no-change) li * {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) button {
   -webkit-box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
           box-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
 }
 
-article.tag-r18 .post-content li::marker {
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) blockquote:not(.no-change).wp-block-quote {
+  border-color: #ffb6c1;
+  outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) blockquote:not(.no-change).wp-block-quote:before {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
+article.tag-r18 .post-content > div:not(.no-change):not(.yarpp) blockquote:not(.no-change).wp-block-quote * {
   color: #ffffff;
   font-weight: 700;
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
@@ -884,17 +1001,6 @@ article.tag-r18 .post-content .thumb-box {
   outline-color: #ffb6c1 !important;
 }
 
-article.tag-r18 .post-content blockquote.wp-block-quote {
-  border-color: #ffb6c1;
-  outline-color: #ffb6c1;
-}
-
-article.tag-r18 .post-content blockquote.wp-block-quote:before {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
-}
-
 article.tag-r18 .post-content .is-style-image-postit img,
 article.tag-r18 .post-content .is-style-image-postit svg {
   -o-border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1/1 0 0 0;
@@ -902,525 +1008,7 @@ article.tag-r18 .post-content .is-style-image-postit svg {
      border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1/1 0 0 0;
 }
 
-article.tag-r18 .post-content .no-change *, article.tag-r18 .post-content .yarpp-related * {
-  font-weight: initial;
-  color: initial;
-  background-color: initial;
-  border-color: initial;
-  outline-color: initial;
-  text-shadow: initial;
-}
-
-article.tag-r18 .post-content .no-change h1, article.tag-r18 .post-content .yarpp-related h1 {
-  font-weight: 700;
-  color: #776b53;
-}
-
-article.tag-r18 .post-content .no-change h1 *, article.tag-r18 .post-content .yarpp-related h1 * {
-  font-weight: 700;
-  color: #776b53;
-}
-
-article.tag-r18 .post-content .no-change h2, article.tag-r18 .post-content .yarpp-related h2 {
-  font-weight: 700;
-  color: #776b53;
-}
-
-article.tag-r18 .post-content .no-change h2 *, article.tag-r18 .post-content .yarpp-related h2 * {
-  font-weight: 700;
-  color: #776b53;
-}
-
-article.tag-r18 .post-content .no-change h3, article.tag-r18 .post-content .yarpp-related h3 {
-  font-weight: 700;
-  color: #9b8f76;
-}
-
-article.tag-r18 .post-content .no-change h3 *, article.tag-r18 .post-content .yarpp-related h3 * {
-  font-weight: 700;
-  color: #9b8f76;
-}
-
-article.tag-r18 .post-content .no-change h4, article.tag-r18 .post-content .yarpp-related h4 {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change h4 *, article.tag-r18 .post-content .yarpp-related h4 * {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change h5, article.tag-r18 .post-content .yarpp-related h5 {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change h5 *, article.tag-r18 .post-content .yarpp-related h5 * {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change h6, article.tag-r18 .post-content .yarpp-related h6 {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change h6 *, article.tag-r18 .post-content .yarpp-related h6 * {
-  font-weight: 700;
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change p, article.tag-r18 .post-content .yarpp-related p {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change address, article.tag-r18 .post-content .yarpp-related address {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change table, article.tag-r18 .post-content .yarpp-related table {
-  color: #483613;
-  border-color: #483613;
-  border-width: thin;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change th, article.tag-r18 .post-content .yarpp-related th {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change th, article.tag-r18 .post-content .no-change td, article.tag-r18 .post-content .yarpp-related th, article.tag-r18 .post-content .yarpp-related td {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change dl, article.tag-r18 .post-content .yarpp-related dl {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change a, article.tag-r18 .post-content .yarpp-related a {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change pre, article.tag-r18 .post-content .yarpp-related pre {
-  border-color: #cccccc;
-  border-width: thin;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change ins *:not(a), article.tag-r18 .post-content .yarpp-related ins *:not(a) {
-  outline-color: #9b8f76;
-  background: none repeat scroll 0 0 #f5ead0;
-}
-
-article.tag-r18 .post-content .no-change .post-content h2, article.tag-r18 .post-content .no-change .comment-body h2, article.tag-r18 .post-content .yarpp-related .post-content h2, article.tag-r18 .post-content .yarpp-related .comment-body h2 {
-  font-weight: 700;
-  color: #776b53;
-}
-
-article.tag-r18 .post-content .no-change .post-content a, article.tag-r18 .post-content .no-change .comment-body a, article.tag-r18 .post-content .yarpp-related .post-content a, article.tag-r18 .post-content .yarpp-related .comment-body a {
-  color: #5e523a;
-}
-
-article.tag-r18 .post-content .no-change .post-content > ul, article.tag-r18 .post-content .no-change .post-content > div.wp-block-group ul, article.tag-r18 .post-content .no-change .comment-body > ul, article.tag-r18 .post-content .no-change .comment-body > div.wp-block-group ul, article.tag-r18 .post-content .yarpp-related .post-content > ul, article.tag-r18 .post-content .yarpp-related .post-content > div.wp-block-group ul, article.tag-r18 .post-content .yarpp-related .comment-body > ul, article.tag-r18 .post-content .yarpp-related .comment-body > div.wp-block-group ul {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change .post-content > ol, article.tag-r18 .post-content .no-change .post-content > div.wp-block-group ol, article.tag-r18 .post-content .no-change .comment-body > ol, article.tag-r18 .post-content .no-change .comment-body > div.wp-block-group ol, article.tag-r18 .post-content .yarpp-related .post-content > ol, article.tag-r18 .post-content .yarpp-related .post-content > div.wp-block-group ol, article.tag-r18 .post-content .yarpp-related .comment-body > ol, article.tag-r18 .post-content .yarpp-related .comment-body > div.wp-block-group ol {
-  color: #483613;
-}
-
-article.tag-r18 .post-content .no-change .post-navigation div, article.tag-r18 .post-content .yarpp-related .post-navigation div {
-  font-weight: 700;
-}
-
-article.tag-r18 .post-content .no-change blockquote.wp-block-quote, article.tag-r18 .post-content .yarpp-related blockquote.wp-block-quote {
-  color: #777777;
-  background: #f5f5f5;
-  border-color: #9dd4ff;
-}
-
-article.tag-r18 .post-content .no-change blockquote.wp-block-quote:before, article.tag-r18 .post-content .yarpp-related blockquote.wp-block-quote:before {
-  color: #9dd4ff;
-}
-
-article.tag-r18 .post-content .no-change blockquote.wp-block-quote cite, article.tag-r18 .post-content .yarpp-related blockquote.wp-block-quote cite {
-  color: #888888;
-}
-
-article.tag-r18 .post-content .no-change .is-style-under-line, article.tag-r18 .post-content .yarpp-related .is-style-under-line {
-  border-color: #B3A279;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li, article.tag-r18 .post-content .yarpp-related .related-posts ul li {
-  position: relative;
-  display: block;
-  width: 14rem;
-  height: 13.5rem;
-  max-width: 14rem;
-  max-height: 13.5rem;
-  border-color: #dddddd;
-  border-width: thin;
-  border-style: solid;
-  overflow: hidden;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li:not(:last-child), article.tag-r18 .post-content .yarpp-related .related-posts ul li:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li > a, article.tag-r18 .post-content .yarpp-related .related-posts ul li > a {
-  display: block;
-  width: 14rem;
-  height: 13.5rem;
-  max-width: 14rem;
-  max-height: 13.5rem;
-  margin: 0;
-  color: #e47911;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li > a::after, article.tag-r18 .post-content .yarpp-related .related-posts ul li > a::after {
-  content: 'No Image';
-  font-size: 1.4rem;
-  line-height: 2.1rem;
-  font-weight: 400;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li > a:hover, article.tag-r18 .post-content .yarpp-related .related-posts ul li > a:hover {
-  color: #996633;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li > a:hover img, article.tag-r18 .post-content .yarpp-related .related-posts ul li > a:hover img {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: 1s all;
-  transition: 1s all;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li img, article.tag-r18 .post-content .yarpp-related .related-posts ul li img {
-  position: absolute;
-  height: 93%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  text-align: center;
-  -o-object-fit: fill;
-     object-fit: fill;
-  background: #F4EDDF;
-  z-index: 1;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li span, article.tag-r18 .post-content .yarpp-related .related-posts ul li span {
-  font-size: 1.1rem;
-  line-height: 1.65rem;
-  font-weight: 700;
-  color: #e47911;
-  background-color: #000000;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0 0.4rem;
-  word-break: break-all;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  opacity: 0.8;
-  z-index: 2;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li.tag-r18, article.tag-r18 .post-content .yarpp-related .related-posts ul li.tag-r18 {
-  border-color: #ffb6c1;
-  outline-color: #ffb6c1;
-}
-
-article.tag-r18 .post-content .no-change .related-posts ul li.tag-r18 > a > span, article.tag-r18 .post-content .yarpp-related .related-posts ul li.tag-r18 > a > span {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change .is-style-image-postit img, article.tag-r18 .post-content .no-change .is-style-image-postit svg, article.tag-r18 .post-content .yarpp-related .is-style-image-postit img, article.tag-r18 .post-content .yarpp-related .is-style-image-postit svg {
-  width: calc(100% - 1rem);
-  margin: auto;
-  padding: 0.5rem;
-  background: #ffffff;
-  -o-border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.1rem) 1/1 0 0 0;
-     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0rem, #ddffff), color-stop(0.1rem, #ffffff)) 1/1 0 0 0;
-     border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.1rem) 1/1 0 0 0;
-  border-width: 2.5rem 0 0 0;
-  border-style: solid;
-  -webkit-box-shadow: 0 1rem 0.6rem -0.6rem #777777;
-          box-shadow: 0 1rem 0.6rem -0.6rem #777777;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-ssr, article.tag-r18 .post-content .no-change h2.is-style-sr, article.tag-r18 .post-content .no-change h2.is-style-r, article.tag-r18 .post-content .yarpp-related h2.is-style-ssr, article.tag-r18 .post-content .yarpp-related h2.is-style-sr, article.tag-r18 .post-content .yarpp-related h2.is-style-r {
-  color: #FFFFFF;
-  font-weight: 700;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-ssr span, article.tag-r18 .post-content .no-change h2.is-style-sr span, article.tag-r18 .post-content .no-change h2.is-style-r span, article.tag-r18 .post-content .yarpp-related h2.is-style-ssr span, article.tag-r18 .post-content .yarpp-related h2.is-style-sr span, article.tag-r18 .post-content .yarpp-related h2.is-style-r span {
-  color: #FFFFFF;
-  font-weight: 700;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-ssr, article.tag-r18 .post-content .yarpp-related h2.is-style-ssr {
-  text-shadow: #E6B422 0.1rem 0.1rem 1rem, #E6B422 -0.1rem 0.1rem 1rem, #E6B422 0.1rem -0.1rem 1rem, #E6B422 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-ssr span, article.tag-r18 .post-content .yarpp-related h2.is-style-ssr span {
-  text-shadow: #E6B422 0.1rem 0.1rem 1rem, #E6B422 -0.1rem 0.1rem 1rem, #E6B422 0.1rem -0.1rem 1rem, #E6B422 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-sr, article.tag-r18 .post-content .yarpp-related h2.is-style-sr {
-  text-shadow: #C0C0C0 0.1rem 0.1rem 1rem, #C0C0C0 -0.1rem 0.1rem 1rem, #C0C0C0 0.1rem -0.1rem 1rem, #C0C0C0 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-sr span, article.tag-r18 .post-content .yarpp-related h2.is-style-sr span {
-  text-shadow: #C0C0C0 0.1rem 0.1rem 1rem, #C0C0C0 -0.1rem 0.1rem 1rem, #C0C0C0 0.1rem -0.1rem 1rem, #C0C0C0 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-r, article.tag-r18 .post-content .yarpp-related h2.is-style-r {
-  text-shadow: #8C4841 0.1rem 0.1rem 1rem, #8C4841 -0.1rem 0.1rem 1rem, #8C4841 0.1rem -0.1rem 1rem, #8C4841 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change h2.is-style-r span, article.tag-r18 .post-content .yarpp-related h2.is-style-r span {
-  text-shadow: #8C4841 0.1rem 0.1rem 1rem, #8C4841 -0.1rem 0.1rem 1rem, #8C4841 0.1rem -0.1rem 1rem, #8C4841 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles h4 span, article.tag-r18 .post-content .yarpp-related section.profiles h4 span {
-  font-weight: 700;
-  color: #9b8f76;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article, article.tag-r18 .post-content .yarpp-related section.profiles article {
-  color: #9b8f76;
-  background: #f5ead0 url(images/bg-side2.jpg) no-repeat bottom right;
-  border-color: #dcd0b6;
-  border-width: thin;
-  border-style: solid;
-  border-radius: 0 0 1.1rem/4.2rem 0;
-  -webkit-box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
-          box-shadow: 0.3rem 0.4rem 0.3rem rgba(50, 50, 50, 0.4);
-}
-
-article.tag-r18 .post-content .no-change section.profiles article p, article.tag-r18 .post-content .yarpp-related section.profiles article p {
-  border-color: #776B53;
-  border-bottom-width: thin;
-  border-bottom-style: dashed;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article a, article.tag-r18 .post-content .yarpp-related section.profiles article a {
-  color: #9b8f76;
-  text-decoration: none;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article a:hover, article.tag-r18 .post-content .yarpp-related section.profiles article a:hover {
-  text-decoration: underline;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article div.headline, article.tag-r18 .post-content .yarpp-related section.profiles article div.headline {
-  color: #863016;
-  background-color: #ecdbb3;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article div.headline:before, article.tag-r18 .post-content .yarpp-related section.profiles article div.headline:before {
-  border-width: 1.35rem 0 1.35rem 1.5rem;
-  border-color: #f5ead0 transparent #f5ead0 transparent;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article div.sub_headline, article.tag-r18 .post-content .yarpp-related section.profiles article div.sub_headline {
-  color: #863016;
-  border-color: #776B53;
-  border-bottom-width: medium;
-  border-bottom-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article div.sub_headline:before, article.tag-r18 .post-content .yarpp-related section.profiles article div.sub_headline:before {
-  border-width: 1rem 1.5rem 0 0;
-  border-color: transparent #776B53;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div .ribbon, article.tag-r18 .post-content .yarpp-related section.profiles article > div .ribbon {
-  --color: #f4eddf;
-  --background: #442266;
-  color: var(--color);
-  border-color: var(--background);
-  border-width: thin;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div .ribbon .ribbon_left, article.tag-r18 .post-content .no-change section.profiles article > div .ribbon .ribbon_right, article.tag-r18 .post-content .yarpp-related section.profiles article > div .ribbon .ribbon_left, article.tag-r18 .post-content .yarpp-related section.profiles article > div .ribbon .ribbon_right {
-  color: var(--color);
-  background-color: var(--background);
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div .ribbon .ribbon_left:before, article.tag-r18 .post-content .yarpp-related section.profiles article > div .ribbon .ribbon_left:before {
-  border-width: 0.9rem 0 0.9rem 2rem;
-  border-color: #f5ead0 transparent #f5ead0 transparent;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div .ribbon .ribbon_right:before, article.tag-r18 .post-content .yarpp-related section.profiles article > div .ribbon .ribbon_right:before {
-  border-width: 0.9rem 0 0.9rem 2rem;
-  border-color: transparent #f5ead0 transparent #f5ead0;
-  border-style: solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.icon, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.icon {
-  --color: #483613;
-  --background: #f5f5f5;
-  background: var(--background);
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.icon span, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.icon span {
-  color: var(--color);
-  background: var(--background);
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status {
-  border: #776B53 thin solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status div, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status div {
-  color: #9b8f76;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status div:first-child, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status div:first-child {
-  border-left: #776B53 thin solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status div:last-child, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status div:last-child {
-  border-right: #776B53 thin solid;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status div.status_headline, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status div.status_headline {
-  color: #f4eddf;
-  background-color: #776B53;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.fire, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.attack, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.higher, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.fire, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.attack, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.higher {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #ff0000 0.1rem 0.1rem 1rem, #ff0000 -0.1rem 0.1rem 1rem, #ff0000 0.1rem -0.1rem 1rem, #ff0000 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.water, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.lower, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.water, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.lower {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #3366ff 0.1rem 0.1rem 1rem, #3366ff -0.1rem 0.1rem 1rem, #3366ff 0.1rem -0.1rem 1rem, #3366ff -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.wind, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.healer, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.wind, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.healer {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #00ff00 0.1rem 0.1rem 1rem, #00ff00 -0.1rem 0.1rem 1rem, #00ff00 0.1rem -0.1rem 1rem, #00ff00 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.thunder, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.balance, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.thunder, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.balance {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #e2e23b 0.1rem 0.1rem 1rem, #e2e23b -0.1rem 0.1rem 1rem, #e2e23b 0.1rem -0.1rem 1rem, #e2e23b -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.light, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.light {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #9b8f76 0.1rem 0.1rem 1rem, #9b8f76 -0.1rem 0.1rem 1rem, #9b8f76 0.1rem -0.1rem 1rem, #9b8f76 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.darkness, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.tricky, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.darkness, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.tricky {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #cc99ff 0.1rem 0.1rem 1rem, #cc99ff -0.1rem 0.1rem 1rem, #cc99ff 0.1rem -0.1rem 1rem, #cc99ff -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.personal div.status span.defense, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.personal div.status span.defense {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: #ff9900 0.1rem 0.1rem 1rem, #ff9900 -0.1rem 0.1rem 1rem, #ff9900 0.1rem -0.1rem 1rem, #ff9900 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes p, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes p {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-  border-color: #FFB6C1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode > .headline, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode > .headline {
-  font-weight: 700;
-  color: #FFFFFF;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-  border-color: #FFB6C1;
-  border-bottom-width: medium;
-  border-bottom-style: solid;
-  background: #ffe4e1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline *, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode > div > .headline * {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-  background: #ffe4e1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline {
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-  border-color: #FFB6C1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline:before, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.sub_headline:before {
-  border-width: 1.1rem 1.5rem 0 0;
-  border-color: transparent #FFB6C1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play {
-  border-color: #FFB6C1;
-  border-width: thin;
-  border-style: solid;
-  border-left-style: double;
-  border-right-style: double;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div * {
-  position: relative;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:before, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:before, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:before {
-  border-left: #FFB6C1 thin solid;
-  border-right: #FFB6C1 thin solid;
-  background-color: #ffe4e1;
-}
-
-article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after, article.tag-r18 .post-content .no-change section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:after, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div:after, article.tag-r18 .post-content .yarpp-related section.profiles article > div > div:not(.ribbon) div.episodes div.episode div.outline div.column div.play div *:after {
-  border-right: #FFB6C1 thin solid;
-}
-
-article:not(.tag-r18) span.r18 {
+article:not(tag-r18) span.r18 {
   display: none;
 }
 
