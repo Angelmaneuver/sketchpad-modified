@@ -1008,7 +1008,7 @@ article.tag-r18 .post-content .is-style-image-postit svg {
      border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1/1 0 0 0;
 }
 
-article:not(tag-r18) span.r18 {
+article:not(.tag-r18) span.r18 {
   display: none;
 }
 

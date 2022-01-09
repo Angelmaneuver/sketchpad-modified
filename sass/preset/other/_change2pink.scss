@@ -268,7 +268,7 @@
     }
   }
 
-  &:not(#{$change2pink}) {
+  &:not(.#{$change2pink}) {
     span.r18 {
       display: none;
     }
