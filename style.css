@@ -4083,6 +4083,15 @@ article:not(.tag-r18) .sharedaddy .sd-block .sd-content ul li a.sd-button:hover 
 }
 
 /**
+* DLsite Affiliate
+* -----------------------------------------------------------------------------------------------
+*/
+.dlsite-blogparts > .wp-block-group__inner-container > div {
+  display: -ms-grid;
+  display: grid;
+}
+
+/**
 * Deprecated
 * -----------------------------------------------------------------------------------------------
 */

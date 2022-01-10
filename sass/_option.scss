@@ -266,3 +266,12 @@ article {
 .grecaptcha-badge {
   @include SketchpadSuperLayer;
 }
+
+/**
+* DLsite Affiliate
+* -----------------------------------------------------------------------------------------------
+*/
+
+.dlsite-blogparts > .wp-block-group__inner-container > div {
+  display: grid;
+}
