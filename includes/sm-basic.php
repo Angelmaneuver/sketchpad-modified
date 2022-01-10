@@ -149,7 +149,14 @@ function sketchpad_blog_card_image_form( $shape, $thumbnail_id ) {
  */
 function sketchpad_blog_card_content( string $output ): string {
 	global $post;
-	return sketchpad_content2more_read( $output, esc_url( get_permalink( $post ) ) );
+
+	if ( empty( $post->post_excerpt ) ) {
+		$content = $post->post_content;
+	} else {
+		$content = $post->post_excerpt;
+	}
+
+	return sketchpad_content2more_read( $content, esc_url( get_permalink( $post ) ) );
 }
 
 add_action( 'embed_head', 'sketchpad_embed_styles' );
