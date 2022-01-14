@@ -170,6 +170,13 @@ function sketchpad_script() {
 		null
 	);
 
+	wp_enqueue_style(
+		'google-montserrat',
+		'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap',
+		array(),
+		null
+	);
+
 	wp_enqueue_style( 'dashicons' );
 
 	wp_enqueue_style(
