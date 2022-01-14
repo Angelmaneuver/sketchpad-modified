@@ -2327,6 +2327,7 @@ aside ul.wp-block-sketchpad-modified-blocks-table-of-contents > li div.toc-item 
 }
 
 .comments-area .comment-list .comment-author .fn {
+  font-family: "Arial";
   font-size: 1.4rem;
   line-height: 2.1rem;
   font-weight: 900;

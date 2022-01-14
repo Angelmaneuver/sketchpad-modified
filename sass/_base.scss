@@ -947,6 +947,7 @@ footer {
     }
 
     .comment-author .fn {
+      @include ArialFontFamily;
       @include GetFontPreSet(1.4rem, 900);
       @include LinkColor3;
     }
