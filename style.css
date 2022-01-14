@@ -863,7 +863,9 @@ article.tag-r18 .post-content > p:not(.no-change) * {
   outline-color: #ffb6c1;
 }
 
-article.tag-r18 .post-content > ul:not(.no-change) ol, article.tag-r18 .post-content > ul:not(.no-change) li {
+article.tag-r18 .post-content > ul:not(.no-change) li, article.tag-r18 .post-content > ol:not(.no-change) li {
+  position: relative;
+  list-style: none;
   color: #ffffff;
   font-weight: 700;
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
@@ -871,12 +873,34 @@ article.tag-r18 .post-content > ul:not(.no-change) ol, article.tag-r18 .post-con
   outline-color: #ffb6c1;
 }
 
-article.tag-r18 .post-content > ul:not(.no-change) ol *, article.tag-r18 .post-content > ul:not(.no-change) li * {
+article.tag-r18 .post-content > ul:not(.no-change) li::before, article.tag-r18 .post-content > ol:not(.no-change) li::before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
+}
+
+article.tag-r18 .post-content > ul:not(.no-change) li *, article.tag-r18 .post-content > ol:not(.no-change) li * {
   color: #ffffff;
   font-weight: 700;
   text-shadow: #ff9a93 0.1rem 0.1rem 1rem, #ff9a93 -0.1rem 0.1rem 1rem, #ff9a93 0.1rem -0.1rem 1rem, #ff9a93 -0.1rem -0.1rem 1rem;
   border-color: #ffb6c1;
   outline-color: #ffb6c1;
+}
+
+article.tag-r18 .post-content > ul:not(.no-change) li::before {
+  content: "\02022";
+}
+
+article.tag-r18 .post-content > ol:not(.no-change) {
+  counter-reset: li;
+}
+
+article.tag-r18 .post-content > ol:not(.no-change) li::before {
+  content: counter(li) ".";
+  counter-increment: li;
 }
 
 article.tag-r18 .post-content > blockquote:not(.no-change).wp-block-quote {

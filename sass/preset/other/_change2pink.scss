@@ -166,14 +166,42 @@
           }
         }
 
-        ul:not(#{$excludeKeyword}) {
-          ol, li {
+        ul, ol {
+          &:not(#{$excludeKeyword}) li {
+            position: relative;
+            list-style: none;
             @include Change2PinkTextStyle;
             @include Change2PinkBorderColor;
+
+            &::before {
+              position: absolute;
+              top: 0;
+              left: -1em;
+              @include Change2PinkTextStyle;
+            }
 
             * {
               @include Change2PinkTextStyle;
               @include Change2PinkBorderColor;
+            }
+          }
+        }
+
+        ul:not(#{$excludeKeyword}) {
+          li {
+            &::before {
+              content: "\02022";
+            }
+          }
+        }
+
+        ol:not(#{$excludeKeyword}) {
+          counter-reset: li;
+
+          li {
+            &::before {
+              content: counter(li)".";
+              counter-increment: li;
             }
           }
         }
