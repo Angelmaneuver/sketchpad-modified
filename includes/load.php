@@ -1,30 +1,28 @@
 <?php
 /**
- * These functions are needed to load sketchpad - modified Theme.
+ * These functions are needed to load this theme.
  *
- * @package sketchpad
+ * @package Sketchpad
  * @since   2.1.0
  */
 
 /**
- * Utils.
+ * Common function libraries.
  */
-require get_template_directory() . '/includes/utils/sm-utility.php';
-require get_template_directory() . '/includes/utils/sm-sanitizer.php';
+require get_template_directory() . '/includes/utils/load.php';
 
 /**
  * Filters.
  */
-require get_template_directory() . '/includes/filter/sm-categories.php';
+require get_template_directory() . '/includes/filter/load.php';
 
 /**
- * Block styles.
+ * Blocks.
  */
-require get_template_directory() . '/includes/block-style/sm-style.php';
+require get_template_directory() . '/includes/block/styles.php';
+require get_template_directory() . '/includes/block/patterns.php';
 
 /**
- * Functions.
+ * Theme basic features.
  */
-require get_template_directory() . '/includes/sm-basic.php';
-require get_template_directory() . '/includes/sm-breadcrumb.php';
-require get_template_directory() . '/includes/sm-rss.php';
+require get_template_directory() . '/includes/basic/load.php';

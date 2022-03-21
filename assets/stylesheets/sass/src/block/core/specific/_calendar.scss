@@ -1,0 +1,99 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  &1 {
+    table {
+      @include Preset.MontserratFontFamily;
+      margin-bottom: 0.5rem;
+      text-align: center;
+  
+      caption {
+        @include Preset.CalendarCaptionColor;
+        width: 60%;
+        margin: 0.5rem 20%;
+        @include Preset.CalendarCaptionBackgroundColor;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      thead {
+        tr {
+          th {
+            @include Preset.MontserratFontFamily;
+            @include Preset.BackgroundNone;
+            @include Preset.BorderColorNone;
+
+            &:nth-last-child(2) {
+              @include Preset.CalendarSaturdayColor;
+            }
+
+            &:nth-last-child(1) {
+              @include Preset.CalendarSundayColor;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            @include Preset.MontserratFontFamily;
+            @include Preset.BorderColorNone;
+
+            &#today {
+              @include Preset.CalendarTodayBackgroundColor;
+              @include Preset.CalendarTodayColor;
+            }
+          }
+
+          &:last-child() {
+            td {
+              &:nth-child(6) {
+                @include Preset.CalendarSaturdayColor;
+
+                * {
+                  @include Preset.CalendarSaturdayColor;
+                }
+              }
+
+              &:nth-child(7) {
+                @include Preset.CalendarSundayColor;
+
+                * {
+                  @include Preset.CalendarSundayColor;
+                }
+              }
+            }
+          }
+
+          &:not(:last-child()) {
+            td {
+              &:nth-last-child(2) {
+                @include Preset.CalendarSaturdayColor;
+
+                * {
+                  @include Preset.CalendarSaturdayColor;
+                }
+              }
+
+              &:nth-last-child(1) {
+                @include Preset.CalendarSundayColor;
+
+                * {
+                  @include Preset.CalendarSundayColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .wp-calendar-nav {
+      @include Preset.MontserratFontFamily;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

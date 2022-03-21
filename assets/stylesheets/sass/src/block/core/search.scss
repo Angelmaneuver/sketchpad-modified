@@ -1,0 +1,27 @@
+@use 'preset'            as Preset;
+@use 'define'            as Define;
+@use 'common'            as Common;
+@use './specific/search' as Specific;
+
+$class: 'wp-block-search';
+
+/**
+ * Sketchpad Style - Search.
+ */
+@include Common.Main($class) {
+  .#{$class}__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.625em;
+
+    &.has-icon svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &#{Define.$key} {
+    @include Specific.Styles;
+  }
+}

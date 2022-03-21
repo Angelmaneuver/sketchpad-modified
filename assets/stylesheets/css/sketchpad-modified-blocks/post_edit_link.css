@@ -1,0 +1,31 @@
+/**
+ * Sketchpad Style - Sketchpad modified Blocks's Post Edit Link.
+ */
+a.wp-block-sketchpad-modified-blocks-post-edit-link, div.wp-block-sketchpad-modified-blocks-post-edit-link a {
+  font-family: var(--wp--preset--font-family--sketchpad-arial-font);
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 700;
+  color: var(--wp--preset--color--sketchpad-basic-part-font-color);
+  fill: var(--wp--preset--color--sketchpad-basic-part-font-color);
+  background-color: var(--wp--preset--color--sketchpad-title-font-color);
+  border-color: transparent;
+  padding: 0.0625rem 0.3125rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+a.wp-block-sketchpad-modified-blocks-post-edit-link:hover, div.wp-block-sketchpad-modified-blocks-post-edit-link a:hover {
+  background-color: var(--wp--preset--color--sketchpad-heading-font-color);
+  text-decoration: underline;
+}
+
+body.tag-r18 main > header:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) a.wp-block-sketchpad-modified-blocks-post-edit-link:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+  background: #FF9A93;
+}

@@ -1,0 +1,19 @@
+@use 'preset' as Preset;
+
+@mixin Styles{
+  &1, &2 {
+    &:not(.is-style-wide):not(.is-style-dots) {
+      width: auto;
+      height: 0;
+      opacity: 1;
+    }
+  }
+
+  &1 {
+    @include Preset.ThinBorderTopStyle($border-width: 0.125rem);
+  }
+
+  &2 {
+    @include Preset.ThinBorderTopStyle;
+  }
+}

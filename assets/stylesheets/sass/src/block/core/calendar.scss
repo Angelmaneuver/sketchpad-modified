@@ -1,0 +1,15 @@
+@use 'preset'              as Preset;
+@use 'define'              as Define;
+@use 'common'              as Common;
+@use './specific/calendar' as Specific;
+
+$class: 'wp-block-calendar';
+
+/**
+ * Sketchpad Style - Calendar.
+ */
+@include Common.Main($class) {
+  &#{Define.$key} {
+    @include Specific.Styles;
+  }
+}

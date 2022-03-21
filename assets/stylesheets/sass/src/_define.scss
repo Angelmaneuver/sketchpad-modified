@@ -1,0 +1,10 @@
+$use_webp:                 true;
+$image_directory:          '/wp-content/themes/sketchpad-modified/assets/images/';
+$specific_class_name:      'is-style-sketchpad';
+$key:                      '.#{$specific_class_name}';
+$sidebar_background_color: var(--wp--preset--color--sketchpad-sketchpad-sidebar-background);
+$sidebar_font_size:        0.75rem;
+$sidebar_font_weight:      400;
+$use_change_color:         true;
+$no_change_class_name:     '.is-style-no-change';
+$change2pink:              'tag-r18';

@@ -1,0 +1,142 @@
+// Postit Property
+
+@mixin ImagePostit($padding: 0.3125rem) {
+  img, svg {
+    width: calc(100% - 0.625rem);
+    margin: auto;
+    padding: $padding;
+    background: #ffffff;
+    border-image: linear-gradient(to bottom, #ddffff 0rem, #ffffff 0.0625rem) 1 / 1 0 0 0;
+    border-width: 1.5625rem 0 0 0;
+    border-style: solid;
+    box-shadow: 0 1rem 0.6rem -0.6rem #777777;
+  }
+}
+
+@mixin BasePostit($display: inline-block, $width: 50%, $padding: 0.625rem 0.625rem 0.625rem 2.5rem, $tag: '') {
+  font-style: italic;
+  @if $display != '' {
+    display: $display;
+  }
+  width: $width;
+  padding: $padding;
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 2.2rem, #ffffcc 7%);
+  border-right-style: solid;
+  border-right-width: 1.875rem;
+  box-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.22);
+  box-sizing: border-box;
+
+  @if $tag != '' {
+    &:not(#{$tag}:first-of-type) {
+      margin-top: 0.3125rem;
+    }
+  }
+}
+
+@mixin Postit4Sidebar($padding: 0.375rem 0.375rem 0.375rem 1.75rem) {
+  width: 10.9375rem;
+  margin-left: 0.3125rem;
+  padding: $padding;
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
+  border-right-width: 1.25rem;
+  box-sizing: content-box;
+}
+
+@mixin BaseSidebarPostit($padding: 0.375rem 0.375rem 0.375rem 1.75rem) {
+  font-style: italic;
+  display: inline-block;
+  margin-left: 0.3125rem;
+  padding: $padding;
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
+  border-right-width: 1.25rem;
+  border-right-style: solid;
+  box-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.22);
+}
+
+@mixin SidebarPostit {
+  @include BaseSidebarPostit;
+  width: 10.9375rem;
+}
+
+@mixin SidebarPostitWidthAuto {
+  @include BaseSidebarPostit(0.6rem 0.6rem 0.6rem 22%);
+
+  * {
+    width: var(--width);
+    max-width: var(--max-width);
+  }
+}
+
+@mixin PostitRed {
+  border-color: #ff0000;
+}
+
+@mixin PostitBlue {
+  border-color: #4169e1;
+}
+
+@mixin PostitYellow {
+  border-color: #ffd700;
+}
+
+@mixin PostitGreen {
+  border-right-color: #90ee90;
+}
+
+@mixin PostitOrange {
+  border-right-color: #ff8c00;
+}
+
+@mixin PostitLavender {
+  border-right-color: #e6e6fa;
+}
+
+@mixin PostitMistyrose {
+  border-right-color: #ffe4e1;
+}
+
+@mixin PostitMintcream {
+  border-right-color: #f5fffa;
+}
+
+@mixin PostitBlack {
+  border-right-color: #000000;
+}
+
+@mixin SidebarPostitColorSeries($target: '') {
+  &:not([class*='postit-']):nth-child(9n + 1) #{$target} {
+    @include PostitRed;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 2) #{$target} {
+    @include PostitBlue;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 3) #{$target} {
+    @include PostitYellow;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 4) #{$target} {
+    @include PostitGreen;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 5) #{$target} {
+    @include PostitOrange;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 6) #{$target} {
+    @include PostitLavender;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 7) #{$target} {
+    @include PostitMistyrose;
+  }
+  
+  &:not([class*='postit-']):nth-child(9n + 8) #{$target} {
+    @include PostitMintcream;
+  }
+
+  &:not([class*='postit-']):nth-child(9n + 9) #{$target} {
+    @include PostitBlack;
+  }
+}

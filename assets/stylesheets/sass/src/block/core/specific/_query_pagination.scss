@@ -1,0 +1,46 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+
+@mixin Styles {
+  &1 {
+    display: block;
+    margin-top: 1.25rem;
+
+    .wp-block-query-pagination-numbers {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .wp-block-query-pagination-previous, .wp-block-query-pagination-next {
+      margin: 0;
+    }
+
+    span, a {
+      @include Preset.ArialFontFamily;
+      @include Preset.GetFontPreSet($font-size: 0.875rem);
+      @include Preset.PaginationColor;
+      padding: 0.3125rem;
+      border-radius: 0.1875rem;
+    }
+
+    span:not(.current), a {
+      @include Preset.PaginationBackgroundColor;
+    }
+
+    a:hover {
+      @include Preset.PaginationHoverBackgroundColor;
+    }
+
+    .current {
+      @include Preset.PaginationCurrentBackgroundColor;
+    }
+
+    &.aligncenter {
+      text-align: center;
+    }
+
+    &.alignright {
+      text-align: right;
+    }
+  }
+}

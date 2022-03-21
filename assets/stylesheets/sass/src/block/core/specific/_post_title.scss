@@ -1,0 +1,22 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+
+@mixin Styles {
+  &1 {
+    padding-bottom: 0.1rem;
+
+    a {
+      @include Preset.Left2RightStyle(#9B8F76);
+
+      &:first-of-type::after {
+        @if Define.$use_webp {
+          content: url(../../../images/mark3.webp);
+        } @else {
+          content: url(../../../images/mark3.png);
+        }  
+
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}

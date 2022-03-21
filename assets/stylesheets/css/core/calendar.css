@@ -1,0 +1,71 @@
+/**
+ * Sketchpad Style - Calendar.
+ */
+.wp-block-calendar.is-style-sketchpad1 table {
+  font-family: var(--wp--preset--font-family--sketchpad-montserrat-font);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.wp-block-calendar.is-style-sketchpad1 table caption {
+  color: #F6E9DC;
+  width: 60%;
+  margin: 0.5rem 20%;
+  background-color: #4E4F4A;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.wp-block-calendar.is-style-sketchpad1 table thead tr th {
+  font-family: var(--wp--preset--font-family--sketchpad-montserrat-font);
+  background: transparent;
+  border-color: transparent;
+}
+.wp-block-calendar.is-style-sketchpad1 table thead tr th:nth-last-child(2) {
+  color: #426ab3;
+}
+.wp-block-calendar.is-style-sketchpad1 table thead tr th:nth-last-child(1) {
+  color: #c0392b;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr td {
+  font-family: var(--wp--preset--font-family--sketchpad-montserrat-font);
+  border-color: transparent;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr td#today {
+  background-color: #4E4F4A;
+  color: #F4EDDF;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:last-child() td:nth-child(6) {
+  color: #426ab3;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:last-child() td:nth-child(6) * {
+  color: #426ab3;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:last-child() td:nth-child(7) {
+  color: #c0392b;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:last-child() td:nth-child(7) * {
+  color: #c0392b;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:not(:last-child()) td:nth-last-child(2) {
+  color: #426ab3;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:not(:last-child()) td:nth-last-child(2) * {
+  color: #426ab3;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:not(:last-child()) td:nth-last-child(1) {
+  color: #c0392b;
+}
+.wp-block-calendar.is-style-sketchpad1 table tbody tr:not(:last-child()) td:nth-last-child(1) * {
+  color: #c0392b;
+}
+.wp-block-calendar.is-style-sketchpad1 .wp-calendar-nav {
+  font-family: var(--wp--preset--font-family--sketchpad-montserrat-font);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

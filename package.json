@@ -1,0 +1,19 @@
+{
+  "name": "sketchpad-modified",
+  "description": "CSS generation with sass.",
+  "version": "1.0.0",
+  "private": "true",
+  "browserslist": ["last 2 versions"],
+  "scripts": {
+    "compile": "yarn -s run gulp compile"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "minimatch": "^5.0.0",
+    "sass": "^1.49.8"
+  }
+}

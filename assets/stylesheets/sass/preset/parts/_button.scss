@@ -1,0 +1,17 @@
+@use '../color/color'      as Color;
+@use '../color/background' as BackgroundColor;
+
+@mixin Button($width: 3.25rem, $height: 1rem, $padding: 0.3125rem, $border: none, $border-radius: 0.25rem) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border: $border;
+  border-radius: $border-radius;
+  @include Color.ButtonColor;
+  @include BackgroundColor.ButtonBackgroundColor;
+  cursor: pointer;
+
+  &:hover {
+    @include BackgroundColor.ButtonHoverBackgroundColor;
+  }
+}

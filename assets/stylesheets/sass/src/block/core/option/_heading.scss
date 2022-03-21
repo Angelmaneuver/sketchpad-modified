@@ -1,0 +1,13 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  & {
+    &.is-style-under-line {
+      @include Preset.ThinBorderBottomStyle;
+    }
+
+    &.is-style-single-character-line-spacing {
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use '../font/base'          as Font;
+@use '../color/border_color' as BorderColor;
+@use '../style/border'       as BorderStyle;
+
+@mixin InputForm($padding: 0 0.3125rem, $border-radius: 0.3125rem) {
+  width: 100%;
+  padding: $padding;
+  @include BorderColor.FormBorderColor;
+  @include BorderStyle.ThinBorderStyle;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+}

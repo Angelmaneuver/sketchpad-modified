@@ -1,0 +1,69 @@
+@use 'preset'              as Preset;
+@use 'define'              as Define;
+@use 'common'              as Common;
+@use './specific/loginout' as Specific;
+
+$class: 'wp-block-loginout';
+
+/**
+ * Sketchpad Style - Loginout.
+ */
+@include Common.Main($class) {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .login-remember {
+    margin-top: 1.25rem;
+  }
+
+  &#{Define.$key}-postit {
+    @include Specific.Postit;
+  }
+
+  #loginform p {
+    margin-top: 0.3125rem;
+  }
+}
+
+@include Common.MainOnly($class) {
+  #loginform p {
+    display: flex;
+
+    &.login-username, &.login-password {
+      > * {
+        flex-basis: 50%;
+      }
+    }
+
+    &.login-remember, &.login-submit {
+      justify-content: center;
+    }
+
+    &.login-submit input {
+      height: 100%;
+      width: 33%;
+    }
+  }
+}
+
+@include Common.Sidebar($class) {
+  @include Preset.GetFontPreSet(Define.$sidebar_font_size, Define.$sidebar_font_weight);
+
+  .login-remember {
+    text-align: center;
+  }
+
+  .login-submit {
+    margin-top: 0.625rem;
+
+    input {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &#{Define.$key}-postit {
+    @include Specific.Postit4Sidebar;
+  }
+}

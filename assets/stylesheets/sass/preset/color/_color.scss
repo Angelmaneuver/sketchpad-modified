@@ -1,0 +1,127 @@
+@mixin BasicFontColor {
+  color: var(--wp--preset--color--sketchpad-basic-font-color);
+}
+
+@mixin PersonNameColor {
+  color: var(--wp--preset--color--sketchpad-person-name-font-color);
+}
+
+@mixin PostTagsMarkColor {
+  color: var(--wp--preset--color--sketchpad-sketchpad-background);
+}
+
+@mixin PostTagsColor($color: var(--wp--preset--color--sketchpad-basic-part-font-color)) {
+  color: $color;
+  fill: $color;
+}
+
+@mixin PaginationColor {
+  color: var(--wp--preset--color--sketchpad-sketchpad-background);
+}
+
+@mixin ButtonColor($color: var(--wp--preset--color--sketchpad-basic-part-font-color)) {
+  color: $color;
+  fill: $color;
+}
+
+@mixin Required {
+  color: #c0392b;
+}
+
+@mixin SidebarHeadingColor {
+  color: #5E523A;
+}
+
+@mixin CalendarCaptionColor {
+  color: #F6E9DC;
+}
+
+@mixin CalendarSaturdayColor {
+  color: #426ab3;
+}
+
+@mixin CalendarSundayColor {
+  color: #c0392b;
+}
+
+@mixin CalendarTodayColor {
+  color: #F4EDDF;
+}
+
+
+
+@mixin HeadlineColor1 {
+  color: #776b53;
+}
+
+@mixin HeadlineColor2 {
+  color: #9b8f76;
+}
+
+@mixin HeadlineColor3 {
+  color: #483613;
+}
+
+@mixin SentenceColor1 {
+  color: #483613;
+}
+
+@mixin BreadcrumbColor {
+  color: #9b8f76;
+}
+
+@mixin QuoteSimbolColor {
+  color: #9dd4ff;
+}
+
+@mixin QuoteColor {
+  color: #777777;
+}
+
+@mixin QuoteCiteColor {
+  color: #888888
+}
+
+@mixin LinkColor1 {
+  color: #483613;
+}
+
+@mixin LinkColor2 {
+  color: #483a28;
+}
+
+@mixin LinkColor3 {
+  color: #5e523a;
+}
+
+@mixin CommentCancelLinkHoverColor {
+  color: #000000;
+}
+
+@mixin MetaColor1 {
+  color: #61553c;
+}
+
+@mixin MetaColor2 {
+  color: #000000;
+}
+
+@mixin PostTagColor {
+  color: #f4eddf;
+}
+
+@mixin PaginationColor {
+  color: #f4eddf
+}
+
+@mixin CommentColor {
+  color: #483613;
+}
+
+@mixin SidebarColor1 {
+  color: #71634e;
+}
+
+@mixin FooterColor1 {
+  color: #71634e;
+}

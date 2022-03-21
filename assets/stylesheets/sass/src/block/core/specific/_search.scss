@@ -1,0 +1,34 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  &1, &2 {
+    .wp-block-search__input {
+      @include Preset.InputForm;
+    }
+
+    .wp-block-search__inside-wrapper {
+      @include Preset.FormWraperBorderColor;
+    }
+
+    .wp-block-search__button {
+      &.has-icon svg {
+        @include Preset.ButtonColor;
+      }
+    }
+  }
+
+
+  &1 {
+    @include Preset.GetFontPreSet($font-size: 0.75rem, $line-height-ratio: 1);
+
+    .wp-block-search__button {
+      @include Preset.Button;
+    }
+  }
+
+  &2 {
+    .wp-block-search__button {
+      @include Preset.Button($height:100%);
+    }
+  }
+}

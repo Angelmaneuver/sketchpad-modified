@@ -1,0 +1,27 @@
+@use 'preset' as Preset;
+/**
+* Reset Browser Native Style.
+* -----------------------------------------------------------------------------------------------
+*/
+
+textarea, input[type="text"], input[type="email"], input[type="url"], input[type="search"], input[type="password"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+
+	@include Preset.InputForm;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  @include Preset.Button;
+}
+
+select {
+  @include Preset.InputForm;
+}
+
+*[class*='has-'][class*='-font-size'] {
+  line-height: initial;
+}

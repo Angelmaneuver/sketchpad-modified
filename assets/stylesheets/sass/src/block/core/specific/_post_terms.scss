@@ -1,0 +1,23 @@
+@use 'preset' as Preset;
+
+@mixin PostTag {
+  &1 {
+    &::before {
+      content: 'Tags:';
+      margin-right: 0.3125rem;
+    }
+
+    a {
+      @include Preset.PostTagsColor;
+      @include Preset.PostTagsBackgroundColor;
+      padding-right: 0.3125rem;
+      border-radius: 0.625rem 0 0 0.625rem;
+
+      &::before {
+        content: '●';
+        @include Preset.PostTagsMarkColor;
+        margin: 0 0.3125rem;
+      }
+    }
+  }
+}

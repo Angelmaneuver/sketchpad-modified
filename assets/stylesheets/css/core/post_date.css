@@ -1,0 +1,17 @@
+/**
+ * Sketchpad Style - Post Date.
+ */
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-date:not(.is-style-no-change) a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}

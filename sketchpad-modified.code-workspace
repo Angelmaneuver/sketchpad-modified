@@ -15,14 +15,6 @@
 			"editor.tabSize": 2,
 		},
 		"auto-rename-tag.activationOnLanguage": ["*"],
-		"liveSassCompile.settings.formats": [
-			{
-				"format": "expanded",
-				"extensionName": ".css",
-				"savePath": "/"
-			}
-		],
-		"liveSassCompile.settings.generateMap": false,
 		"phpcs.executablePath": "./vendor/squizlabs/php_codesniffer/bin/phpcs",
 		"phpcs.standard": "WordPress",
 		"intelephense.stubs": [
@@ -108,8 +100,6 @@
 			"anthonydiametrix.acf-snippet",
 			"abusaidm.html-snippets",
 			"zignd.html-css-class-completion",
-			"ritwickdey.live-sass",
-			"ritwickdey.liveserver",
 			"dbaeumer.vscode-eslint",
 			"shevaua.phpcs",
 			"neilbrayfield.php-docblocker",

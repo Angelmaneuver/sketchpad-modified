@@ -1,0 +1,21 @@
+/**
+ * Sketchpad Style - Separator.
+ */
+.wp-block-separator.is-style-sketchpad1:not(.is-style-wide):not(.is-style-dots), .wp-block-separator.is-style-sketchpad2:not(.is-style-wide):not(.is-style-dots) {
+  width: auto;
+  height: 0;
+  opacity: 1;
+}
+.wp-block-separator.is-style-sketchpad1 {
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+}
+.wp-block-separator.is-style-sketchpad2 {
+  border-top-width: thin;
+  border-top-style: solid;
+}
+
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-separator:not(.is-style-no-change) {
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}

@@ -1,0 +1,41 @@
+@use 'preset' as Preset;
+
+@mixin Postit {
+  &.wp-block-categories-list {
+    > li:first-child ul div {
+      margin-top: 0.3125rem;
+    }
+
+    > li:not(:first-child) div {
+      margin-top: 0.3125rem;
+    }
+
+    > li {
+      @include Preset.SidebarPostitColorSeries('div');
+    }
+
+    li {
+      list-style: none;
+
+      div {
+        @include Preset.BasePostit;
+      }
+    }
+
+
+    ul {
+      margin-left: 2.1em;
+    }
+  }
+  
+  &.wp-block-categories-dropdown {
+    @include Preset.BasePostit;
+    @include Preset.PostitRed;
+  }
+}
+
+@mixin Postit4Sidebar {
+  &.wp-block-categories-list div, &.wp-block-categories-dropdown {
+    @include Preset.Postit4Sidebar;
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Sketchpad Style - Post Excerpt.
+ */
+.wp-block-post-excerpt.is-style-sketchpad1 {
+  width: 100%;
+}
+.wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__excerpt, .wp-block-post-excerpt.is-style-sketchpad1 > div:first-of-type {
+  display: inline-block;
+  min-height: 8.125rem;
+  margin-bottom: 1.5625rem;
+}
+.wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__more-text {
+  font-family: var(--wp--preset--font-family--sketchpad-arial-font);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-align: right;
+}
+.wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__more-text a:hover {
+  text-decoration: underline;
+}
+
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) a::after {
+  display: none;
+}

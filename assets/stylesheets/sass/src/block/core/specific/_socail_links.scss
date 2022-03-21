@@ -1,0 +1,14 @@
+@use 'preset' as Preset;
+
+@mixin Postit {
+  @include Preset.BasePostit($display: '', $width: 100%);
+  @include Preset.PostitRed;
+
+  li {
+    width: fit-content;
+  }
+}
+
+@mixin Postit4Sidebar {
+  @include Preset.Postit4Sidebar;
+}

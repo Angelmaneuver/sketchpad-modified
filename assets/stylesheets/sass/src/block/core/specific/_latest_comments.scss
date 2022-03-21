@@ -1,0 +1,20 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  a {
+    @include Preset.Left2RightStyle(var(--wp--preset--color--sketchpad-heading-font-color), 0.125rem, 0.0625rem);
+  }
+}
+
+@mixin Postit {
+  li {
+    @include Preset.BasePostit($width: 100%);
+    @include Preset.SidebarPostitColorSeries;
+  }
+}
+
+@mixin Postit4Sidebar {
+  li {
+    @include Preset.Postit4Sidebar;
+  }
+}

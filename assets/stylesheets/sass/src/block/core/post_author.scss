@@ -1,0 +1,24 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+@use 'common' as Common;
+
+$class: 'wp-block-post-author';
+
+/**
+ * Sketchpad Style - Post Author.
+ */
+@if Define.$use_change_color {
+  @include Common.ChangeColor(Define.$change2pink) {
+    .#{$class} {
+      &:not(#{Define.$no_change_class_name}) {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+
+        a {
+          @include Preset.Change2PinkTextStyle;
+          @include Preset.Change2PinkBorderColor;
+        }
+      }
+    }
+  }
+}

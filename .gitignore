@@ -32,4 +32,4 @@ vendor/
 .vscode/
 
 # ignore user definitions saas files.
-sass/customised/
+assets/stylesheets/sass/customised

@@ -1,0 +1,32 @@
+/**
+ * Sketchpad Style - Heading.
+ */
+.h1.is-style-sketchpad-sidebar1, h2.is-style-sketchpad-sidebar1, h3.is-style-sketchpad-sidebar1, h4.is-style-sketchpad-sidebar1, h5.is-style-sketchpad-sidebar1, h6.is-style-sketchpad-sidebar1 {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  color: #5E523A;
+  margin-bottom: 0.3125rem;
+  border-color: #DCD0B6;
+  border-bottom-width: 0.125rem;
+  border-bottom-style: solid;
+}
+.h1.is-style-under-line, h2.is-style-under-line, h3.is-style-under-line, h4.is-style-under-line, h5.is-style-under-line, h6.is-style-under-line {
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+}
+.h1.is-style-single-character-line-spacing, h2.is-style-single-character-line-spacing, h3.is-style-single-character-line-spacing, h4.is-style-single-character-line-spacing, h5.is-style-single-character-line-spacing, h6.is-style-single-character-line-spacing {
+  line-height: 2;
+}
+
+.wp-block-post-content h1 + *, .wp-block-post-content h2 + *, .wp-block-post-content h3 + *, .wp-block-post-content h4 + *, .wp-block-post-content h5 + *, .wp-block-post-content h6 + * {
+  margin-top: 0.625rem;
+}
+
+body.tag-r18 main > header:not(.is-style-no-change) h1:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) h2:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) h3:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) h4:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) h5:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) h6:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h1:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h2:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h3:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h4:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h5:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) h6:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h1:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h2:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h3:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h4:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h5:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) h6:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h1:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h2:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h3:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h4:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h5:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) h6:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h1:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h2:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h3:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h4:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h5:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) h6:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h1:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h2:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h3:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h4:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h5:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) h6:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}

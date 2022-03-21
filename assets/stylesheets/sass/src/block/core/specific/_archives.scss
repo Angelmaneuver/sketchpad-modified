@@ -1,0 +1,19 @@
+@use 'preset' as Preset;
+
+@mixin Postit {
+  &.wp-block-archives-list li {
+    @include Preset.BasePostit($tag: 'li');
+    @include Preset.SidebarPostitColorSeries;
+  }
+
+  &.wp-block-archives-dropdown {
+    @include Preset.BasePostit;
+    @include Preset.PostitRed;
+  }
+}
+
+@mixin Postit4Sidebar {
+  &.wp-block-archives-list li, &.wp-block-archives-dropdown {
+    @include Preset.Postit4Sidebar;
+  }
+}

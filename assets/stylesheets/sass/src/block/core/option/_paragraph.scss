@@ -1,0 +1,34 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  p {
+    &.is-style-text-indent {
+      text-indent: 1em;
+    }
+
+    &.is-style-single-character-line-spacing {
+      line-height: 2;
+    }
+
+    &.is-style-speech {
+      text-indent: -1em;
+      padding-left: 1.5em;
+
+      &::first-letter {
+        font-size: inherit;
+      }
+
+      &::before {
+        content: '『';
+      }
+
+      &::after {
+        content: '』';
+      }
+    }
+
+    &.is-style-r18-paragraph {
+      @include Preset.Change2PinkTextStyle;
+    }
+  }
+}

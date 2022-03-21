@@ -1,0 +1,28 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  &-sidebar {
+    &1 {
+      li {
+        @include Preset.SidebarPostit;
+        @include Preset.SidebarPostitColorSeries;
+  
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
+        .wp-block-post-title {
+          @include Preset.GetFontPreSet($font-size: 1.2rem);
+
+          a {
+            @include Preset.BasicFontColor;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

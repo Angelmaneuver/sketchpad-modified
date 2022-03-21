@@ -1,0 +1,25 @@
+@use 'preset'                     as Preset;
+@use 'define'                     as Define;
+@use 'common'                     as Common;
+@use './specific/latest_comments' as Specific;
+
+$class: 'wp-block-latest-comments';
+
+/**
+ * Sketchpad Style - Latest Comments.
+ */
+@include Common.Main($class) {
+  @include Specific.Styles;
+
+  &#{Define.$key}-postit {
+    @include Specific.Postit;
+  }
+}
+
+@include Common.Sidebar($class) {
+  @include Preset.GetFontPreSet(Define.$sidebar_font_size, Define.$sidebar_font_weight);
+
+  &#{Define.$key}-postit {
+    @include Specific.Postit4Sidebar;
+  }
+}

@@ -1,0 +1,73 @@
+@mixin BorderColorNone {
+  border-color: transparent;
+}
+
+@mixin SidebarBorderColor {
+  border-color: #CFC5AD;
+}
+
+@mixin SidebarDelimiterBorderColor {
+  border-color: #DCD0B6;
+}
+
+@mixin ThumbnailBorderColor {
+  border-color: var(--wp--preset--color--sketchpad-thumbnail-border-color);
+}
+
+@mixin FormBorderColor {
+  border-color: var(--wp--preset--color--sketchpad-form-border-color);
+}
+
+@mixin FormWraperBorderColor {
+  border-color: var(--wp--preset--color--sketchpad-form-wraper-border-color);
+}
+
+
+
+@mixin TableBorderColor1 {
+  border-color: #483613;
+}
+
+@mixin PreBorderColor1 {
+  border-color: #cccccc;
+}
+
+@mixin InsBorderColor {
+  outline-color: #9b8f76;
+}
+
+@mixin QuoteBorderColor {
+  border-color: #9dd4ff;
+}
+
+@mixin DelimiterBorderColor1 {
+  border-color: #776B53;
+}
+
+@mixin DelimiterBorderColor2 {
+  border-color: #B3A279;
+}
+
+@mixin TagListBorderColor {
+  border-color: #cfc5ad;
+}
+
+@mixin TagListHoverBorderColor {
+  border-color: #000000;
+}
+
+@mixin ThumbnailBorderColor {
+  border-color: #d1c6ab;
+}
+
+@mixin CommentInfoBorderColor {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+@mixin SidebarFormBorderColor {
+  border-color: #000000;
+}
+
+@mixin SidebarCalendarBorderColor {
+  border-color: #e66053;
+}

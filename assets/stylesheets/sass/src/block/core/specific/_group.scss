@@ -1,0 +1,53 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+
+@mixin Styles {
+  &-sidebar{
+    &1 {
+      section {
+        @include Preset.ThinBorderStyle;
+        @include Preset.SidebarBorderColor;
+        @include Preset.SketchpadShadow;
+        background-color: Define.$sidebar_background_color;
+        box-sizing: border-box;
+
+        > {
+          h1, h2, h3, h4, h5, h6 {
+            & + * {
+              margin-top: 0;
+            }
+          }
+
+          * + * {
+            margin-top: 0.625rem;
+          }
+        }
+
+        &:first-child {
+          border-radius: 1rem/3.125rem 0 0 0;
+  
+          @if Define.$use_webp {
+            background: Define.$sidebar_background_color url("#{Define.$image_directory}bg-side1.webp") no-repeat top left;
+          } @else {
+            background: Define.$sidebar_background_color url("#{Define.$image_directory}bg-side1.jpg") no-repeat top left;
+          }
+        }
+  
+        &:last-child {
+          min-height: 2.6875rem;
+          border-radius: 0 0 0.8125rem/2.6875rem 0;
+  
+          @if Define.$use_webp {
+            background: Define.$sidebar_background_color url("#{Define.$image_directory}bg-side2.webp") no-repeat bottom right;
+          } @else {
+            background: Define.$sidebar_background_color url("#{Define.$image_directory}bg-side2.jpg") no-repeat bottom right;
+          }
+
+          > *:last-child {
+            margin-bottom: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

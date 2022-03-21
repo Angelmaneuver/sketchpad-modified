@@ -1,0 +1,9 @@
+@use 'define' as Define;
+
+@mixin FooterStyles($key: '.#{Define.$specific_class_name}') {
+  footer.wp-block-template-part#{Define.$key} {
+    &1 {
+      margin-top: 0;
+    }
+  }
+}

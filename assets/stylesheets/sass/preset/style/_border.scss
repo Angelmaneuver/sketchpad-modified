@@ -1,0 +1,35 @@
+@mixin ThinBorderStyle($border-width: thin, $border-style: solid) {
+  border-width: $border-width;
+  border-style: $border-style;
+}
+
+@mixin ThinBorderTopStyle($border-width: thin, $border-style: solid) {
+  border-top-width: $border-width;
+  border-top-style: $border-style;
+}
+
+@mixin ThinBorderBottomStyle($border-width: thin, $border-style: solid) {
+  border-bottom-width: $border-width;
+  border-bottom-style: $border-style;
+}
+
+@mixin ThinBorderRightStyle($border-width: thin, $border-style: solid) {
+  border-right-width: $border-width;
+  border-right-style: $border-style;
+}
+
+@mixin DoubleBorderStyle($padding: 0.5rem, $border-width: medium, $border-style: double) {
+  padding: $padding;
+  border-width: $border-width;
+  border-style: $border-style;
+}
+
+@mixin DottedBorderBottomStyle($border-width: thin, $border-style: dotted) {
+  border-bottom-width: $border-width;
+  border-bottom-style: $border-style;
+}
+
+@mixin DottedOutlineStyle($border-width: thin, $border-style: dotted) {
+  outline-width: $border-width;
+  outline-style: $border-style;
+}

@@ -1,0 +1,14 @@
+@use 'preset' as Preset;
+
+@mixin Postit {
+  a {
+    @include Preset.BasePostit($tag: 'a');
+    @include Preset.PostitRed;
+  }
+}
+
+@mixin Postit4Sidebar {
+  a {
+    @include Preset.Postit4Sidebar;
+  }
+}

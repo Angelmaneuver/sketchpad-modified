@@ -1,0 +1,38 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+@use 'common' as Common;
+
+$class: 'wp-block-sketchpad-modified-blocks-post-edit-link';
+
+/**
+ * Sketchpad Style - Sketchpad modified Blocks's Post Edit Link.
+ */
+a.#{$class}, div.#{$class} a {
+  @include Preset.ArialFontFamily;
+  @include Preset.GetFontPreSet(0.75rem, 700, 1);
+  @include Preset.ButtonColor;
+  @include Preset.ButtonBackgroundColor;
+  @include Preset.BorderColorNone;
+  padding: 0.0625rem 0.3125rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:hover {
+    @include Preset.ButtonHoverBackgroundColor;
+    text-decoration: underline;
+  }
+}
+
+@if Define.$use_change_color {
+  @include Common.ChangeColor(Define.$change2pink) {
+    a.#{$class} {
+      &:not(#{Define.$no_change_class_name}) {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+        @include Preset.Change2PinkBackground;
+      }
+    }
+  }
+}

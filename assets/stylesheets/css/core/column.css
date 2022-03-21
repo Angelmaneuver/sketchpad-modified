@@ -1,0 +1,25 @@
+/**
+ * Sketchpad Style - Column.
+ */
+.wp-block-column.is-style-sketchpad1, .wp-block-column.is-style-sketchpad2 {
+  border: none;
+}
+.wp-block-column.is-style-sketchpad1 {
+  border-top-left-radius: 0.8rem;
+}
+.wp-block-column.is-style-sketchpad2 {
+  border-top-right-radius: 0.8rem;
+}
+.wp-block-column.is-style-sketchpad2, .wp-block-column.is-style-sketchpad4 {
+  -webkit-box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
+          box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
+}
+.wp-block-column.is-style-sketchpad3 {
+  background: url("/wp-content/themes/sketchpad-modified/assets/images/bg-main.webp") top left repeat-y;
+  background-size: contain;
+}
+.wp-block-column.is-style-sketchpad5 {
+  min-height: 5.2rem;
+  background: url("/wp-content/themes/sketchpad-modified/assets/images/bg-footer.webp") no-repeat;
+  background-size: contain;
+}

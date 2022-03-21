@@ -1,0 +1,117 @@
+@use 'preset'               as Preset;
+@use 'define'               as Define;
+@use 'common'               as Common;
+
+$class: 'wp-block-post-comments';
+
+/**
+ * Sketchpad Style - Post Comments.
+ */
+@include Common.Main($class) {
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .commentlist {
+    margin-top: 1.25rem;
+
+    .comment-meta {
+      .fn {
+        @include Preset.ArialFontFamily;
+        @include Preset.GetFontPreSet($font-size: 0.875rem, $font-weight: 900);
+        font-style: italic;
+
+        &, a {
+          @include Preset.PersonNameColor;
+        }
+      }
+
+      .says {
+        display: none;
+      }
+
+      .comment-metadata {
+        @include Preset.GetFontPreSet($font-size: 0.75rem);
+      }
+
+      .edit-link {
+        margin-left: 0.625rem;
+
+        a {
+          &::before {
+            content: '(';
+          }
+
+          &::after {
+            content: ')';
+          }
+        }
+      }
+    }
+
+    .comment-content {
+      p {
+        @include Preset.GetFontPreSet($font-size: 1rem);
+      }
+    }
+  }
+
+  .comment-respond {
+    form {
+      @include Preset.GetFontPreSet($font-size: 0.875rem);
+      margin-top: 1.25rem;
+
+      > p {
+        margin-top: 0.625rem;
+      }
+
+      .required {
+        @include Preset.Required;
+      }
+
+      .comment-form-comment {
+        textarea {
+          max-width: 100%;
+        }
+      }
+
+      .form-submit input {
+        @include Preset.Button($width: 100%, $height: 100%);
+      }
+
+      .logged-in-as {
+        .required-field-message {
+          display: none;
+        }
+
+        & + .comment-form-comment > label > .required {
+          display: none;
+        }
+      }
+    }
+
+    .comment-reply-title {
+      > a {
+        @include Preset.ArialFontFamily;
+        font-style: italic;
+      }
+
+      #cancel-comment-reply-link {
+        @include Preset.GetFontPreSet($font-size: 0.75rem, $font-weight: 400);
+        margin-left: 0.3125rem;
+
+        &::before {
+          content: '(';
+        }
+
+        &::after {
+          content: ')';
+        }
+      }
+    }
+  }
+}

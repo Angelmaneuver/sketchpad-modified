@@ -1,0 +1,304 @@
+@mixin Change2PinkTextStyle {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem,
+  #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+}
+
+@mixin Change2PinkBoxStyle {
+  box-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem,
+  #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem;
+}
+
+@mixin Change2PinkQuoteSimbol {
+  color: #FFFFFF;
+}
+
+@mixin Change2PinkBorderColor {
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+@mixin Change2PinkHoverBorderColor {
+  border-color: #FF9A93;
+}
+
+@mixin Change2PinkBackground {
+  background: #FF9A93;
+}
+
+
+
+@mixin Change2PinkBorderColorImportant {
+  border-color: #ffb6c1 !important;
+  outline-color: #ffb6c1 !important;
+}
+
+@mixin Change2PinkUnderBorderColor {
+  border: none;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+    @include Change2PinkBoxStyle;
+  }
+}
+
+@mixin Change2PinkPostTagBackground {
+  background: #ff9a93;
+}
+
+@mixin Change2PinkImagePostit {
+  border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1 / 1 0
+    0 0;
+}
+
+@mixin Change2PinkRecentPost {
+  &.#{$change2pink} {
+    @include Change2PinkBorderColor;
+
+    > a > span {
+      @include Change2PinkTextStyle;
+    }
+  }
+}
+
+@mixin Change2PinkArticle {
+  &.#{$change2pink} {
+    header {
+      * {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      > div.post-header > h3.post-title {
+        > a {
+          @include Change2PinkTextStyle;
+          @include Left2RightStyle(#ff9a93);
+
+          &:first-of-type::after {
+            content: "";
+            padding-left: initial;
+          }
+
+          &.external {
+            background: none;
+            transition: initial;
+          }
+        }
+
+        span.r18 {
+          font-size: 1.65rem;
+
+          > span {
+            margin-top: -0.1rem;
+            margin-left: -0.1rem;
+          }
+        }
+      }
+
+      .post-meta {
+        .post-edit-link {
+          @include Change2PinkBackground;
+        }
+
+        .by-author {
+          @include Change2PinkTextStyle;
+        }
+      }
+    }
+
+    footer {
+      * {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      a.comments-link,
+      a.more-link {
+        @include Change2PinkTextStyle;
+        @include Change2PinkBorderColor;
+      }
+
+      .post-tag a {
+        @include Change2PinkPostTagBackground;
+      }
+
+      .pagination {
+        * {
+          @include Change2PinkTextStyle;
+          @include Change2PinkBorderColor;
+        }
+
+        .post-page-numbers:not(.current) {
+          @include ThinBorderStyle;
+          @include SketchpadBackground;
+        }
+
+        .current,
+        .post-page-numbers:hover,
+        a:hover {
+          @include Change2PinkBackground;
+          @include Change2PinkHoverBorderColor;
+        }
+      }
+    }
+
+    .post-content {
+      > {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          &:not(#{$excludeKeyword}) {
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+        }
+
+        ul, ol {
+          &:not(#{$excludeKeyword}) li {
+            position: relative;
+            list-style: none;
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            &::before {
+              position: absolute;
+              top: 0;
+              left: -1em;
+              @include Change2PinkTextStyle;
+            }
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+        }
+
+        ul:not(#{$excludeKeyword}) {
+          li {
+            &::before {
+              content: "\02022";
+            }
+          }
+        }
+
+        ol:not(#{$excludeKeyword}) {
+          counter-reset: li;
+
+          li {
+            &::before {
+              content: counter(li)".";
+              counter-increment: li;
+            }
+          }
+        }
+
+        blockquote:not(#{$excludeKeyword}).wp-block-quote {
+          @include Change2PinkBorderColor;
+
+          &:before {
+            @include Change2PinkTextStyle;
+          }
+
+          * {
+            @include Change2PinkTextStyle;
+          }
+        }
+      }
+
+      > div {
+        &:not(#{$excludeKeyword}):not(.yarpp) {
+          @include Change2PinkTextStyle;
+          @include Change2PinkBorderColor;
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          p,
+          em,
+          s,
+          ruby,
+          rp,
+          rt,
+          a,
+          table,
+          thead,
+          tbody,
+          tr,
+          th,
+          td,
+          figcaption {
+            @include Change2PinkTextStyle;
+            @include Change2PinkBorderColor;
+
+            * {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+            }
+          }
+
+          ul:not(#{$excludeKeyword}) {
+            ol, li {
+              @include Change2PinkTextStyle;
+              @include Change2PinkBorderColor;
+  
+              * {
+                @include Change2PinkTextStyle;
+                @include Change2PinkBorderColor;
+              }
+            }
+          }
+
+          button {
+            @include Change2PinkBoxStyle;
+          }
+
+          blockquote:not(#{$excludeKeyword}).wp-block-quote {
+            @include Change2PinkBorderColor;
+
+            &:before {
+              @include Change2PinkTextStyle;
+            }
+
+            * {
+              @include Change2PinkTextStyle;
+            }
+          }
+        }
+      }
+
+      .thumb-box {
+        @include Change2PinkBorderColorImportant;
+      }
+
+      .is-style-image-postit {
+        img,
+        svg {
+          @include Change2PinkImagePostit;
+        }
+      }
+    }
+  }
+
+  &:not(.#{$change2pink}) {
+    span.r18 {
+      display: none;
+    }
+  }
+}

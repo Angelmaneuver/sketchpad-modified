@@ -1,0 +1,9 @@
+/**
+ * Sketchpad Style - Sketchpad modified Blocks's Post Navigation Links.
+ */
+.wp-block-sketchpad-modified-blocks-post-navigation-links a {
+  text-decoration: underline;
+}
+.wp-block-sketchpad-modified-blocks-post-navigation-links a:hover {
+  text-decoration: none;
+}

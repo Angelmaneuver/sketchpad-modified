@@ -1,0 +1,50 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+
+@mixin Main($class) {
+  .#{$class} {
+    @content;
+  }
+}
+
+@mixin MainOnly($class) {
+  main .#{$class} {
+    @content;
+  }
+}
+
+@mixin Sidebar($class) {
+  aside .#{$class} {
+    @content;
+  }
+}
+
+@mixin DefaultListStyle($tag: '') {
+  margin-left: 1.5em;
+
+  @if $tag != '' {
+    #{$tag}:hover {
+      padding-left: 1.5em;
+      transition: padding-left 1s;
+    }
+  } @else {
+    &:hover {
+      padding-left: 1.5em;
+      transition: padding-left 1s;
+    }
+  }
+
+  a {
+    @include Preset.Left2RightStyle(var(--wp--preset--color--sketchpad-heading-font-color), 0.125rem, 0.0625rem);
+  }
+}
+
+@mixin ChangeColor($change: '') {
+  body.#{$change} main > header, body.#{$change} main > div, li.wp-block-post.#{$change} {
+    &, * {
+      &:not(#{Define.$no_change_class_name}) {
+        @content;
+      }
+    }
+  }
+}

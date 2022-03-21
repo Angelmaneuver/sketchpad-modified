@@ -1,0 +1,33 @@
+@import '../preset/init';
+
+/**
+ * Sketchpad Style - Return to top button.
+ */
+.top_button {
+  @include GetFontPreSet(1.25rem);
+  @include BaseFontFamily;
+  position: fixed;
+  display: none;
+  bottom: 0.875rem;
+  right: 6.25rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.1875rem;
+  @include FillInStringColor;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  @include SketchpadSuperLayer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  * {
+    font-size: 1.875rem;
+    width: initial;
+    height: initial;
+  }
+}

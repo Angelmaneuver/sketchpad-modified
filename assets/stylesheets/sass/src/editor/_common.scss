@@ -1,0 +1,7 @@
+@use 'define' as Define;
+
+@mixin ChangeColor($change: '') {
+  body.#{$change} .editor-styles-wrapper *:not(#{Define.$no_change_class_name}) {
+    @content;
+  }
+}

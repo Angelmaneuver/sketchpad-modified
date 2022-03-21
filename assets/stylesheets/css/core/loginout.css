@@ -1,0 +1,75 @@
+/**
+ * Sketchpad Style - Loginout.
+ */
+.wp-block-loginout a:hover {
+  text-decoration: underline;
+}
+.wp-block-loginout .login-remember {
+  margin-top: 1.25rem;
+}
+.wp-block-loginout.is-style-sketchpad-postit a {
+  font-style: italic;
+  display: inline-block;
+  width: 50%;
+  padding: 0.625rem 0.625rem 0.625rem 2.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(2.2rem, #f1f1c1), color-stop(7%, #ffffcc));
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 2.2rem, #ffffcc 7%);
+  border-right-style: solid;
+  border-right-width: 1.875rem;
+  -webkit-box-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.22);
+          box-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.22);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #ff0000;
+}
+.wp-block-loginout.is-style-sketchpad-postit a:not(a:first-of-type) {
+  margin-top: 0.3125rem;
+}
+.wp-block-loginout #loginform p {
+  margin-top: 0.3125rem;
+}
+
+main .wp-block-loginout #loginform p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .wp-block-loginout #loginform p.login-username > *, main .wp-block-loginout #loginform p.login-password > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+main .wp-block-loginout #loginform p.login-remember, main .wp-block-loginout #loginform p.login-submit {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .wp-block-loginout #loginform p.login-submit input {
+  height: 100%;
+  width: 33%;
+}
+
+aside .wp-block-loginout {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+aside .wp-block-loginout .login-remember {
+  text-align: center;
+}
+aside .wp-block-loginout .login-submit {
+  margin-top: 0.625rem;
+}
+aside .wp-block-loginout .login-submit input {
+  height: 100%;
+  width: 100%;
+}
+aside .wp-block-loginout.is-style-sketchpad-postit a {
+  width: 10.9375rem;
+  margin-left: 0.3125rem;
+  padding: 0.375rem 0.375rem 0.375rem 1.75rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffcc), color-stop(0.5%, #f1f1c1), color-stop(10%, #f1f1c1), color-stop(12%, #ffffcc));
+  background-image: linear-gradient(to right, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 10%, #ffffcc 12%);
+  border-right-width: 1.25rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}

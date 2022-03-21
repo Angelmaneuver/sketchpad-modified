@@ -1,0 +1,21 @@
+@mixin Styles {
+  & {
+    &.is-style-indent {
+      margin-left: 0.9375rem;
+    }
+
+    &[class*="wp-container"] {
+      &.is-style-align-items-start {
+        align-items: flex-start;
+      }
+  
+      &.is-style-align-items-center {
+        align-items: center;
+      }
+  
+      &.is-style-align-items-end {
+        align-items: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin Styles {
+  &1 {
+    overflow: hidden;
+
+    a img {
+      transition: 1s all;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1s all;
+      }
+    }
+  }
+}
