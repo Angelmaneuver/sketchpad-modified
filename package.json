@@ -15,7 +15,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
-    "minimatch": "^5.0.0",
-    "sass": "^1.49.8"
+    "minimatch": "^5.0.1",
+    "sass": "^1.49.9"
   }
 }
