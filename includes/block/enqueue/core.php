@@ -30,6 +30,7 @@ return [
 	[ 'name' => 'core/post-terms',          'handle' => 'post-terms',          'src' => 'post_terms',          'path_set' => true ],
 	[ 'name' => 'core/post-title',          'handle' => 'post-title',          'src' => 'post_title',          'path_set' => true ],
 	[ 'name' => 'core/query-pagination',    'handle' => 'query-pagination',    'src' => 'query_pagination',    'path_set' => true ],
+	[ 'name' => 'core/quote',               'handle' => 'quote',               'src' => 'quote',               'path_set' => true ],
 	[ 'name' => 'core/search',              'handle' => 'search',              'src' => 'search',              'path_set' => true ],
 	[ 'name' => 'core/separator',           'handle' => 'separator',           'src' => 'separator',           'path_set' => true ],
 	[ 'name' => 'core/site-title',          'handle' => 'site-title',          'src' => 'site_title',          'path_set' => true ],

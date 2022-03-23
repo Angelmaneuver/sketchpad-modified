@@ -15,6 +15,7 @@ return [
 	[ 'name' => 'core/post-terms' ],
 	[ 'name' => 'core/post-title' ],
 	[ 'name' => 'core/query-pagination' ],
+	[ 'name' => 'core/quote' ],
 	[ 'name' => 'core/site-title' ],
 	[ 'name' => 'core/search',    'number' => 2 ],
 	[ 'name' => 'core/separator', 'number' => 2 ],

@@ -22,6 +22,9 @@
   border-color: var(--wp--preset--color--sketchpad-form-wraper-border-color);
 }
 
+@mixin QuoteBorderColor {
+  border-color: #9DD4FF;
+}
 
 
 @mixin TableBorderColor1 {
@@ -34,10 +37,6 @@
 
 @mixin InsBorderColor {
   outline-color: #9b8f76;
-}
-
-@mixin QuoteBorderColor {
-  border-color: #9dd4ff;
 }
 
 @mixin DelimiterBorderColor1 {

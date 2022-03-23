@@ -48,6 +48,13 @@
   color: #F4EDDF;
 }
 
+@mixin QuoteSimbolColor {
+  color: #9dd4ff;
+}
+
+@mixin CiteColor {
+  color: #888888;
+}
 
 
 @mixin HeadlineColor1 {
@@ -68,10 +75,6 @@
 
 @mixin BreadcrumbColor {
   color: #9b8f76;
-}
-
-@mixin QuoteSimbolColor {
-  color: #9dd4ff;
 }
 
 @mixin QuoteColor {

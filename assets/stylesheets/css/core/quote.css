@@ -1,0 +1,41 @@
+/**
+ * Sketchpad Style - Quote.
+ */
+.wp-block-quote.is-style-sketchpad1 {
+  padding: 0.5em;
+  text-align: right;
+  background: #F5F5F5;
+  border-color: #9DD4FF;
+  border-left-width: 1.5em;
+  border-left-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
+}
+.wp-block-quote.is-style-sketchpad1 p {
+  text-align: left;
+}
+.wp-block-quote.is-style-sketchpad1 p:first-of-type::before {
+  content: "\f205";
+  font-family: "dashicons";
+  font-weight: 100;
+  color: #9dd4ff;
+}
+.wp-block-quote.is-style-sketchpad1 p:not(:first-of-type) {
+  padding-left: 1em;
+}
+.wp-block-quote.is-style-sketchpad1 cite {
+  color: #888888;
+}
+.wp-block-quote.is-style-sketchpad1 * + * {
+  margin-top: 0.5em;
+}
+
+body.tag-r18 main > header:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), body.tag-r18 main > header:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, body.tag-r18 main > header:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}

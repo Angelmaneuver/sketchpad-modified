@@ -1,0 +1,38 @@
+@use 'preset' as Preset;
+
+@mixin Styles {
+  &1 {
+    padding: 0.5em;
+    text-align: right;
+    @include Preset.QuoteBackgroundColor;
+    @include Preset.QuoteBorderColor;
+    border-left-width: 1.5em;
+    border-left-style: solid;
+    box-sizing: border-box;
+    @include Preset.BlockQuoteShadow;
+
+    p {
+      text-align: left;
+
+      &:first-of-type::before {
+        content: "\f205";
+        font-family: "dashicons";
+        font-weight: 100;
+        @include Preset.QuoteSimbolColor;
+      }
+
+      &:not(:first-of-type) {
+        padding-left: 1em;
+
+      }
+    }
+
+    cite {
+      @include Preset.CiteColor;
+    }
+
+    * + * {
+      margin-top: 0.5em;
+    }
+  }
+}
