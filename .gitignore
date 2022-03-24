@@ -31,6 +31,8 @@ vendor/
 # ignore VSCode manage files
 .vscode/
 
-# ignore user definitions saas files.
+# ignore user custom files.
 assets/stylesheets/sass/user/*
 !assets/stylesheets/sass/user/.gitkeep
+user/css/*
+!user/css/settings.php
