@@ -32,4 +32,5 @@ vendor/
 .vscode/
 
 # ignore user definitions saas files.
-assets/stylesheets/sass/customised
+assets/stylesheets/sass/user/*
+!assets/stylesheets/sass/user/.gitkeep

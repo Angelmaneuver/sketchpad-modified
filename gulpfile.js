@@ -118,9 +118,35 @@ function watch4(done) {
 	done();
 }
 
+function compile5(done) {
+	src([
+		'./assets/stylesheets/sass/user/**/*.scss',
+	])
+	.pipe(plumber())
+	.pipe(sass.sync({
+		includePaths: [
+			'./assets/stylesheets/sass/preset',
+		]
+	}))
+	.pipe(autoprefixer())
+	.pipe(dest('./user/css'));
+
+	done();
+}
+
+function watch5(done) {
+	watch([
+		'./assets/stylesheets/sass/user/**/*.scss',
+		'./assets/stylesheets/sass/preset/**/*.scss',
+	], series(compile5));
+
+	done();
+}
+
 exports.compile = parallel([
 	series(compile1, watch1),
 	series(compile2, watch2),
 	series(compile3, watch3),
 	series(del4, compile4, watch4),
+	series(compile5, watch5),
 ]);

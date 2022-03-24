@@ -1,4 +1,11 @@
 // Responsive Property
+$breakpoints: (
+  'sm': 'screen and (max-width: 1023px)',
+  'md': 'screen and (max-width: 1023px)',
+  'lg': '(min-width: 1024px)',
+  'xl': '(min-width: 1024px)',
+) !default;
+
 @mixin responsive($key: lg, $breakpoints: $breakpoints) {
   @media #{map-get($breakpoints, $key)} {
     @content;

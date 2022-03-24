@@ -15,6 +15,7 @@ require get_template_directory() . '/includes/basic/functions/insert-body-tag.ph
 require get_template_directory() . '/includes/basic/functions/background-color.php';
 require get_template_directory() . '/includes/basic/functions/return2top-button.php';
 require get_template_directory() . '/includes/basic/functions/rss.php';
+require get_template_directory() . '/includes/basic/functions/user-custom-loading.php';
 
 if ( current_user_can( 'edit_theme_options' ) & ( is_admin() || is_customize_preview() ) ) {
 	/**
