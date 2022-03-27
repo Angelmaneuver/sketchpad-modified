@@ -35,6 +35,6 @@ return [
 	[ 'name' => 'core/separator',           'handle' => 'separator',           'src' => 'separator',           'path_set' => true ],
 	[ 'name' => 'core/site-title',          'handle' => 'site-title',          'src' => 'site_title',          'path_set' => true ],
 	[ 'name' => 'core/social-links',        'handle' => 'social-links',        'src' => 'social_links',        'path_set' => true ],
-	[ 'name' => 'core/template-part',       'handle' => 'template-part',       'src' => 'template_part',       'path_set' => true ],
+	[ 'name' => 'core/template-part',       'handle' => 'template-part',       'src' => 'template_part',       'path_set' => false ],
 ];
 // @codingStandardsIgnoreEnd

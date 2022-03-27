@@ -4,7 +4,7 @@
 	$( document ).ready( function() {
 
 		/** Return to Top button event */
-		const return2top_button = $( '.top_button' );
+		const return2top_button = $( '.return2top' );
 
 		$( window ).on( 'scroll', function() {
 			if( $( this ).scrollTop() > 100 ){

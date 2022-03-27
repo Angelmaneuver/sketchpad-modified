@@ -108,3 +108,10 @@ body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-separat
   border-color: #FFB6C1;
   outline-color: #FFB6C1;
 }
+
+/**
+ * Sketchpad Style - Template part.
+ */
+.wp-site-blocks > footer.wp-block-template-part.is-style-sketchpad-footer .wp-block-columns.is-style-sketchpad-footer {
+  min-height: 74px;
+}

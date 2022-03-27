@@ -17,7 +17,7 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3125rem;
-  border-color: #d1c6ab;
+  border-color: var(--wp--preset--color--sketchpad-thumbnail-border-color);
   border-width: thin;
   border-style: solid;
   border-radius: 0.125rem;

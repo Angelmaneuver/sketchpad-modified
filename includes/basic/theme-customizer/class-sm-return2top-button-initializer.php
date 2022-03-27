@@ -159,7 +159,7 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 	 * @return string
 	 */
 	public static function get_sketchpad_return2top_button_mark():string {
-		return get_theme_mod( 'sketchpad_top_button_background_color', sketchpad_sanitize_button_template( self::DEFAULT_BUTTON_MARK ) );
+		return get_theme_mod( 'sketchpad_top_button_mark', sketchpad_sanitize_button_template( self::DEFAULT_BUTTON_MARK ) );
 	}
 
 	/**
@@ -169,7 +169,7 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 	 * @return string
 	 */
 	public static function get_sketchpad_return2top_button_background_color():string {
-		return get_theme_mod( 'sketchpad_top_button_mark', self::DEFAULT_BUTTON_BACKGROUND_COLOR );
+		return get_theme_mod( 'sketchpad_top_button_background_color', self::DEFAULT_BUTTON_BACKGROUND_COLOR );
 	}
 
 	/**

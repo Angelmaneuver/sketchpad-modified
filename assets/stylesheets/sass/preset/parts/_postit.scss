@@ -1,5 +1,3 @@
-// Postit Property
-
 @mixin ImagePostit($padding: 0.3125rem) {
   img, svg {
     width: calc(100% - 0.625rem);
@@ -56,15 +54,6 @@
 @mixin SidebarPostit {
   @include BaseSidebarPostit;
   width: 10.9375rem;
-}
-
-@mixin SidebarPostitWidthAuto {
-  @include BaseSidebarPostit(0.6rem 0.6rem 0.6rem 22%);
-
-  * {
-    width: var(--width);
-    max-width: var(--max-width);
-  }
 }
 
 @mixin PostitRed {

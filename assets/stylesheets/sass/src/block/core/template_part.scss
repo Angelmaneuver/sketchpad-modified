@@ -3,7 +3,15 @@
 @use 'common'                   as Common;
 @use './specific/template_part' as Specific;
 
+$class: 'wp-site-blocks';
+
 /**
  * Sketchpad Style - Template Part.
  */
 @include Specific.FooterStyles;
+
+@include Common.SidebarOnDisplay($class) {
+  > footer.is-style-sketchpad-footer {
+    @include Specific.FooterWhenSidebarIsDisplayed;
+  }
+}

@@ -1,6 +1,11 @@
 /**
  * Sketchpad Style - Search.
  */
+@media screen and (max-width: 1023px) {
+  .is-style-sketchpad-heading .wp-block-search.is-style-sketchpad1 {
+    margin-top: 1.25rem;
+  }
+}
 .wp-block-search .wp-block-search__button {
   display: -webkit-box;
   display: -ms-flexbox;

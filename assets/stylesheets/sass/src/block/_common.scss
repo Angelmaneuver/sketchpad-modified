@@ -48,3 +48,9 @@
     }
   }
 }
+
+@mixin SidebarOnDisplay($class) {
+  body.sidebar-on-display .#{$class} {
+    @content;
+  }
+}

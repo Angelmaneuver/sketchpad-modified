@@ -1,42 +1,124 @@
 @use 'preset' as Preset;
 @use 'define' as Define;
 
-@mixin Styles {
-  &1, &2 {
-    border: none;
-  }
-
-  &1 {
-    border-top-left-radius: 0.8rem;
-  }
-
-  &2 {
-    border-top-right-radius: 0.8rem;
-  }
-
-  &2, &4 {
-    @include Preset.SketchpadShadow;
-  }
-
-  &3 {
-    @if Define.$use_webp {
-      background: url("#{Define.$image_directory}bg-main.webp") top left repeat-y;
-    } @else {
-      background: url("#{Define.$image_directory}bg-main.png") top left repeat-y;
+@mixin Header {
+  #{Define.$key} {
+    &-logo, &-heading {
+      justify-content: center;
     }
 
-    background-size: contain;
+    &-heading {
+      #{Define.$key} {
+        &-left, &-right {
+          border: none;
+        }
+
+        &-left {
+          border-top-left-radius: 0.8rem;
+        }
+
+        &-right {
+          border-top-right-radius: 0.8rem;
+          @include Preset.SketchpadShadow;
+        }
+      }
+    }
   }
 
-  &5 {
-    min-height: 5.2rem;
+  @include Preset.responsive {
+    #{Define.$key} {
+      &-logo > {
+        div.wp-block-column:last-of-type {
+          flex-basis: 1.125rem !important;
+        }
+      }
 
-    @if Define.$use_webp {
-      background: url("#{Define.$image_directory}bg-footer.webp") no-repeat;
-    } @else {
-      background: url("#{Define.$image_directory}bg-footer.png") no-repeat;
+      &-heading > {
+        div.wp-block-column:last-of-type {
+          flex-basis: 1.125rem !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin HeaderWhenSidebarIsDisplayed {
+  #{Define.$key} {
+    &-logo {
+      display: none;
     }
 
-    background-size: contain;
+    &-heading {
+      height: 1.875rem;
+      margin-top: 0.625rem !important;
+      justify-content: flex-start;
+
+      > div.wp-block-column:not(.is-style-sketchpad-right):not(:last-of-type) {
+          display: none;
+      }
+    }
+  }
+}
+
+@mixin Section {
+  > div {
+    justify-content: center;
+  }
+
+  .wp-block-column#{Define.$key} {
+    &-left {
+      @if Define.$use_webp {
+        background: url("#{Define.$image_directory}bg-main.webp") top left repeat-y;
+      } @else {
+        background: url("#{Define.$image_directory}bg-main.png") top left repeat-y;
+      }
+  
+      background-size: contain;
+    }
+
+    &-center {
+      min-height: 19rem;
+      z-index: 1;
+
+      & + div {
+        @include Preset.SketchpadShadow;
+      }
+    }
+  }
+
+  @include Preset.responsive {
+    > .wp-block-columns {
+      justify-content: flex-start;
+
+      .wp-block-column:last-of-type {
+        flex-basis: 1.125rem !important;
+  
+        > aside {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@mixin SectionWhenSidebarIsDisplayed {
+  & .wp-block-columns {
+    height: initial !important;
+    justify-content: flex-start;
+
+    > div.wp-block-column {
+      &.is-style-sketchpad-left, &.is-style-sketchpad-center {
+        display: none;
+      }
+
+      &:last-of-type {
+        flex-basis: 9.8125rem !important;
+
+        aside {
+          display: block;
+          padding-bottom: 74px;
+        }
+      }
+    }
   }
 }

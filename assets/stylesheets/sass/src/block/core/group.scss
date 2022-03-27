@@ -12,7 +12,9 @@ $class: 'wp-block-group';
 @include Common.Main($class) {
   &#{Define.$key} {
     @include Specific.Styles;
+    @include Specific.Article;
   }
+
   & {
     @include Option.Styles;
   }

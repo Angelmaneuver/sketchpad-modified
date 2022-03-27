@@ -51,3 +51,28 @@
     }
   }
 }
+
+@mixin Article {
+  &-article {
+    @include Preset.responsive {
+      & {
+        gap: 1.25rem !important;
+        flex-direction: column !important;
+
+        .wp-block-post-featured-image {
+          height: auto !important;
+          width: 100% !important;
+          margin-left: 0;
+          margin-right: 0;
+          box-sizing: border-box;
+
+          img {
+            height: auto !important;
+          }
+        }
+
+
+      }
+    }
+  }
+}

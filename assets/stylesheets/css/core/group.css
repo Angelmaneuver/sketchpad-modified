@@ -29,6 +29,26 @@
 .wp-block-group.is-style-sketchpad-sidebar1 section:last-child > *:last-child {
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 1023px) {
+  .wp-block-group.is-style-sketchpad-article {
+    gap: 1.25rem !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .wp-block-group.is-style-sketchpad-article .wp-block-post-featured-image {
+    height: auto !important;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .wp-block-group.is-style-sketchpad-article .wp-block-post-featured-image img {
+    height: auto !important;
+  }
+}
 .wp-block-group.is-style-indent {
   margin-left: 0.9375rem;
 }

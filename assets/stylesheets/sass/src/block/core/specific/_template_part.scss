@@ -1,9 +1,96 @@
+@use 'preset' as Preset;
 @use 'define' as Define;
 
 @mixin FooterStyles($key: '.#{Define.$specific_class_name}') {
   footer.wp-block-template-part#{Define.$key} {
-    &1 {
+    &-footer {
       margin-top: 0;
+
+      .wp-block-columns#{Define.$key}-footer {
+        justify-content: center;
+
+        .wp-block-column#{Define.$key} {
+          &-left {
+            @if Define.$use_webp {
+              background: url("#{Define.$image_directory}bg-footer-ring.png") top left repeat-y;
+            } @else {
+              background: url("#{Define.$image_directory}bg-footer-ring.png") top left repeat-y;
+            }
+
+            background-size: contain;
+          }
+  
+          &-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &-right {
+            @include Preset.SketchpadShadow;
+          }
+        }
+
+        &-end {
+          justify-content: center;
+          padding-bottom: 0.625rem;
+
+          > .wp-block-column {
+            height: 0.625rem;
+
+            &#{Define.$key} {
+              &-left, &-center, &-right {
+                @include Preset.FooterBackgroundColor;
+                @include Preset.SketchpadShadow;
+              }
+
+              &-left {
+                border-bottom-left-radius: 0.8rem;
+              }
+
+              &-right {
+                border-bottom-right-radius: 0.8rem;
+              }
+            }
+          }
+        }  
+      }
+
+      .wp-block-columns#{Define.$key}-footer > .wp-block-column:not(:first-of-type):not(:last-of-type) {
+        @include Preset.FooterBackgroundColor;
+      }
+    }
+  }
+
+  @include Preset.responsive {
+    footer.wp-block-template-part#{Define.$key} {
+      &-footer {
+        .wp-block-columns#{Define.$key} {
+          &-footer, &-footer-end {
+            .wp-block-column:last-of-type {
+              flex-basis: 1.125rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin FooterWhenSidebarIsDisplayed {
+  & .wp-block-columns {
+    justify-content: flex-start;
+
+    > div.wp-block-column {
+      height: 37px;
+
+      &:first-of-type, &.is-style-sketchpad-left, &.is-style-sketchpad-center {
+        display: none;
+      }
+
+      &:last-of-type {
+        flex-basis: 9.8125rem !important;
+      }
     }
   }
 }

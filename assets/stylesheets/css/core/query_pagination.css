@@ -16,7 +16,7 @@
   font-family: var(--wp--preset--font-family--sketchpad-arial-font);
   font-size: 0.875rem;
   line-height: 1.3125rem;
-  color: #f4eddf;
+  color: var(--wp--preset--color--sketchpad-sketchpad-background);
   padding: 0.3125rem;
   border-radius: 0.1875rem;
 }

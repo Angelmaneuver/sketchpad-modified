@@ -8,6 +8,14 @@ $class: 'wp-block-search';
 /**
  * Sketchpad Style - Search.
  */
+ @include Preset.responsive {
+  #{Define.$key} {
+    &-heading .#{$class}#{Define.$key}1 {
+      margin-top: 1.25rem;
+    }
+  }
+}
+
 @include Common.Main($class) {
   .#{$class}__button {
     display: flex;

@@ -22,9 +22,9 @@ require_once get_template_directory() . '/includes/basic/theme-customizer/class-
 function sketchpad_output_return2top_button_script() {
 	wp_register_style(
 		'sketchpad-return2top-style',
-		get_template_directory_uri() . '/css/theme/return2top.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/theme/return2top.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/css/theme/return2top.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/theme/return2top.css' ),
 		'all'
 	);
 
@@ -34,7 +34,7 @@ function sketchpad_output_return2top_button_script() {
 
 	wp_add_inline_style(
 		'sketchpad-return2top-style',
-		".top_button{background-color:{$background_color};border-color:{$border_color};} .top_button:hover{background-color:{$hover_background_color};}"
+		".return2top{background-color:{$background_color};border-color:{$border_color};} .return2top:hover{background-color:{$hover_background_color};}"
 	);
 
 	wp_enqueue_style( 'sketchpad-return2top-style' );
@@ -57,7 +57,7 @@ function sketchpad_output_return2top_button_script() {
 function sketchpad_output_return2top_button():void {
 	$mark  = SM_Return2Top_Button_Initializer::get_sketchpad_return2top_button_mark();
 	$value = <<<EOM
-<button class="top_button">{$mark}</button>
+<button class="return2top">{$mark}</button>
 
 EOM;
 

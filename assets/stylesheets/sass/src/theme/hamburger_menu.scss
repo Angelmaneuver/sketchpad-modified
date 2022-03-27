@@ -1,0 +1,41 @@
+@use 'preset' as Preset;
+
+/**
+ * Sketchpad Style - Hamburger menu button.
+ */
+.hamburger {
+  @include Preset.responsive('lg') {
+    display: none;
+  }
+  @include Preset.responsive('md') {
+    @include Preset.GetFontPreSet(1.25rem);
+    @include Preset.BaseFontFamily;
+    position: fixed;
+    bottom: 0.875rem;
+    left: 0.625rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    @include Preset.ButtonColor($color: #FFFFFF);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    @include Preset.SketchpadSuperLayer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    .close {
+      display: none;
+    }
+
+    * {
+      font-size: 1.875rem;
+      width: initial;
+      height: initial;
+    }
+  }
+}

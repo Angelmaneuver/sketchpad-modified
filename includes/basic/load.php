@@ -14,6 +14,7 @@ require get_template_directory() . '/includes/basic/functions/insert-head-tag.ph
 require get_template_directory() . '/includes/basic/functions/insert-body-tag.php';
 require get_template_directory() . '/includes/basic/functions/background-color.php';
 require get_template_directory() . '/includes/basic/functions/return2top-button.php';
+require get_template_directory() . '/includes/basic/functions/hamburger-menu-button.php';
 require get_template_directory() . '/includes/basic/functions/rss.php';
 require get_template_directory() . '/includes/basic/functions/user-custom-loading.php';
 
@@ -46,5 +47,6 @@ if ( current_user_can( 'edit_theme_options' ) & ( is_admin() || is_customize_pre
 	add_action( 'customize_register', array( new SM_Insert_Body_Tag_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Color_Setting_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_Return2Top_Button_Initializer(), 'init' ), 100 );
+	add_action( 'customize_register', array( new SM_Hamburger_Menu_Button_Initializer(), 'init' ), 100 );
 	add_action( 'customize_register', array( new SM_RSS_Initializer(), 'init' ), 10 );
 }

@@ -3,13 +3,27 @@
 @use 'common'            as Common;
 @use './specific/column' as Specific;
 
-$class: 'wp-block-column';
+$class: 'wp-site-blocks';
 
 /**
  * Sketchpad Style - Column.
  */
-@include Common.Main($class) {
-  &#{Define.$key} {
-    @include Specific.Styles;
+.#{$class} {
+  > header {
+    @include Specific.Header;  
+  }
+
+  > section {
+    @include Specific.Section;
+  }
+}
+
+@include Common.SidebarOnDisplay($class) {
+  > header {
+    @include Specific.HeaderWhenSidebarIsDisplayed;
+  }
+
+  > section {
+    @include Specific.SectionWhenSidebarIsDisplayed;
   }
 }

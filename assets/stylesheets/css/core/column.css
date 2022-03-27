@@ -1,25 +1,91 @@
 /**
  * Sketchpad Style - Column.
  */
-.wp-block-column.is-style-sketchpad1, .wp-block-column.is-style-sketchpad2 {
+.wp-site-blocks > header .is-style-sketchpad-logo, .wp-site-blocks > header .is-style-sketchpad-heading {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wp-site-blocks > header .is-style-sketchpad-heading .is-style-sketchpad-left, .wp-site-blocks > header .is-style-sketchpad-heading .is-style-sketchpad-right {
   border: none;
 }
-.wp-block-column.is-style-sketchpad1 {
+.wp-site-blocks > header .is-style-sketchpad-heading .is-style-sketchpad-left {
   border-top-left-radius: 0.8rem;
 }
-.wp-block-column.is-style-sketchpad2 {
+.wp-site-blocks > header .is-style-sketchpad-heading .is-style-sketchpad-right {
   border-top-right-radius: 0.8rem;
-}
-.wp-block-column.is-style-sketchpad2, .wp-block-column.is-style-sketchpad4 {
   -webkit-box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
           box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
 }
-.wp-block-column.is-style-sketchpad3 {
+@media screen and (max-width: 1023px) {
+  .wp-site-blocks > header .is-style-sketchpad-logo > div.wp-block-column:last-of-type {
+    -ms-flex-preferred-size: 1.125rem !important;
+        flex-basis: 1.125rem !important;
+  }
+  .wp-site-blocks > header .is-style-sketchpad-heading > div.wp-block-column:last-of-type {
+    -ms-flex-preferred-size: 1.125rem !important;
+        flex-basis: 1.125rem !important;
+  }
+}
+.wp-site-blocks > section > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wp-site-blocks > section .wp-block-column.is-style-sketchpad-left {
   background: url("/wp-content/themes/sketchpad-modified/assets/images/bg-main.webp") top left repeat-y;
   background-size: contain;
 }
-.wp-block-column.is-style-sketchpad5 {
-  min-height: 5.2rem;
-  background: url("/wp-content/themes/sketchpad-modified/assets/images/bg-footer.webp") no-repeat;
-  background-size: contain;
+.wp-site-blocks > section .wp-block-column.is-style-sketchpad-center {
+  min-height: 19rem;
+  z-index: 1;
+}
+.wp-site-blocks > section .wp-block-column.is-style-sketchpad-center + div {
+  -webkit-box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
+          box-shadow: 0.3rem 0.2rem 0.3rem rgba(50, 50, 50, 0.3);
+}
+@media screen and (max-width: 1023px) {
+  .wp-site-blocks > section > .wp-block-columns {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .wp-site-blocks > section > .wp-block-columns .wp-block-column:last-of-type {
+    -ms-flex-preferred-size: 1.125rem !important;
+        flex-basis: 1.125rem !important;
+  }
+  .wp-site-blocks > section > .wp-block-columns .wp-block-column:last-of-type > aside {
+    display: none;
+  }
+}
+
+body.sidebar-on-display .wp-site-blocks > header .is-style-sketchpad-logo {
+  display: none;
+}
+body.sidebar-on-display .wp-site-blocks > header .is-style-sketchpad-heading {
+  height: 1.875rem;
+  margin-top: 0.625rem !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+body.sidebar-on-display .wp-site-blocks > header .is-style-sketchpad-heading > div.wp-block-column:not(.is-style-sketchpad-right):not(:last-of-type) {
+  display: none;
+}
+body.sidebar-on-display .wp-site-blocks > section .wp-block-columns {
+  height: initial !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+body.sidebar-on-display .wp-site-blocks > section .wp-block-columns > div.wp-block-column.is-style-sketchpad-left, body.sidebar-on-display .wp-site-blocks > section .wp-block-columns > div.wp-block-column.is-style-sketchpad-center {
+  display: none;
+}
+body.sidebar-on-display .wp-site-blocks > section .wp-block-columns > div.wp-block-column:last-of-type {
+  -ms-flex-preferred-size: 9.8125rem !important;
+      flex-basis: 9.8125rem !important;
+}
+body.sidebar-on-display .wp-site-blocks > section .wp-block-columns > div.wp-block-column:last-of-type aside {
+  display: block;
+  padding-bottom: 74px;
 }

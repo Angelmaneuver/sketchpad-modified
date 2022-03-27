@@ -38,35 +38,6 @@
   background: #F5F5F5;
 }
 
-
-@mixin Background {
-  background: #AF9F88;
-}
-
-@mixin SketchpadBackground {
-  background: #F4EDDF;
-}
-
-@mixin NavigationHoverBackgroundColor {
-  background: #CFC5AD;
-}
-
-@mixin PostTagBackground {
-  background: #776b53;
-}
-
-@mixin PaginationBackground {
-  background: #9b8f76
-}
-
-@mixin PaginationHoverBackground {
-  background: #776b53
-}
-
-@mixin ExternalContentBackgroundColor1 {
-  background: none repeat scroll 0 0 #f5ead0;
-}
-
 @mixin FooterBackgroundColor {
-  background: #CFC5AD;
+  background: #DCCCB4;
 }

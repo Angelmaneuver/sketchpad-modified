@@ -85,13 +85,39 @@ function watch3(done) {
 	done();
 }
 
-function del4(done) {
+function compile4(done) {
+	src('./assets/stylesheets/sass/src/theme/**/*.scss')
+	.pipe(plumber())
+	.pipe(sass.sync({
+		includePaths: [
+			'./assets/stylesheets/sass/src',
+			'./assets/stylesheets/sass/src/theme',
+			'./assets/stylesheets/sass/preset',
+		]
+	}))
+	.pipe(autoprefixer())
+	.pipe(dest('./assets/stylesheets/css/theme'));
+
+	done();
+}
+
+function watch4(done) {
+	watch([
+		'./assets/stylesheets/sass/src/_define.scss',
+		'./assets/stylesheets/sass/src/theme/**/*.scss',
+		'./assets/stylesheets/sass/preset/**/*.scss',
+	], compile4);
+
+	done();
+}
+
+function del5(done) {
 	del('./assets/stylesheets/css/core');
 
 	done();
 }
 
-function compile4(done) {
+function compile5(done) {
 	src([
 		'./assets/stylesheets/sass/src/block/**/*.scss',
 	])
@@ -109,16 +135,16 @@ function compile4(done) {
 	done();
 }
 
-function watch4(done) {
+function watch5(done) {
 	watch([
-		'./assets/stylesheets/sass/src/**/*.scss',
+		'./assets/stylesheets/sass/src/block/**/*.scss',
 		'./assets/stylesheets/sass/preset/**/*.scss',
-	], series(del4, compile4));
+	], series(del5, compile5));
 
 	done();
 }
 
-function compile5(done) {
+function compile6(done) {
 	src([
 		'./assets/stylesheets/sass/user/**/*.scss',
 	])
@@ -134,11 +160,11 @@ function compile5(done) {
 	done();
 }
 
-function watch5(done) {
+function watch6(done) {
 	watch([
 		'./assets/stylesheets/sass/user/**/*.scss',
 		'./assets/stylesheets/sass/preset/**/*.scss',
-	], series(compile5));
+	], series(compile6));
 
 	done();
 }
@@ -147,6 +173,7 @@ exports.compile = parallel([
 	series(compile1, watch1),
 	series(compile2, watch2),
 	series(compile3, watch3),
-	series(del4, compile4, watch4),
-	series(compile5, watch5),
+	series(compile4, watch4),
+	series(del5, compile5, watch5),
+	series(compile6, watch6),
 ]);

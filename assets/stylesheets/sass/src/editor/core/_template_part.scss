@@ -1,0 +1,14 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+@use 'common' as Common;
+
+/**
+ * Sketchpad Style - Template part.
+ */
+ .wp-site-blocks {
+  > footer.wp-block-template-part#{Define.$key}-footer {
+    .wp-block-columns#{Define.$key}-footer {
+      min-height: 74px;
+    }
+  }
+}
