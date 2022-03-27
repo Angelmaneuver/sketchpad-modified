@@ -12,168 +12,167 @@ const plumber      = require('gulp-plumber');
 const sass         = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 
-function compile1(done) {
-	src('./assets/stylesheets/sass/src/style.scss')
+function compile(srcPath, destPath, includePaths, done) {
+	src(srcPath)
 	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: './assets/stylesheets/sass/preset'
-	}))
+	.pipe(sass.sync({ includePaths: includePaths }))
 	.pipe(autoprefixer())
-	.pipe(dest('./'));
+	.pipe(dest(destPath))
 
 	done();
 }
 
-function watch1(done) {
-	watch([
+function watcher(checkPaths, compiler, done) {
+	watch(checkPaths, compiler);
+
+	done();
+}
+
+function clear(paths) {
+	if(paths instanceof String) {
+		del(paths);
+	} else if(Array.isArray(paths)) {
+		paths.foreach((element) => {
+			del(element);
+		} );
+	}
+}
+
+const style = (done) => {
+	compile(
 		'./assets/stylesheets/sass/src/style.scss',
-		'./assets/stylesheets/sass/src/style/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], compile1);
-
-	done();
+		'./',
+		'./assets/stylesheets/sass/preset',
+		done
+	);
 }
 
-function compile2(done) {
-	src('./assets/stylesheets/sass/src/admin/style_admin.scss')
-	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: [
+const style_admin = (done) => {
+	compile(
+		'./assets/stylesheets/sass/src/admin/style_admin.scss',
+		'./assets/stylesheets/css/admin',
+		[
 			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/preset',
-		]
-	}))
-	.pipe(autoprefixer())
-	.pipe(dest('./assets/stylesheets/css/admin'));
-
-	done();
+		],
+		done
+	);
 }
 
-function watch2(done) {
-	watch([
-		'./assets/stylesheets/sass/src/_define.scss',
-		'./assets/stylesheets/sass/src/admin/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], compile2);
-
-	done();
-}
-
-function compile3(done) {
-	src('./assets/stylesheets/sass/src/editor/block_editor_style.scss')
-	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: [
+const block_editor_style = (done) => {
+	compile(
+		'./assets/stylesheets/sass/src/editor/block_editor_style.scss',
+		'./assets/stylesheets/css/editor',
+		[
 			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/src/editor',
 			'./assets/stylesheets/sass/preset',
-		]
-	}))
-	.pipe(autoprefixer())
-	.pipe(dest('./assets/stylesheets/css/editor'));
-
-	done();
+		],
+		done
+	);
 }
 
-function watch3(done) {
-	watch([
-		'./assets/stylesheets/sass/src/_define.scss',
-		'./assets/stylesheets/sass/src/editor/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], compile3);
-
-	done();
-}
-
-function compile4(done) {
-	src('./assets/stylesheets/sass/src/theme/**/*.scss')
-	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: [
+const theme = (done) => {
+	compile(
+		'./assets/stylesheets/sass/src/theme/**/*.scss',
+		'./assets/stylesheets/css/theme',
+		[
 			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/src/theme',
 			'./assets/stylesheets/sass/preset',
-		]
-	}))
-	.pipe(autoprefixer())
-	.pipe(dest('./assets/stylesheets/css/theme'));
-
-	done();
+		],
+		done
+	);
 }
 
-function watch4(done) {
-	watch([
-		'./assets/stylesheets/sass/src/_define.scss',
-		'./assets/stylesheets/sass/src/theme/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], compile4);
+const blocks = (done) => {
+	clear('./assets/stylesheets/css/core');
 
-	done();
-}
-
-function del5(done) {
-	del('./assets/stylesheets/css/core');
-
-	done();
-}
-
-function compile5(done) {
-	src([
+	compile(
 		'./assets/stylesheets/sass/src/block/**/*.scss',
-	])
-	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: [
+		'./assets/stylesheets/css',
+		[
 			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/preset',
 			'./assets/stylesheets/sass/src/block',
-		]
-	}))
-	.pipe(autoprefixer())
-	.pipe(dest('./assets/stylesheets/css'));
-
-	done();
+		],
+		done
+	);
 }
 
-function watch5(done) {
-	watch([
-		'./assets/stylesheets/sass/src/block/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], series(del5, compile5));
-
-	done();
-}
-
-function compile6(done) {
-	src([
+const user = (done) => {
+	compile(
 		'./assets/stylesheets/sass/user/**/*.scss',
-	])
-	.pipe(plumber())
-	.pipe(sass.sync({
-		includePaths: [
+		'./user/css',
+		[
 			'./assets/stylesheets/sass/preset',
-		]
-	}))
-	.pipe(autoprefixer())
-	.pipe(dest('./user/css'));
-
-	done();
-}
-
-function watch6(done) {
-	watch([
-		'./assets/stylesheets/sass/user/**/*.scss',
-		'./assets/stylesheets/sass/preset/**/*.scss',
-	], series(compile6));
-
-	done();
+		],
+		done
+	);
 }
 
 exports.compile = parallel([
-	series(compile1, watch1),
-	series(compile2, watch2),
-	series(compile3, watch3),
-	series(compile4, watch4),
-	series(del5, compile5, watch5),
-	series(compile6, watch6),
+	series(
+		style,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/style.scss',
+				'./assets/stylesheets/sass/src/style/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], style, done);
+		}
+	),
+
+	series(
+		style_admin,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/_define.scss',
+				'./assets/stylesheets/sass/src/admin/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], style_admin, done);
+		}
+	),
+
+	series(
+		block_editor_style,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/_define.scss',
+				'./assets/stylesheets/sass/src/editor/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], block_editor_style, done);
+		}
+	),
+
+	series(
+		theme,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/_define.scss',
+				'./assets/stylesheets/sass/src/theme/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], theme, done);
+		}
+	),
+
+	series(
+		blocks,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/block/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], blocks, done);
+		}
+	),
+
+	series(
+		user,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/user/**/*.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], user, done);
+		}
+	),
 ]);
