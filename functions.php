@@ -160,6 +160,24 @@ function sketchpad_editor_script() {
 
 add_action( 'enqueue_block_editor_assets', 'sketchpad_editor_script' );
 
+/**
+ * Embed Card Styles enqueue process.
+ *
+ * @return void
+ * @see    https://developer.wordpress.org/reference/hooks/embed_head/
+ */
+function sketchpad_embed_style() {
+	wp_enqueue_style(
+		'sketchpad-embed-style',
+		get_template_directory_uri() . '/assets/stylesheets/css/embed/embed-template.css',
+		array(),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/embed/embed-template.css' ),
+		'all'
+	);
+}
+
+add_filter( 'embed_head', 'sketchpad_embed_style' );
+
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
 require get_template_directory() . '/includes/load.php';

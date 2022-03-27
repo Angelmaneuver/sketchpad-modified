@@ -72,6 +72,19 @@ const block_editor_style = (done) => {
 	);
 }
 
+const embed_template = (done) => {
+	compile(
+		'./assets/stylesheets/sass/src/embed/embed-template.scss',
+		'./assets/stylesheets/css/embed',
+		[
+			'./assets/stylesheets/sass/src',
+			'./assets/stylesheets/sass/src/embed',
+			'./assets/stylesheets/sass/preset',
+		],
+		done
+	);
+}
+
 const theme = (done) => {
 	compile(
 		'./assets/stylesheets/sass/src/theme/**/*.scss',
@@ -142,6 +155,17 @@ exports.compile = parallel([
 				'./assets/stylesheets/sass/src/editor/**/*.scss',
 				'./assets/stylesheets/sass/preset/**/*.scss',
 			], block_editor_style, done);
+		}
+	),
+
+	series(
+		embed_template,
+		(done) => {
+			watcher([
+				'./assets/stylesheets/sass/src/_define.scss',
+				'./assets/stylesheets/sass/src/embed/embed-template.scss',
+				'./assets/stylesheets/sass/preset/**/*.scss',
+			], embed_template, done);
 		}
 	),
 

@@ -1,0 +1,70 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+
+.wp-embed {
+  color: #483613;
+  background-color: #F5EAD0;
+  @include Preset.ThinBorderStyle;
+  @include Preset.SidebarBorderColor;
+  @include Preset.SketchpadShadow;
+
+  .wp-embed-heading a {
+    color: #9B8F76;
+    @include Preset.Left2RightStyle(#9B8F76);
+  }
+
+  .wp-embed-more {
+    color: #483613;
+  }
+
+  .wp-embed-featured-image {
+    height: auto !important;
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.3125rem;
+    border-radius: 0.125rem;
+    border-color: #D1C6AB;
+    border-width: thin;
+    border-style: solid;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    a img {
+      vertical-align: middle;
+      transition: 1s all;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1s all;
+      }
+    }
+  }
+
+  .wp-embed-footer {
+    .wp-embed-site-title, .wp-embed-meta {
+      a {
+        color: #61553C;
+      }
+    }
+  }
+}
+
+@if Define.$use_change_color {
+  .#{Define.$change2pink} {
+    .wp-embed {
+      .wp-embed-heading a, p, .wp-embed-more, .wp-embed-footer, .wp-embed-footer a {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+      }
+
+      .wp-embed-heading a {
+        @include Preset.Left2RightStyle(#ffb6c1);
+      }
+    
+      .wp-embed-featured-image {
+        @include Preset.Change2PinkBorderColor;
+      }
+    }
+  }
+}
