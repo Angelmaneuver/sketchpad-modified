@@ -4,16 +4,28 @@
 
 This is a modified theme of Sketchpad from BestLayout.com. Original is [it](https://bestweblayout.com/products/sketchpad/).
 
-![Screen Shot](screenshot.png)
+![Screen Shot](screenshot.webp)
 
 Original Sketchpad theme has stopped updating. (Last Update V2.0 – 25.08.2016)
 
 I like this theme so I dicided to customize it. Not a job but a hobby...
 
 ## Changes from the original
+### Full Site Editing
+
+![FSE Screen Shot](./assets/images/screenshot%20-%20FSE.webp)
+
+You can edit the entire structure of the site by yourself.
+
+\* WordPress 5.9 or later version is required.
+
 ### Responsive Support
 
+![Responsive Screen Shot](./assets/images/screenshot%20-%20responsive1.webp)
+
 Smartphone screens are now supported.
+
+![Responsive with Sidebar Screen Shot](./assets/images/screenshot%20-%20responsive2.webp)
 
 The sidebar can displayed via the hamburger menu.
 
@@ -25,18 +37,18 @@ I changed the size of the text and eye catching image to make them easier to rea
 
 The following features have been added.
 
- - Breadcrumb
  - Return to Top Button
  - Hamburger Menu
- - Output more read links to RSS feeds when you select excerpt
  - Output Eye catching image to RSS feeds
- - Setting up a Blog Card
  - HTML can be inserted into the Head tags
  - HTML can be inserted into the Body tags
- - Infinite Scroll (JetPack Plugin)
 
 ### Repeal
 
 The following features have been removed.
 
  - IE Support
+
+### Requirements
+
+Parts of this theme use [Sketchpad modified - Blocks](https://github.com/Angelmaneuver/sketchpad-modified-blocks#readme).

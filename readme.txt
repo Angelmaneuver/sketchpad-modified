@@ -1,65 +1,68 @@
-=== Sketchpad - modified ===
-Contributors: Angelmaneuver
-Author URI: https://github.com/Angelmaneuver
+=== Sketchpad modified ===
+Contributors :     Angelmaneuver
+Author URI:        https://github.com/Angelmaneuver
 Donate link:
-Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, translation-ready
+Tags:              full-site-editing, blog, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, sticky-post, threaded-comments, featured-images, translation-ready
 Requires at least: 7.4.12
-Tested up to: Latest
-Stable tag: 2.1.0
-License: GNU General Public License V3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tested up to     : Latest
+Stable tag       : 3.0.0
+License:           GNU General Public License V3
+License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 
-Sketchpad - modified WordPress Theme, Copyright 2021 Angelmaneuver
+Sketchpad modified WordPress Theme, Copyright 2022 Angelmaneuver
 
 Original Sketchpad WordPress Theme, Copyright 2016 BestWebLayout.com
 Theme Sketchpad - modified is distributed under the terms of the GNU GPL
 
 == Description ==
 
-If you are looking for a great theme to note down your thoughts, experience or best practices, there hardly is a better option that Sketchpad - a convenient all-in-one solution to making your website look stylish and uncluttered at the same time. This theme is designed as a twenty-first-century notepad, combining the traditional elegance of notetaking with a nouveau worldview. This way, any ideas of yours will fit in harmoniously, and your readers will appreciate a polished yet completely unintrusive interface. Sketchpad will be most well-suited for business news, journalist reviews, morning news, personal opinion blogs, event reviews, business ideas, case studies, cuisine, book stores, book reviews and many, many more. Check out Sketchpad at: https://github.com/Angelmaneuver/sketchpad-modified
+If you are looking for a great theme to note down your thoughts, experience or best practices, there hardly is a better option that Sketchpad - a convenient all-in-one solution to making your website look stylish and uncluttered at the same time.
+
+This theme is designed as a twenty-first-century notepad, combining the traditional elegance of notetaking with a nouveau worldview.
+
+This way, any ideas of yours will fit in harmoniously, and your readers will appreciate a polished yet completely unintrusive interface.
+
+Sketchpad will be most well-suited for business news, journalist reviews, morning news, personal opinion blogs, event reviews, business ideas, case studies, cuisine, book stores, book reviews and many, many more. Check out Sketchpad at: https://github.com/Angelmaneuver/sketchpad-modified
 
 = Features =
 
-* Cross-browser compatible
-* Two-column design
-* Fixed-layout
-* Translation-ready
+* Full site editing
 * Responsive
-* Breadcrumb
-* Pagination
-* Customizable background and color of site title
-* Customizable header image
-* Customizable logo and favicon
-* Support posts formats
-* Main colors: brown
 
 = Translation =
 
 * Japanese (ja)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="https://github.com/Angelmaneuver/sketchpad-modified" target="_blank">GitHub</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="https://github.com/Angelmaneuver/sketchpad-modified" target="_blank">GitHub</a> and we'll add it to the plugin.
+
+You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Copyrights for Resources used in this theme =
 
 * External font from Google Webfonts is used in Theme:
-  	- Open Sans - http://www.google.com/fonts/specimen/Open+Sans
-      License: Apache License Version 2.0
-      Copyright: Steve Matteson, https://profiles.google.com/107777320916704234605/about
+ - Open Sans - http://www.google.com/fonts/specimen/Open+Sans
+   License:    Apache License Version 2.0
+   Copyright:  Steve Matteson, https://profiles.google.com/107777320916704234605/about
 
-* The following images are used in the "img" folder in the Sketchpad Theme
-    License:  GNU General Public License v2 or later
+ - Montserrat - https://fonts.google.com/specimen/Montserrat
+   License:     Open Font License
+   Copyright:   Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly
+
+
+* The following images are used in the "assets/images" folder in the Sketchpad Theme
+    License:   GNU General Public License v2 or later
     Copyright: the Bestwebsoft team, https://github.com/bestwebsoft
 
 == Installation ==
 
 Manual installation:
 
-1. Upload the `Sketchpad - modified` folder to the `/wp-content/themes/` directory
+1. Upload the `Sketchpad modified` folder to the `/wp-content/themes/` directory
 
 Installation using "Add New Theme"
 
 1. From your Admin UI (Dashboard), use the menu to select Themes -> Add New
-2. Search for ‘Sketchpad - modified’
+2. Search for ‘Sketchpad modified’
 3. Click the 'Install' button to open the theme's repository listing
 4. Click the 'Install' button
 
@@ -69,36 +72,11 @@ Activation and Use
 
 == Theme Notes ==
 
-= Post Thumbnail Functionality =
-
-To post thumbnails we recommend using the image with width equal to 503px.
-
-= Widgets =
-
-The Theme supports standard Widgets.
-By default in the sidebar the following widgets will be displayed: pages.
-
 == Frequently Asked Questions ==
 
 = How can I change language from English into Japanese? =
 
 Change the language in the admin settings screen. Settings > General > Site Language.
-
-= How to use the custom header image? =
-
-You can use the custom header image the following way: from your Admin UI (Dashboard), use the menu to select Appearance -> Header -> Select image -> Browse, and then select Upload. Header images have max size 880px*117px.
-
-= How to use the custom logo and favicon? =
-
-You can use the custom logo and favicon the following way: from your Admin UI (Dashboard), use the menu to select Appearance -> Customize -> Logo & Favicon -> Click on "No image" under the Logo or Favicon -> Click on "select a file" -> Browse your image -> Press Save & Publish.
-
-= Does the theme support widgets? =
-
-Yes, this theme includes widgets. The widget 'pages' is shown by default.
-
-= Does the theme support custom menu? =
-
-Yes, the Theme supports navigation menus, which is located at the top of the page.
 
 = How to add plugins? =
 
@@ -110,8 +88,11 @@ From your Admin Panel, use the menu to select Plugins -> Add New. Search the nec
 
 == Changelog ==
 
-= V2.1.0 =
-Release date of Sketchpad - modified.
+= V3.0.0 - XX.XX.YYYY =
+* Update : Update from classic theme to block theme.
+
+= V2.1.0 - 29.01.2022 =
+Release date of Sketchpad modified.
 
 = V2.0 - 25.08.2016 =
 * Update : All functionality for WordPress 4.6 was updated.
@@ -185,9 +166,14 @@ Release date of Sketchpad - modified.
 * Release date of Sketchpad
 
 == Upgrade Notice ==
+= V3.0 =
+Upgrade to Block theme.
+
+= V2.1 =
+Final version of the classic theme for WordPress 5.8 and earlier.
 
 = V2.0 =
-* The compatibility with new WordPress version updated.
+The compatibility with new WordPress version updated.
 
 = V1.9 =
 The 'title-tag' theme support was added. The 'custom-logo' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Unnecessary files category.php, author.php and tag.php have been removed. Theme functionality was improved. Translation was updated. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.

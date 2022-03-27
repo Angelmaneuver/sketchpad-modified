@@ -5,6 +5,8 @@
   overflow: hidden;
 }
 .wp-block-post-featured-image.is-style-sketchpad1 a img {
+  height: auto !important;
+  width: 100%;
   -webkit-transition: 1s all;
   transition: 1s all;
 }
