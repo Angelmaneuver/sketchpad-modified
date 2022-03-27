@@ -4,7 +4,7 @@
 
 This is a modified theme of Sketchpad from BestLayout.com. Original is [it](https://bestweblayout.com/products/sketchpad/).
 
-![Screen Shot](./assets/images/screenshot%20-%20View.png)
+![Screen Shot](./assets/images/screenshot%20-%20View.webp)
 
 Original Sketchpad theme has stopped updating. (Last Update V2.0 – 25.08.2016)
 
