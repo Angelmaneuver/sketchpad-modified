@@ -103,15 +103,13 @@ function sketchpad_script() {
 
 	wp_enqueue_style( 'dashicons' );
 
-	wp_register_style(
+	wp_enqueue_style(
 		'sketchpad-style',
 		get_template_directory_uri() . '/style.css',
 		array(),
 		(string) filemtime( get_template_directory() . '/style.css' ),
 		'all'
 	);
-
-	wp_enqueue_style( 'sketchpad-style' );
 
 	wp_enqueue_script(
 		'sketchpad-script',
