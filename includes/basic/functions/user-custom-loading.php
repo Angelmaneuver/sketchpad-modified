@@ -24,19 +24,7 @@ function sketchpad_user_custom_style() {
 		$media      = isset( $setting['media'] ) ? $setting['media'] : 'all';
 		$target_url = isset( $setting['target_url'] ) ? $setting['target_url'] : 'all';
 
-		if ( empty( $handle ) ) {
-			continue;
-		}
-
-		if ( empty( $filename ) ) {
-			continue;
-		}
-
-		if ( ! file_exists( $base_path . $filename ) ) {
-			continue;
-		}
-
-		if ( 'all' !== $target_url && ! strpos( get_the_permalink(), strtolower( rawurlencode( $target_url ) ) ) ) {
+		if ( is_invalid_parameter_sketchpad_user_custom_style( $base_path, $handle, $filename, $target_url ) ) {
 			continue;
 		}
 
@@ -51,3 +39,32 @@ function sketchpad_user_custom_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'sketchpad_user_custom_style' );
+
+/**
+ * Validation to user custom loading stylesheets settings.
+ *
+ * @param string $base_path  Used to check file name parameter.
+ * @param string $handle     Parameters to be checked.
+ * @param string $filename   Parameters to be checked.
+ * @param string $target_url Parameters to be checked.
+ * @return boolean True if parameters to be invaild.
+ */
+function is_invalid_parameter_sketchpad_user_custom_style( string $base_path, string $handle, string $filename, string $target_url ):bool {
+	if ( empty( $handle ) ) {
+		return true;
+	}
+
+	if ( empty( $filename ) ) {
+		return true;
+	}
+
+	if ( ! file_exists( $base_path . $filename ) ) {
+		return true;
+	}
+
+	if ( 'all' !== $target_url && ! strpos( get_the_permalink(), strtolower( rawurlencode( $target_url ) ) ) ) {
+		return true;
+	}
+
+	return false;
+}
