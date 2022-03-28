@@ -57,7 +57,6 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_top_button_enable',
@@ -85,7 +84,6 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 				'sanitize_callback' => 'sanitize_hex_color',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -96,16 +94,15 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_top_button_enable' => array(
+			'sketchpad_top_button_enable'        => array(
 				'setting'  => 'sketchpad_top_button_enable',
 				'section'  => 'sketchpad_top_button_section',
 				'label'    => __( 'Top Button enable', 'sketchpad-modified' ),
 				'type'     => 'checkbox',
 				'priority' => 0,
 			),
-			'sketchpad_top_button_mark' => array(
+			'sketchpad_top_button_mark'          => array(
 				'setting' => 'sketchpad_top_button_mark',
 				'section' => 'sketchpad_top_button_section',
 				'label'   => __( 'Top Button Mark', 'sketchpad-modified' ),
@@ -117,7 +114,7 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 				array(
 					'setting' => 'sketchpad_top_button_background_color',
 					'section' => 'sketchpad_top_button_section',
-					'label'   => __( 'Top Button Background Color', 'sketchpad-modified' )
+					'label'   => __( 'Top Button Background Color', 'sketchpad-modified' ),
 				)
 			),
 			parent::WP_OBJECT_START_WITH . '002' => new WP_Customize_Color_Control(
@@ -126,7 +123,7 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 				array(
 					'setting' => 'sketchpad_top_button_hover_background_color',
 					'section' => 'sketchpad_top_button_section',
-					'label'   => __( 'Top Button Hover Background Color', 'sketchpad-modified' )
+					'label'   => __( 'Top Button Hover Background Color', 'sketchpad-modified' ),
 				)
 			),
 			parent::WP_OBJECT_START_WITH . '003' => new WP_Customize_Color_Control(
@@ -135,11 +132,10 @@ class SM_Return2Top_Button_Initializer extends SM_Abstract_Theme_Customizer_Init
 				array(
 					'setting' => 'sketchpad_top_button_border_color',
 					'section' => 'sketchpad_top_button_section',
-					'label'   => __( 'Top Button Border Color', 'sketchpad-modified' )
+					'label'   => __( 'Top Button Border Color', 'sketchpad-modified' ),
 				)
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

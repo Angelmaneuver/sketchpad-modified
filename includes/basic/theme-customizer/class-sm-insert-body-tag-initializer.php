@@ -51,12 +51,11 @@ class SM_Insert_Body_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_body_insert_directly_under_body',
 				'default'           => '',
-				'sanitize_callback' => 'sketchpad_non_sanitize'
+				'sanitize_callback' => 'sketchpad_non_sanitize',
 			),
 			array(
 				'key'               => 'sketchpad_body_insert_directly_under_body_priority',
@@ -65,7 +64,6 @@ class SM_Insert_Body_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 				'sanitize_callback' => 'absint',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -76,13 +74,12 @@ class SM_Insert_Body_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
 			'sketchpad_body_insert_directly_under_body' => array(
 				'setting' => 'sketchpad_body_insert_directly_under_body',
 				'section' => 'sketchpad_body_section',
 				'label'   => __( 'Directly Under the Body Tag', 'sketchpad-modified' ),
-				'type'    => 'textarea'
+				'type'    => 'textarea',
 			),
 			'sketchpad_body_insert_directly_under_body_priority' => array(
 				'setting'     => 'sketchpad_body_insert_under_body_priority',
@@ -93,11 +90,10 @@ class SM_Insert_Body_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 				'input_attrs' => array(
 					'min'  => 0,
 					'max'  => 10,
-					'step' => 1
+					'step' => 1,
 				),
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

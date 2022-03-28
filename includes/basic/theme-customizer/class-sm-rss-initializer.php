@@ -53,7 +53,6 @@ class SM_RSS_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_rss_output_post_tumbnail',
@@ -83,7 +82,6 @@ class SM_RSS_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 				'sanitize_callback' => 'sketchpad_sanitize_select',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -94,27 +92,26 @@ class SM_RSS_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_rss_output_post_tumbnail' => array(
+			'sketchpad_rss_output_post_tumbnail'     => array(
 				'setting' => 'sketchpad_rss_output_post_tumbnail',
 				'section' => 'sketchpad_rss_section',
 				'label'   => __( 'output eye-catching image', 'sketchpad-modified' ),
-				'type'    => 'checkbox'
+				'type'    => 'checkbox',
 			),
 			'sketchpad_rss_output_media_content_tag' => array(
 				'setting' => 'sketchpad_rss_output_media_content_tag',
 				'section' => 'sketchpad_rss_section',
 				'label'   => __( 'to incluede the "media:content" tag', 'sketchpad-modified' ),
-				'type'    => 'checkbox'
+				'type'    => 'checkbox',
 			),
-			'sketchpad_rss_output_enclosure_tag' => array(
+			'sketchpad_rss_output_enclosure_tag'     => array(
 				'setting' => 'sketchpad_rss_output_enclosure_tag',
 				'section' => 'sketchpad_rss_section',
 				'label'   => __( 'to incluede the "enclosure" tag', 'sketchpad-modified' ),
-				'type'    => 'checkbox'
+				'type'    => 'checkbox',
 			),
-			'sketchpad_rss_media_image_size' => array(
+			'sketchpad_rss_media_image_size'         => array(
 				'setting' => 'sketchpad_rss_media_image_size',
 				'section' => 'sketchpad_rss_section',
 				'label'   => __( 'Image Size', 'sketchpad-modified' ),
@@ -122,12 +119,11 @@ class SM_RSS_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 					'thumbnail' => 'thumbnail',
 					'medium'    => 'medium',
 					'large'     => 'large',
-					'full'      => 'full'
+					'full'      => 'full',
 				),
-				'type'    => 'select'
+				'type'    => 'select',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

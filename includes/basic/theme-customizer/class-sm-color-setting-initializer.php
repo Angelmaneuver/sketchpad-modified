@@ -54,7 +54,6 @@ class SM_Color_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_background_color_enable',
@@ -68,7 +67,6 @@ class SM_Color_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 				'sanitize_callback' => 'sanitize_hex_color',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -79,7 +77,6 @@ class SM_Color_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
 			'sketchpad_background_color_enable'  => array(
 				'setting'  => 'sketchpad_background_color_enable',
@@ -97,9 +94,8 @@ class SM_Color_Setting_Initializer extends SM_Abstract_Theme_Customizer_Initiali
 					'label'    => __( 'Color', 'sketchpad-modified' ),
 					'priority' => 1,
 				)
-			)
+			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

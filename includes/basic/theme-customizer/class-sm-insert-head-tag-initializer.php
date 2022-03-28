@@ -51,21 +51,19 @@ class SM_Insert_Head_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_head_insert_head',
 				'default'           => '',
-				'sanitize_callback' => 'sketchpad_sanitize_head'
+				'sanitize_callback' => 'sketchpad_sanitize_head',
 			),
 			array(
 				'key'               => 'sketchpad_head_insert_priority',
 				'default'           => 10,
 				'transport'         => 'postMessage',
-				'sanitize_callback' => 'absint'
+				'sanitize_callback' => 'absint',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -76,12 +74,11 @@ class SM_Insert_Head_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
-			'sketchpad_head_insert_head' => array(
+			'sketchpad_head_insert_head'     => array(
 				'setting' => 'sketchpad_head_insert_head',
 				'section' => 'sketchpad_head_section',
-				'type'    => 'textarea'
+				'type'    => 'textarea',
 			),
 			'sketchpad_head_insert_priority' => array(
 				'setting'     => 'sketchpad_head_insert_priority',
@@ -92,11 +89,10 @@ class SM_Insert_Head_Tag_Initializer extends SM_Abstract_Theme_Customizer_Initia
 				'input_attrs' => array(
 					'min'  => 0,
 					'max'  => 10,
-					'step' => 1
+					'step' => 1,
 				),
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**

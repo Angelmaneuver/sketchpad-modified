@@ -63,7 +63,6 @@ EOM;
 	 * @return array
 	 */
 	protected function get_settings():array {
-		// @codingStandardsIgnoreStart
 		return array(
 			array(
 				'key'               => 'sketchpad_admin_page_background_image',
@@ -93,10 +92,9 @@ EOM;
 				'key'               => 'sketchpad_admin_background_image_opacity_targets',
 				'default'           => self::DEFAULT_OPACITY_TARGETS,
 				'transport'         => 'postMessage',
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'sanitize_text_field',
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
@@ -107,16 +105,15 @@ EOM;
 	 * @return array
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
-		// @codingStandardsIgnoreStart
 		return array(
 			'sketchpad_admin_page_background_image' => array(
 				'setting'  => 'sketchpad_admin_page_background_image',
 				'section'  => 'sketchpad_admin_page_setting_section',
 				'label'    => __( 'Activate the background image setting in the admin panel.', 'sketchpad-modified' ),
 				'type'     => 'checkbox',
-				'priority' => 0
+				'priority' => 0,
 			),
-			parent::WP_OBJECT_START_WITH . '001' => new WP_Customize_Upload_Control(
+			parent::WP_OBJECT_START_WITH . '001'    => new WP_Customize_Upload_Control(
 				$wp_customize,
 				'sketchpad_admin_page_background_image_url',
 				array(
@@ -125,7 +122,7 @@ EOM;
 					'label'   => __( 'Background', 'sketchpad-modified' ) . __( 'Image', 'sketchpad-modified' ),
 				)
 			),
-			parent::WP_OBJECT_START_WITH . '002' => new WP_Customize_Color_Control(
+			parent::WP_OBJECT_START_WITH . '002'    => new WP_Customize_Color_Control(
 				$wp_customize,
 				'sketchpad_admin_page_background_image_color',
 				array(
@@ -137,7 +134,7 @@ EOM;
 			'sketchpad_admin_background_image_color_reset_button' => array(
 				'settings'    => array(),
 				'section'     => 'sketchpad_admin_page_setting_section',
-				'type'        => 'button', 
+				'type'        => 'button',
 				'input_attrs' => array(
 					'value' => __( 'Reset', 'sketchpad-modified' ),
 					'class' => 'button button-primary',
@@ -150,9 +147,9 @@ EOM;
 				'description' => __( 'The more you slide to the left, the higher the transparency.', 'sketchpad-modified' ),
 				'type'        => 'range',
 				'input_attrs' => array(
-					'min' => 0,
-					'max' => 1,
-					'step' => 0.01
+					'min'  => 0,
+					'max'  => 1,
+					'step' => 0.01,
 				),
 			),
 			'sketchpad_admin_background_image_opacity_reset_button' => array(
@@ -169,7 +166,7 @@ EOM;
 				'section'     => 'sketchpad_admin_page_setting_section',
 				'label'       => __( 'Transparent DOM', 'sketchpad-modified' ),
 				'description' => __( 'Enter the DOM element you want to make transparent.', 'sketchpad-modified' ),
-				'type'        => 'textarea'
+				'type'        => 'textarea',
 			),
 			'sketchpad_admin_background_image_opacity_targets_reset_button' => array(
 				'settings'    => array(),
@@ -181,7 +178,6 @@ EOM;
 				),
 			),
 		);
-		// @codingStandardsIgnoreEnd
 	}
 
 	/**
