@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2022-03-28T13:19:40+00:00\n"
+"POT-Creation-Date: 2022-03-28T16:38:07+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -36,11 +36,11 @@ msgstr ""
 msgid "https://github.com/Angelmaneuver"
 msgstr ""
 
-#: includes/basic/load.php:40
+#: includes/basic/load.php:39
 msgid "Site Setting"
 msgstr "サイト設定"
 
-#: includes/basic/load.php:67
+#: includes/basic/load.php:66
 msgid "Post Setting"
 msgstr "投稿設定"
 
@@ -261,37 +261,9 @@ msgstr "\"enclosure\"タグを追加する"
 msgid "Image Size"
 msgstr "画像サイズ"
 
-#: includes/block/pattern/contents-main.php:11
-msgid "Contents main"
-msgstr ""
-
-#: includes/block/pattern/contents.php:11
-msgid "Contents"
-msgstr ""
-
-#: includes/block/pattern/header-logo.php:11
-msgid "Default header"
-msgstr ""
-
-#: includes/block/pattern/header-logo.php:16
-msgid "Header logo image"
-msgstr ""
-
-#: includes/block/pattern/header1.php:11
-msgid "header1"
-msgstr ""
-
-#: includes/block/pattern/header2.php:11
-msgid "header2"
-msgstr ""
-
-#: includes/block/pattern/sidebar.php:11
+#: includes/block/pattern/sidebar.php:11 includes/block/patterns.php:19
 msgid "Sidebar"
-msgstr ""
-
-#: includes/block/patterns.php:22
-msgid "Frames"
-msgstr ""
+msgstr "サイドバー"
 
 #: includes/block/style/core/group.php:12
 msgid "Indent"

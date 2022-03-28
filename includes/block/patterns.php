@@ -15,11 +15,9 @@
  */
 function register_sketchpad_block_patterns():void {
 	$block_pattern_categories = array(
-		'header' => array( 'label' => 'Headers' ),
-		'footer' => array( 'label' => 'Footers' ),
-		'query'  => array( 'label' => 'Query' ),
-		'pages'  => array( 'label' => 'Pages' ),
-		'frame'  => array( 'label' => __( 'Frames', 'sketchpad-modified' ) ),
+		'Sidebar' => array(
+			'label' => __( 'Sidebar', 'sketchpad-modified' ),
+		),
 	);
 
 	foreach ( $block_pattern_categories as $name => $properties ) {
@@ -29,11 +27,6 @@ function register_sketchpad_block_patterns():void {
 	}
 
 	$block_patterns = array(
-		'header-logo',
-		'header1',
-		'header2',
-		'contents',
-		'contents-main',
 		'sidebar',
 	);
 
