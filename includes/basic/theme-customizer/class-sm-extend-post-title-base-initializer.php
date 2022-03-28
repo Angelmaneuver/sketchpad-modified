@@ -120,7 +120,7 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 	 */
 	protected function get_controls( WP_Customize_Manager $wp_customize ):array {
 		return array(
-			"sketchpad_{$this->post_type}_title_extend_enable"  => array(
+			"sketchpad_{$this->post_type}_title_extend_enable" => array(
 				'setting'  => "sketchpad_{$this->post_type}_title_extend_enable",
 				'section'  => "sketchpad_{$this->post_type}_section",
 				'label'    => sprintf(
