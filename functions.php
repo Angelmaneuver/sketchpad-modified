@@ -87,21 +87,7 @@ add_filter( 'wp_resource_hints', 'sketchpad_resource_hints', 10, 2 );
  * @see    https://developer.wordpress.org/reference/functions/wp_enqueue_script/
  */
 function sketchpad_script() {
-	wp_enqueue_style(
-		'google-open-sans',
-		'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap',
-		array(),
-		null
-	);
-
-	wp_enqueue_style(
-		'google-montserrat',
-		'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap',
-		array(),
-		null
-	);
-
-	wp_enqueue_style( 'dashicons' );
+	enqueue_sketchpad_fonts();
 
 	wp_enqueue_style(
 		'sketchpad-style',
@@ -177,6 +163,29 @@ function sketchpad_embed_style() {
 }
 
 add_filter( 'embed_head', 'sketchpad_embed_style' );
+
+/**
+ * Enqueue fonts to be used in the theme.
+ *
+ * @return void
+ */
+function enqueue_sketchpad_fonts() {
+	wp_enqueue_style( 'dashicons' );
+
+	wp_enqueue_style(
+		'google-open-sans',
+		'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap',
+		array(),
+		null
+	);
+
+	wp_enqueue_style(
+		'google-montserrat',
+		'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap',
+		array(),
+		null
+	);
+}
 
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
