@@ -44,12 +44,10 @@ function sketchpad_rss_output_thumbnail():void {
 		return;
 	}
 
-	$thumbnail_id       = get_post_thumbnail_id();
-	$thumbnail_path     = get_attached_file( $thumbnail_id );
-	$thumbnail_info     = wp_get_attachment_image_src( $thumbnail_id, SM_RSS_Initializer::get_rss_media_image_size() );
-	$thumbnail_mimetype = wp_check_filetype( $thumbnail_path )['type'];
-	$thumbnail_length   = filesize( $thumbnail_path );
-	$value              = null;
+	list(
+		'info' => $thumbnail_info, 'mimetype' => $thumbnail_mimetype, 'length' => $thumbnail_length
+	)      = sketchpad_get_thunmbnail_info();
+	$value = null;
 
 	if ( SM_RSS_Initializer::is_output_media_content_tag() ) {
 		$value = <<<EOM
@@ -86,3 +84,25 @@ function sketchpad_rss_excerpt():string {
 }
 
 add_filter( 'the_excerpt_rss', 'sketchpad_rss_excerpt' );
+
+/**
+ * Return the thumbnail infomation.
+ *
+ * @param  int|WP_Post $post Post ID or WP_Post object. Default is global `$post`.
+ * @return array       Thumbnail infomation.
+ */
+function sketchpad_get_thunmbnail_info( $post = null ):array {
+	$id       = get_post_thumbnail_id( $post );
+	$path     = get_attached_file( $id );
+	$info     = wp_get_attachment_image_src( $id, SM_RSS_Initializer::get_rss_media_image_size() );
+	$mimetype = wp_check_filetype( $path )['type'];
+	$length   = filesize( $path );
+
+	return array(
+		'id'       => $id,
+		'path'     => $path,
+		'info'     => $info,
+		'mimetype' => $mimetype,
+		'length'   => $length,
+	);
+}
