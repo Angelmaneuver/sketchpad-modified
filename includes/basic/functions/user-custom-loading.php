@@ -50,21 +50,23 @@ add_action( 'wp_enqueue_scripts', 'sketchpad_user_custom_style' );
  * @return boolean True if parameters to be invaild.
  */
 function is_invalid_parameter_sketchpad_user_custom_style( string $base_path, string $handle, string $filename, string $target_url ):bool {
+	$result = false;
+
 	if ( empty( $handle ) ) {
-		return true;
+		$result = true;
 	}
 
 	if ( empty( $filename ) ) {
-		return true;
+		$result = true;
 	}
 
 	if ( ! file_exists( $base_path . $filename ) ) {
-		return true;
+		$result = true;
 	}
 
 	if ( 'all' !== $target_url && ! strpos( get_the_permalink(), strtolower( rawurlencode( $target_url ) ) ) ) {
-		return true;
+		$result = true;
 	}
 
-	return false;
+	return $result;
 }
