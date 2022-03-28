@@ -14,7 +14,6 @@ require get_template_directory() . '/includes/basic/functions/insert-head-tag.ph
 require get_template_directory() . '/includes/basic/functions/insert-body-tag.php';
 require get_template_directory() . '/includes/basic/functions/background-color.php';
 require get_template_directory() . '/includes/basic/functions/extend-post-title.php';
-require get_template_directory() . '/includes/basic/functions/extend-page-title.php';
 require get_template_directory() . '/includes/basic/functions/return2top-button.php';
 require get_template_directory() . '/includes/basic/functions/hamburger-menu-button.php';
 require get_template_directory() . '/includes/basic/functions/rss.php';

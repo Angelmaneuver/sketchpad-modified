@@ -118,6 +118,7 @@ const user = (done) => {
 		'./assets/stylesheets/sass/user/**/*.scss',
 		'./user/css',
 		[
+			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/preset',
 		],
 		done
@@ -195,6 +196,7 @@ exports.compile = parallel([
 		(done) => {
 			watcher([
 				'./assets/stylesheets/sass/user/**/*.scss',
+				'./assets/stylesheets/sass/src/_define.scss',
 				'./assets/stylesheets/sass/preset/**/*.scss',
 			], user, done);
 		}
