@@ -21,11 +21,11 @@ You can edit the entire structure of the site by yourself.
 
 ### Responsive Support
 
-![Responsive Screen Shot](./assets/images/screenshot%20-%20responsive1.webp)
+|Main|Sidebar|
+|:-:|:-:|
+|![Responsive Screen Shot](./assets/images/screenshot%20-%20responsive1.webp)|![Responsive with Sidebar Screen Shot](./assets/images/screenshot%20-%20responsive2.webp)|
 
 Smartphone screens are now supported.
-
-![Responsive with Sidebar Screen Shot](./assets/images/screenshot%20-%20responsive2.webp)
 
 The sidebar can displayed via the hamburger menu.
 
