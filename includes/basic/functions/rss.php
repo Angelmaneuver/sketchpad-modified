@@ -37,16 +37,14 @@ add_action( 'rss2_ns', 'sketchpad_rss_namespaces' );
  * @return void
  */
 function sketchpad_rss_output_thumbnail():void {
-	global $post;
-
 	if (
 		! SM_RSS_Initializer::is_output_post_tumbnail() ||
-		! has_post_thumbnail( $post->ID )
+		! has_post_thumbnail()
 	) {
 		return;
 	}
 
-	$thumbnail_id       = get_post_thumbnail_id( $post->ID );
+	$thumbnail_id       = get_post_thumbnail_id();
 	$thumbnail_path     = get_attached_file( $thumbnail_id );
 	$thumbnail_info     = wp_get_attachment_image_src( $thumbnail_id, SM_RSS_Initializer::get_rss_media_image_size() );
 	$thumbnail_mimetype = wp_check_filetype( $thumbnail_path )['type'];
