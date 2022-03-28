@@ -18,7 +18,7 @@ require_once get_template_directory() . '/includes/basic/theme-customizer/saniti
  *
  * @since 3.0.0
  */
-class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
+abstract class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer_Initializer {
 	const DEFAULT_SKETCHPAD_PAGE_TITLE_EXTEND_ENABLE = false;
 	const DEFAULT_SKETCHPAD_PAGE_TITLE_EXTEND        = '{title}';
 
@@ -30,15 +30,6 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 	 * @var    string    $post_type Post type string.
 	 */
 	protected $post_type = '';
-
-	/**
-	 * Title for Post type string.
-	 *
-	 * @since  0.1.0
-	 * @access protected
-	 * @var    string    $title4post_type title for post type string.
-	 */
-	protected $title4post_type = '';
 
 	/**
 	 * Label for Post type string.
@@ -54,15 +45,11 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 	 *
 	 * @since 3.0.0
 	 * @param string $post_type       Post type string.
-	 * @param string $title4post_type Title for post type string.
-	 * @param string $label4post_type Label for post type string.
 	 */
-	public function __construct( string $post_type, string $title4post_type, string $label4post_type ) {
+	public function __construct( string $post_type ) {
 		parent::__construct( 'sketchpad_post_panel' );
 
-		$this->post_type       = $post_type;
-		$this->title4post_type = $title4post_type;
-		$this->label4post_type = $label4post_type;
+		$this->post_type = $post_type;
 	}
 
 	/**
@@ -78,12 +65,12 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 				'title'       => sprintf(
 					/* translators: %1$s: Post type */
 					__( '%1$s Title Setting', 'sketchpad-modified' ),
-					$this->title4post_type
+					$this->get_title()
 				),
 				'description' => sprintf(
 					/* translators: %1$s: Post type */
 					__( 'Please enter if you want to add text to all %1$s titles.', 'sketchpad-modified' ),
-					$this->label4post_type
+					$this->get_label()
 				),
 			),
 		);
@@ -126,7 +113,7 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 				'label'    => sprintf(
 					/* translators: %1$s: Post type */
 					__( '%1$s title extend enable', 'sketchpad-modified' ),
-					$this->title4post_type
+					$this->get_title()
 				),
 				'type'     => 'checkbox',
 				'priority' => 0,
@@ -137,15 +124,31 @@ class SM_Extend_Post_Title_Base_Initializer extends SM_Abstract_Theme_Customizer
 				'label'       => sprintf(
 					/* translators: %1$s: Post type */
 					__( 'Extend all %1$s titles', 'sketchpad-modified' ),
-					$this->label4post_type
+					$this->get_label()
 				),
 				'description' => sprintf(
 					/* translators: %1$s: Post type */
 					__( '* The title of the %1$s is set at location specified by the "{title}" keyword.', 'sketchpad-modified' ),
-					$this->label4post_type
+					$this->get_label()
 				),
 				'type'        => 'textarea',
 			),
 		);
 	}
+
+	/**
+	 * Return the title string.
+	 *
+	 * @since  3.0.0
+	 * @return string
+	 */
+	abstract protected function get_title():string;
+
+	/**
+	 * Return the label string.
+	 *
+	 * @since  3.0.0
+	 * @return string
+	 */
+	abstract protected function get_label():string;
 }

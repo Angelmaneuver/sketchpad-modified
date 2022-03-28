@@ -24,7 +24,7 @@ class SM_Extend_Page_Title_Initializer extends SM_Extend_Post_Title_Base_Initial
 	 * @since 3.0.0
 	 */
 	public function __construct() {
-		parent::__construct( 'page', __( 'Page', 'sketchpad-modified' ), __( 'page', 'sketchpad-modified' ) );
+		parent::__construct( 'page' );
 	}
 
 
@@ -46,5 +46,25 @@ class SM_Extend_Page_Title_Initializer extends SM_Extend_Post_Title_Base_Initial
 	 */
 	public static function get_sketchpad_title_extend():string {
 		return get_theme_mod( 'sketchpad_page_title_extend', self::DEFAULT_SKETCHPAD_PAGE_TITLE_EXTEND );
+	}
+
+	/**
+	 * Return the title string.
+	 *
+	 * @since  3.0.0
+	 * @return string
+	 */
+	protected function get_title():string {
+		return __( 'Page', 'sketchpad-modified' );
+	}
+
+	/**
+	 * Return the label string.
+	 *
+	 * @since  3.0.0
+	 * @return string
+	 */
+	protected function get_label():string {
+		return __( 'page', 'sketchpad-modified' );
 	}
 }
