@@ -10,12 +10,12 @@
     "compile": "yarn -s run gulp compile"
   },
   "devDependencies": {
-    "del": "^6.0.0",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
-    "minimatch": "^5.0.1",
-    "sass": "^1.49.9"
+    "minimatch": "^5.1.0",
+    "sass": "^1.52.1"
   }
 }
