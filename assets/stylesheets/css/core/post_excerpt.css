@@ -6,7 +6,6 @@
 }
 .wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__excerpt, .wp-block-post-excerpt.is-style-sketchpad1 > div:first-of-type {
   display: inline-block;
-  min-height: 8.125rem;
   margin-bottom: 1.5625rem;
 }
 .wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__more-text {
@@ -19,6 +18,11 @@
   text-decoration: underline;
 }
 
+@media (min-width: 1024px) {
+  .wp-block-post-excerpt.is-style-sketchpad1 .wp-block-post-excerpt__excerpt, .wp-block-post-excerpt.is-style-sketchpad1 > div:first-of-type {
+    min-height: 8.125rem;
+  }
+}
 body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-excerpt:not(.is-style-no-change) {
   color: #ffffff !important;
   font-weight: 700 !important;

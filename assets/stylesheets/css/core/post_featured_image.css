@@ -17,6 +17,17 @@
   transition: 1s all;
 }
 
+@media screen and (max-width: 1023px) {
+  .wp-block-post-featured-image.is-style-sketchpad1 {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .wp-block-post-featured-image.is-style-sketchpad1 {
+    height: auto;
+    width: 12.5rem;
+  }
+}
 body.tag-r18 main > header:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-post-featured-image:not(.is-style-no-change) {
   border-color: #FFB6C1;
   outline-color: #FFB6C1;

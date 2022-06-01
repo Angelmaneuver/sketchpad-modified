@@ -27,6 +27,9 @@ function register_sketchpad_block_patterns():void {
 	}
 
 	$block_patterns = array(
+		'article-headline',
+		'article-excerpt',
+		'article-footer',
 		'sidebar',
 	);
 

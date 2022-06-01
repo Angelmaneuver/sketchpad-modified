@@ -14,3 +14,16 @@
     }
   }
 }
+
+@mixin SmartPhone {
+  &1 {
+    margin-bottom: 1rem;
+  }
+}
+
+@mixin Desktop {
+  &1 {
+    height: auto;
+    width: 12.5rem;
+  }
+}

@@ -13,6 +13,12 @@ $class: 'wp-block-post-excerpt';
 
 }
 
+@include Preset.responsive(lg) {
+  .#{$class}#{Define.$key} {
+    @include Specific.Desktop;
+  }
+}
+
 @if Define.$use_change_color {
   @include Common.ChangeColor(Define.$change2pink) {
     .#{$class} {

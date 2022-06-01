@@ -6,7 +6,6 @@
 
     .wp-block-post-excerpt__excerpt, > div:first-of-type {
       display: inline-block;
-      min-height: 8.125rem;
       margin-bottom: 1.5625rem;
     }
 
@@ -18,6 +17,14 @@
       a:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@mixin Desktop {
+  &1 {
+    .wp-block-post-excerpt__excerpt, > div:first-of-type {
+      min-height: 8.125rem;
     }
   }
 }

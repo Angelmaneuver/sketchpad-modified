@@ -28,6 +28,7 @@ function register_sketchpad_block_styles():void {
 
 	// Option style.
 	$option_styles = array(
+		'core/column',
 		'core/group',
 		'core/heading',
 		'core/paragraph',

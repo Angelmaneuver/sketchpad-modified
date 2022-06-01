@@ -2,13 +2,15 @@
 @use 'define'            as Define;
 @use 'common'            as Common;
 @use './specific/column' as Specific;
+@use './option/column'   as Option;
 
-$class: 'wp-site-blocks';
+$class1: 'wp-site-blocks';
+$class2: 'wp-block-column';
 
 /**
  * Sketchpad Style - Column.
  */
-.#{$class} {
+.#{$class1} {
   > header {
     @include Specific.Header;  
   }
@@ -18,12 +20,18 @@ $class: 'wp-site-blocks';
   }
 }
 
-@include Common.SidebarOnDisplay($class) {
+@include Common.SidebarOnDisplay($class1) {
   > header {
     @include Specific.HeaderWhenSidebarIsDisplayed;
   }
 
   > section {
     @include Specific.SectionWhenSidebarIsDisplayed;
+  }
+}
+
+@include Preset.responsive(lg) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .#{$class2} {
+    @include Option.Styles;
   }
 }

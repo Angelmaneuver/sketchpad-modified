@@ -12,6 +12,18 @@ $class: 'wp-block-post-featured-image';
   @include Specific.Styles;
 }
 
+@include Preset.responsive {
+  .#{$class}#{Define.$key} {
+    @include Specific.SmartPhone;
+  }
+}
+
+@include Preset.responsive(lg) {
+  .#{$class}#{Define.$key} {
+    @include Specific.Desktop;
+  }
+}
+
 @if Define.$use_change_color {
   @include Common.ChangeColor(Define.$change2pink) {
     .#{$class} {

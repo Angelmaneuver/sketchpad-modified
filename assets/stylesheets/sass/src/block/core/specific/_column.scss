@@ -88,8 +88,6 @@
 
   @include Preset.responsive {
     > .wp-block-columns {
-      justify-content: flex-start;
-
       .wp-block-column:last-of-type {
         flex-basis: 1.125rem !important;
   

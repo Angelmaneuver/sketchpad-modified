@@ -1,0 +1,8 @@
+@mixin Styles {
+  & {
+    &.is-style-fit-content {
+      flex-basis: fit-content;
+      flex-grow: 0;
+    }
+  }
+}
