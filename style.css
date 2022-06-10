@@ -27,6 +27,10 @@
   padding: 0;
 }
 
+.wp-block-post-content span[id^=more-] + * {
+  margin-top: 0.625rem;
+}
+
 /**
 * Reset Browser Native Style.
 * -----------------------------------------------------------------------------------------------
