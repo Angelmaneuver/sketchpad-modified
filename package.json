@@ -16,6 +16,6 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
     "minimatch": "^5.1.0",
-    "sass": "^1.52.1"
+    "sass": "^1.52.3"
   }
 }
