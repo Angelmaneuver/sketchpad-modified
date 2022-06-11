@@ -13,7 +13,15 @@ $class: 'wp-block-separator';
 }
 
 @if Define.$use_change_color {
-  @include Common.ChangeColor(Define.$change2pink) {
+  @include Common.ChangeColor4PostMeta {
+    .#{$class} {
+      &:not(#{Define.$no_change_class_name}) {
+        @include Preset.Change2PinkBorderColor;
+      }
+    }
+  }
+
+  @include Common.ChangeColor4Article {
     .#{$class} {
       &:not(#{Define.$no_change_class_name}) {
         @include Preset.Change2PinkBorderColor;

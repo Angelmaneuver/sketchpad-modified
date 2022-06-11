@@ -1,7 +1,16 @@
 @use './core/heading';
 @use './core/image';
 @use './core/paragraph';
+@use './core/post_comments_form';
 @use './core/post_title';
+@use './core/quote';
 @use './core/search';
 @use './core/separator';
 @use './core/template_part';
+
+/**
+ * Sketchpad Style - Common.
+ */
+.editor-styles-wrapper .is-root-container {
+  margin-top: 1.5rem;
+}

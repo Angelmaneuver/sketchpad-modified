@@ -61,6 +61,31 @@ body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) p:not(.is-style-n
 }
 
 /**
+ * Sketchpad Style - Post Comments Form.
+ */
+.block-editor-block-list__layout .block-editor-block-list__block.wp-block-post-comments-form {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.block-editor-block-list__layout .block-editor-block-list__block.wp-block-post-comments-form p {
+  margin-top: 0.625rem;
+}
+.block-editor-block-list__layout .block-editor-block-list__block.wp-block-post-comments-form .comment-form input {
+  width: 100%;
+  height: 100%;
+  padding: 0.3125rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--wp--preset--color--sketchpad-basic-part-font-color);
+  fill: var(--wp--preset--color--sketchpad-basic-part-font-color);
+  background-color: var(--wp--preset--color--sketchpad-title-font-color);
+  cursor: pointer;
+}
+.block-editor-block-list__layout .block-editor-block-list__block.wp-block-post-comments-form .comment-form input:hover {
+  background-color: var(--wp--preset--color--sketchpad-heading-font-color);
+}
+
+/**
  * Sketchpad Style - Post Title.
  */
 body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-post-title:not(.is-style-no-change) {
@@ -95,6 +120,17 @@ body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-post-ti
 }
 
 /**
+ * Sketchpad Style - Quote.
+ */
+body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change), body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) p::before, body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-quote:not(.is-style-no-change) cite {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+/**
  * Sketchpad Style - Search.
  */
 body.editor-styles-wrapper aside .wp-block-search .components-resizable-box__container {
@@ -114,4 +150,11 @@ body.tag-r18 .editor-styles-wrapper *:not(.is-style-no-change) .wp-block-separat
  */
 .wp-site-blocks > footer.wp-block-template-part.is-style-sketchpad-footer .wp-block-columns.is-style-sketchpad-footer {
   min-height: 74px;
+}
+
+/**
+ * Sketchpad Style - Common.
+ */
+.editor-styles-wrapper .is-root-container {
+  margin-top: 1.5rem;
 }

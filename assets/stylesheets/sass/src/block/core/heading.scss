@@ -28,7 +28,7 @@ $target: 'h1, h2, h3, h4, h5, h6';
 }
 
 @if Define.$use_change_color {
-  @include Common.ChangeColor(Define.$change2pink) {
+  @include Common.ChangeColor4Article {
     #{$target} {
       &:not(#{Define.$no_change_class_name}) {
         @include Preset.Change2PinkTextStyle;

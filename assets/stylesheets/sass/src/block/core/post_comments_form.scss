@@ -2,10 +2,10 @@
 @use 'define'               as Define;
 @use 'common'               as Common;
 
-$class: 'wp-block-post-comments';
+$class: 'wp-block-post-comments-form';
 
 /**
- * Sketchpad Style - Post Comments.
+ * Sketchpad Style - Post Comments Form.
  */
 @include Common.Main($class) {
   a {
@@ -16,51 +16,7 @@ $class: 'wp-block-post-comments';
     }
   }
 
-  .commentlist {
-    margin-top: 1.25rem;
-
-    .comment-meta {
-      .fn {
-        @include Preset.ArialFontFamily;
-        @include Preset.GetFontPreSet($font-size: 0.875rem, $font-weight: 900);
-        font-style: italic;
-
-        &, a {
-          @include Preset.PersonNameColor;
-        }
-      }
-
-      .says {
-        display: none;
-      }
-
-      .comment-metadata {
-        @include Preset.GetFontPreSet($font-size: 0.75rem);
-      }
-
-      .edit-link {
-        margin-left: 0.625rem;
-
-        a {
-          &::before {
-            content: '(';
-          }
-
-          &::after {
-            content: ')';
-          }
-        }
-      }
-    }
-
-    .comment-content {
-      p {
-        @include Preset.GetFontPreSet($font-size: 1rem);
-      }
-    }
-  }
-
-  .comment-respond {
+  &.comment-respond {
     form {
       @include Preset.GetFontPreSet($font-size: 0.875rem);
       margin-top: 1.25rem;

@@ -10,6 +10,7 @@
 // @codingStandardsIgnoreStart
 return [
 	[ 'name' => 'core/calendar' ],
+	[ 'name' => 'core/comments-pagination' ],
 	[ 'name' => 'core/post-featured-image' ],
 	[ 'name' => 'core/post-excerpt' ],
 	[ 'name' => 'core/post-terms' ],

@@ -20,7 +20,7 @@ $class: 'wp-block-post-excerpt';
 }
 
 @if Define.$use_change_color {
-  @include Common.ChangeColor(Define.$change2pink) {
+  @include Common.ChangeColor4PostsMeta {
     .#{$class} {
       &:not(#{Define.$no_change_class_name}) {
         @include Preset.Change2PinkTextStyle;

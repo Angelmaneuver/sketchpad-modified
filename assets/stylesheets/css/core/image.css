@@ -15,19 +15,19 @@
           box-shadow: 0 1rem 0.6rem -0.6rem #777777;
 }
 
-body.tag-r18 main > header:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) {
+body.tag-r18 main > div.wp-block-post-content > .wp-block-image:not(.is-style-no-change), body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) {
   color: #ffffff !important;
   font-weight: 700 !important;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
   border-color: #FFB6C1;
   outline-color: #FFB6C1;
 }
-body.tag-r18 main > header:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img {
+body.tag-r18 main > div.wp-block-post-content > .wp-block-image:not(.is-style-no-change) img, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) img {
   -o-border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1/1 0 0 0;
      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0rem, #ffb6c1), color-stop(0.1rem, #ffffff)) 1/1 0 0 0;
      border-image: linear-gradient(to bottom, #ffb6c1 0rem, #ffffff 0.1rem) 1/1 0 0 0;
 }
-body.tag-r18 main > header:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > header:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > header *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > div:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > div *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, li.wp-block-post.tag-r18:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, li.wp-block-post.tag-r18 *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption {
+body.tag-r18 main > div.wp-block-post-content > .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > div.wp-block-post-content > .wp-block-image:not(.is-style-no-change) figcaption, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) a, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) .wp-block-image:not(.is-style-no-change) figcaption {
   color: #ffffff !important;
   font-weight: 700 !important;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;

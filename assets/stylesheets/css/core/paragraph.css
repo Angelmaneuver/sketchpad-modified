@@ -35,14 +35,44 @@ p.is-style-r18-paragraph {
   margin-top: 1.5625rem;
 }
 
-body.tag-r18 main > header:not(.is-style-no-change) p:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) p:not(.is-style-no-change), body.tag-r18 main > div:not(.is-style-no-change) p:not(.is-style-no-change), body.tag-r18 main > div *:not(.is-style-no-change) p:not(.is-style-no-change), li.wp-block-post.tag-r18:not(.is-style-no-change) p:not(.is-style-no-change), li.wp-block-post.tag-r18 *:not(.is-style-no-change) p:not(.is-style-no-change) {
+li.wp-block-post.tag-r18 p:not(.is-style-no-change) {
   color: #ffffff !important;
   font-weight: 700 !important;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
   border-color: #FFB6C1;
   outline-color: #FFB6C1;
 }
-body.tag-r18 main > header:not(.is-style-no-change) p:not(.is-style-no-change) a, body.tag-r18 main > header *:not(.is-style-no-change) p:not(.is-style-no-change) a, body.tag-r18 main > div:not(.is-style-no-change) p:not(.is-style-no-change) a, body.tag-r18 main > div *:not(.is-style-no-change) p:not(.is-style-no-change) a, li.wp-block-post.tag-r18:not(.is-style-no-change) p:not(.is-style-no-change) a, li.wp-block-post.tag-r18 *:not(.is-style-no-change) p:not(.is-style-no-change) a {
+li.wp-block-post.tag-r18 p:not(.is-style-no-change) a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+body.tag-r18 main > header > p:not(.is-style-no-change), body.tag-r18 main > header *:not(.is-style-no-change) p:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+body.tag-r18 main > header > p:not(.is-style-no-change) a, body.tag-r18 main > header *:not(.is-style-no-change) p:not(.is-style-no-change) a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+
+body.tag-r18 main > div.wp-block-post-content > p:not(.is-style-no-change), body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) p:not(.is-style-no-change) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
+  border-color: #FFB6C1;
+  outline-color: #FFB6C1;
+}
+body.tag-r18 main > div.wp-block-post-content > p:not(.is-style-no-change) a, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) p:not(.is-style-no-change) a {
   color: #ffffff !important;
   font-weight: 700 !important;
   text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;

@@ -39,12 +39,40 @@
   }
 }
 
-@mixin ChangeColor($change: '') {
-  body.#{$change} main > header, body.#{$change} main > div, li.wp-block-post.#{$change} {
-    &, * {
-      &:not(#{Define.$no_change_class_name}) {
+@mixin ChangeColor4PostsMeta {
+  li.wp-block-post.#{Define.$change2pink} {
+    @content;    
+  }
+}
+
+@mixin ChangeColor4PostMeta {
+  li.wp-block-post.#{Define.$change2pink} {
+    @content;    
+  }
+
+  body.#{Define.$change2pink} main > {
+    header {
+      >, *:not(#{Define.$no_change_class_name}) {
         @content;
       }
+    }
+  }
+}
+
+@mixin ChangeColor4PostFooter {
+  body.#{Define.$change2pink} main > {
+    footer {
+      >, *:not(#{Define.$no_change_class_name}) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin ChangeColor4Article {
+  body.#{Define.$change2pink} main > div.wp-block-post-content {
+    >, *:not(#{Define.$no_change_class_name}) {
+      @content;
     }
   }
 }

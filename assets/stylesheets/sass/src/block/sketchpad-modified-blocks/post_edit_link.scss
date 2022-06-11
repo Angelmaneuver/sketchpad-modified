@@ -26,7 +26,7 @@ a.#{$class}, div.#{$class} a {
 }
 
 @if Define.$use_change_color {
-  @include Common.ChangeColor(Define.$change2pink) {
+  @include Common.ChangeColor4PostMeta {
     a.#{$class} {
       &:not(#{Define.$no_change_class_name}) {
         @include Preset.Change2PinkTextStyle;

@@ -26,7 +26,21 @@ $target: 'p';
 }
 
 @if Define.$use_change_color {
-  @include Common.ChangeColor(Define.$change2pink) {
+  @include Common.ChangeColor4PostMeta {
+    #{$target} {
+      &:not(#{Define.$no_change_class_name}) {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+
+        a {
+          @include Preset.Change2PinkTextStyle;
+          @include Preset.Change2PinkBorderColor;
+        }
+      }
+    }
+  }
+
+  @include Common.ChangeColor4Article {
     #{$target} {
       &:not(#{Define.$no_change_class_name}) {
         @include Preset.Change2PinkTextStyle;

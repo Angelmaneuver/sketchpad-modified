@@ -1,0 +1,37 @@
+/**
+ * Sketchpad Style - Comments Pagination.
+ */
+.wp-block-comments-pagination.is-style-sketchpad1 {
+  display: block;
+  margin-top: 1.25rem;
+}
+.wp-block-comments-pagination.is-style-sketchpad1 .wp-block-comments-pagination-numbers {
+  display: inline-block;
+  margin: 0;
+}
+.wp-block-comments-pagination.is-style-sketchpad1 .wp-block-comments-pagination-previous, .wp-block-comments-pagination.is-style-sketchpad1 .wp-block-comments-pagination-next {
+  margin: 0;
+}
+.wp-block-comments-pagination.is-style-sketchpad1 span, .wp-block-comments-pagination.is-style-sketchpad1 a {
+  font-family: var(--wp--preset--font-family--sketchpad-arial-font);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: var(--wp--preset--color--sketchpad-sketchpad-background);
+  padding: 0.3125rem;
+  border-radius: 0.1875rem;
+}
+.wp-block-comments-pagination.is-style-sketchpad1 span:not(.current), .wp-block-comments-pagination.is-style-sketchpad1 a {
+  background-color: var(--wp--preset--color--sketchpad-title-font-color);
+}
+.wp-block-comments-pagination.is-style-sketchpad1 a:hover {
+  background-color: var(--wp--preset--color--sketchpad-heading-font-color);
+}
+.wp-block-comments-pagination.is-style-sketchpad1 .current {
+  background-color: var(--wp--preset--color--sketchpad-heading-font-color);
+}
+.wp-block-comments-pagination.is-style-sketchpad1.aligncenter {
+  text-align: center;
+}
+.wp-block-comments-pagination.is-style-sketchpad1.alignright {
+  text-align: right;
+}
