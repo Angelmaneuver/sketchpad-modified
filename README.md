@@ -17,7 +17,7 @@ I like this theme so I dicided to customize it. Not a job but a hobby...
 
 You can edit the entire structure of the site by yourself.
 
-\* WordPress 5.9 or later version is required.
+\* WordPress 6.0 or later version is required.
 
 ### Responsive Support
 
