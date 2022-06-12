@@ -128,10 +128,12 @@ function register_sketchpad_block_style_by_style_handle(
  * @return void
  */
 function enqueue_sketchpad_block_styles():void {
+	// Common Setting.
+	$extension = '.min.css';
+
 	// Core block stylesheets.
 	$specific_prefix  = 'sketchpad';
 	$css_directory    = 'assets/stylesheets/css/core/';
-	$extension        = '.css';
 	$stylesheets_file = get_theme_file_path( '/includes/block/enqueue/core.php' );
 
 	foreach ( require $stylesheets_file as $style ) {

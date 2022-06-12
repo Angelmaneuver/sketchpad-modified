@@ -22,9 +22,9 @@ require_once get_template_directory() . '/includes/basic/theme-customizer/class-
 function sketchpad_output_hamburger_menu_button_script() {
 	wp_register_style(
 		'sketchpad-hamburger-menu-button-style',
-		get_template_directory_uri() . '/assets/stylesheets/css/theme/hamburger_menu.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/theme/hamburger_menu.min.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/theme/hamburger_menu.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/theme/hamburger_menu.min.css' ),
 		'screen'
 	);
 

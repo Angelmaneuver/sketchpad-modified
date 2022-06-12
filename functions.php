@@ -118,9 +118,9 @@ add_action( 'wp_enqueue_scripts', 'sketchpad_script' );
 function sketchpad_admin_script() {
 	wp_register_style(
 		'sketchpad-admin-style',
-		get_template_directory_uri() . '/assets/stylesheets/css/admin/style_admin.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/admin/style_admin.min.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/admin/style_admin.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/admin/style_admin.min.css' ),
 		'all'
 	);
 	wp_enqueue_style( 'sketchpad-admin-style' );
@@ -137,9 +137,9 @@ add_action( 'admin_enqueue_scripts', 'sketchpad_admin_script' );
 function sketchpad_editor_script() {
 	wp_enqueue_style(
 		'sketchpad-editor-style',
-		get_template_directory_uri() . '/assets/stylesheets/css/editor/block_editor_style.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/editor/block_editor_style.min.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/editor/block_editor_style.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/editor/block_editor_style.min.css' ),
 		'all'
 	);
 }
@@ -155,9 +155,9 @@ add_action( 'enqueue_block_editor_assets', 'sketchpad_editor_script' );
 function sketchpad_embed_style() {
 	wp_enqueue_style(
 		'sketchpad-embed-style',
-		get_template_directory_uri() . '/assets/stylesheets/css/embed/embed-template.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/embed/embed-template.min.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/embed/embed-template.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/embed/embed-template.min.css' ),
 		'all'
 	);
 }

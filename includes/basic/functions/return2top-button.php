@@ -22,9 +22,9 @@ require_once get_template_directory() . '/includes/basic/theme-customizer/class-
 function sketchpad_output_return2top_button_script() {
 	wp_register_style(
 		'sketchpad-return2top-style',
-		get_template_directory_uri() . '/assets/stylesheets/css/theme/return2top.css',
+		get_template_directory_uri() . '/assets/stylesheets/css/theme/return2top.min.css',
 		array(),
-		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/theme/return2top.css' ),
+		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/theme/return2top.min.css' ),
 		'all'
 	);
 

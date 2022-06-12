@@ -10,14 +10,28 @@ const {
 }                  = require('gulp');
 const plumber      = require('gulp-plumber');
 const sass         = require('gulp-sass')(require('sass'));
+const cleanCss     = require('gulp-clean-css');
+const rename       = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 
-function compile(srcPath, destPath, includePaths, done) {
+function compileWithNotMinify(srcPath, destPath, includePaths, done) {
 	src(srcPath)
 	.pipe(plumber())
 	.pipe(sass.sync({ includePaths: includePaths }))
 	.pipe(autoprefixer())
 	.pipe(dest(destPath))
+
+	done();
+}
+
+function compile(srcPath, destPath, includePaths, done) {
+	src(srcPath, { sourcemaps: true })
+	.pipe(plumber())
+	.pipe(sass.sync({ includePaths: includePaths }))
+	.pipe(autoprefixer())
+	.pipe(rename({ extname: '.min.css' }))
+	.pipe(cleanCss())
+	.pipe(dest(destPath, { sourcemaps: '.' }))
 
 	done();
 }
@@ -39,7 +53,7 @@ function clear(paths) {
 }
 
 const style = (done) => {
-	compile(
+	compileWithNotMinify(
 		'./assets/stylesheets/sass/src/style.scss',
 		'./',
 		'./assets/stylesheets/sass/preset',
