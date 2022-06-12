@@ -30,6 +30,7 @@ function register_sketchpad_block_patterns():void {
 		'article-headline',
 		'article-excerpt',
 		'article-footer',
+		'search-result-not-hit',
 		'sidebar',
 	);
 
