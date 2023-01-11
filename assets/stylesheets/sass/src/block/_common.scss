@@ -2,19 +2,19 @@
 @use 'define' as Define;
 
 @mixin Main($class) {
-  .#{$class} {
+  body .#{$class} {
     @content;
   }
 }
 
 @mixin MainOnly($class) {
-  main .#{$class} {
+  body main .#{$class} {
     @content;
   }
 }
 
 @mixin Sidebar($class) {
-  aside .#{$class} {
+  body aside .#{$class} {
     @content;
   }
 }
