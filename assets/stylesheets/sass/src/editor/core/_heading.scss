@@ -5,6 +5,14 @@
 /**
  * Sketchpad Style - Heading.
  */
+body .editor-styles-wrapper .wp-block-post-content {
+  h1, h2, h3, h4, h5, h6 {
+    & + * {
+      margin-top: 0.625rem;
+    }
+  }
+}
+
 @if Define.$use_change_color {
   @include Common.ChangeColor(Define.$change2pink) {
     h1, h2, h3, h4, h5, h6 {
