@@ -6,7 +6,6 @@
     &1 {
       @include Preset.GetFontPreSet($font-size: Define.$sidebar_font_size, $font-weight: 700);
       @include Preset.SidebarHeadingColor;
-      margin-bottom: 0.3125rem;
       @include Preset.SidebarDelimiterBorderColor;
       @include Preset.ThinBorderBottomStyle(0.125rem);
     }
