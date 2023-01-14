@@ -150,6 +150,7 @@ function watchFiles() {
 
 	gulp.watch([
 		'./assets/stylesheets/sass/src/block/**/*.scss',
+		'./assets/stylesheets/sass/src/block/**/**/*.scss',
 		'./assets/stylesheets/sass/preset/**/*.scss',
 	], blocks);
 

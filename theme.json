@@ -161,12 +161,6 @@
 				}
 			},
 			"core/post-featured-image": {
-				"border": {
-					"color": "var(--wp--preset--color--sketchpad-thumbnail-border-color)",
-					"width": "thin",
-					"style": "solid",
-					"radius": "0.125rem"
-				},
 				"spacing": {
 					"margin": {
 						"right": "0.9375rem",

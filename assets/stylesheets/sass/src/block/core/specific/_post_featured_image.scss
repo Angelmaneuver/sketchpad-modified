@@ -1,5 +1,10 @@
+@use 'preset' as Preset;
+
 @mixin Styles {
   &1 {
+    @include Preset.ThinBorderStyle();
+    @include Preset.ThumbnailBorderColor;
+    border-radius: 0.125rem;
     overflow: hidden;
 
     a img {
