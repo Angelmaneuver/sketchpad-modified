@@ -7,18 +7,29 @@ $class: 'wp-block-jetpack-slideshow';
 /**
  * Sketchpad Style - Jetpack's Slide Show.
  */
-.wp-block-group .#{$class} img {
-  width: 100%;
-  object-fit: initial;
+.wp-block-group .#{$class} {
+  img {
+    width: 100%;
+    object-fit: initial;
+  }
+
+  .wp-block-jetpack-slideshow_pagination {
+    justify-content: center;
+
+    &.swiper-pagination button.swiper-pagination-bullet {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
 }
 
 @include Common.Main($class) {
   &#{Define.$key}-postit {
     @include Preset.ImagePostit(0.3125rem  0.3125rem 1.25rem  0.3125rem);
 
-    .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets {
-      margin-bottom: 1rem;
-      padding-top: 0.3125rem;
+    .wp-block-jetpack-slideshow_pagination {
+      margin-bottom: 1.5rem;
+      padding-top: 0.46875rem;
     }
   }
 }
