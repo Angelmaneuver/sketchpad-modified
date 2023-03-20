@@ -95,16 +95,17 @@
 	"extensions": {
 		"recommendations": [
 			"mosapride.zenkaku",
-			"formulahendry.auto-rename-tag",
 			"christian-kohler.path-intellisense",
-			"anthonydiametrix.acf-snippet",
+			"formulahendry.auto-rename-tag",
 			"zignd.html-css-class-completion",
 			"dbaeumer.vscode-eslint",
-			"shevaua.phpcs",
-			"neilbrayfield.php-docblocker",
-			"bmewburn.vscode-intelephense-client",
-			"wordpresstoolbox.wordpress-toolbox",
 			"esbenp.prettier-vscode",
+			"shevaua.phpcs",
+			"bmewburn.vscode-intelephense-client",
+			"neilbrayfield.php-docblocker",
+			"anthonydiametrix.acf-snippet",
+			"wordpresstoolbox.wordpress-toolbox",
+			"johnbillion.vscode-wordpress-hooks",
 		]
 	}
 }
