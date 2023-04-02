@@ -6,6 +6,7 @@
     padding-bottom: 0.1rem;
 
     a {
+      display: initial;
       @include Preset.Left2RightStyle(#9B8F76);
 
       &:first-of-type::after {
