@@ -141,7 +141,7 @@ function enqueue_sketchpad_block_styles():void {
 			$style['name'],
 			"{$specific_prefix}-{$style['handle']}",
 			"{$css_directory}{$style['src']}{$extension}",
-			( isset( $style['path_set'] ) && ! $style['path_set'] ? false : true )
+			( isset( $style['path_set'] ) && $style['path_set'] ? true : false )
 		);
 	}
 
@@ -154,7 +154,7 @@ function enqueue_sketchpad_block_styles():void {
 			$style['name'],
 			"{$style['handle']}",
 			"{$sketcpad_modified_blocks_css_directory}{$style['src']}{$extension}",
-			( isset( $style['path_set'] ) && ! $style['path_set'] ? false : true )
+			( isset( $style['path_set'] ) && $style['path_set'] ? true : false )
 		);
 	}
 
@@ -167,7 +167,7 @@ function enqueue_sketchpad_block_styles():void {
 			$style['name'],
 			"{$style['handle']}",
 			"{$jetpack_css_directory}{$style['src']}{$extension}",
-			( isset( $style['path_set'] ) && ! $style['path_set'] ? false : true )
+			( isset( $style['path_set'] ) && $style['path_set'] ? true : false )
 		);
 	}
 }

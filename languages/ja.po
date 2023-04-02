@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2022-03-28T16:38:07+00:00\n"
+"POT-Creation-Date: 2023-04-02T06:02:36+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -52,42 +52,42 @@ msgstr "管理画面設定"
 msgid "Please enter if you want to background image for the admin panel."
 msgstr "管理画面に背景画像が必要な場合は入力してください。"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:115
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:112
 msgid "Activate the background image setting in the admin panel."
 msgstr "管理画面で背景画像の設定を有効にする。"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:125
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:122
 msgid "Background"
 msgstr "背景"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:125
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:122
 msgid "Image"
 msgstr "画像"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:134
-#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:97
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:131
+#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:94
 msgid "Color"
 msgstr "色"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:142
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:163
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:179
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:139
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:160
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:176
 msgid "Reset"
 msgstr "初期値に戻す"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:149
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:146
 msgid "Opacity"
 msgstr "透過率"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:150
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:147
 msgid "The more you slide to the left, the higher the transparency."
 msgstr "左にスライドするほど透明度が高くなります。"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:170
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:167
 msgid "Transparent DOM"
 msgstr "透過させる DOM"
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:171
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:168
 msgid "Enter the DOM element you want to make transparent."
 msgstr "透過させたい DOM 要素を入力してください。"
 
@@ -99,7 +99,7 @@ msgstr "背景色設定"
 msgid "Please enter if you want to background color setting."
 msgstr "背景色を設定したい場合は入力してください。"
 
-#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:87
+#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:84
 msgid "Background color setting enable"
 msgstr "背景色の設定を有効化する"
 
@@ -152,27 +152,27 @@ msgstr "ハンバ－ガ－メニュ－ボタン設定"
 msgid "Configure settings for the button that hamburger menu of the page."
 msgstr "ハンバ－ガ－メニュ－ボタンの設定"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:110
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:107
 msgid "Hamburger menu Button enable"
 msgstr "ハンバ－ガ－メニュ－ボタンを有効化する"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:117
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:114
 msgid "Hamburger menu Button Open Mark"
 msgstr "ハンバ－ガ－メニュ－ (開く) ボタンのマ－ク"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:123
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:120
 msgid "Hamburger menu Button Close Mark"
 msgstr "ハンバ－ガ－メニュ－ (閉じる) ボタンのマ－ク"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:132
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:129
 msgid "Hamburger menu Button Background Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの背景色"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:141
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:138
 msgid "Hamburger menu Button Hover Background Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの背景色 (オンマウス時)"
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:150
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:147
 msgid "Hamburger menu Button Border Color"
 msgstr "ハンバ－ガ－メニュ－ボタンの枠線色"
 
@@ -184,16 +184,16 @@ msgstr "Bodyタグ設定"
 msgid "Please enter if you want to insert in directly under the body tag"
 msgstr "Bodyタグ直下に挿入する場合は入力してください。"
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:84
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:81
 msgid "Directly Under the Body Tag"
 msgstr "Bodyタグ直下"
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:90
-#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:89
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:87
+#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:86
 msgid "Priority"
 msgstr "優先度"
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:91
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:88
 msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
 msgstr "左にスライドするほどBodyタグ直下への出力が早くなります。"
 
@@ -205,7 +205,7 @@ msgstr "Headタグ設定"
 msgid "Please enter if you want to insert in the head tag"
 msgstr "Headタグに挿入する場合は入力してください。"
 
-#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:90
+#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:87
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr "左にスライドするほどHeadタグへの出力が早くなります。"
 
@@ -217,23 +217,23 @@ msgstr "トップへ戻るボタン設定"
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr "ペ－ジの先頭に戻るボタンの設定"
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:104
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:101
 msgid "Top Button enable"
 msgstr "トップへ戻るボタンを有効化する"
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:111
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:108
 msgid "Top Button Mark"
 msgstr "トップへ戻るボタンのマ－ク"
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:120
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:117
 msgid "Top Button Background Color"
 msgstr "トップへ戻るボタンの背景色"
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:129
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:126
 msgid "Top Button Hover Background Color"
 msgstr "トップへ戻るボタンの背景色 (オンマウス時)"
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:138
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:135
 msgid "Top Button Border Color"
 msgstr "トップへ戻るボタンの枠線色"
 
@@ -245,39 +245,43 @@ msgstr "RSSフィードの設定"
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr "アイキャッチ画像をRSSフィードに出力するかどうかの設定"
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:102
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:99
 msgid "output eye-catching image"
 msgstr "アイキャッチ画像を出力する"
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:108
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:105
 msgid "to incluede the \"media:content\" tag"
 msgstr "\"media:content\"タグを追加する"
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:114
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:111
 msgid "to incluede the \"enclosure\" tag"
 msgstr "\"enclosure\"タグを追加する"
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:120
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:117
 msgid "Image Size"
 msgstr "画像サイズ"
 
-#: includes/block/pattern/sidebar.php:11 includes/block/patterns.php:19
-msgid "Sidebar"
-msgstr "サイドバー"
+#: includes/block/style/core/column.php:12
+msgid "Match width to content"
+msgstr "幅をコンテンツに合わせる"
 
 #: includes/block/style/core/group.php:12
 msgid "Indent"
 msgstr "インデント"
 
 #: includes/block/style/core/group.php:13
+msgid "If empty, the element will not be displayed"
+msgstr "子要素を持たない場合、非表示にする"
+
+#: includes/block/style/core/group.php:14
 msgid "Align to the start position * For row blocks"
 msgstr "先端に揃える * 行ブロック用"
 
-#: includes/block/style/core/group.php:14
+#: includes/block/style/core/group.php:15
 msgid "Align to the center position * For row blocks"
 msgstr "中央に揃える * 行ブロック用"
 
-#: includes/block/style/core/group.php:15
+#: includes/block/style/core/group.php:16
 msgid "Align to the end position * For row blocks"
 msgstr "終端に揃える * 行ブロック用"
 
@@ -301,6 +305,179 @@ msgstr "台詞"
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
-#: includes/block/styles.php:82
+#: includes/block/styles.php:83
 msgid "Sketchpad Style"
 msgstr "メモ帳スタイル"
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:14
+msgid "Page not found..."
+msgstr "ページが見つかりませんでした..."
+
+#: patterns/404.php:18
+msgid "Try using the search form"
+msgstr "検索フォームをご利用ください"
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr ""
+
+#: patterns/no-results.php:14
+msgid "Sorry, but nothing matched your search terms."
+msgstr "申し訳ありません、検索条件に該当する結果がありません。"
+
+#: patterns/no-results.php:18
+msgid "Please try again with some different keywords."
+msgstr "キーワードを変えて再度お試しください。"
+
+#: patterns/search-keyword.php
+msgctxt "Pattern title"
+msgid "Search keyword"
+msgstr "検索キーワード"
+
+#: patterns/search-keyword.php:13
+msgid "Search results for: "
+msgstr "検索結果: "
+
+#: patterns/search1.php
+msgctxt "Pattern title"
+msgid "Search1"
+msgstr ""
+
+#: patterns/search1.php:12 patterns/search2.php:12
+msgid "Search"
+msgstr "検索"
+
+#: patterns/search1.php:12 patterns/search2.php:12
+msgid "Enter search keyword"
+msgstr "検索キーワードを入力する"
+
+#: patterns/search2.php
+msgctxt "Pattern title"
+msgid "Search2"
+msgstr ""
+
+#: patterns/site-info.php
+msgctxt "Pattern title"
+msgid "Site Info"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Sketchpad Base Font"
+msgstr "基本フォント"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Arial Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Montserrat Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr "背景色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sketchpad Background"
+msgstr "メモ帳背景色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sidebar Background"
+msgstr "サイドバー背景色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Basic Font Color"
+msgstr "基本文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Site Title Font Color"
+msgstr "サイトタイトル文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Title Font Color"
+msgstr "タイトル文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Meta data Font Color"
+msgstr "メタ情報文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Footer Font Color"
+msgstr "フッター文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Person Name Font Color"
+msgstr "人名文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Heading Font Color"
+msgstr "見出し文字色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Thumbnail Border Color"
+msgstr "サムネイル枠線色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Form Border Color"
+msgstr "入力フォーム枠線色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Form Wraper Border Color"
+msgstr "フォーム要素枠線色"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Basic Part Font Color"
+msgstr "基本文字色"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "ヘッダー"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "フッター"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Header"
+msgstr "記事ヘッダー"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Footer"
+msgstr "記事フッター"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Content"
+msgstr "記事コンテンツ"

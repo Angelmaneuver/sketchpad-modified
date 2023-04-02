@@ -1,4 +1,4 @@
-# Copyright (C) 2022 Angelmaneuver
+# Copyright (C) 2023 Angelmaneuver
 # This file is distributed under the GNU General Public License V3.
 msgid ""
 msgstr ""
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-03-28T16:38:07+00:00\n"
+"POT-Creation-Date: 2023-04-02T06:02:36+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.5.0\n"
+"X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: sketchpad-modified\n"
 
 #. Theme Name of the theme
@@ -50,42 +50,42 @@ msgstr ""
 msgid "Please enter if you want to background image for the admin panel."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:115
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:112
 msgid "Activate the background image setting in the admin panel."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:125
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:122
 msgid "Background"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:125
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:122
 msgid "Image"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:134
-#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:97
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:131
+#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:94
 msgid "Color"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:142
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:163
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:179
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:139
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:160
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:176
 msgid "Reset"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:149
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:146
 msgid "Opacity"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:150
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:147
 msgid "The more you slide to the left, the higher the transparency."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:170
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:167
 msgid "Transparent DOM"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:171
+#: includes/basic/theme-customizer/class-sm-admin-page-setting-initializer.php:168
 msgid "Enter the DOM element you want to make transparent."
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid "Please enter if you want to background color setting."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:87
+#: includes/basic/theme-customizer/class-sm-color-setting-initializer.php:84
 msgid "Background color setting enable"
 msgstr ""
 
@@ -150,27 +150,27 @@ msgstr ""
 msgid "Configure settings for the button that hamburger menu of the page."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:110
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:107
 msgid "Hamburger menu Button enable"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:117
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:114
 msgid "Hamburger menu Button Open Mark"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:123
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:120
 msgid "Hamburger menu Button Close Mark"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:132
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:129
 msgid "Hamburger menu Button Background Color"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:141
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:138
 msgid "Hamburger menu Button Hover Background Color"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:150
+#: includes/basic/theme-customizer/class-sm-hamburger-menu-button-initializer.php:147
 msgid "Hamburger menu Button Border Color"
 msgstr ""
 
@@ -182,16 +182,16 @@ msgstr ""
 msgid "Please enter if you want to insert in directly under the body tag"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:84
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:81
 msgid "Directly Under the Body Tag"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:90
-#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:89
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:87
+#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:86
 msgid "Priority"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:91
+#: includes/basic/theme-customizer/class-sm-insert-body-tag-initializer.php:88
 msgid "The more you slide to the left, the faster it will be output to directly under the Body tag."
 msgstr ""
 
@@ -203,7 +203,7 @@ msgstr ""
 msgid "Please enter if you want to insert in the head tag"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:90
+#: includes/basic/theme-customizer/class-sm-insert-head-tag-initializer.php:87
 msgid "The more you slide to the left, the faster it will be output to the Head tag."
 msgstr ""
 
@@ -215,23 +215,23 @@ msgstr ""
 msgid "Configure settings for the button that returns to the top of the page."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:104
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:101
 msgid "Top Button enable"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:111
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:108
 msgid "Top Button Mark"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:120
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:117
 msgid "Top Button Background Color"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:129
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:126
 msgid "Top Button Hover Background Color"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:138
+#: includes/basic/theme-customizer/class-sm-return2top-button-initializer.php:135
 msgid "Top Button Border Color"
 msgstr ""
 
@@ -243,25 +243,24 @@ msgstr ""
 msgid "Set whether to output an eye-catching image to RSS Feed."
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:102
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:99
 msgid "output eye-catching image"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:108
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:105
 msgid "to incluede the \"media:content\" tag"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:114
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:111
 msgid "to incluede the \"enclosure\" tag"
 msgstr ""
 
-#: includes/basic/theme-customizer/class-sm-rss-initializer.php:120
+#: includes/basic/theme-customizer/class-sm-rss-initializer.php:117
 msgid "Image Size"
 msgstr ""
 
-#: includes/block/pattern/sidebar.php:11
-#: includes/block/patterns.php:19
-msgid "Sidebar"
+#: includes/block/style/core/column.php:12
+msgid "Match width to content"
 msgstr ""
 
 #: includes/block/style/core/group.php:12
@@ -269,14 +268,18 @@ msgid "Indent"
 msgstr ""
 
 #: includes/block/style/core/group.php:13
-msgid "Align to the start position * For row blocks"
+msgid "If empty, the element will not be displayed"
 msgstr ""
 
 #: includes/block/style/core/group.php:14
-msgid "Align to the center position * For row blocks"
+msgid "Align to the start position * For row blocks"
 msgstr ""
 
 #: includes/block/style/core/group.php:15
+msgid "Align to the center position * For row blocks"
+msgstr ""
+
+#: includes/block/style/core/group.php:16
 msgid "Align to the end position * For row blocks"
 msgstr ""
 
@@ -300,6 +303,181 @@ msgstr ""
 msgid "Change the display to R18."
 msgstr ""
 
-#: includes/block/styles.php:82
+#: includes/block/styles.php:83
 msgid "Sketchpad Style"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:14
+msgid "Page not found..."
+msgstr ""
+
+#: patterns/404.php:18
+msgid "Try using the search form"
+msgstr ""
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr ""
+
+#: patterns/no-results.php:14
+msgid "Sorry, but nothing matched your search terms."
+msgstr ""
+
+#: patterns/no-results.php:18
+msgid "Please try again with some different keywords."
+msgstr ""
+
+#: patterns/search-keyword.php
+msgctxt "Pattern title"
+msgid "Search keyword"
+msgstr ""
+
+#: patterns/search-keyword.php:13
+msgid "Search results for: "
+msgstr ""
+
+#: patterns/search1.php
+msgctxt "Pattern title"
+msgid "Search1"
+msgstr ""
+
+#: patterns/search1.php:12
+#: patterns/search2.php:12
+msgid "Search"
+msgstr ""
+
+#: patterns/search1.php:12
+#: patterns/search2.php:12
+msgid "Enter search keyword"
+msgstr ""
+
+#: patterns/search2.php
+msgctxt "Pattern title"
+msgid "Search2"
+msgstr ""
+
+#: patterns/site-info.php
+msgctxt "Pattern title"
+msgid "Site Info"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Sketchpad Base Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Arial Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Montserrat Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sketchpad Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sidebar Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Basic Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Site Title Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Title Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Meta data Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Footer Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Person Name Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Heading Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Thumbnail Border Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Form Border Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Form Wraper Border Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Basic Part Font Color"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Article Content"
 msgstr ""

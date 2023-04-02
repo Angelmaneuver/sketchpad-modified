@@ -125,6 +125,15 @@
 					"fontSize": "0.75rem"
 				}
 			},
+			"core/post-author-name": {
+				"color": {
+					"text": "var(--wp--preset--color--sketchpad-basic-font-color)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sketchpad-arial-font)",
+					"fontSize": "0.75rem"
+				}
+			},
 			"core/post-comments": {
 				"spacing": {
 					"margin": {
@@ -172,6 +181,11 @@
 						"bottom": "0.3125rem",
 						"left": "0.3125rem"
 					}
+				}
+			},
+			"core/post-template": {
+				"spacing": {
+					"blockGap": "0"
 				}
 			},
 			"core/post-terms": {
@@ -250,8 +264,11 @@
 		}
 	},
 	"templateParts": [
-		{ "name": "header",  "title": "Header",  "area": "header" },
-		{ "name": "footer",  "title": "Footer",  "area": "footer" },
-		{ "name": "sidebar", "title": "Sidebar", "area": "uncategorized" }
+		{ "name": "header",           "title": "Header",           "area": "header" },
+		{ "name": "footer",           "title": "Footer",           "area": "footer" },
+		{ "name": "sidebar",          "title": "Sidebar",          "area": "uncategorized" },
+		{ "name": "article-header",   "title": "Article Header",   "area": "uncategorized" },
+		{ "name": "article-footer",   "title": "Article Footer",   "area": "uncategorized" },
+		{ "name": "article-content",  "title": "Article Content",  "area": "uncategorized" }
 	]
 }

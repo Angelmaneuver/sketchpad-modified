@@ -1,10 +1,6 @@
 @use 'preset' as Preset;
 
 @mixin Postit {
-  > li:first-child ul li {
-    margin-top: 0.3125rem;
-  }
-
   > li:not(:first-child) {
     margin-top: 0.3125rem;
   }
@@ -13,6 +9,10 @@
     @include Preset.BasePostit;
     @include Preset.SidebarPostitColorSeries;
     display: block;
+
+    > ul {
+      display: none;
+    }
   }
 }
 

@@ -50,7 +50,7 @@
     @content;    
   }
 
-  body.#{Define.$change2pink} main > {
+  body.#{Define.$change2pink} main {
     header {
       >, *:not(#{Define.$no_change_class_name}) {
         @content;

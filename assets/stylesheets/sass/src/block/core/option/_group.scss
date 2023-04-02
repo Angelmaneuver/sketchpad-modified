@@ -4,6 +4,10 @@
       margin-left: 0.9375rem;
     }
 
+    &.is-style-empty:not(:has(> *)) {
+      display: none;
+    }
+
     &[class*="wp-container"] {
       &.is-style-align-items-start {
         align-items: flex-start;

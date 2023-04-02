@@ -24,7 +24,7 @@ function compile(srcPath, destPath, includePaths) {
 	.pipe(autoprefixer())
 	.pipe(rename({ extname: '.min.css' }))
 	.pipe(cleanCss())
-	.pipe(gulp.dest(destPath, { sourcemaps: '.' }))
+	.pipe(gulp.dest(destPath))
 }
 
 function clear(paths) {
