@@ -9,6 +9,7 @@
 
 // @codingStandardsIgnoreStart
 return [
+	[ 'name' => 'sketchpad-modified-blocks/post-comments-count',   'handle' => 'sketchpad-modified-blocks/post-comments-count',   'src' => 'post_comments_count' ],
 	[ 'name' => 'sketchpad-modified-blocks/post-edit-link',        'handle' => 'sketchpad-modified-blocks/post-edit-link',        'src' => 'post_edit_link' ],
 	[ 'name' => 'sketchpad-modified-blocks/post-navigation-links', 'handle' => 'sketchpad-modified-blocks/post-navigation-links', 'src' => 'post_navigation_links' ],
 	[ 'name' => 'sketchpad-modified-blocks/table-of-contents',     'handle' => 'sketchpad-modified-blocks/table-of-contents',     'src' => 'table_of_contents' ],
