@@ -9,7 +9,7 @@ $class: 'wp-block-image';
  * Sketchpad Style - Image.
  */
 @include Common.Main($class) {
-  &#{Define.$key}-postit {
+  &.is-style-image-postit {
     @include Specific.Postit;
   }
 }

@@ -20,16 +20,44 @@ $class: 'wp-block-jetpack-slideshow';
       height: 1rem;
       width: 1rem;
     }
+
+    .swiper-pagination-simple {
+      text-align: center;
+    }
   }
 }
 
 @include Common.Main($class) {
-  &#{Define.$key}-postit {
+  &.is-style-image-postit {
     @include Preset.ImagePostit(0.3125rem  0.3125rem 1.25rem  0.3125rem);
 
     .wp-block-jetpack-slideshow_pagination {
       margin-bottom: 1.5rem;
       padding-top: 0.46875rem;
+    }
+  }
+}
+
+@if Define.$use_change_color {
+  @include Common.ChangeColor4Article {
+    .#{$class} {
+      &:not(#{Define.$no_change_class_name}) {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+
+        img {
+          @include Preset.Change2PinkImagePostit;
+        }
+
+        a, figcaption {
+          @include Preset.Change2PinkTextStyle;
+          @include Preset.Change2PinkBorderColor;
+        }
+
+        button {
+          @include Preset.Change2PinkBoxStyle;
+        }
+      }
     }
   }
 }

@@ -26,6 +26,15 @@ function register_sketchpad_block_styles():void {
 		false
 	);
 
+	$image_postit_label = __( 'Image Postit', 'sketchpad-modified' );
+	foreach ( require get_theme_file_path( '/includes/block/style/specific/image-postit.php' ) as $style ) {
+		register_sketchpad_block_style_by_style_handle(
+			$style['name'],
+			'image-postit',
+			$image_postit_label,
+		);
+	}
+
 	// Option style.
 	$option_styles = array(
 		'core/column',
