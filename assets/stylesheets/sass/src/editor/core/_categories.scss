@@ -1,0 +1,13 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+@use 'common' as Common;
+
+/**
+ * Sketchpad Style - Categories.
+ */
+.block-editor-block-list__layout .block-editor-block-list__block {
+  &.wp-block-categories.wp-block-categories-dropdown.is-style-sketchpad-postit {
+    display: block;
+    width: initial;
+  }
+}
