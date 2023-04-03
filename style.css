@@ -27,7 +27,7 @@
   padding: 0;
 }
 
-body main .wp-block-post-content ul:not([class]) li {
+body main .wp-block-post-content ul:not([class]) li, body main .wp-block-post-content ol:not([class]) li {
   margin-left: 1em;
 }
 
