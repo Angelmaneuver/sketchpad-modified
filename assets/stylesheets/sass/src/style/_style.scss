@@ -7,3 +7,7 @@
   margin: 0;
   padding: 0;
 }
+
+body main .wp-block-post-content ul:not([class]) li {
+  margin-left: 1em;
+}

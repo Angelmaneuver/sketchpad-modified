@@ -27,6 +27,10 @@
   padding: 0;
 }
 
+body main .wp-block-post-content ul:not([class]) li {
+  margin-left: 1em;
+}
+
 /**
 * Reset Browser Native Style.
 * -----------------------------------------------------------------------------------------------

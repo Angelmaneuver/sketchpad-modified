@@ -41,7 +41,11 @@ function style() {
 	return compileWithNotMinify(
 		'./assets/stylesheets/sass/src/style.scss',
 		'./',
-		'./assets/stylesheets/sass/preset',
+		[
+			'./assets/stylesheets/sass/src',
+			'./assets/stylesheets/sass/preset',
+			'./assets/stylesheets/sass/src/block',
+		],
 	);
 }
 
