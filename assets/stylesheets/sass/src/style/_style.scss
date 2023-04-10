@@ -1,3 +1,7 @@
+@use 'preset' as Preset;
+@use 'define' as Define;
+@use 'common' as Common;
+
 /**
 * Basic Style
 * -----------------------------------------------------------------------------------------------
@@ -12,6 +16,17 @@ body main .wp-block-post-content {
   ul, ol {
     &:not([class]) li {
       margin-left: 1em;
+    }
+  }
+}
+
+@if Define.$use_change_color {
+  @include Common.ChangeColor4Article {
+    ul, ol {
+      &:not(#{Define.$no_change_class_name}) li {
+        @include Preset.Change2PinkTextStyle;
+        @include Preset.Change2PinkBorderColor;
+      }
     }
   }
 }

@@ -7,6 +7,12 @@
   }
 }
 
+@mixin MainWithTag($tag) {
+  body #{$tag} {
+    @content;
+  }
+}
+
 @mixin MainOnly($class) {
   body main .#{$class} {
     @content;

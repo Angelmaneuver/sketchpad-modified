@@ -9,7 +9,7 @@ $target: 'h1, h2, h3, h4, h5, h6';
 /**
  * Sketchpad Style - Heading.
  */
-@include Common.Main($target) {
+@include Common.MainWithTag($target) {
   &#{Define.$key} {
     @include Specific.Styles;
   }

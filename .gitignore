@@ -36,3 +36,4 @@ assets/stylesheets/sass/user/*
 !assets/stylesheets/sass/user/.gitkeep
 user/css/*
 !user/css/settings.php
+yarpp-template*.php
