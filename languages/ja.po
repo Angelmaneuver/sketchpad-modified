@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2023-04-02T06:02:36+00:00\n"
+"POT-Creation-Date: 2023-05-01T15:23:04+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -261,6 +261,10 @@ msgstr "\"enclosure\"タグを追加する"
 msgid "Image Size"
 msgstr "画像サイズ"
 
+#: includes/block/pattern.php:19
+msgid "sidebar"
+msgstr "サイドバー"
+
 #: includes/block/style/core/column.php:12
 msgid "Match width to content"
 msgstr "幅をコンテンツに合わせる"
@@ -305,7 +309,11 @@ msgstr "台詞"
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
-#: includes/block/styles.php:83
+#: includes/block/styles.php:29
+msgid "Image Postit"
+msgstr "ポストイット (画像)"
+
+#: includes/block/styles.php:92
 msgid "Sketchpad Style"
 msgstr "メモ帳スタイル"
 
@@ -361,6 +369,11 @@ msgstr "検索キーワードを入力する"
 msgctxt "Pattern title"
 msgid "Search2"
 msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr "サイドバー"
 
 #: patterns/site-info.php
 msgctxt "Pattern title"

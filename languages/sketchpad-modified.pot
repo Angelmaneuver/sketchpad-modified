@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-04-02T06:02:36+00:00\n"
+"POT-Creation-Date: 2023-05-01T15:23:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: sketchpad-modified\n"
@@ -259,6 +259,10 @@ msgstr ""
 msgid "Image Size"
 msgstr ""
 
+#: includes/block/pattern.php:19
+msgid "sidebar"
+msgstr ""
+
 #: includes/block/style/core/column.php:12
 msgid "Match width to content"
 msgstr ""
@@ -303,7 +307,11 @@ msgstr ""
 msgid "Change the display to R18."
 msgstr ""
 
-#: includes/block/styles.php:83
+#: includes/block/styles.php:29
+msgid "Image Postit"
+msgstr ""
+
+#: includes/block/styles.php:92
 msgid "Sketchpad Style"
 msgstr ""
 
@@ -360,6 +368,11 @@ msgstr ""
 #: patterns/search2.php
 msgctxt "Pattern title"
 msgid "Search2"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
 msgstr ""
 
 #: patterns/site-info.php

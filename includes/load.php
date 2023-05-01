@@ -20,6 +20,7 @@ require get_template_directory() . '/includes/filter/load.php';
  * Blocks.
  */
 require get_template_directory() . '/includes/block/styles.php';
+require get_template_directory() . '/includes/block/pattern.php';
 
 /**
  * Theme basic features.
