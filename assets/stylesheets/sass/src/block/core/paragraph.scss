@@ -23,6 +23,12 @@ $target: 'p';
       margin-top: 1.5625rem;
     }
   }
+
+  span, #{$target} {
+    & + figure.wp-block-image {
+      margin-top: var(--wp--style--block-gap);
+    }
+  }
 }
 
 @if Define.$use_change_color {
