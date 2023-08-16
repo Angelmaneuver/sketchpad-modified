@@ -26,18 +26,6 @@
   padding: 0;
 }
 
-body main .wp-block-post-content ul:not([class]) li, body main .wp-block-post-content ol:not([class]) li {
-  margin-left: 1em;
-}
-
-body.tag-r18 main > div.wp-block-post-content > ul:not(.is-style-no-change) li, body.tag-r18 main > div.wp-block-post-content > ol:not(.is-style-no-change) li, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) ul:not(.is-style-no-change) li, body.tag-r18 main > div.wp-block-post-content *:not(.is-style-no-change) ol:not(.is-style-no-change) li {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: #FF9A93 0.1rem 0.1rem 1rem, #FF9A93 -0.1rem 0.1rem 1rem, #FF9A93 0.1rem -0.1rem 1rem, #FF9A93 -0.1rem -0.1rem 1rem !important;
-  border-color: #FFB6C1;
-  outline-color: #FFB6C1;
-}
-
 /**
 * Reset Browser Native Style.
 * -----------------------------------------------------------------------------------------------

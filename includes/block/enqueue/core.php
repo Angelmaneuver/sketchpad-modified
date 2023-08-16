@@ -19,6 +19,7 @@ return [
 	[ 'name' => 'core/image',               'handle' => 'image',               'src' => 'image' ,              'path_set' => true ],
 	[ 'name' => 'core/latest-comments',     'handle' => 'latest-comments',     'src' => 'latest_comments',     'path_set' => true ],
 	[ 'name' => 'core/latest-posts',        'handle' => 'latest-posts',        'src' => 'latest_posts',        'path_set' => true ],
+	[ 'name' => 'core/list',                'handle' => 'list',                'src' => 'list',                'path_set' => true ],
 	[ 'name' => 'core/loginout',            'handle' => 'loginout',            'src' => 'loginout',            'path_set' => true ],
 	[ 'name' => 'core/page-list',           'handle' => 'page-list',           'src' => 'page_list',           'path_set' => true ],
 	[ 'name' => 'core/paragraph',           'handle' => 'paragraph',           'src' => 'paragraph',           'path_set' => true ],
