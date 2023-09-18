@@ -10,7 +10,7 @@
     "compile": "yarn -s run gulp"
   },
   "devDependencies": {
-    "del": "^7.0.0",
+    "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -19,7 +19,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "minimatch": "^9.0.3",
-    "sass": "^1.64.2"
+    "sass": "^1.67.0"
   },
   "dependencies": {}
 }
