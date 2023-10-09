@@ -5,6 +5,7 @@
 @use './core/post_comments_form';
 @use './core/post_featured_image';
 @use './core/post_title';
+@use './core/query_pagination';
 @use './core/quote';
 @use './core/search';
 @use './core/separator';
