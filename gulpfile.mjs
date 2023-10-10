@@ -117,6 +117,7 @@ function user() {
 		[
 			'./assets/stylesheets/sass/src',
 			'./assets/stylesheets/sass/preset',
+			'./assets/stylesheets/sass/src/block',
 		],
 	);
 }
