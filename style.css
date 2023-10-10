@@ -74,3 +74,10 @@ select {
 *[class*=has-][class*=-font-size] {
   line-height: initial;
 }
+
+.wp-block-post-content span[id^=more-] {
+  display: block;
+}
+.wp-block-post-content span[id^=more-] + * {
+  margin-top: 0;
+}
