@@ -2,11 +2,13 @@
 
 @mixin Styles {
   &1 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
 
-    .wp-block-post-excerpt__excerpt, > div:first-of-type {
-      display: inline-block;
-      margin-bottom: 1.5625rem;
+    .wp-block-post-excerpt__excerpt {
+      flex-grow: 1;
     }
 
     .wp-block-post-excerpt__more-text {
@@ -23,8 +25,8 @@
 
 @mixin Desktop {
   &1 {
-    .wp-block-post-excerpt__excerpt, > div:first-of-type {
-      min-height: 8.125rem;
+    &.wp-block-post-excerpt {
+      min-height: 12.5rem;
     }
   }
 }
