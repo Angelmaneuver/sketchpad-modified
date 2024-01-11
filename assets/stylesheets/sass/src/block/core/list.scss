@@ -11,6 +11,14 @@ ul, ol {
   }
 }
 
+.wp-block-post-content {
+  ul, ol {
+    & + figure {
+      margin-top: var(--wp--style--block-gap);
+    }
+  }
+}
+
 @if Define.$use_change_color {
   @include Common.ChangeColor4Article {
     ul, ol {
