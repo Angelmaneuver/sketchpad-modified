@@ -6,6 +6,14 @@
       text-indent: 1em;
     }
 
+    &.is-style-text-indent-two-letters {
+      text-indent: 2em;
+    }
+
+    &.is-style-text-indent-three-letters {
+      text-indent: 3em;
+    }
+
     &.is-style-single-character-line-spacing {
       line-height: 2;
     }

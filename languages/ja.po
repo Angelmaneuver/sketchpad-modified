@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sketchpad - modified 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sketchpad-modified\n"
-"POT-Creation-Date: 2023-05-01T15:23:04+00:00\n"
+"POT-Creation-Date: 2024-02-18T15:00:29+00:00\n"
 "PO-Revision-Date: 2020-06-28 21:48+0000\n"
 "Last-Translator: root <f_a-18hornet@hotmail.co.jp>\n"
 "Language-Team: Japanese\n"
@@ -298,14 +298,22 @@ msgid "Single character indentation"
 msgstr "1文字字下げする"
 
 #: includes/block/style/core/paragraph.php:13
+msgid "Two character indentation"
+msgstr "2文字字下げする"
+
+#: includes/block/style/core/paragraph.php:14
+msgid "Three character indentation"
+msgstr "3文字字下げする"
+
+#: includes/block/style/core/paragraph.php:15
 msgid "Open one character between line"
 msgstr "行間を1文字開ける"
 
-#: includes/block/style/core/paragraph.php:14
+#: includes/block/style/core/paragraph.php:16
 msgid "Speech"
 msgstr "台詞"
 
-#: includes/block/style/core/paragraph.php:15
+#: includes/block/style/core/paragraph.php:17
 msgid "Change the display to R18."
 msgstr "R18表示に変更する"
 
@@ -329,6 +337,16 @@ msgstr "ページが見つかりませんでした..."
 #: patterns/404.php:18
 msgid "Try using the search form"
 msgstr "検索フォームをご利用ください"
+
+#: patterns/header-image.php
+msgctxt "Pattern title"
+msgid "Header Image"
+msgstr "ヘッダー画像"
+
+#: patterns/header-image.php:16
+#, fuzzy
+msgid "Header image"
+msgstr "ヘッダー画像"
 
 #: patterns/no-results.php
 msgctxt "Pattern title"
