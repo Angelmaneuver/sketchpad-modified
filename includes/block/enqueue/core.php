@@ -12,6 +12,7 @@ return [
 	[ 'name' => 'core/archives',            'handle' => 'archives',            'src' => 'archives',            'path_set' => true ],
 	[ 'name' => 'core/categories',          'handle' => 'categories',          'src' => 'categories',          'path_set' => true ],
 	[ 'name' => 'core/calendar',            'handle' => 'calendar',            'src' => 'calendar',            'path_set' => true ],
+	[ 'name' => 'core/code',                'handle' => 'code',                'src' => 'code',                'path_set' => true ],
 	[ 'name' => 'core/column',              'handle' => 'column',              'src' => 'column',              'path_set' => false ],
 	[ 'name' => 'core/comments-pagination', 'handle' => 'comments-pagination', 'src' => 'comments_pagination', 'path_set' => false ],
 	[ 'name' => 'core/group',               'handle' => 'group',               'src' => 'group',               'path_set' => false ],
