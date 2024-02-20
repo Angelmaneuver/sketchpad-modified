@@ -8,11 +8,6 @@ $class: 'wp-block-jetpack-slideshow';
  * Sketchpad Style - Jetpack's Slide Show.
  */
 .wp-block-group .#{$class} {
-  img {
-    width: 100%;
-    object-fit: initial;
-  }
-
   .wp-block-jetpack-slideshow_pagination {
     justify-content: center;
 
