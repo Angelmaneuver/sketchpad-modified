@@ -2,8 +2,8 @@
 
 @mixin Postit {
   a {
-    @include Preset.BasePostit($tag: 'a');
     @include Preset.PostitRed;
+    @include Preset.BasePostit($tag: 'a');
   }
 }
 

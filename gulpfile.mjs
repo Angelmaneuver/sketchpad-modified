@@ -1,11 +1,11 @@
-import * as del     from 'del';
-import gulp         from 'gulp';
-import plumber      from 'gulp-plumber';
-import dartSass     from 'sass';
-import gulpSass     from 'gulp-sass';
-import cleanCss     from 'gulp-clean-css';
-import rename       from 'gulp-rename';
-import autoprefixer from 'gulp-autoprefixer';
+import * as del      from 'del';
+import gulp          from 'gulp';
+import plumber       from 'gulp-plumber';
+import * as dartSass from 'sass';
+import gulpSass      from 'gulp-sass';
+import cleanCss      from 'gulp-clean-css';
+import rename        from 'gulp-rename';
+import autoprefixer  from 'gulp-autoprefixer';
 
 const sass = gulpSass(dartSass);
 

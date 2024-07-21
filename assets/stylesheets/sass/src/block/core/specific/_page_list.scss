@@ -8,7 +8,10 @@
   & li {
     @include Preset.BasePostit;
     @include Preset.SidebarPostitColorSeries;
-    display: block;
+
+    & {
+      display: block;
+    }
 
     > ul {
       display: none;
