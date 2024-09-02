@@ -7,7 +7,11 @@ $class: 'wp-block-code';
 /**
  * Sketchpad Style - Code.
  */
-@if Define.$use_change_color {
+@include Common.Main($class) {
+  word-break: break-all;
+}
+
+ @if Define.$use_change_color {
   @include Common.ChangeColor4Article {
     .#{$class} {
       &:not(#{Define.$no_change_class_name}) {

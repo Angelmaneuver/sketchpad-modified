@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
+	"version": 3,
 	"settings": {
 		"appearanceTools": true,
 		"typography": {
@@ -99,6 +99,11 @@
 			"core/calendar": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--sketchpad-montserrat-font)"
+				}
+			},
+			"core/code": {
+				"typography": {
+					"fontSize": "0.75rem"
 				}
 			},
 			"core/loginout": {
