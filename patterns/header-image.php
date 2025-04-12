@@ -13,5 +13,5 @@
 
 ?>
 <!-- wp:image {"linkDestination":"none"} -->
-<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/bg-logo.webp' ); ?>" alt="<?php echo esc_html__( 'Header image', 'sketchpad-modified' ); ?>"></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/bg-logo.webp' ); ?>" alt="<?php echo esc_attr__( 'Header image', 'sketchpad-modified' ); ?>"></figure>
 <!-- /wp:image -->
