@@ -16,10 +16,10 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "minimatch": "^10.0.1",
-    "sass": "^1.81.0"
+    "sass": "^1.86.3"
   },
   "dependencies": {},
   "packageManager": "yarn@1.22.22"

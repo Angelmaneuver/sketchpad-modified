@@ -1,1 +1,0 @@
-{"version":3,"sources":["core/specific/_site_title.scss"],"names":[],"mappings":"AACE,sDACE,gBAAA","file":"core/site_title.min.css","sourcesContent":["@mixin Styles {\n  &1 a:hover {\n    text-decoration: underline;\n  }\n}\n"]}

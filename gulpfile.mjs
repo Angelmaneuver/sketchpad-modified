@@ -12,15 +12,15 @@ const sass = gulpSass(dartSass);
 function compileWithNotMinify(srcPath, destPath, includePaths) {
 	return gulp.src(srcPath)
 	.pipe(plumber())
-	.pipe(sass.sync({ includePaths: includePaths }))
+	.pipe(sass.sync({ loadPaths: includePaths }))
 	.pipe(autoprefixer())
 	.pipe(gulp.dest(destPath))
 }
 
 function compile(srcPath, destPath, includePaths) {
-	return gulp.src(srcPath, { sourcemaps: true })
+	return gulp.src(srcPath)
 	.pipe(plumber())
-	.pipe(sass.sync({ includePaths: includePaths }))
+	.pipe(sass.sync({ loadPaths: includePaths }))
 	.pipe(autoprefixer())
 	.pipe(rename({ extname: '.min.css' }))
 	.pipe(cleanCss())
