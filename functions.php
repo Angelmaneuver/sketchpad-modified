@@ -16,7 +16,7 @@ if ( ! isset( $content_width ) ) {
  * @return void
  * @see    https://developer.wordpress.org/reference/hooks/init/
  */
-function sketchpad_init():void {
+function sketchpad_init(): void {
 	/** This theme supports to category and tag the page. */
 	register_taxonomy_for_object_type( 'category', 'page' );
 	register_taxonomy_for_object_type( 'post_tag', 'page' );
@@ -30,7 +30,7 @@ add_action( 'init', 'sketchpad_init' );
  * @return void
  * @see    https://developer.wordpress.org/reference/hooks/after_setup_theme/
  */
-function sketchpad_setup():void {
+function sketchpad_setup(): void {
 	/** Makes Sketchpad available for translation. */
 	load_theme_textdomain( 'sketchpad-modified', get_template_directory() . '/languages' );
 
