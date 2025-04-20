@@ -1,5 +1,5 @@
 @mixin ImagePostit($padding: 0.3125rem) {
-  img, svg {
+  img {
     width: calc(100% - 0.625rem);
     margin: auto;
     padding: $padding;
