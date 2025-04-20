@@ -90,6 +90,18 @@
 			"zlib",
 			"wordpress"
 		],
+		"command-launcher.commands": {
+			"WordPress": {
+				"type": 2,
+				"コンパイル": {
+					"command": "yarn run compile",
+					"type": 3,
+					"label": "$(debug-start)",
+					"description": "Sass ファイルをコンパイルします。",
+					"singleton": true
+				}
+			}
+		}
 	},
 	"extensions": {
 		"recommendations": [
@@ -104,6 +116,7 @@
 			"wordpresstoolbox.wordpress-toolbox",
 			"johnbillion.vscode-wordpress-hooks",
 			"xdebug.php-debug",
+			"angelmaneuver.command-launcher",
 		]
 	},
 	"launch": {
