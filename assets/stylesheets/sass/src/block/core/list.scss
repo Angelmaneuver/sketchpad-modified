@@ -6,7 +6,7 @@
  * Sketchpad Style - List.
  */
 ul, ol {
-  &:not([class]) li {
+  &[class^="wp-block-list"] li {
     margin-left: 1em;
   }
 }
