@@ -10,6 +10,8 @@ $class: 'wp-block-jetpack-slideshow';
 .wp-block-group .#{$class} {
   .wp-block-jetpack-slideshow_pagination {
     justify-content: center;
+    margin-bottom: 1.5rem;
+    padding-top: 0.46875rem;
 
     &.swiper-pagination button.swiper-pagination-bullet {
       height: 1rem;
@@ -25,11 +27,6 @@ $class: 'wp-block-jetpack-slideshow';
 @include Common.Main($class) {
   &.is-style-image-postit {
     @include Preset.ImagePostit(0.3125rem  0.3125rem 1.25rem  0.3125rem);
-
-    .wp-block-jetpack-slideshow_pagination {
-      margin-bottom: 1.5rem;
-      padding-top: 0.46875rem;
-    }
   }
 }
 
