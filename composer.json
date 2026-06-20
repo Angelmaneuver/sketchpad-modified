@@ -1,5 +1,6 @@
 {
     "require": {
+		"php": "^8.5.2",
         "squizlabs/php_codesniffer": "3.*",
         "wp-coding-standards/wpcs": "^3.0"
     },
@@ -7,5 +8,8 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "scripts": {
+        "phpcbf": "vendor/bin/phpcbf --standard=WordPress --extensions=php,inc -n ."
     }
 }

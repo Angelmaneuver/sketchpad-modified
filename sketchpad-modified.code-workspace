@@ -10,6 +10,10 @@
 		"editor.detectIndentation": false,
 		"files.insertFinalNewline": true,
 		"files.trimFinalNewlines": true,
+		"[php]": {
+			"editor.defaultFormatter": "valeryanm.vscode-phpsab",
+			"editor.formatOnSave": true,
+		},
 		"[scss]": {
 			"editor.insertSpaces": true,
 			"editor.tabSize": 2,
@@ -18,8 +22,7 @@
 		"php.suggest.basic": false,
 		"php.validate.enable": false,
 		"php.validate.executablePath": null,
-		"phpcs.executablePath": "./vendor/bin/phpcs",
-		"phpcs.standard": "WordPress",
+		"phpsab.standard": "WordPress",
 		"intelephense.stubs": [
 			"apache",
 			"bcmath",
@@ -105,11 +108,10 @@
 	},
 	"extensions": {
 		"recommendations": [
-			"mosapride.zenkaku",
 			"christian-kohler.path-intellisense",
 			"formulahendry.auto-rename-tag",
 			"zignd.html-css-class-completion",
-			"shevaua.phpcs",
+			"valeryanm.vscode-phpsab",
 			"bmewburn.vscode-intelephense-client",
 			"neilbrayfield.php-docblocker",
 			"anthonydiametrix.acf-snippet",
