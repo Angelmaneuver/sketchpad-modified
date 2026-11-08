@@ -104,6 +104,9 @@
 					"singleton": true
 				}
 			}
+		},
+		"json.schemaDownload.trustedDomains": {
+			"https://schemas.wp.org/trunk/theme.json": true
 		}
 	},
 	"extensions": {
