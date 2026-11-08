@@ -11,4 +11,5 @@
  * These modules are needed to load this function.
  */
 require get_template_directory() . '/includes/filter/template/post/body-class.php';
+require get_template_directory() . '/includes/filter/render_block/core/image.php';
 require get_template_directory() . '/includes/filter/render_block/core/categories.php';

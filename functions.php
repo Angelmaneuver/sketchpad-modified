@@ -142,6 +142,16 @@ function sketchpad_editor_script() {
 		(string) filemtime( get_template_directory() . '/assets/stylesheets/css/editor/block_editor_style.min.css' ),
 		'all'
 	);
+
+	wp_enqueue_script(
+		'sketchpad-image-dimensions',
+		get_template_directory_uri() . '/assets/js/sketchpad-image-dimensions.js',
+		array( 'wp-blocks', 'wp-block-editor', 'wp-components', 'wp-compose', 'wp-element', 'wp-hooks', 'wp-i18n' ),
+		(string) filemtime( get_template_directory() . '/assets/js/sketchpad-image-dimensions.js' ),
+		true
+	);
+
+	wp_set_script_translations( 'sketchpad-image-dimensions', 'sketchpad-modified', get_template_directory() . '/languages' );
 }
 
 add_action( 'enqueue_block_editor_assets', 'sketchpad_editor_script' );
